@@ -6,6 +6,7 @@ venv/
 
 node_modules/
 dist/
+vendor/
 
 .vscode/
 .idea/
