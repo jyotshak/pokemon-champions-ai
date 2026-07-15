@@ -7,6 +7,7 @@ venv/
 node_modules/
 dist/
 vendor/
+logs/
 
 .vscode/
 .idea/

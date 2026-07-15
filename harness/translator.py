@@ -189,8 +189,16 @@ def battle_to_state(battle: DoubleBattle) -> BattleState:
     my_active = [
         own_pokemon(mon, _position(i)) for i, mon in enumerate(battle.active_pokemon) if mon is not None
     ]
+    # battle.team always holds all 6 submitted Pokemon, but only 4 are
+    # actually brought into a given battle (VGC bring-4-of-6). During team
+    # preview itself, none are marked selected_in_teampreview yet (that
+    # decision hasn't been made), so all 6 correctly show up here - that's
+    # exactly what's needed to choose which 4 to bring. Once team preview
+    # ends, only the actually-brought ones should remain (see actions.py's
+    # team_preview_action_to_order, which sets the flag).
     my_bench = [
-        own_pokemon(mon, None) for mon in battle.team.values() if mon not in battle.active_pokemon
+        own_pokemon(mon, None) for mon in battle.team.values()
+        if mon not in battle.active_pokemon and (battle.in_team_preview or mon.selected_in_teampreview)
     ]
     opp_active = [
         opponent_pokemon(mon, _position(i)) for i, mon in enumerate(battle.opponent_active_pokemon) if mon is not None
@@ -201,8 +209,12 @@ def battle_to_state(battle: DoubleBattle) -> BattleState:
 
     team_preview = None
     if battle.in_team_preview:
+        # battle.teampreview_team is never actually populated by poke-env
+        # (confirmed by reading its source - nothing calls its setter);
+        # poke-env's own default random_teampreview uses battle.team
+        # directly, so we do too.
         team_preview = TeamPreviewInfo(
-            my_team=[mon.species for mon in battle.teampreview_team],
+            my_team=[mon.species for mon in battle.team.values()],
             opp_team=[mon.species for mon in battle.teampreview_opponent_team],
         )
 

@@ -27,7 +27,16 @@ def _target_to_int(target: Target, actor_position: Position) -> int:
 
 
 def _bench_pokemon(battle: DoubleBattle, bench_slot: int):
-    bench = [mon for mon in battle.team.values() if mon not in battle.active_pokemon]
+    # battle.team always holds all 6 submitted Pokemon, but only 4 are
+    # actually brought into a given battle (VGC bring-4-of-6) - filtering
+    # on "not currently active" alone wrongly offers the other 2, never-
+    # brought mons as switch targets. selected_in_teampreview (set in
+    # team_preview_action_to_order below) is what actually narrows this
+    # to the real bench.
+    bench = [
+        mon for mon in battle.team.values()
+        if mon not in battle.active_pokemon and mon.selected_in_teampreview
+    ]
     return bench[bench_slot]
 
 
@@ -51,9 +60,13 @@ def _single_order(battle: DoubleBattle, action: Action, actor, position: Positio
 
 
 def turn_actions_to_order(battle: DoubleBattle, actions: TurnActions) -> DoubleBattleOrder:
+    # Do NOT default to Pass just because active_pokemon[i] is None - that's
+    # exactly the fainted-needs-a-switch case, where the actor object isn't
+    # needed anyway (SwitchAction/NoAction in _single_order don't use it,
+    # only MoveAction does, and a fainted slot should never receive one).
     left_mon, right_mon = battle.active_pokemon
-    first = _single_order(battle, actions.slot_left, left_mon, Position.LEFT) if left_mon else PassBattleOrder()
-    second = _single_order(battle, actions.slot_right, right_mon, Position.RIGHT) if right_mon else PassBattleOrder()
+    first = _single_order(battle, actions.slot_left, left_mon, Position.LEFT)
+    second = _single_order(battle, actions.slot_right, right_mon, Position.RIGHT)
     return DoubleBattleOrder(first_order=first, second_order=second)
 
 
@@ -61,9 +74,20 @@ def team_preview_action_to_order(battle: DoubleBattle, action: TeamPreviewAction
     """`action.bring`/`lead_order` are 0-based indices into the 6-mon roster
     (the schema's convention); Showdown's /team string is 1-based, so the
     +1 offset is applied only here, at the protocol boundary.
+
+    battle.teampreview_team is never actually populated by poke-env (see
+    translator.py) so battle.team is used instead, same fix.
     """
-    all_indices = list(range(len(battle.teampreview_team)))
+    roster = list(battle.team.values())
+    all_indices = list(range(len(roster)))
     bring_rest = [i for i in action.bring if i not in action.lead_order]
     remaining = [i for i in all_indices if i not in action.bring]
     order = action.lead_order + bring_rest + remaining
+
+    # Mirrors poke-env's own random_teampreview: mark the actually-brought
+    # mons so bench lookups (translator.py, _bench_pokemon above) can tell
+    # them apart from the 2 that were never brought into this battle.
+    for i in action.bring:
+        roster[i]._selected_in_teampreview = True
+
     return "/team " + "".join(str(i + 1) for i in order)
