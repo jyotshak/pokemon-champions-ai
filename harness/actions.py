@@ -1,0 +1,69 @@
+"""Converts our TurnActions/TeamPreviewAction into poke-env BattleOrders —
+the reverse direction of translator.py. Showdown-protocol-specific glue,
+same as translator.py: no decision logic lives here.
+
+Target-position integers (opponent slots = 1/2, ally slots = -1/-2, no
+explicit target = 0) come directly from poke-env's own
+DoubleBattle.{POKEMON,OPPONENT}_{1,2}_POSITION constants, not guessed.
+"""
+
+from poke_env.battle.double_battle import DoubleBattle
+from poke_env.player.battle_order import DoubleBattleOrder, PassBattleOrder, SingleBattleOrder
+
+from schema.battle_state import (
+    Action, MoveAction, NoAction, Position, SwitchAction, Target, TeamPreviewAction, TurnActions,
+)
+
+
+def _target_to_int(target: Target, actor_position: Position) -> int:
+    if target == Target.OPP_LEFT:
+        return 1
+    if target == Target.OPP_RIGHT:
+        return 2
+    if target == Target.ALLY:
+        # the ally is whichever slot the actor isn't in
+        return -2 if actor_position == Position.LEFT else -1
+    return 0  # SELF, NONE - spread/self-targeting moves need no explicit target
+
+
+def _bench_pokemon(battle: DoubleBattle, bench_slot: int):
+    bench = [mon for mon in battle.team.values() if mon not in battle.active_pokemon]
+    return bench[bench_slot]
+
+
+def _single_order(battle: DoubleBattle, action: Action, actor, position: Position) -> SingleBattleOrder:
+    if isinstance(action, NoAction):
+        return PassBattleOrder()
+    if isinstance(action, SwitchAction):
+        return SingleBattleOrder(_bench_pokemon(battle, action.bench_slot))
+    if isinstance(action, MoveAction):
+        # Own moveset order is assumed stable (team-declared order), since
+        # OwnPokemon's full 4 moves are known up front, unlike an opponent's
+        # moves dict which only grows as they're revealed.
+        move = list(actor.moves.values())[action.move_slot - 1]
+        return SingleBattleOrder(
+            move,
+            mega=action.mega,
+            terastallize=action.tera,
+            move_target=_target_to_int(action.target, position),
+        )
+    raise ValueError(f"Unknown action type: {action!r}")
+
+
+def turn_actions_to_order(battle: DoubleBattle, actions: TurnActions) -> DoubleBattleOrder:
+    left_mon, right_mon = battle.active_pokemon
+    first = _single_order(battle, actions.slot_left, left_mon, Position.LEFT) if left_mon else PassBattleOrder()
+    second = _single_order(battle, actions.slot_right, right_mon, Position.RIGHT) if right_mon else PassBattleOrder()
+    return DoubleBattleOrder(first_order=first, second_order=second)
+
+
+def team_preview_action_to_order(battle: DoubleBattle, action: TeamPreviewAction) -> str:
+    """`action.bring`/`lead_order` are 0-based indices into the 6-mon roster
+    (the schema's convention); Showdown's /team string is 1-based, so the
+    +1 offset is applied only here, at the protocol boundary.
+    """
+    all_indices = list(range(len(battle.teampreview_team)))
+    bring_rest = [i for i in action.bring if i not in action.lead_order]
+    remaining = [i for i in all_indices if i not in action.bring]
+    order = action.lead_order + bring_rest + remaining
+    return "/team " + "".join(str(i + 1) for i in order)
