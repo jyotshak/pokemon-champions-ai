@@ -47,6 +47,21 @@
     protocol; wrong for search, which reasons inside an already fully-
     determinized world with nothing left to hide from itself. Must read
     p.trapped directly, not the protocol-gated req.trapped.
+12. must_recharge reconstruction at a FRESH init_battle (in-search
+    recharge-blindness fix, 2026-07-20) - distinct from #10, which
+    continues a LIVE step() handle where the engine's own in-memory
+    volatile from a real Hyper Beam is still present. Every live decision
+    and every per-world search rollout instead calls init_battle fresh
+    from a Python-side FullInfoState (belief/determinize.py always builds
+    a brand-new one), where the ONLY way the engine can know a mon must
+    recharge is the `volatiles` field surviving applyMonState's round
+    trip. Before this fix that case was 48/48 rejected rollouts in a live
+    match ("Can't pass: ... must make a move", MB552's Sylveon with an
+    exhausted bench after Hyper Beam) - the rebuilt engine had no idea
+    the mon was locked. Also checks the flip side: with the volatile
+    correctly reconstructed, the engine's OWN choice validation now
+    correctly REFUSES an illegal switch for that mon too (real recharge
+    mechanics; before the fix a switch was silently, incorrectly allowed).
 
 Needs node + the built vendor sim (vendor/pokemon-showdown/dist).
 Run from the project root: python -m engine.test_bridge
@@ -57,7 +72,8 @@ from pathlib import Path
 
 from engine.bridge import EngineBridge
 from schema.battle_state import (
-    Boosts, FieldState, MoveAction, MoveSlot, OwnPokemon, Position, Status, Target, TurnActions,
+    Boosts, FieldState, MoveAction, MoveSlot, OwnPokemon, Position, Status, SwitchAction, Target, TurnActions,
+    VolatileState,
 )
 from schema.full_info_state import FullInfoState
 
@@ -82,14 +98,15 @@ def flat(species):
 
 
 def mk(species, moves, ability, item=None, position=None, hp=None, fainted=False,
-       status=Status.NONE, boosts=None):
+       status=Status.NONE, boosts=None, moves_disabled=False, must_recharge=False):
     max_hp, stats = flat(species)
     return OwnPokemon(
         species=species, position=position, fainted=fainted,
         hp=0 if fainted else (hp if hp is not None else max_hp), max_hp=max_hp,
         status=status, stats=stats, boosts=boosts or Boosts(),
         ability=ability, item=item,
-        moves=[MoveSlot(move=m, pp=16, max_pp=16) for m in moves],
+        moves=[MoveSlot(move=m, pp=16, max_pp=16, disabled=moves_disabled) for m in moves],
+        volatiles=[VolatileState(name="must_recharge")] if must_recharge else [],
     )
 
 
@@ -361,6 +378,38 @@ immune_gholdengo = next(m for m in echo10.my_team if m.species == "gholdengo")
 check("Ghost-type Gholdengo correctly immune to Shadow Tag (real engine's own type-immunity check, "
       "not something we special-cased)", not immune_gholdengo.trapped)
 
-bridge.free([handle, h2])
+print("\n12. must_recharge reconstruction at a FRESH init_battle")
+recharge_root = base_state()
+recharge_root.my_team[1] = mk("garchomp", ["earthquake", "dragonclaw", "protect", "swordsdance"], "roughskin",
+                              position=Position.RIGHT, moves_disabled=True, must_recharge=True)
+handle11, echo11 = bridge.init_battle(recharge_root)
+
+forced_move_turn = bridge.step(
+    handle11, echo11,
+    my=TurnActions(slot_left=MoveAction(move_slot=1, target=Target.NONE),
+                   slot_right=MoveAction(move_slot=1, target=Target.NONE)),  # move_slot content is irrelevant -
+    # getLockedMove() overrides it once the volatile round-trips (this module's
+    # header comment) - the point being tested is that the choice is ACCEPTED,
+    # not what specifically executes.
+    opp=TurnActions(slot_left=MoveAction(move_slot=3, target=Target.SELF),
+                    slot_right=MoveAction(move_slot=3, target=Target.SELF)),
+)
+check("forced move accepted, no 'must make a move' rejection", not forced_move_turn.errors, forced_move_turn.errors)
+recharged = next(m for m in forced_move_turn.state.my_team if m.species == "garchomp")
+check("garchomp did not execute a real attack (still full HP - only recharged)",
+      recharged.hp == recharge_root.my_team[1].hp, recharged.hp)
+
+handle12, echo12 = bridge.init_battle(recharge_root)   # independent fresh reconstruction, not reusing handle11
+switch_attempt = bridge.step(
+    handle12, echo12,
+    my=TurnActions(slot_left=MoveAction(move_slot=1, target=Target.NONE), slot_right=SwitchAction(bench_slot=0)),
+    opp=TurnActions(slot_left=MoveAction(move_slot=3, target=Target.SELF),
+                    slot_right=MoveAction(move_slot=3, target=Target.SELF)),
+)
+check("switching a recharging mon is correctly REFUSED by the engine "
+      "(real mechanics - proves the volatile actually engaged, not just that SOME choice was accepted)",
+      bool(switch_attempt.errors), switch_attempt.errors)
+
+bridge.free([handle, h2, handle11, handle12])
 bridge.close()
 print(f"\n{'PASS' if not failures else 'FAIL: ' + ', '.join(failures)}")

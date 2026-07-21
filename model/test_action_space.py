@@ -20,6 +20,7 @@ from model.leaf_value import hp_leaf_value
 from schema.full_info_state import FullInfoState
 from schema.battle_state import (
     FieldState, MoveAction, MoveSlot, NoAction, OwnPokemon, Position, SwitchAction, SideConditions, Target,
+    VolatileState,
 )
 
 _MOVE_DATA = json.loads((Path(__file__).resolve().parent.parent / "reference" / "move_data.json").read_text(encoding="utf-8"))
@@ -34,7 +35,8 @@ def check(name: str, actual, expected):
         failures.append(name)
 
 
-def mk(species, moves, item=None, position=None, hp=155, fainted=False, pp=16, trapped=False):
+def mk(species, moves, item=None, position=None, hp=155, fainted=False, pp=16, trapped=False,
+      disabled=False, must_recharge=False):
     for m in moves:
         assert m in _MOVE_DATA, f"typo in test data: {m} not in move_data.json"
     return OwnPokemon(
@@ -42,8 +44,9 @@ def mk(species, moves, item=None, position=None, hp=155, fainted=False, pp=16, t
         hp=0 if fainted else hp, max_hp=hp,
         stats={"atk": 120, "def": 120, "spa": 120, "spd": 120, "spe": 120},
         ability="pressure", item=item,
-        moves=[MoveSlot(move=m, pp=pp, max_pp=16) for m in moves],
+        moves=[MoveSlot(move=m, pp=pp, max_pp=16, disabled=disabled) for m in moves],
         trapped=trapped,
+        volatiles=[VolatileState(name="must_recharge")] if must_recharge else [],
     )
 
 
@@ -143,6 +146,42 @@ locked = FullInfoState(
 )
 locked_actions = propose_slot_actions(locked, "me", Position.LEFT)
 check("exactly one action", locked_actions, [MoveAction(move_slot=1, target=Target.NONE)])
+
+print("\nmust_recharge volatile (LIVE-TRANSLATED shape: real moveset kept, all disabled, "
+      "harness/translator.py::own_pokemon) -> exactly one no-target move, no switch even with a live bench")
+# Regression for the in-search recharge-blindness bug: without this check,
+# a recharging mon with an exhausted bench fell through to [NoAction()] (the
+# generic enumerator skips every disabled move and, before this fix, offered
+# switches whenever trapped=False - which the live translator never sets for
+# this case). That NoAction, submitted to a rebuilt engine world that has no
+# idea the mon must recharge (engine/bridge.js reconstructs the matching
+# volatile now - see its own comment), got rejected with "Can't pass: ...
+# must make a move" - 48/48 rollouts rejected in the live match that
+# surfaced this (MB552's Sylveon after Hyper Beam).
+recharging = FullInfoState(
+    turn=4, field=FieldState(),
+    my_team=[mk("sylveon", ["hypervoice", "hyperbeam", "quickattack", "detect"],
+               position=Position.LEFT, disabled=True, must_recharge=True),
+             mk("kingambit", ["suckerpunch", "ironhead", "kowtowcleave", "lowkick"])],  # a LIVE bench mon
+    opp_team=[mk("tyranitar", ["crunch"], position=Position.LEFT)],
+)
+recharge_actions = propose_slot_actions(recharging, "me", Position.LEFT)
+check("exactly one action despite 4 real (disabled) moves + a live bench",
+      recharge_actions, [MoveAction(move_slot=1, target=Target.NONE)])
+check("no switch offered (a recharging mon cannot switch, even with one available)",
+      any(isinstance(a, SwitchAction) for a in recharge_actions), False)
+
+print("\nmust_recharge with an EXHAUSTED bench - the exact shape that used to fall through to NoAction")
+recharging_no_bench = FullInfoState(
+    turn=4, field=FieldState(),
+    my_team=[mk("sylveon", ["hypervoice", "hyperbeam", "quickattack", "detect"],
+               position=Position.LEFT, disabled=True, must_recharge=True),
+             mk("kingambit", ["suckerpunch"], fainted=True)],
+    opp_team=[mk("tyranitar", ["crunch"], position=Position.LEFT)],
+)
+check("still one real move, NOT NoAction",
+      propose_slot_actions(recharging_no_bench, "me", Position.LEFT),
+      [MoveAction(move_slot=1, target=Target.NONE)])
 
 print("\nCurse targeting depends on the USER's type, not a fixed move property")
 curse_ghost = FullInfoState(

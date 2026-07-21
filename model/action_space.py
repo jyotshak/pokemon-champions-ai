@@ -84,6 +84,28 @@ def propose_slot_actions(state: FullInfoState, side: str, position: Position) ->
         # means this side has no living mon to field here — pass.
         return [NoAction()]
 
+    if any(v.name == "must_recharge" for v in mon.volatiles):
+        # A mon translated from a LIVE recharge request (harness/
+        # translator.py::own_pokemon, from poke-env's Effect.MUST_RECHARGE)
+        # keeps its REAL 4-move moveset (all marked disabled) rather than a
+        # single synthetic entry - see that function's docstring for why
+        # (a synthetic id has no PP data and breaks engine rebuilds). Left
+        # to the generic move/switch enumeration below, an exhausted bench
+        # produces [NoAction()] (a real Sylveon-mid-recharge-with-no-bench
+        # case that stalled a live match, then broke a search rollout the
+        # same way: the engine, having no idea this mon must recharge,
+        # rejects the resulting pass with "Can't pass: ... must make a
+        # move"). Bypass all of that: propose the single forced move
+        # directly. move_slot's VALUE doesn't matter - Showdown's own
+        # getLockedMove() (conditions.ts's mustrecharge: onLockMove) forces
+        # the real recharge regardless of which move we name, PROVIDED
+        # engine/bridge.js's applyMonState reconstructs the matching
+        # volatile (see its own comment) so getLockedMove() actually fires.
+        # No switch is offered either - matches the real mechanic (a
+        # recharging mon cannot switch) instead of the engine wrongly
+        # allowing it once the volatile is otherwise lost on reconstruction.
+        return [MoveAction(move_slot=1, target=Target.NONE)]
+
     if mon.trapped and len(mon.moves) == 1:
         # Forced single continuation (mid-recharge, or locked into a
         # two-turn move like Solar Beam/Fly) - the engine's own request
@@ -92,7 +114,10 @@ def propose_slot_actions(state: FullInfoState, side: str, position: Position) ->
         # on the original turn) and no mega/switch options. `trapped` is
         # set by the engine for both this case and genuine trapping
         # abilities (Arena Trap etc.) - the single-move-list check is what
-        # narrows it to specifically this one.
+        # narrows it to specifically this one. (This is the ENGINE-
+        # RECONSTRUCTED shape, e.g. a state echoed back mid-search after a
+        # real turn resolved; the must_recharge-volatile check above is the
+        # LIVE-TRANSLATED shape, where the real 4-move moveset survives.)
         return [MoveAction(move_slot=1, target=Target.NONE)]
 
     ally_position = Position.RIGHT if position == Position.LEFT else Position.LEFT

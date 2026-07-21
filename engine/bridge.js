@@ -136,6 +136,24 @@ function applyMonState(p, mon) {
       if (ms.disabled) p.moveSlots[j].disabled = true;
     }
   });
+  // Volatiles are otherwise NOT reconstructed at the root (this module's
+  // header comment, "Known V1 fidelity gaps") - this one targeted exception
+  // exists because losing it broke both live play and search rollouts the
+  // same way: a mon translated from a real recharge request (harness/
+  // translator.py::own_pokemon, model/action_space.py's matching check -
+  // both key on this exact string, poke-env's Effect.MUST_RECHARGE
+  // lowercased) keeps its real moveset with everything disabled, and
+  // without the engine's OWN mustrecharge volatile, it has no idea the
+  // mon is locked - it demands a normal choice and rejects whatever gets
+  // submitted for an exhausted-bench mon ("Can't pass: ... must make a
+  // move"), or wrongly allows an illegal switch otherwise. addVolatile
+  // (not a raw flag) is what makes Pokemon.getLockedMove() return
+  // 'recharge' - the actual mechanism side.ts's chooseMove() uses to force
+  // the real move regardless of what we submit, and what makes the
+  // engine's own choice validation correctly refuse a switch for this mon.
+  if (mon.volatiles && mon.volatiles.some(v => v.name === 'must_recharge')) {
+    p.addVolatile('mustrecharge');
+  }
 }
 
 function applySideConditions(side, sc) {

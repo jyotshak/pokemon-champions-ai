@@ -126,6 +126,17 @@ def own_pokemon(
         tera_type=str(poke_mon.tera_type) if poke_mon.tera_type else None,
         tera_activated=poke_mon.is_terastallized,
         mega_activated=_is_mega(poke_mon),
+        # A mon locked into a forced continuation (recharge after Hyper
+        # Beam, an in-progress two-turn move) needs THIS to survive so a
+        # rebuilt search/engine world doesn't see a totally free mon: no
+        # move data says why every real move is disabled, and nothing
+        # marks it unable to switch. poke-env already tracks this live as
+        # Effect.MUST_RECHARGE (Effect.name.lower() -> "must_recharge");
+        # model/action_space.py::propose_slot_actions and
+        # engine/bridge.js::applyMonState both key on that exact string -
+        # see their own comments for the two ends of this fix. (This field
+        # was already wired here before that fix - the actual gap was that
+        # nothing downstream READ it for the recharge case.)
         volatiles=_volatiles(poke_mon),
         trapped=trapped,
     )
