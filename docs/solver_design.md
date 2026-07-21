@@ -1179,28 +1179,16 @@ Over the 10 mirror games (75 net move-clicks):
 
 ### 6.9 Planned improvements (priority order)
 
-1. **Fix in-search recharge blindness** — thread the must-recharge state
-   into the reconstructed world so rollouts are legal. Prerequisite for
-   any meaningful net-vs-solver number.
-2. **Tier-1 pruning in the net search** — reuse
-   `propose_pruned_turn_actions`; kills the resisted-attack class
-   (Heat Wave into a double resist) immediately.
-3. **Mixed strategy instead of argmax.** The depth-1 search already
-   builds a payoff MATRIX (my k by opp k, to leaf value); solve that
-   small zero-sum matrix for an equilibrium (LP, or regret matching in
-   microseconds) rather than taking the max. This does triple duty:
-   (a) it largely restores Protect/switch behaviour *for free* — sampling
-   a policy that already puts ~12% on Protect plays it ~12% of the time
-   instead of 0%; (b) a pure strategy is exploitable in a
-   SIMULTANEOUS-MOVE game, and this is the correct fix; (c) it is the
-   prerequisite for sound self-play (pure-strategy improvement can cycle,
-   with rock-paper-scissors dynamics). It also yields exactly the desired
-   context-dependence with no hand-tuning: where an action dominates, the
-   equilibrium IS pure; where the spot is volatile, it is mixed.
-4. **Value-head convergence** — the real bottleneck. Depth-1 is only as
-   good as its evaluator, and 0.58 is near chance. More epochs, a higher
-   value-loss weight, and ideally self-play outcome labels (cleaner than
-   imitation's noisy "this player happened to win eventually").
+Items 2-4 are DONE (2026-07-20); see §6.10 for what actually shipped.
+Item 1 (in-search recharge blindness) is still open and is now the
+blocker for a clean net-vs-solver rerun.
+
+1. **Fix in-search recharge blindness (OPEN)** — thread the must-recharge
+   state into the reconstructed world so rollouts are legal. Prerequisite
+   for any meaningful net-vs-solver number.
+2. ~~**Tier-1 pruning in the net search**~~ — DONE, §6.10.
+3. ~~**Mixed strategy instead of argmax.**~~ — DONE, §6.10.
+4. ~~**Value-head convergence**~~ — DONE, §6.10.
 5. **Encoder v3** — add a per-mon "entered this turn" flag (plus a turn
    counter) so switch-in-conditional moves (Fake Out) can be valued, and
    a must-recharge/locked flag so the net can see forced continuations.
@@ -1215,7 +1203,77 @@ Over the 10 mirror games (75 net move-clicks):
 8. **Self-play RL fine-tuning** (the longer arc) — the pieces exist:
    policy+value net, a real simulator with true terminals, a search that
    improves on the raw policy, and the encoder/training loop. Fine-tuning
-   from the imitation net skips the expensive tabula-rasa phase. Requires
-   (3) first for a sound target; imperfect information stays approximate
-   via determinization (ReBeL-style belief-conditioned value is the
-   rigorous version if it becomes necessary).
+   from the imitation net skips the expensive tabula-rasa phase. Item 3's
+   mixed-strategy solve (now done) was the prerequisite for a sound
+   self-play target; imperfect information stays approximate via
+   determinization (ReBeL-style belief-conditioned value is the rigorous
+   version if it becomes necessary).
+
+### 6.10 Items 2-4 shipped (2026-07-20)
+
+**Tier-1 pruning in the net search.** `harness/net_search.py`'s
+`_ranked_joints` now draws candidates from `_pruned_slot_actions` (the
+exact function `propose_pruned_turn_actions` calls internally) instead
+of the raw `propose_slot_actions`, via a new `tier1_cap` parameter on
+`net_depth1_decision` (default 6, matching `SolverPlayer`'s
+`per_slot_cap`). Regression-tested by reconstructing the literal MB552
+misplay (Charizard + a real bench, Garchomp/Charizard opposing) and
+asserting Heat Wave is never proposed while Rock Slide is. That test
+initially passed for the wrong reason: `_pruned_slot_actions` early-exits
+with the unfiltered list whenever the raw enumeration already fits the
+cap, so a bench-less test mon never exercised the filter at all — a
+useful reminder that a green pruning test proves nothing without an
+action count that actually needs pruning.
+
+**Mixed strategy via matrix solve.** `net_depth1_decision` now builds an
+explicit k_my x k_opp payoff matrix (columns are opponent-POLICY-RANK
+positions rather than a single literal action, since different
+determinized worlds can hand the opponent's hidden mon a different real
+moveset — averaging each column's cell over the worlds that had a
+candidate at that rank sidesteps the identity mismatch while still
+producing a well-defined matrix for MY row strategy) and solves it with
+`model/regret.py`'s existing `solve_matrix_game` — the identical
+regret-matching primitive the CFR tree already uses at its own nodes, so
+this added zero new equilibrium code and zero new dependencies. The
+result is **sampled**, not argmaxed, via a threaded `rng: random.Random`.
+Verified two ways: (a) on a position with one clearly-best action the
+solve correctly stays near-pure (p=0.996 on the top action — mixing is
+never forced); (b) the underlying `solve_matrix_game` primitive already
+had dedicated tests proving genuine equilibrium mixing, including one
+literally named "asymmetric mixed game (Protect-mindgame shape)"
+(0.668/0.332) in `model/test_regret.py`, so the exact behavior this
+change targets was proven at the primitive level before this wiring
+existed. `SearchDiagnostics.my_values` was renamed to `.strategy`
+((prob, TurnActions) pairs, matching `SolveDiagnostics.strategy`'s
+naming on the CFR side) with a new `.matrix` field; `NetPlayer` and both
+match runners updated to pass `rng=self.rng` and log "top-3 probs" (was
+"top-3 values"), mirroring `SolverPlayer`'s own log line.
+
+**Value-head convergence.** Root cause: `compute_loss`'s
+`value_coef` defaulted to 1.0, but the value BCE is capped at
+ln(2) ~= 0.69 while the five policy losses summed to several nats early
+in training — in the shared backward pass the value gradient was simply
+outweighed, not starved of data or capacity. `model/train.py` gained
+`--value-coef`, `--resume <checkpoint>` (arch dims are read from the
+checkpoint's own saved args so it always loads cleanly regardless of
+this run's CLI flags), a cosine LR schedule, and best-value-acc
+checkpointing (saves only on improvement, not just the final epoch).
+An 80-epoch continuation run from `imitation_v1.pt`
+(`--value-coef 4.0 --lr 1.5e-4`, full corpus) produced `imitation_v2.pt`:
+**value-acc 0.582 -> 0.815**, converging cleanly as the LR decayed
+(unlike v1, which was still climbing when training simply stopped at
+epoch 25). move-acc held steady (0.453 -> 0.474) and type-acc was
+unchanged (0.894 -> 0.896) — the reweighting cost nothing on the policy
+side. The position-eval readout confirms this is real discrimination,
+not just a moved accuracy number: v1's three eval-position values were
+~0.51/0.55/0.54 (barely distinguishable — the signature of a
+near-chance evaluator); v2 gives 0.211/0.160/0.662, a believable spread
+matching which matchups are actually favorable. `imitation_v2.pt` is now
+the default checkpoint in every consumer (`harness/net_player.py`,
+`run_net_match.py`, `run_net_vs_solver.py`, `test_net_search.py`,
+`model/eval_positions.py`); `imitation_v1.pt` stays on disk untouched as
+a reference point.
+
+All three changes are covered by the existing test suite
+(`harness/test_net_search.py`, `model/test_regret.py`) plus the
+qualitative `model/eval_positions.py` readout; nothing regressed.

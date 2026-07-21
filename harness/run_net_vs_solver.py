@@ -38,7 +38,7 @@ from model.net_infer import NetEvaluator
 
 TEAM_ID = sys.argv[1] if len(sys.argv) > 1 else "MB552"
 N_GAMES = int(sys.argv[2]) if len(sys.argv) > 2 else 10
-CHECKPOINT = "model/checkpoints/imitation_v1.pt"
+CHECKPOINT = "model/checkpoints/imitation_v2.pt"
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "logs"
 
 EVALUATOR = NetEvaluator(CHECKPOINT)   # one shared model for the whole batch

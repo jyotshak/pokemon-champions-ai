@@ -2,10 +2,13 @@
 policy+value search on a hand-built, engine-valid position with a REAL
 EngineBridge (no live server, no poke-env). Verifies the search completes
 with zero engine rejections, returns a legal TurnActions, and produces a
-well-formed value per candidate.
+well-formed MIXED STRATEGY (the matrix-game solve, not an argmax) per
+candidate.
 
 Run from the project root: python -m harness.test_net_search
 """
+
+import random
 
 from schema.battle_state import Boosts, FieldState, MoveSlot, OwnPokemon, Position, TurnActions
 from schema.full_info_state import FullInfoState
@@ -26,7 +29,7 @@ def _desc(action, team, position):
     return "pass"
 
 FORMAT = "gen9championsvgc2026regmb"
-CKPT = "model/checkpoints/imitation_v1.pt"
+CKPT = "model/checkpoints/imitation_v2.pt"
 
 failures = []
 
@@ -73,19 +76,20 @@ worlds = [state, state]  # already full-info; two copies stands in for determini
 import time
 with EngineBridge(FORMAT) as bridge:
     t0 = time.time()
-    best, diag = net_depth1_decision(evaluator, bridge, worlds,
-                                     my_netstate=full_info_state_to_netstate(state),
-                                     k_my=4, k_opp=4)
+    chosen, diag = net_depth1_decision(evaluator, bridge, worlds,
+                                       my_netstate=full_info_state_to_netstate(state),
+                                       k_my=4, k_opp=4, rng=random.Random(0))
     dt = time.time() - t0
 
-check("returned a TurnActions", isinstance(best, TurnActions), type(best))
+check("returned a TurnActions", isinstance(chosen, TurnActions), type(chosen))
 check("zero engine rejections", diag.engine_errors == 0, diag.engine_errors)
 check("ran rollouts", diag.rollouts > 0, diag.rollouts)
-check("a value per my-candidate", len(diag.my_values) > 0)
-vals = [v for v, _ in diag.my_values]
-check("all values in [0,1]", all(0.0 <= v <= 1.0 for v in vals), vals)
-check("values are discriminative (not all identical)",
-      len(set(round(v, 4) for v in vals)) > 1, [round(v, 3) for v in vals])
+check("a probability per my-candidate", len(diag.strategy) > 0)
+probs = [p for p, _ in diag.strategy]
+check("all probabilities in [0,1]", all(0.0 <= p <= 1.0 for p in probs), probs)
+check("probabilities sum to ~1 (a real mixed strategy)", abs(sum(probs) - 1.0) < 1e-6, sum(probs))
+check("strategy is discriminative (not perfectly uniform)",
+      len(set(round(p, 4) for p in probs)) > 1, [round(p, 3) for p in probs])
 
 print(f"\n  rollouts={diag.rollouts}  errors={diag.engine_errors}  wall={dt:.1f}s")
 
@@ -95,6 +99,50 @@ print(f"\n  rollouts={diag.rollouts}  errors={diag.engine_errors}  wall={dt:.1f}
 # with "Reached heap limit - JavaScript heap out of memory" (and GC-thrashes
 # long before that, which looks exactly like a hang). Many decisions on ONE
 # bridge is the shape that exposes it.
+print("\nTier-1 pruning regression: the net search must never propose a "
+      "resisted-into-everything attack when a better one exists")
+# The exact MB552 misplay: Charizard clicked Heat Wave into a Garchomp+
+# Charizard pair that BOTH resist Fire, while Charizard also knows Rock
+# Slide/Solar Beam/Protect. _pruned_slot_actions (the same pruner
+# SolverPlayer's propose_pruned_turn_actions uses) drops Heat Wave here
+# since a neutral/better attack (Rock Slide) survives - see
+# model/test_tier1_pruning.py for the pruner's own unit tests; this checks
+# the net SEARCH actually draws from the pruned pool, not the raw one.
+#
+# NOTE: _pruned_slot_actions early-exits with the UNFILTERED list when the
+# raw enumeration is already <= cap (no need to prune what already fits) -
+# so this needs a real bench (raw count > cap), same as the actual MB552
+# roster, or the filter never even runs and the test passes for the wrong
+# reason.
+from harness.net_search import _ranked_joints  # noqa: E402
+
+heatwave_state = FullInfoState(
+    turn=1, field=FieldState(),
+    my_team=[
+        mon("charizard", Position.LEFT, ability="blaze",
+            moves=["heatwave", "rockslide", "solarbeam", "protect"]),
+        mon("incineroar", Position.RIGHT, ability="intimidate",
+            moves=["fakeout", "flareblitz", "partingshot", "knockoff"]),
+        mon("kingambit", None, ability="defiant", moves=["suckerpunch"]),
+        mon("sylveon", None, ability="pixilate", moves=["hypervoice"]),
+    ],
+    opp_team=[
+        mon("garchomp", Position.LEFT, ability="roughskin", moves=["earthquake"]),
+        mon("charizard", Position.RIGHT, ability="blaze", moves=["airslash"]),
+    ],
+)
+my_cands = _ranked_joints(evaluator, full_info_state_to_netstate(heatwave_state),
+                          heatwave_state, "me", heatwave_state.my_team, k=8, tier1_cap=6)
+left_moves = set()
+for _, ta in my_cands:
+    a = ta.slot_left
+    if isinstance(a, MoveAction):
+        left_moves.add(active_mon(heatwave_state.my_team, Position.LEFT).moves[a.move_slot - 1].move)
+check("Heat Wave never proposed for Charizard (resisted by both opposing mons)",
+      "heatwave" not in left_moves, left_moves)
+check("Rock Slide IS proposed (neutral/super, survives the cut)",
+      "rockslide" in left_moves, left_moves)
+
 print("\nhandle-leak soak: many decisions on one bridge must stay fast + not crash")
 N_SOAK = 25
 with EngineBridge(FORMAT) as bridge:
@@ -114,9 +162,9 @@ check(f"{N_SOAK} sequential decisions completed on one bridge", True)
 check("no runaway slowdown (last decision < 3x the first)", last < max(first * 3.0, 0.5),
       f"first={first:.2f}s last={last:.2f}s")
 print(f"  soak: {N_SOAK} decisions in {soak:.1f}s (first {first:.2f}s, last {last:.2f}s)")
-print("  top candidates by value:")
-for v, ta in diag.my_values[:5]:
-    print(f"    value {v:.3f}  left={_desc(ta.slot_left, state.my_team, Position.LEFT)}"
+print("  mixed strategy (probability per candidate):")
+for p, ta in diag.strategy[:5]:
+    print(f"    p={p:.3f}  left={_desc(ta.slot_left, state.my_team, Position.LEFT)}"
           f"  right={_desc(ta.slot_right, state.my_team, Position.RIGHT)}")
 
 print(f"\n{'PASS' if not failures else 'FAIL: ' + ', '.join(failures)}")

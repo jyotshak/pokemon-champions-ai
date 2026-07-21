@@ -50,7 +50,7 @@ def _remap_bench(action: Action, state: BattleState) -> Action:
 
 
 class NetPlayer(Player):
-    def __init__(self, *args, checkpoint: str = "model/checkpoints/imitation_v1.pt",
+    def __init__(self, *args, checkpoint: str = "model/checkpoints/imitation_v2.pt",
                  evaluator: NetEvaluator | None = None,
                  n_worlds: int = 4, k_my: int = 4, k_opp: int = 4,
                  solver_seed: int = 0, verbose: bool = False,
@@ -122,21 +122,22 @@ class NetPlayer(Player):
             return turn_actions_to_order(battle, actions)
 
         worlds = [sample_determinization(state, self.rng) for _ in range(self.n_worlds)]
-        best, diag = net_depth1_decision(
+        chosen, diag = net_depth1_decision(
             self.evaluator, self.bridge, worlds,
             my_netstate=battle_state_to_netstate(state), k_my=self.k_my, k_opp=self.k_opp,
+            rng=self.rng,
         )
-        best = TurnActions(slot_left=_remap_bench(best.slot_left, state),
-                           slot_right=_remap_bench(best.slot_right, state))
-        self.log_lines.append(format_turn(state, best))
-        top = ", ".join(f"{v:.2f}" for v, _ in diag.my_values[:3])
+        chosen = TurnActions(slot_left=_remap_bench(chosen.slot_left, state),
+                             slot_right=_remap_bench(chosen.slot_right, state))
+        self.log_lines.append(format_turn(state, chosen))
+        top = ", ".join(f"{p:.2f}" for p, _ in diag.strategy[:3])
         self.log_lines.append(
-            f"  [net d1] {diag.rollouts} rollouts, {diag.engine_errors} engine rejections, top-3 values: {top}"
+            f"  [net d1] {diag.rollouts} rollouts, {diag.engine_errors} engine rejections, top-3 probs: {top}"
         )
         if self.verbose:
             print(self.log_lines[-2])
             print(self.log_lines[-1])
-        return turn_actions_to_order(battle, best)
+        return turn_actions_to_order(battle, chosen)
 
     def finalize_log(self, won: bool) -> str:
         self.log_lines.append(format_result(won))

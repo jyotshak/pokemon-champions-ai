@@ -14,6 +14,13 @@ imitation - while training sees dropout, forcing role-based play
 Examples:
   python -m model.train --epochs 8                 # full corpus (rating>=1200)
   python -m model.train --limit 4000 --epochs 5    # quick sanity run
+  python -m model.train --resume model/checkpoints/imitation_v1.pt \
+      --value-coef 4.0 --epochs 60 --lr 1e-4 --out model/checkpoints/imitation_v2.pt
+      # continuation run targeting value-head convergence ([[imitation-net-v1]]):
+      # v1's value-acc was still rising at 0.58/epoch 25 when training stopped,
+      # and value_coef=1.0 (the default) lets the value BCE (capped at ln2=0.69)
+      # get drowned out by the five policy losses (summing to several nats
+      # early on) in the shared backward pass - value_coef re-balances that.
 """
 
 import argparse
@@ -66,39 +73,55 @@ def train(args):
     train_dl = DataLoader(train_ds, batch_size=args.batch, shuffle=True, drop_last=True)
     val_dl = DataLoader(val_ds, batch_size=args.batch, shuffle=False)
 
-    net = PolicyValueNet(d_model=args.d_model, layers=args.layers,
-                         species_dim=args.species_dim).to(dev)
+    # --resume: continue training an existing checkpoint (e.g. imitation_v1.pt)
+    # instead of starting fresh - architecture dims come from the checkpoint's
+    # own saved args so the state_dict always loads cleanly, overriding
+    # whatever --d-model/--layers/--species-dim were passed on this run.
+    ckpt = torch.load(args.resume, map_location=dev, weights_only=False) if args.resume else None
+    arch = ckpt["args"] if ckpt else vars(args)
+    net = PolicyValueNet(d_model=arch.get("d_model", args.d_model), layers=arch.get("layers", args.layers),
+                         species_dim=arch.get("species_dim", args.species_dim)).to(dev)
+    if ckpt:
+        net.load_state_dict(ckpt["model"])
+        print(f"resumed from {args.resume}")
     n_params = sum(p.numel() for p in net.parameters())
     opt = torch.optim.AdamW(net.parameters(), lr=args.lr, weight_decay=args.wd)
+    sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=max(args.epochs, 1))
     print(f"device={dev}  params={n_params:,}  "
-          f"train={len(train_ds)} val={len(val_ds)}  batch={args.batch}")
+          f"train={len(train_ds)} val={len(val_ds)}  batch={args.batch}  value_coef={args.value_coef}")
 
     base = evaluate(net, val_dl, dev)
     print(f"epoch 0 (init)  val loss {base['loss']:.3f}  "
           f"move-acc {base['move_acc']:.3f}  type-acc {base['type_acc']:.3f}  "
           f"value-acc {base['value_acc']:.3f}")
 
+    best_value_acc = base["value_acc"]
     for ep in range(1, args.epochs + 1):
         t0 = time.time()
         run = n = 0
         for batch in train_dl:
             batch = _to_device(batch, dev)
             out = net(batch["state"])
-            total, parts = compute_loss(out, batch)
+            total, parts = compute_loss(out, batch, value_coef=args.value_coef)
             opt.zero_grad()
             total.backward()
             torch.nn.utils.clip_grad_norm_(net.parameters(), 5.0)
             opt.step()
             run += float(total) * batch["value"].size(0)
             n += batch["value"].size(0)
+        sched.step()
         ev = evaluate(net, val_dl, dev)
+        improved = ev["value_acc"] > best_value_acc
+        best_value_acc = max(best_value_acc, ev["value_acc"])
         print(f"epoch {ep:2d}  train {run/max(n,1):.3f}  |  val {ev['loss']:.3f}  "
               f"move-acc {ev['move_acc']:.3f}  type-acc {ev['type_acc']:.3f}  "
-              f"value-acc {ev['value_acc']:.3f}  ({time.time()-t0:.1f}s)")
+              f"value-acc {ev['value_acc']:.3f}{'*' if improved else ' '}  "
+              f"lr {sched.get_last_lr()[0]:.2e}  ({time.time()-t0:.1f}s)")
+        if improved and args.out:
+            torch.save({"model": net.state_dict(), "args": vars(args)}, args.out)
 
     if args.out:
-        torch.save({"model": net.state_dict(), "args": vars(args)}, args.out)
-        print(f"saved -> {args.out}")
+        print(f"best value-acc {best_value_acc:.3f} -> saved to {args.out}")
 
 
 def main():
@@ -116,7 +139,12 @@ def main():
     ap.add_argument("--species-dim", type=int, default=32)
     ap.add_argument("--seed", type=int, default=0)
     ap.add_argument("--cpu", action="store_true")
-    ap.add_argument("--out", type=str, default="")
+    ap.add_argument("--out", type=str, default="", help="save the BEST value-acc checkpoint here (overwritten each improvement)")
+    ap.add_argument("--resume", type=str, default="", help="continue training from this checkpoint (arch dims taken from it)")
+    ap.add_argument("--value-coef", type=float, default=1.0,
+                    help="weight on the value BCE term - raise this to fix value convergence "
+                         "(the value loss is capped at ln2~=0.69 vs several nats for the summed "
+                         "policy losses early in training, so at 1.0 it's easily drowned out)")
     args = ap.parse_args()
     train(args)
 

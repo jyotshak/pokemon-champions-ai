@@ -23,7 +23,7 @@ from model.encoding import (
 )
 from model.policy_net import PolicyValueNet, ME_ACTIVE_SLOTS
 
-CKPT = sys.argv[1] if len(sys.argv) > 1 else "model/checkpoints/imitation_v1.pt"
+CKPT = sys.argv[1] if len(sys.argv) > 1 else "model/checkpoints/imitation_v2.pt"
 
 
 def _mon(species, moves, hp=1.0, item=None, ability=None, status=None, boosts=None):
