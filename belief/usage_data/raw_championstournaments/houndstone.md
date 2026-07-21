@@ -1,0 +1,139 @@
+# Houndstone - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Tournaments
+
+> Find the best Houndstone builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Tournaments. Data from Pikalytics.
+
+## Best Houndstone Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Tournaments (`championstournaments`) |
+| **Game** | Pokemon Champions |
+| **Category** | championstournaments |
+| **Usage** | 1% |
+| **Win Rate** | 51.73% |
+| **Record** | 164-153-1 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Houndstone)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/championstournaments/Houndstone
+- **Format Overview**: [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments)
+- **AI Format Index**: [/ai/pokedex/championstournaments](https://www.pikalytics.com/ai/pokedex/championstournaments)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Houndstone.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Ghost (2x), Dark (2x) |
+| **Resists** | Poison (1/2x), Bug (1/2x) |
+| **Immune To** | Normal (0x), Fighting (0x) |
+
+**Ability Notes**: Fluffy: Contact damage is reduced, but Fire damage is increased.
+
+## Common Moves
+- **Last Respects**: 95.313%
+- **Protect**: 90.625%
+- **Will-O-Wisp**: 81.250%
+- **Ally Switch**: 32.813%
+- **Body Press**: 26.563%
+- **Psychic Fangs**: 12.500%
+- **Shadow Sneak**: 10.938%
+- **Phantom Force**: 9.375%
+- **Howl**: 7.813%
+- **Ice Fang**: 4.688%
+
+## Common Abilities
+- **Sand Rush**: 100.000%
+
+## Common Items
+- **Sitrus Berry**: 59.375%
+- **Life Orb**: 18.750%
+- **Spell Tag**: 9.375%
+- **Focus Sash**: 4.688%
+- **Colbur Berry**: 4.688%
+- **Nothing**: 1.563%
+- **Kasib Berry**: 1.563%
+
+## Common Teammates
+- **Excadrill**: 78.125%
+- **Tyranitar-Mega**: 67.188%
+- **Rotom-Wash**: 40.625%
+- **Corviknight**: 35.938%
+- **Hydreigon**: 31.250%
+- **Tyranitar**: 31.250%
+
+## Featured Teams with Houndstone
+
+### Team 1 by JurassicJoints
+*Record: 9-0*
+*Event: limitless-6a3c370fc87cd9ff0a30eaa1*
+
+**Pokemon**: Hydreigon, Tyranitar-Mega, Excadrill, Rotom-Wash, Corviknight, Houndstone
+
+**Houndstone Set**:
+- **Ability**: Sand Rush
+- **Item**: Spell Tag
+- **Moves**: Phantom Force, Will-O-Wisp, Last Respects, Protect
+
+### Team 2 by JurassicJoints
+*Record: 3-0*
+*Event: limitless-6a303342e334c3c9befd76fd*
+
+**Pokemon**: Hydreigon, Tyranitar-Mega, Excadrill, Rotom-Wash, Corviknight, Houndstone
+
+**Houndstone Set**:
+- **Ability**: Sand Rush
+- **Item**: Spell Tag
+- **Moves**: Phantom Force, Will-O-Wisp, Last Respects, Protect
+
+
+## FAQ for Houndstone in championstournaments-1760
+
+### What are the top moves for Houndstone?
+The most common moves for Houndstone are Last Respects, Protect, Will-O-Wisp, Ally Switch. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Houndstone?
+Houndstone is frequently paired with Excadrill, Tyranitar-Mega, Rotom-Wash, Corviknight. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Houndstone weak to and resistant against?
+Houndstone is weak to Ghost (2x), Dark (2x), resists Poison (1/2x), Bug (1/2x), and is immune to Normal (0x), Fighting (0x). Ability notes: Fluffy: Contact damage is reduced, but Fire damage is increased.
+
+### Which Tera Types are best for Houndstone?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Houndstone?
+No EV spread or nature data available.
+
+### Which Ability and Item should I use on Houndstone?
+Houndstone is most effectively run with the ability **Sand Rush** (100.000%) and the item **Sitrus Berry** (59.375%).
+
+### What is the most common role for Houndstone?
+Based on common item usage (Sitrus Berry), Houndstone often functions as a **bulky attacker or support** in the championstournaments-1760 meta.
+
+### What are the base stats for Houndstone?
+| Stat | Value |
+|------|-------|
+| HP | 72 |
+| Attack | 101 |
+| Defense | 100 |
+| Sp. Atk | 50 |
+| Sp. Def | 97 |
+| Speed | 68 |
+| **BST** | **488** |
+
+---
+
+## Additional Resources
+
+- [View Houndstone on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Houndstone) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/championstournaments) - Build teams with Houndstone
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

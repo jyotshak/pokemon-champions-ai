@@ -1,0 +1,130 @@
+# Meowscarada - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data
+
+> Find the best Meowscarada builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data. Data from Pikalytics.
+
+## Best Meowscarada Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data (`battledataregmbs3`) |
+| **Game** | Pokemon Scarlet Violet |
+| **Category** | battledataregmbs3 |
+| **Usage** | N/A |
+| **Win Rate** | 41.402% |
+| **Record** | 339-480-1 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Meowscarada)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/battledataregmbs3/Meowscarada
+- **Format Overview**: [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3)
+- **AI Format Index**: [/ai/pokedex/battledataregmbs3](https://www.pikalytics.com/ai/pokedex/battledataregmbs3)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Meowscarada.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Bug (4x), Fire (2x), Ice (2x), Fighting (2x), Poison (2x), Flying (2x), Fairy (2x) |
+| **Resists** | Water (1/2x), Electric (1/2x), Grass (1/2x), Ground (1/2x), Ghost (1/2x), Dark (1/2x) |
+| **Immune To** | Psychic (0x) |
+
+## Common Moves
+- **Flower Trick**: 97.4%
+- **Triple Axel**: 85.2%
+- **Knock Off**: 63.0%
+- **Sucker Punch**: 37.3%
+- **U-turn**: 30.1%
+- **Play Rough**: 24.1%
+- **Protect**: 18.5%
+- **Throat Chop**: 9.2%
+- **Low Kick**: 9.0%
+- **Brick Break**: 7.7%
+
+## Common Abilities
+- **Protean**: 83.6%
+- **Overgrow**: 16.4%
+
+## Common Items
+- **Choice Scarf**: 52.6%
+- **Focus Sash**: 24.6%
+- **Life Orb**: 13.9%
+- **Wide Lens**: 3.0%
+- **Expert Belt**: 2.8%
+- **Sitrus Berry**: 0.7%
+- **Miracle Seed**: 0.7%
+- **Black Glasses**: 0.7%
+- **Fairy Feather**: 0.5%
+- **White Herb**: 0.2%
+
+## Common Teammates
+- **Raichu**: undefined%
+- **Sneasler**: undefined%
+- **Whimsicott**: undefined%
+- **Basculegion**: undefined%
+- **Pelipper**: undefined%
+- **Staraptor**: undefined%
+
+## Featured Teams with Meowscarada
+
+### Team 1 by Finalbelle
+*Record: 5-1*
+*Event: limitless-6a205e6747f3797bf6baad73*
+
+**Pokemon**: Froslass-Mega, Sneasler, Volcarona, Farigiraf, Quaquaval, Meowscarada
+
+**Meowscarada Set**:
+- **Ability**: Protean
+- **Item**: Choice Scarf
+- **Moves**: Flower Trick, Thunder Punch, Knock Off, Triple Axel
+
+
+## FAQ for Meowscarada in battledataregmbs3-1760
+
+### What are the top moves for Meowscarada?
+The most common moves for Meowscarada are Flower Trick, Triple Axel, Knock Off, Sucker Punch. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Meowscarada?
+Meowscarada is frequently paired with Raichu, Sneasler, Whimsicott, Basculegion. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Meowscarada weak to and resistant against?
+Meowscarada is weak to Bug (4x), Fire (2x), Ice (2x), Fighting (2x), Poison (2x), Flying (2x), Fairy (2x), resists Water (1/2x), Electric (1/2x), Grass (1/2x), Ground (1/2x), Ghost (1/2x), Dark (1/2x), and is immune to Psychic (0x).
+
+### Which Tera Types are best for Meowscarada?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Meowscarada?
+The top build for Meowscarada features a **** nature with an EV spread of `2/32/0/0/0/32`. This configuration accounts for 45.2% of competitive builds.
+
+### Which Ability and Item should I use on Meowscarada?
+Meowscarada is most effectively run with the ability **Protean** (83.6%) and the item **Choice Scarf** (52.6%).
+
+### What is the most common role for Meowscarada?
+Based on common item usage (Choice Scarf), Meowscarada often functions as a **choice-locked attacker** in the battledataregmbs3-1760 meta.
+
+### What are the base stats for Meowscarada?
+| Stat | Value |
+|------|-------|
+| HP | 76 |
+| Attack | 110 |
+| Defense | 70 |
+| Sp. Atk | 81 |
+| Sp. Def | 70 |
+| Speed | 123 |
+| **BST** | **530** |
+
+---
+
+## Additional Resources
+
+- [View Meowscarada on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Meowscarada) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/battledataregmbs3) - Build teams with Meowscarada
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

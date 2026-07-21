@@ -1,0 +1,142 @@
+# Overqwil - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data
+
+> Find the best Overqwil builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data. Data from Pikalytics.
+
+## Best Overqwil Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data (`battledataregmbs3`) |
+| **Game** | Pokemon Scarlet Violet |
+| **Category** | battledataregmbs3 |
+| **Usage** | N/A |
+| **Win Rate** | 47.176% |
+| **Record** | 142-159 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Overqwil)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/battledataregmbs3/Overqwil
+- **Format Overview**: [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3)
+- **AI Format Index**: [/ai/pokedex/battledataregmbs3](https://www.pikalytics.com/ai/pokedex/battledataregmbs3)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Overqwil.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Ground (2x) |
+| **Resists** | Grass (1/2x), Poison (1/2x), Ghost (1/2x), Dark (1/2x) |
+| **Immune To** | Psychic (0x) |
+
+## Common Moves
+- **Protect**: 77.8%
+- **Throat Chop**: 61.0%
+- **Barb Barrage**: 55.6%
+- **Aqua Jet**: 37.1%
+- **Poison Jab**: 34.6%
+- **Taunt**: 21.0%
+- **Lash Out**: 17.8%
+- **Crunch**: 15.2%
+- **Fell Stinger**: 13.3%
+- **Haze**: 12.7%
+
+## Common Abilities
+- **Swift Swim**: 73.3%
+- **Intimidate**: 24.1%
+- **Poison Point**: 2.5%
+
+## Common Items
+- **Life Orb**: 59.0%
+- **Sitrus Berry**: 19.7%
+- **Shuca Berry**: 9.8%
+- **Focus Sash**: 3.5%
+- **Expert Belt**: 3.2%
+- **Leftovers**: 2.9%
+- **Black Glasses**: 0.6%
+- **Choice Scarf**: 0.6%
+- **Poison Barb**: 0.3%
+- **Metronome**: 0.3%
+
+## Common Teammates
+- **Swampert**: undefined%
+- **Pelipper**: undefined%
+- **Archaludon**: undefined%
+- **Basculegion**: undefined%
+- **Glimmora**: undefined%
+- **Whimsicott**: undefined%
+
+## Featured Teams with Overqwil
+
+### Team 1 by 2cake
+*Record: 6-0*
+*Event: limitless-6a2f143fe334c3c9befd6e8e*
+
+**Pokemon**: Pelipper, Archaludon, Sinistcha, Swampert-Mega, Maushold, Overqwil
+
+**Overqwil Set**:
+- **Ability**: Swift Swim
+- **Item**: Life Orb
+- **Moves**: Gunk Shot, Throat Chop, Icy Wind, Protect
+
+### Team 2 by Losandy
+*Record: 5-0*
+*Event: limitless-6a3464d42d97f3b0c26197e8*
+
+**Pokemon**: Raichu-Mega-Y, Dragonite, Pelipper, Basculegion, Beartic, Overqwil
+
+**Overqwil Set**:
+- **Ability**: Swift Swim
+- **Item**: Life Orb
+- **Moves**: Poison Jab, Crunch, Waterfall, Protect
+
+
+## FAQ for Overqwil in battledataregmbs3-1760
+
+### What are the top moves for Overqwil?
+The most common moves for Overqwil are Protect, Throat Chop, Barb Barrage, Aqua Jet. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Overqwil?
+Overqwil is frequently paired with Swampert, Pelipper, Archaludon, Basculegion. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Overqwil weak to and resistant against?
+Overqwil is weak to Ground (2x), resists Grass (1/2x), Poison (1/2x), Ghost (1/2x), Dark (1/2x), and is immune to Psychic (0x).
+
+### Which Tera Types are best for Overqwil?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Overqwil?
+The top build for Overqwil features a **** nature with an EV spread of `2/32/0/0/0/32`. This configuration accounts for 26.3% of competitive builds.
+
+### Which Ability and Item should I use on Overqwil?
+Overqwil is most effectively run with the ability **Swift Swim** (73.3%) and the item **Life Orb** (59.0%).
+
+### What is the most common role for Overqwil?
+Based on common item usage (Life Orb), Overqwil often functions as a **offensive attacker** in the battledataregmbs3-1760 meta.
+
+### What are the base stats for Overqwil?
+| Stat | Value |
+|------|-------|
+| HP | 85 |
+| Attack | 115 |
+| Defense | 95 |
+| Sp. Atk | 65 |
+| Sp. Def | 65 |
+| Speed | 85 |
+| **BST** | **510** |
+
+---
+
+## Additional Resources
+
+- [View Overqwil on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Overqwil) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/battledataregmbs3) - Build teams with Overqwil
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

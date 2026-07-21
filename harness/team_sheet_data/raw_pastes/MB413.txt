@@ -1,0 +1,54 @@
+Delphox @ Delphoxite  
+Ability: Blaze  
+EVs: 15 HP / 25 Def / 7 SpA / 19 Spe  
+Timid Nature  
+- Heat Wave  
+- Psychic  
+- Nasty Plot  
+- Protect  
+
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+EVs: 32 HP / 11 Def / 14 SpD / 9 Spe  
+Impish Nature  
+- Fake Out  
+- Parting Shot  
+- Flare Blitz  
+- Throat Chop  
+
+Maushold-Four @ Chople Berry  
+Ability: Friend Guard  
+EVs: 32 HP / 20 Def / 14 SpD  
+Impish Nature  
+- Feint  
+- Helping Hand  
+- Protect  
+- Follow Me  
+
+Sinistcha @ Kasib Berry  
+Ability: Hospitality  
+EVs: 31 HP / 14 Def / 21 SpD  
+Bold Nature  
+- Protect  
+- Matcha Gotcha  
+- Life Dew  
+- Rage Powder  
+
+Sneasler @ Focus Sash  
+Ability: Poison Touch  
+EVs: 32 Atk / 2 Def / 32 Spe  
+Adamant Nature  
+- Close Combat  
+- Dire Claw  
+- Quick Guard  
+- Fake Out  
+
+Blastoise @ Blastoisinite  
+Ability: Rain Dish  
+EVs: 2 HP / 32 SpA / 32 Spe  
+Modest Nature  
+- Protect  
+- Water Spout  
+- Dark Pulse  
+- Shell Smash  
+

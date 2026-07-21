@@ -9,5 +9,17 @@ dist/
 vendor/
 logs/
 
+# Generated replay artifacts - all reproducible from scrape/parse/reconstruct,
+# and far too large to track (raw 49M, parsed 14M, examples 104M).
+replays/raw/
+replays/parsed/
+replays/examples/
+
+# Trained model weights - reproducible via `python -m model.train`.
+model/checkpoints/*.pt
+
+# Third-party download, not part of this project's source.
+Showdown-Singleplayer-main/
+
 .vscode/
 .idea/

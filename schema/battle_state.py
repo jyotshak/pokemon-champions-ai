@@ -112,6 +112,16 @@ class OwnPokemon(BaseModel):
 
     volatiles: list[VolatileState] = Field(default_factory=list)
 
+    trapped: bool = False
+    """Cannot currently switch out — a genuine trapping effect (Arena Trap,
+    Shadow Tag, Mean Look...) OR being locked into a forced single-move
+    continuation (mid-recharge, mid-two-turn-move like Solar Beam/Fly).
+    Both cases are unified under this one flag by the engine itself
+    (Showdown's own request-generation sets `trapped: true` for a locked
+    mon too) - when true alongside a single-entry `moves` list, that one
+    entry is the forced continuation, not a real choice among moves.
+    """
+
 
 class WeightedOption(BaseModel):
     """A live, dynamically-updated marginal probability for one candidate
@@ -254,6 +264,15 @@ class BattleState(BaseModel):
     turn: int
     team_preview: Optional[TeamPreviewInfo] = None   # present only pre-battle
 
+    opp_roster: list[SpeciesId] = Field(default_factory=list)
+    """All 6 species the opponent showed at team preview — observed public
+    information that stays relevant for the whole battle (team_preview
+    itself is cleared once the bring/lead decision is made). This is what
+    lets the belief layer hypothesize which unseen species are in the
+    opponent's back slots (VGC bring-4-of-6): unseen = opp_roster minus
+    everything in opp_active/opp_bench.
+    """
+
     field: FieldState
     my_active: list[OwnPokemon]        # len 2 in doubles, positions filled
     my_bench: list[OwnPokemon]
@@ -279,6 +298,19 @@ class MoveAction(BaseModel):
     target: Target
     tera: bool = False           # only legal if tera not yet activated this battle (not live at launch)
     mega: bool = False           # only legal if mega not yet activated this battle, and mon holds its Mega Stone
+    # Only set (and only legal) when this move is a self-switcher (Parting
+    # Shot/U-turn/Volt Switch/Baton Pass/Flip Turn/Shed Tail/Chilly
+    # Reception - reference/move_data.json's selfSwitch field, sourced from
+    # vendor/pokemon-showdown's real Dex): which bench mon should come in if
+    # the move actually triggers its mid-turn switch-out. Bundled onto the
+    # move itself rather than a separate downstream decision node - the
+    # engine's own default forced-switch auto-pick (always "first living
+    # bench mon in team order") is a real, deterministic, unmodified engine
+    # mechanism (Side.chooseSwitch() with no slot given), so choosing the
+    # switch-in is just a matter of which bench mon model/action_space.py
+    # puts first when it reconstructs the state for this branch - no engine
+    # changes, no separate mid-turn request needed.
+    switch_bench_slot: Optional[int] = None
 
 
 class SwitchAction(BaseModel):

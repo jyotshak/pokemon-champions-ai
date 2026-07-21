@@ -1,0 +1,48 @@
+Whimsicott @ Focus Sash  
+Ability: Prankster  
+Timid Nature  
+- Moonblast  
+- Tailwind  
+- Encore  
+- Protect  
+
+Floette-Eternal @ Floettite  
+Ability: Flower Veil  
+Modest Nature  
+- Moonblast  
+- Dazzling Gleam  
+- Light of Ruin  
+- Protect  
+
+Charizard @ Charizardite Y  
+Ability: Blaze  
+Modest Nature  
+- Weather Ball  
+- Heat Wave  
+- Solar Beam  
+- Protect  
+
+Garchomp @ Life Orb  
+Ability: Rough Skin  
+Jolly Nature  
+- Dragon Claw  
+- Rock Slide  
+- Earthquake  
+- Protect  
+
+Basculegion @ Mystic Water  
+Ability: Adaptability  
+Adamant Nature  
+- Wave Crash  
+- Last Respects  
+- Aqua Jet  
+- Protect  
+
+Kingambit @ Chople Berry  
+Ability: Defiant  
+Adamant Nature  
+- Kowtow Cleave  
+- Sucker Punch  
+- Iron Head  
+- Low Kick  
+

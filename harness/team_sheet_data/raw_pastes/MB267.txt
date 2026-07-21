@@ -1,0 +1,48 @@
+Swampert @ Rindo Berry  
+Ability: Torrent  
+Level: 50  
+- Protect  
+- Flip Turn  
+- Yawn  
+- Wide Guard  
+
+Gengar @ Gengarite  
+Ability: Cursed Body  
+Level: 50  
+- Protect  
+- Sludge Bomb  
+- Shadow Ball  
+- Disable  
+
+Pelipper @ Sitrus Berry  
+Ability: Drizzle  
+Level: 50  
+- Protect  
+- Hurricane  
+- Weather Ball  
+- Tailwind  
+
+Archaludon @ Leftovers  
+Ability: Stamina  
+Level: 50  
+- Protect  
+- Electro Shot  
+- Flash Cannon  
+- Dragon Pulse  
+
+Sinistcha @ Kasib Berry  
+Ability: Hospitality  
+Level: 50  
+- Protect  
+- Matcha Gotcha  
+- Trick Room  
+- Rage Powder  
+
+Blastoise @ Blastoisinite  
+Ability: Rain Dish  
+Level: 50  
+- Water Spout  
+- Dark Pulse  
+- Aura Sphere  
+- Fake Out  
+

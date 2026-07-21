@@ -1,0 +1,4 @@
+# Keep this directory in the repo (model/train.py writes checkpoints here),
+# but never track the weights themselves.
+*
+!.gitignore

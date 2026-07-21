@@ -1,0 +1,60 @@
+Staraptor @ Staraptite  
+Ability: Intimidate  
+Level: 50  
+EVs: 20 HP / 14 Atk / 32 Spe  
+Jolly Nature  
+- Brave Bird  
+- Close Combat  
+- Roost  
+- Protect  
+
+Mawile @ Mawilite  
+Ability: Intimidate  
+Level: 50  
+EVs: 32 HP / 15 Atk / 19 SpD  
+Brave Nature  
+- Iron Head  
+- Brick Break  
+- Sucker Punch  
+- Swords Dance  
+
+Farigiraf @ Colbur Berry  
+Ability: Armor Tail  
+Level: 50  
+EVs: 16 HP / 30 Def / 20 SpD  
+Relaxed Nature  
+- Twin Beam  
+- Thunderbolt  
+- Helping Hand  
+- Trick Room  
+
+Gholdengo @ Life Orb  
+Ability: Good as Gold  
+Level: 50  
+EVs: 7 HP / 27 SpA / 32 Spe  
+Modest Nature  
+- Shadow Ball  
+- Make It Rain  
+- Power Gem  
+- Protect  
+
+Grimmsnarl (M) @ Roseli Berry  
+Ability: Prankster  
+Level: 50  
+EVs: 32 HP / 15 Def / 15 SpD / 4 Spe  
+Careful Nature  
+- Spirit Break  
+- Scratch  
+- Fake Out  
+- Parting Shot  
+
+Diggersby @ Choice Scarf  
+Ability: Huge Power  
+Level: 50  
+EVs: 1 HP / 32 Atk / 1 SpD / 32 Spe  
+Jolly Nature  
+- High Horsepower  
+- Ice Punch  
+- Rock Tomb  
+- Foul Play  
+

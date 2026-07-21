@@ -1,0 +1,140 @@
+# Tsareena - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Tournaments
+
+> Find the best Tsareena builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Tournaments. Data from Pikalytics.
+
+## Best Tsareena Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Tournaments (`championstournaments`) |
+| **Game** | Pokemon Champions |
+| **Category** | championstournaments |
+| **Usage** | 1% |
+| **Win Rate** | 49.391% |
+| **Record** | 527-540-1 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Tsareena)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/championstournaments/Tsareena
+- **Format Overview**: [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments)
+- **AI Format Index**: [/ai/pokedex/championstournaments](https://www.pikalytics.com/ai/pokedex/championstournaments)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Tsareena.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Fire (2x), Ice (2x), Poison (2x), Flying (2x), Bug (2x) |
+| **Resists** | Water (1/2x), Electric (1/2x), Grass (1/2x), Ground (1/2x) |
+| **Immune To** | None |
+
+## Common Moves
+- **Triple Axel**: 87.500%
+- **Protect**: 62.500%
+- **Trop Kick**: 58.553%
+- **Low Kick**: 51.316%
+- **Power Whip**: 40.789%
+- **U-turn**: 28.947%
+- **Taunt**: 19.737%
+- **High Jump Kick**: 16.447%
+- **Knock Off**: 12.500%
+- **Helping Hand**: 9.868%
+
+## Common Abilities
+- **Queenly Majesty**: 99.342%
+
+## Common Items
+- **Wide Lens**: 43.421%
+- **Choice Scarf**: 25.658%
+- **Sitrus Berry**: 6.579%
+- **Focus Sash**: 5.921%
+- **Miracle Seed**: 3.947%
+- **Occa Berry**: 3.947%
+- **Coba Berry**: 3.289%
+- **White Herb**: 1.974%
+- **Life Orb**: 1.316%
+- **Mental Herb**: 1.316%
+
+## Common Teammates
+- **Garchomp**: 28.289%
+- **Basculegion**: 25.000%
+- **Whimsicott**: 24.342%
+- **Sneasler**: 21.053%
+- **Raichu-Mega-Y**: 18.421%
+- **Kingambit**: 15.789%
+
+## Featured Teams with Tsareena
+
+### Team 1 by Shedfan
+*Record: 5-0*
+*Event: limitless-6a3ce3c9c87cd9ff0a30ef12*
+
+**Pokemon**: Incineroar, Gardevoir-Mega, Talonflame, Tsareena, Maushold, Basculegion
+
+**Tsareena Set**:
+- **Ability**: Queenly Majesty
+- **Item**: Wide Lens
+- **Moves**: Protect, Triple Axel, Low Kick, Power Whip
+
+### Team 2 by Shedfan
+*Record: 7-0*
+*Event: limitless-6a38f19b83fd320299bcdb33*
+
+**Pokemon**: Incineroar, Gardevoir-Mega, Talonflame, Tsareena, Maushold, Basculegion
+
+**Tsareena Set**:
+- **Ability**: Queenly Majesty
+- **Item**: Wide Lens
+- **Moves**: Protect, Triple Axel, Low Kick, Power Whip
+
+
+## FAQ for Tsareena in championstournaments-1760
+
+### What are the top moves for Tsareena?
+The most common moves for Tsareena are Triple Axel, Protect, Trop Kick, Low Kick. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Tsareena?
+Tsareena is frequently paired with Garchomp, Basculegion, Whimsicott, Sneasler. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Tsareena weak to and resistant against?
+Tsareena is weak to Fire (2x), Ice (2x), Poison (2x), Flying (2x), Bug (2x), resists Water (1/2x), Electric (1/2x), Grass (1/2x), Ground (1/2x), and is immune to no types.
+
+### Which Tera Types are best for Tsareena?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Tsareena?
+No EV spread or nature data available.
+
+### Which Ability and Item should I use on Tsareena?
+Tsareena is most effectively run with the ability **Queenly Majesty** (99.342%) and the item **Wide Lens** (43.421%).
+
+### What is the most common role for Tsareena?
+Based on common item usage (Wide Lens), Tsareena often functions as a **tactical** in the championstournaments-1760 meta.
+
+### What are the base stats for Tsareena?
+| Stat | Value |
+|------|-------|
+| HP | 72 |
+| Attack | 120 |
+| Defense | 98 |
+| Sp. Atk | 50 |
+| Sp. Def | 98 |
+| Speed | 72 |
+| **BST** | **510** |
+
+---
+
+## Additional Resources
+
+- [View Tsareena on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Tsareena) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/championstournaments) - Build teams with Tsareena
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

@@ -1,0 +1,906 @@
+{
+ "abomasnow": {
+  "usage_pct": null,
+  "win_rate": 36.364
+ },
+ "absol": {
+  "usage_pct": null,
+  "win_rate": 26.667
+ },
+ "aegislash": {
+  "usage_pct": 1.0,
+  "win_rate": 46.799
+ },
+ "aerodactyl": {
+  "usage_pct": 5.0,
+  "win_rate": 46.547
+ },
+ "aggron": {
+  "usage_pct": null,
+  "win_rate": 40.0
+ },
+ "alakazam": {
+  "usage_pct": null,
+  "win_rate": 44.444
+ },
+ "alcremie": {
+  "usage_pct": null,
+  "win_rate": 45.455
+ },
+ "altaria": {
+  "usage_pct": null,
+  "win_rate": 42.742
+ },
+ "ampharos": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "annihilape": {
+  "usage_pct": 3.0,
+  "win_rate": 43.994
+ },
+ "appletun": {
+  "usage_pct": null,
+  "win_rate": 55.844
+ },
+ "araquanid": {
+  "usage_pct": 1.0,
+  "win_rate": 45.289
+ },
+ "arbok": {
+  "usage_pct": null,
+  "win_rate": 20.0
+ },
+ "arcanine": {
+  "usage_pct": null,
+  "win_rate": 35.714
+ },
+ "arcaninehisui": {
+  "usage_pct": 1.0,
+  "win_rate": 52.25
+ },
+ "archaludon": {
+  "usage_pct": 17.0,
+  "win_rate": 50.798
+ },
+ "ariados": {
+  "usage_pct": null,
+  "win_rate": 46.154
+ },
+ "armarouge": {
+  "usage_pct": null,
+  "win_rate": 46.154
+ },
+ "aromatisse": {
+  "usage_pct": null,
+  "win_rate": 44.615
+ },
+ "audino": {
+  "usage_pct": null,
+  "win_rate": 33.333
+ },
+ "aurorus": {
+  "usage_pct": null,
+  "win_rate": 40.0
+ },
+ "avalugg": {
+  "usage_pct": null,
+  "win_rate": 16.667
+ },
+ "avalugghisui": {
+  "usage_pct": null,
+  "win_rate": 0.0
+ },
+ "azumarill": {
+  "usage_pct": 1.0,
+  "win_rate": 43.819
+ },
+ "banette": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "barbaracle": {
+  "usage_pct": null,
+  "win_rate": 30.0
+ },
+ "basculegion": {
+  "usage_pct": 32.0,
+  "win_rate": 52.561
+ },
+ "basculegionf": {
+  "usage_pct": null,
+  "win_rate": 36.986
+ },
+ "bastiodon": {
+  "usage_pct": null,
+  "win_rate": 8.333
+ },
+ "beartic": {
+  "usage_pct": null,
+  "win_rate": 45.455
+ },
+ "beedrill": {
+  "usage_pct": null,
+  "win_rate": 36.0
+ },
+ "bellibolt": {
+  "usage_pct": null,
+  "win_rate": 37.768
+ },
+ "blastoise": {
+  "usage_pct": null,
+  "win_rate": 44.505
+ },
+ "blaziken": {
+  "usage_pct": 1.0,
+  "win_rate": 46.809
+ },
+ "camerupt": {
+  "usage_pct": null,
+  "win_rate": 46.154
+ },
+ "castform": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "ceruledge": {
+  "usage_pct": 3.0,
+  "win_rate": 52.675
+ },
+ "chandelure": {
+  "usage_pct": null,
+  "win_rate": 45.349
+ },
+ "charizard": {
+  "usage_pct": 1.0,
+  "win_rate": 47.61
+ },
+ "chesnaught": {
+  "usage_pct": null,
+  "win_rate": 38.462
+ },
+ "chimecho": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "clawitzer": {
+  "usage_pct": null,
+  "win_rate": 44.03
+ },
+ "clefable": {
+  "usage_pct": 1.0,
+  "win_rate": 43.75
+ },
+ "cofagrigus": {
+  "usage_pct": null,
+  "win_rate": 28.09
+ },
+ "conkeldurr": {
+  "usage_pct": null,
+  "win_rate": 40.708
+ },
+ "corviknight": {
+  "usage_pct": 2.0,
+  "win_rate": 46.105
+ },
+ "crabominable": {
+  "usage_pct": null,
+  "win_rate": 50.0
+ },
+ "decidueye": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "decidueyehisui": {
+  "usage_pct": null,
+  "win_rate": 42.857
+ },
+ "dedenne": {
+  "usage_pct": null,
+  "win_rate": 38.462
+ },
+ "delphox": {
+  "usage_pct": null,
+  "win_rate": 41.935
+ },
+ "diggersby": {
+  "usage_pct": null,
+  "win_rate": 0.0
+ },
+ "ditto": {
+  "usage_pct": null,
+  "win_rate": 34.118
+ },
+ "dragalge": {
+  "usage_pct": null,
+  "win_rate": 50.0
+ },
+ "dragapult": {
+  "usage_pct": 1.0,
+  "win_rate": 42.348
+ },
+ "dragonite": {
+  "usage_pct": 2.0,
+  "win_rate": 45.706
+ },
+ "drampa": {
+  "usage_pct": null,
+  "win_rate": 29.412
+ },
+ "eelektross": {
+  "usage_pct": null,
+  "win_rate": 22.5
+ },
+ "emboar": {
+  "usage_pct": null,
+  "win_rate": 35.714
+ },
+ "emolga": {
+  "usage_pct": null,
+  "win_rate": 17.391
+ },
+ "empoleon": {
+  "usage_pct": null,
+  "win_rate": 45.128
+ },
+ "espathra": {
+  "usage_pct": null,
+  "win_rate": 51.167
+ },
+ "espeon": {
+  "usage_pct": null,
+  "win_rate": 52.632
+ },
+ "excadrill": {
+  "usage_pct": 2.0,
+  "win_rate": 49.699
+ },
+ "falinks": {
+  "usage_pct": null,
+  "win_rate": 50.0
+ },
+ "farigiraf": {
+  "usage_pct": 20.0,
+  "win_rate": 49.941
+ },
+ "feraligatr": {
+  "usage_pct": null,
+  "win_rate": 29.73
+ },
+ "flapple": {
+  "usage_pct": null,
+  "win_rate": 20.0
+ },
+ "flareon": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "floetteeternal": {
+  "usage_pct": null,
+  "win_rate": 45.455
+ },
+ "florges": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "forretress": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "froslass": {
+  "usage_pct": null,
+  "win_rate": 54.483
+ },
+ "furfrou": {
+  "usage_pct": null,
+  "win_rate": 38.889
+ },
+ "gallade": {
+  "usage_pct": 1.0,
+  "win_rate": 49.08
+ },
+ "garbodor": {
+  "usage_pct": null,
+  "win_rate": 66.667
+ },
+ "garchomp": {
+  "usage_pct": 38.0,
+  "win_rate": 50.579
+ },
+ "gardevoir": {
+  "usage_pct": null,
+  "win_rate": 42.932
+ },
+ "garganacl": {
+  "usage_pct": null,
+  "win_rate": 35.0
+ },
+ "gengar": {
+  "usage_pct": null,
+  "win_rate": 35.654
+ },
+ "gholdengo": {
+  "usage_pct": 11.0,
+  "win_rate": 48.738
+ },
+ "glaceon": {
+  "usage_pct": null,
+  "win_rate": 36.735
+ },
+ "glalie": {
+  "usage_pct": null,
+  "win_rate": 42.857
+ },
+ "glimmora": {
+  "usage_pct": 2.0,
+  "win_rate": 46.983
+ },
+ "gliscor": {
+  "usage_pct": null,
+  "win_rate": 30.909
+ },
+ "golurk": {
+  "usage_pct": null,
+  "win_rate": 33.0
+ },
+ "goodra": {
+  "usage_pct": null,
+  "win_rate": 26.087
+ },
+ "goodrahisui": {
+  "usage_pct": null,
+  "win_rate": 39.56
+ },
+ "gourgeist": {
+  "usage_pct": null,
+  "win_rate": 30.0
+ },
+ "greninja": {
+  "usage_pct": null,
+  "win_rate": 41.964
+ },
+ "grimmsnarl": {
+  "usage_pct": 16.0,
+  "win_rate": 48.064
+ },
+ "gyarados": {
+  "usage_pct": 1.0,
+  "win_rate": 45.995
+ },
+ "hatterene": {
+  "usage_pct": 1.0,
+  "win_rate": 36.56
+ },
+ "hawlucha": {
+  "usage_pct": null,
+  "win_rate": 37.805
+ },
+ "heliolisk": {
+  "usage_pct": null,
+  "win_rate": 35.677
+ },
+ "heracross": {
+  "usage_pct": null,
+  "win_rate": 25.0
+ },
+ "hippowdon": {
+  "usage_pct": null,
+  "win_rate": 43.396
+ },
+ "houndoom": {
+  "usage_pct": null,
+  "win_rate": 37.5
+ },
+ "houndstone": {
+  "usage_pct": 1.0,
+  "win_rate": 51.73
+ },
+ "hydrapple": {
+  "usage_pct": null,
+  "win_rate": 37.584
+ },
+ "hydreigon": {
+  "usage_pct": 6.0,
+  "win_rate": 49.618
+ },
+ "incineroar": {
+  "usage_pct": 31.0,
+  "win_rate": 51.068
+ },
+ "infernape": {
+  "usage_pct": null,
+  "win_rate": 40.336
+ },
+ "jolteon": {
+  "usage_pct": null,
+  "win_rate": 32.903
+ },
+ "kangaskhan": {
+  "usage_pct": 2.0,
+  "win_rate": 47.954
+ },
+ "kingambit": {
+  "usage_pct": 28.0,
+  "win_rate": 54.327
+ },
+ "kleavor": {
+  "usage_pct": null,
+  "win_rate": 46.367
+ },
+ "klefki": {
+  "usage_pct": null,
+  "win_rate": 47.514
+ },
+ "kommoo": {
+  "usage_pct": 1.0,
+  "win_rate": 45.238
+ },
+ "krookodile": {
+  "usage_pct": null,
+  "win_rate": 47.368
+ },
+ "leafeon": {
+  "usage_pct": null,
+  "win_rate": 29.032
+ },
+ "liepard": {
+  "usage_pct": null,
+  "win_rate": 38.095
+ },
+ "lopunny": {
+  "usage_pct": null,
+  "win_rate": 31.25
+ },
+ "lucario": {
+  "usage_pct": null,
+  "win_rate": 41.053
+ },
+ "luxray": {
+  "usage_pct": null,
+  "win_rate": 42.857
+ },
+ "lycanroc": {
+  "usage_pct": 2.0,
+  "win_rate": 44.828
+ },
+ "machamp": {
+  "usage_pct": null,
+  "win_rate": 23.148
+ },
+ "malamar": {
+  "usage_pct": null,
+  "win_rate": 50.0
+ },
+ "mamoswine": {
+  "usage_pct": 2.0,
+  "win_rate": 52.363
+ },
+ "manectric": {
+  "usage_pct": null,
+  "win_rate": 11.111
+ },
+ "maushold": {
+  "usage_pct": 6.0,
+  "win_rate": 48.697
+ },
+ "mawile": {
+  "usage_pct": null,
+  "win_rate": 55.128
+ },
+ "medicham": {
+  "usage_pct": null,
+  "win_rate": 16.667
+ },
+ "meganium": {
+  "usage_pct": null,
+  "win_rate": 25.0
+ },
+ "meowscarada": {
+  "usage_pct": 1.0,
+  "win_rate": 41.402
+ },
+ "meowstic": {
+  "usage_pct": null,
+  "win_rate": 33.333
+ },
+ "metagross": {
+  "usage_pct": 1.0,
+  "win_rate": 43.59
+ },
+ "milotic": {
+  "usage_pct": 4.0,
+  "win_rate": 47.955
+ },
+ "mimikyu": {
+  "usage_pct": 1.0,
+  "win_rate": 41.839
+ },
+ "morpeko": {
+  "usage_pct": null,
+  "win_rate": 37.879
+ },
+ "mrrime": {
+  "usage_pct": null,
+  "win_rate": 35.135
+ },
+ "mudsdale": {
+  "usage_pct": null,
+  "win_rate": 44.094
+ },
+ "musharna": {
+  "usage_pct": null,
+  "win_rate": 39.024
+ },
+ "ninetales": {
+  "usage_pct": 1.0,
+  "win_rate": 49.653
+ },
+ "ninetalesalola": {
+  "usage_pct": 5.0,
+  "win_rate": 49.954
+ },
+ "noivern": {
+  "usage_pct": null,
+  "win_rate": 35.294
+ },
+ "oranguru": {
+  "usage_pct": 1.0,
+  "win_rate": 40.887
+ },
+ "orthworm": {
+  "usage_pct": null,
+  "win_rate": 49.565
+ },
+ "overqwil": {
+  "usage_pct": 1.0,
+  "win_rate": 47.176
+ },
+ "palafin": {
+  "usage_pct": 1.0,
+  "win_rate": 45.936
+ },
+ "pangoro": {
+  "usage_pct": null,
+  "win_rate": 34.375
+ },
+ "passimian": {
+  "usage_pct": null,
+  "win_rate": 0.0
+ },
+ "pelipper": {
+  "usage_pct": 19.0,
+  "win_rate": 49.758
+ },
+ "pidgeot": {
+  "usage_pct": null,
+  "win_rate": 0.0
+ },
+ "pikachu": {
+  "usage_pct": null,
+  "win_rate": 50.0
+ },
+ "pinsir": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "politoed": {
+  "usage_pct": 2.0,
+  "win_rate": 49.197
+ },
+ "polteageist": {
+  "usage_pct": null,
+  "win_rate": 12.5
+ },
+ "primarina": {
+  "usage_pct": 2.0,
+  "win_rate": 42.844
+ },
+ "pyroar": {
+  "usage_pct": null,
+  "win_rate": 42.683
+ },
+ "quaquaval": {
+  "usage_pct": null,
+  "win_rate": 44.872
+ },
+ "qwilfish": {
+  "usage_pct": null,
+  "win_rate": 42.857
+ },
+ "raichu": {
+  "usage_pct": 1.0,
+  "win_rate": 37.415
+ },
+ "raichualola": {
+  "usage_pct": null,
+  "win_rate": 51.429
+ },
+ "rampardos": {
+  "usage_pct": null,
+  "win_rate": 32.813
+ },
+ "reuniclus": {
+  "usage_pct": null,
+  "win_rate": 37.778
+ },
+ "rhyperior": {
+  "usage_pct": null,
+  "win_rate": 36.17
+ },
+ "roserade": {
+  "usage_pct": null,
+  "win_rate": 66.667
+ },
+ "rotom": {
+  "usage_pct": null,
+  "win_rate": 35.385
+ },
+ "rotomfan": {
+  "usage_pct": null,
+  "win_rate": 22.222
+ },
+ "rotomfrost": {
+  "usage_pct": null,
+  "win_rate": 38.095
+ },
+ "rotomheat": {
+  "usage_pct": 2.0,
+  "win_rate": 42.291
+ },
+ "rotommow": {
+  "usage_pct": null,
+  "win_rate": 40.583
+ },
+ "rotomwash": {
+  "usage_pct": 5.0,
+  "win_rate": 46.534
+ },
+ "runerigus": {
+  "usage_pct": null,
+  "win_rate": 21.277
+ },
+ "sableye": {
+  "usage_pct": 6.0,
+  "win_rate": 45.95
+ },
+ "salazzle": {
+  "usage_pct": null,
+  "win_rate": 56.818
+ },
+ "samurott": {
+  "usage_pct": null,
+  "win_rate": 20.0
+ },
+ "samurotthisui": {
+  "usage_pct": 1.0,
+  "win_rate": 51.438
+ },
+ "sandaconda": {
+  "usage_pct": null,
+  "win_rate": 21.053
+ },
+ "sceptile": {
+  "usage_pct": null,
+  "win_rate": 32.857
+ },
+ "scizor": {
+  "usage_pct": null,
+  "win_rate": 42.378
+ },
+ "scolipede": {
+  "usage_pct": null,
+  "win_rate": 35.417
+ },
+ "scovillain": {
+  "usage_pct": null,
+  "win_rate": 59.677
+ },
+ "scrafty": {
+  "usage_pct": null,
+  "win_rate": 45.85
+ },
+ "serperior": {
+  "usage_pct": null,
+  "win_rate": 40.994
+ },
+ "sharpedo": {
+  "usage_pct": null,
+  "win_rate": 40.0
+ },
+ "simipour": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "simisage": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "simisear": {
+  "usage_pct": null,
+  "win_rate": 45.455
+ },
+ "sinistcha": {
+  "usage_pct": 32.0,
+  "win_rate": 49.387
+ },
+ "skarmory": {
+  "usage_pct": null,
+  "win_rate": 23.077
+ },
+ "skeledirge": {
+  "usage_pct": null,
+  "win_rate": 42.336
+ },
+ "slowbro": {
+  "usage_pct": null,
+  "win_rate": 22.857
+ },
+ "slowbrogalar": {
+  "usage_pct": null,
+  "win_rate": 37.838
+ },
+ "slowking": {
+  "usage_pct": null,
+  "win_rate": 27.941
+ },
+ "slowkinggalar": {
+  "usage_pct": null,
+  "win_rate": 43.671
+ },
+ "slurpuff": {
+  "usage_pct": null,
+  "win_rate": 28.0
+ },
+ "sneasler": {
+  "usage_pct": 21.0,
+  "win_rate": 51.78
+ },
+ "snorlax": {
+  "usage_pct": 1.0,
+  "win_rate": 49.799
+ },
+ "spiritomb": {
+  "usage_pct": null,
+  "win_rate": 45.614
+ },
+ "staraptor": {
+  "usage_pct": 2.0,
+  "win_rate": 45.468
+ },
+ "starmie": {
+  "usage_pct": null,
+  "win_rate": 43.243
+ },
+ "steelix": {
+  "usage_pct": null,
+  "win_rate": 27.711
+ },
+ "stunfisk": {
+  "usage_pct": null,
+  "win_rate": 33.333
+ },
+ "stunfiskgalar": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "swampert": {
+  "usage_pct": null,
+  "win_rate": 48.958
+ },
+ "sylveon": {
+  "usage_pct": 17.0,
+  "win_rate": 50.198
+ },
+ "talonflame": {
+  "usage_pct": 4.0,
+  "win_rate": 45.872
+ },
+ "tauros": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "tinkaton": {
+  "usage_pct": 1.0,
+  "win_rate": 40.0
+ },
+ "torkoal": {
+  "usage_pct": 8.0,
+  "win_rate": 48.5
+ },
+ "torterra": {
+  "usage_pct": null,
+  "win_rate": 44.0
+ },
+ "toucannon": {
+  "usage_pct": null,
+  "win_rate": 43.182
+ },
+ "toxapex": {
+  "usage_pct": 2.0,
+  "win_rate": 50.554
+ },
+ "toxicroak": {
+  "usage_pct": null,
+  "win_rate": 35.0
+ },
+ "trevenant": {
+  "usage_pct": null,
+  "win_rate": 21.739
+ },
+ "tsareena": {
+  "usage_pct": 1.0,
+  "win_rate": 49.391
+ },
+ "typhlosion": {
+  "usage_pct": null,
+  "win_rate": 43.878
+ },
+ "typhlosionhisui": {
+  "usage_pct": 1.0,
+  "win_rate": 45.426
+ },
+ "tyranitar": {
+  "usage_pct": 1.0,
+  "win_rate": 42.583
+ },
+ "tyrantrum": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "umbreon": {
+  "usage_pct": null,
+  "win_rate": 43.827
+ },
+ "vanilluxe": {
+  "usage_pct": null,
+  "win_rate": 44.928
+ },
+ "vaporeon": {
+  "usage_pct": null,
+  "win_rate": 28.571
+ },
+ "venusaur": {
+  "usage_pct": 4.0,
+  "win_rate": 49.432
+ },
+ "victreebel": {
+  "usage_pct": null,
+  "win_rate": 25.0
+ },
+ "vileplume": {
+  "usage_pct": 2.0,
+  "win_rate": 49.008
+ },
+ "vivillon": {
+  "usage_pct": 1.0,
+  "win_rate": 49.306
+ },
+ "volcarona": {
+  "usage_pct": 1.0,
+  "win_rate": 49.316
+ },
+ "watchog": {
+  "usage_pct": null,
+  "win_rate": null
+ },
+ "weavile": {
+  "usage_pct": null,
+  "win_rate": 46.9
+ },
+ "whimsicott": {
+  "usage_pct": 26.0,
+  "win_rate": 50.796
+ },
+ "wyrdeer": {
+  "usage_pct": null,
+  "win_rate": 42.663
+ },
+ "zoroark": {
+  "usage_pct": null,
+  "win_rate": 6.25
+ },
+ "zoroarkhisui": {
+  "usage_pct": 1.0,
+  "win_rate": 40.935
+ }
+}

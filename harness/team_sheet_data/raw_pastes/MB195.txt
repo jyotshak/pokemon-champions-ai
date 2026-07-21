@@ -1,0 +1,50 @@
+Metagross @ Metagrossite  
+Ability: Clear Body  
+Shiny: Yes  
+Jolly Nature  
+- Protect  
+- Iron Head  
+- Psychic Fangs  
+- Bullet Punch  
+
+Garchomp @ Life Orb  
+Ability: Rough Skin  
+Jolly Nature  
+- Rock Slide  
+- Stomping Tantrum  
+- Dragon Claw  
+- Protect  
+
+Grimmsnarl @ Light Clay  
+Ability: Prankster  
+Calm Nature  
+- Light Screen  
+- Reflect  
+- Foul Play  
+- Parting Shot  
+
+Milotic @ Leftovers  
+Ability: Competitive  
+Shiny: Yes  
+Bold Nature  
+- Muddy Water  
+- Coil  
+- Hypnosis  
+- Life Dew  
+
+Venusaur @ Venusaurite  
+Ability: Overgrow  
+Calm Nature  
+- Leech Seed  
+- Sludge Bomb  
+- Giga Drain  
+- Protect  
+
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+Careful Nature  
+- Fake Out  
+- Flare Blitz  
+- Parting Shot  
+- Throat Chop  
+

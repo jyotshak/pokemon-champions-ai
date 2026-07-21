@@ -1,0 +1,48 @@
+Blastoise @ Blastoisinite  
+Ability: Rain Dish  
+Level: 50  
+- Water Spout  
+- Dark Pulse  
+- Shell Smash  
+- Protect  
+
+Maushold-Four @ Focus Sash  
+Ability: Friend Guard  
+Level: 50  
+- Follow Me  
+- Feint  
+- Helping Hand  
+- Protect  
+
+Gengar @ Gengarite  
+Ability: Cursed Body  
+Level: 50  
+- Shadow Ball  
+- Sludge Bomb  
+- Icy Wind  
+- Protect  
+
+Incineroar @ Chople Berry  
+Ability: Intimidate  
+Level: 50  
+- Fake Out  
+- Flare Blitz  
+- Parting Shot  
+- Protect  
+
+Kommo-o @ Sitrus Berry  
+Ability: Bulletproof  
+Level: 50  
+- Clanging Scales  
+- Flamethrower  
+- Clangorous Soul  
+- Protect  
+
+Sinistcha @ Coba Berry  
+Ability: Hospitality  
+Level: 50  
+- Matcha Gotcha  
+- Rage Powder  
+- Life Dew  
+- Protect  
+

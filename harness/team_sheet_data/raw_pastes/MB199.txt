@@ -1,0 +1,49 @@
+Charizard @ Charizardite Y  
+Ability: Blaze  
+Modest Nature  
+- Weather Ball  
+- Heat Wave  
+- Solar Beam  
+- Protect  
+
+Whimsicott @ Focus Sash  
+Ability: Prankster  
+Timid Nature  
+- Moonblast  
+- Tailwind  
+- Encore  
+- Protect  
+
+Garchomp @ Life Orb  
+Ability: Rough Skin  
+Jolly Nature  
+- Earthquake  
+- Dragon Claw  
+- Rock Slide  
+- Protect  
+
+Gholdengo @ Spell Tag  
+Ability: Good as Gold  
+Modest Nature  
+- Make It Rain  
+- Shadow Ball  
+- Nasty Plot  
+- Protect  
+
+Kangaskhan @ Kangaskhanite  
+Ability: Scrappy  
+Adamant Nature  
+- Double-Edge  
+- Ice Punch  
+- Low Kick  
+- Fake Out  
+
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+Shiny: Yes  
+Careful Nature  
+- Flare Blitz  
+- Throat Chop  
+- Parting Shot  
+- Fake Out  
+

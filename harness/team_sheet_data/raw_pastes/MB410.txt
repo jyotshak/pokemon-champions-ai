@@ -1,0 +1,48 @@
+Scovillain @ Scovillainite  
+Ability: Moody  
+Calm Nature  
+- Protect  
+- Overheat  
+- Rage Powder  
+- Leech Seed  
+
+Basculegion @ Life Orb  
+Ability: Swift Swim  
+Adamant Nature  
+- Protect  
+- Wave Crash  
+- Aqua Jet  
+- Last Respects  
+
+Pelipper @ Sitrus Berry  
+Ability: Drizzle  
+Modest Nature  
+- Protect  
+- Weather Ball  
+- Hurricane  
+- Tailwind  
+
+Archaludon @ Leftovers  
+Ability: Stamina  
+Bold Nature  
+- Protect  
+- Flash Cannon  
+- Electro Shot  
+- Dragon Pulse  
+
+Grimmsnarl @ Light Clay  
+Ability: Prankster  
+Sassy Nature  
+- Spirit Break  
+- Light Screen  
+- Reflect  
+- Parting Shot  
+
+Floette-Eternal @ Floettite  
+Ability: Flower Veil  
+Modest Nature  
+- Protect  
+- Dazzling Gleam  
+- Moonblast  
+- Light of Ruin  
+

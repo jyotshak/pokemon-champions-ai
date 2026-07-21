@@ -1,0 +1,141 @@
+# Clefable - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data
+
+> Find the best Clefable builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data. Data from Pikalytics.
+
+## Best Clefable Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data (`battledataregmbs3`) |
+| **Game** | Pokemon Scarlet Violet |
+| **Category** | battledataregmbs3 |
+| **Usage** | N/A |
+| **Win Rate** | 42.531% |
+| **Record** | 410-554 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Clefable)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/battledataregmbs3/Clefable
+- **Format Overview**: [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3)
+- **AI Format Index**: [/ai/pokedex/battledataregmbs3](https://www.pikalytics.com/ai/pokedex/battledataregmbs3)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Clefable.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Poison (2x), Steel (2x) |
+| **Resists** | Fighting (1/2x), Bug (1/2x), Dark (1/2x) |
+| **Immune To** | Dragon (0x) |
+
+## Common Moves
+- **Moonblast**: 94.3%
+- **Follow Me**: 92.1%
+- **Protect**: 74.2%
+- **Helping Hand**: 29.5%
+- **Life Dew**: 22.4%
+- **Icy Wind**: 9.6%
+- **Calm Mind**: 9.3%
+- **Ice Beam**: 9.3%
+- **Dazzling Gleam**: 7.9%
+- **Moonlight**: 7.1%
+
+## Common Abilities
+- **Unaware**: 92.9%
+- **Magic Guard**: 7.1%
+
+## Common Items
+- **Sitrus Berry**: 33.7%
+- **Leftovers**: 21.6%
+- **Clefablite**: 20.6%
+- **Fairy Feather**: 8.8%
+- **Babiri Berry**: 4.7%
+- **Lum Berry**: 3.9%
+- **Kebia Berry**: 2.7%
+- **Mental Herb**: 1.2%
+- **Shell Bell**: 1.2%
+- **Life Orb**: 0.7%
+
+## Common Teammates
+- **Pelipper**: undefined%
+- **Swampert**: undefined%
+- **Archaludon**: undefined%
+- **Garchomp**: undefined%
+- **Staraptor**: undefined%
+- **Torkoal**: undefined%
+
+## Featured Teams with Clefable
+
+### Team 1 by aerxdri
+*Record: 7-2*
+*Event: limitless-6a400679c87cd9ff0a3113c0*
+
+**Pokemon**: Dragonite-Mega, Gholdengo, Clefable, Espathra, Basculegion, Lopunny-Mega
+
+**Clefable Set**:
+- **Ability**: Magic Guard
+- **Item**: Sitrus Berry
+- **Moves**: Protect, Moonblast, Follow Me, Helping Hand
+
+### Team 2 by AustinMcballs
+*Record: 7-0*
+*Event: limitless-6a32dc152d97f3b0c26188d3*
+
+**Pokemon**: Clefable, Froslass-Mega, Palafin, Aerodactyl-Mega, Garchomp, Kingambit
+
+**Clefable Set**:
+- **Ability**: Unaware
+- **Item**: Sitrus Berry
+- **Moves**: Moonblast, Follow Me, Helping Hand, Protect
+
+
+## FAQ for Clefable in battledataregmbs3-1760
+
+### What are the top moves for Clefable?
+The most common moves for Clefable are Moonblast, Follow Me, Protect, Helping Hand. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Clefable?
+Clefable is frequently paired with Pelipper, Swampert, Archaludon, Garchomp. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Clefable weak to and resistant against?
+Clefable is weak to Poison (2x), Steel (2x), resists Fighting (1/2x), Bug (1/2x), Dark (1/2x), and is immune to Dragon (0x).
+
+### Which Tera Types are best for Clefable?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Clefable?
+The top build for Clefable features a **** nature with an EV spread of `32/0/32/0/2/0`. This configuration accounts for 20.1% of competitive builds.
+
+### Which Ability and Item should I use on Clefable?
+Clefable is most effectively run with the ability **Unaware** (92.9%) and the item **Sitrus Berry** (33.7%).
+
+### What is the most common role for Clefable?
+Based on common item usage (Sitrus Berry), Clefable often functions as a **bulky attacker or support** in the battledataregmbs3-1760 meta.
+
+### What are the base stats for Clefable?
+| Stat | Value |
+|------|-------|
+| HP | 95 |
+| Attack | 70 |
+| Defense | 73 |
+| Sp. Atk | 95 |
+| Sp. Def | 90 |
+| Speed | 60 |
+| **BST** | **483** |
+
+---
+
+## Additional Resources
+
+- [View Clefable on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Clefable) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/battledataregmbs3) - Build teams with Clefable
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

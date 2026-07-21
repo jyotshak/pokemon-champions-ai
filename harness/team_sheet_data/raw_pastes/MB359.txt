@@ -1,0 +1,48 @@
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+Careful Nature  
+- Fake Out  
+- Flare Blitz  
+- Darkest Lariat  
+- Parting Shot  
+
+Kingambit @ Chople Berry  
+Ability: Defiant  
+Adamant Nature  
+- Kowtow Cleave  
+- Sucker Punch  
+- Swords Dance  
+- Protect  
+
+Sneasler @ Focus Sash  
+Ability: Poison Touch  
+Jolly Nature  
+- Fake Out  
+- Coaching  
+- Close Combat  
+- Poison Jab  
+
+Floette-Eternal @ Floettite  
+Ability: Flower Veil  
+Bold Nature  
+- Calm Mind  
+- Protect  
+- Draining Kiss  
+- Dazzling Gleam  
+
+Sinistcha @ Leftovers  
+Ability: Hospitality  
+Bold Nature  
+- Trick Room  
+- Rage Powder  
+- Matcha Gotcha  
+- Protect  
+
+Dragonite @ Lum Berry  
+Ability: Multiscale  
+Adamant Nature  
+- Extreme Speed  
+- Dragon Claw  
+- Protect  
+- Fire Punch  
+

@@ -1,0 +1,48 @@
+Charizard @ Charizardite Y  
+Ability: Blaze  
+Modest Nature  
+- Heat Wave  
+- Weather Ball  
+- Solar Beam  
+- Protect  
+
+Incineroar @ Charcoal  
+Ability: Intimidate  
+Brave Nature  
+- Flare Blitz  
+- Darkest Lariat  
+- Fake Out  
+- Parting Shot  
+
+Sylveon @ Fairy Feather  
+Ability: Pixilate  
+Modest Nature  
+- Hyper Voice  
+- Yawn  
+- Quick Attack  
+- Protect  
+
+Farigiraf @ Sitrus Berry  
+Ability: Armor Tail  
+Calm Nature  
+- Psyshock  
+- Helping Hand  
+- Trick Room  
+- Protect  
+
+Garchomp @ Life Orb  
+Ability: Rough Skin  
+Jolly Nature  
+- Earthquake  
+- Protect  
+- Dragon Claw  
+- Stomping Tantrum  
+
+Aerodactyl @ Focus Sash  
+Ability: Unnerve  
+Jolly Nature  
+- Rock Slide  
+- Tailwind  
+- Wide Guard  
+- Protect  
+

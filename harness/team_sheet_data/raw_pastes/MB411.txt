@@ -1,0 +1,48 @@
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+Careful Nature  
+- Flare Blitz  
+- Darkest Lariat  
+- Parting Shot  
+- Fake Out  
+
+Basculegion @ Choice Scarf  
+Ability: Adaptability  
+Jolly Nature  
+- Wave Crash  
+- Last Respects  
+- Flip Turn  
+- Aqua Jet  
+
+Tinkaton @ Leftovers  
+Ability: Mold Breaker  
+Adamant Nature  
+- Gigaton Hammer  
+- Play Rough  
+- Brick Break  
+- Fake Out  
+
+Floette-Eternal @ Floettite  
+Ability: Flower Veil  
+Modest Nature  
+- Moonblast  
+- Dazzling Gleam  
+- Calm Mind  
+- Protect  
+
+Kingambit @ Life Orb  
+Ability: Defiant  
+Adamant Nature  
+- Kowtow Cleave  
+- Sucker Punch  
+- Swords Dance  
+- Protect  
+
+Sneasler @ Focus Sash  
+Ability: Poison Touch  
+Jolly Nature  
+- Close Combat  
+- Dire Claw  
+- Feint  
+- Fake Out  
+

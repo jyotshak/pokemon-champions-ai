@@ -1,0 +1,54 @@
+Reg M-A (Charizard) @ Charizardite Y  
+Ability: Blaze  
+EVs: 20 HP / 31 Def / 1 SpA / 14 Spe  
+Modest Nature  
+- Heat Wave  
+- Solar Beam  
+- Weather Ball  
+- Protect  
+
+Fluff (Whimsicott) @ Focus Sash  
+Ability: Prankster  
+EVs: 2 HP / 32 SpA / 32 Spe  
+Timid Nature  
+- Moonblast  
+- Tailwind  
+- Encore  
+- Protect  
+
+Garchonkus (Garchomp) @ Life Orb  
+Ability: Rough Skin  
+EVs: 6 HP / 28 Atk / 32 Spe  
+Jolly Nature  
+- Stomping Tantrum  
+- Dragon Claw  
+- Rock Slide  
+- Protect  
+
+John (Incineroar) @ Sitrus Berry  
+Ability: Intimidate  
+EVs: 32 HP / 1 Atk / 10 Def / 7 SpD / 16 Spe  
+Impish Nature  
+- Fake Out  
+- Flare Blitz  
+- Throat Chop  
+- Parting Shot  
+
+F (Basculegion) @ Choice Scarf  
+Ability: Adaptability  
+EVs: 23 Atk / 11 Def / 32 Spe  
+Jolly Nature  
+- Wave Crash  
+- Last Respects  
+- Aqua Jet  
+- Flip Turn  
+
+Elon (Gholdengo) @ Spell Tag  
+Ability: Good as Gold  
+EVs: 7 HP / 27 SpA / 32 Spe  
+Modest Nature  
+- Make It Rain  
+- Shadow Ball  
+- Nasty Plot  
+- Protect  
+

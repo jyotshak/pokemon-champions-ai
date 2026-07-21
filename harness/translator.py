@@ -81,9 +81,32 @@ def _position(index: int) -> Position:
     return Position.LEFT if index == 0 else Position.RIGHT
 
 
-def own_pokemon(poke_mon: Pokemon, position: Optional[Position]) -> OwnPokemon:
+def own_pokemon(
+    poke_mon: Pokemon, position: Optional[Position], available_move_ids: Optional[set] = None,
+    trapped: bool = False,
+) -> OwnPokemon:
+    # available_move_ids, when given (active mons only - see battle_to_state),
+    # is battle.available_moves[i] reduced to ids: poke-env's own filtering of
+    # the request's per-move "disabled" flag (Showdown sends this for things
+    # like Fake Out after turn 1, Torment, Taunt, Disable, choice-lock - not
+    # just PP). Without this, every move always looked pickable regardless of
+    # legality, so a policy could "choose" a genuinely unusable move, get
+    # rejected by the server, and stall the turn retrying it forever.
+    # NOTE on FORCED CONTINUATIONS (recharge after Hyper Beam, Struggle, a
+    # locked two-turn move): Showdown replaces the request's move list with one
+    # SYNTHETIC entry whose id is not in the mon's real moveset, which marks
+    # every real move disabled here. That is deliberate - `moves` must stay the
+    # mon's REAL, buildable moveset, because these OwnPokemon feed
+    # engine/bridge.py's init_battle -> buildSet for search rollouts, and a
+    # synthetic id has no PP data behind it (rebuilding one yields
+    # pp/max_pp = null and a FullInfoState ValidationError). The resulting
+    # "no legal move" is resolved at the ORDER boundary instead, where the live
+    # request is still available - see harness/actions.py::_forced_move.
     moves = [
-        MoveSlot(move=move.id, pp=move.current_pp, max_pp=move.max_pp)
+        MoveSlot(
+            move=move.id, pp=move.current_pp, max_pp=move.max_pp,
+            disabled=available_move_ids is not None and move.id not in available_move_ids,
+        )
         for move in poke_mon.moves.values()
     ]
     stats = {k: v for k, v in poke_mon.stats.items() if k != "hp" and v is not None}
@@ -104,6 +127,7 @@ def own_pokemon(poke_mon: Pokemon, position: Optional[Position]) -> OwnPokemon:
         tera_activated=poke_mon.is_terastallized,
         mega_activated=_is_mega(poke_mon),
         volatiles=_volatiles(poke_mon),
+        trapped=trapped,
     )
 
 
@@ -186,8 +210,16 @@ def _side_conditions(conditions: dict, turn: int, mega_used: bool, tera_used: bo
 
 
 def battle_to_state(battle: DoubleBattle) -> BattleState:
+    # battle.available_moves[i] can read empty for a still-alive slot during
+    # a mid-turn switch-only request (Showdown doesn't re-list its moves
+    # when only the fainted slot is being asked to act), which would mark
+    # that mon's moves all "disabled" here - harmless in practice, since
+    # both SolverPlayer and HeuristicPlayer already override the
+    # non-force-switch slot to NoAction() during those requests regardless
+    # of what battle_to_state produced for it.
     my_active = [
-        own_pokemon(mon, _position(i)) for i, mon in enumerate(battle.active_pokemon) if mon is not None
+        own_pokemon(mon, _position(i), {m.id for m in battle.available_moves[i]}, battle.trapped[i])
+        for i, mon in enumerate(battle.active_pokemon) if mon is not None
     ]
     # battle.team always holds all 6 submitted Pokemon, but only 4 are
     # actually brought into a given battle (VGC bring-4-of-6). During team
@@ -222,6 +254,12 @@ def battle_to_state(battle: DoubleBattle) -> BattleState:
         format_id=battle.format or "",
         turn=battle.turn,
         team_preview=team_preview,
+        # teampreview_opponent_team (unlike teampreview_team, which poke-env
+        # never populates) IS filled from the |poke| protocol messages and
+        # persists after preview ends - the full 6-species roster stays
+        # available all battle, which the belief layer needs for
+        # hypothesizing the opponent's unseen back slots.
+        opp_roster=[mon.species for mon in battle.teampreview_opponent_team],
         field=_field_state(battle),
         my_active=my_active,
         my_bench=my_bench,

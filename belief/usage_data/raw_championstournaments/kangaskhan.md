@@ -1,0 +1,148 @@
+# Kangaskhan - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Tournaments
+
+> Find the best Kangaskhan builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Tournaments. Data from Pikalytics.
+
+## Best Kangaskhan Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Tournaments (`championstournaments`) |
+| **Game** | Pokemon Champions |
+| **Category** | championstournaments |
+| **Usage** | 2% |
+| **Win Rate** | 47.954% |
+| **Record** | 457-496 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Kangaskhan)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/championstournaments/Kangaskhan
+- **Format Overview**: [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments)
+- **AI Format Index**: [/ai/pokedex/championstournaments](https://www.pikalytics.com/ai/pokedex/championstournaments)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Kangaskhan.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Fighting (2x) |
+| **Resists** | None |
+| **Immune To** | Ghost (0x) |
+
+## Common Moves
+- **Fake Out**: 96.491%
+- **Last Resort**: 73.684%
+- **Double-Edge**: 22.222%
+- **Sucker Punch**: 12.865%
+- **Protect**: 9.357%
+- **Hammer Arm**: 9.357%
+- **Ice Punch**: 8.772%
+- **Brick Break**: 8.187%
+- **Drain Punch**: 7.018%
+- **Body Slam**: 1.170%
+
+## Common Abilities
+- **Scrappy**: 96.491%
+- **Inner Focus**: 1.170%
+- **Early Bird**: 1.170%
+
+## Common Items
+- **Silk Scarf**: 65.497%
+- **Life Orb**: 23.977%
+- **Chople Berry**: 5.263%
+- **Nothing**: 1.754%
+- **Metronome**: 1.170%
+
+## Common Teammates
+- **Farigiraf**: 73.099%
+- **Torkoal**: 58.480%
+- **Mawile-Mega**: 46.199%
+- **Sylveon**: 20.468%
+- **Vileplume**: 19.883%
+- **Gallade**: 14.620%
+
+## Featured Teams with Kangaskhan
+
+### Team 1 by scrambledegg6
+*Record: 8-1*
+*Event: limitless-6a387661af50e1230840809c*
+
+**Pokemon**: Pyroar-Mega, Gallade, Farigiraf, Kangaskhan, Torkoal, Mawile-Mega
+
+**Kangaskhan Set**:
+- **Ability**: Scrappy
+- **Item**: Life Orb
+- **Moves**: Fake Out, Double-Edge, Ice Punch, Hammer Arm
+
+### Team 2 by Losandy
+*Record: 7-0*
+*Event: limitless-6a492540063cb29d318e305c*
+
+**Pokemon**: Kangaskhan, Farigiraf, Zoroark-Hisui, Maushold, Staraptor-Mega, Pyroar-Mega
+
+**Kangaskhan Set**:
+- **Ability**: Scrappy
+- **Item**: Silk Scarf
+- **Moves**: Fake Out, Last Resort
+
+### Team 3 by biscuitwarrior482
+*Record: 5-1*
+*Event: limitless-6a3d9003c87cd9ff0a30f576*
+
+**Pokemon**: Froslass-Mega, Glimmora, Araquanid, Grimmsnarl, Blaziken-Mega, Kangaskhan
+
+**Kangaskhan Set**:
+- **Ability**: Scrappy
+- **Item**: Silk Scarf
+- **Moves**: Fake Out, Double-Edge, Sucker Punch, Brick Break
+
+
+## FAQ for Kangaskhan in championstournaments-1760
+
+### What are the top moves for Kangaskhan?
+The most common moves for Kangaskhan are Fake Out, Last Resort, Double-Edge, Sucker Punch. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Kangaskhan?
+Kangaskhan is frequently paired with Farigiraf, Torkoal, Mawile-Mega, Sylveon. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Kangaskhan weak to and resistant against?
+Kangaskhan is weak to Fighting (2x), resists no types, and is immune to Ghost (0x).
+
+### Which Tera Types are best for Kangaskhan?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Kangaskhan?
+No EV spread or nature data available.
+
+### Which Ability and Item should I use on Kangaskhan?
+Kangaskhan is most effectively run with the ability **Scrappy** (96.491%) and the item **Silk Scarf** (65.497%).
+
+### What is the most common role for Kangaskhan?
+Based on common item usage (Silk Scarf), Kangaskhan often functions as a **tactical** in the championstournaments-1760 meta.
+
+### What are the base stats for Kangaskhan?
+| Stat | Value |
+|------|-------|
+| HP | 105 |
+| Attack | 95 |
+| Defense | 80 |
+| Sp. Atk | 40 |
+| Sp. Def | 80 |
+| Speed | 90 |
+| **BST** | **490** |
+
+---
+
+## Additional Resources
+
+- [View Kangaskhan on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Kangaskhan) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/championstournaments) - Build teams with Kangaskhan
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

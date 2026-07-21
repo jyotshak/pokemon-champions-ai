@@ -1,0 +1,140 @@
+# Zoroark-Hisui - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Tournaments
+
+> Find the best Zoroark-Hisui builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Tournaments. Data from Pikalytics.
+
+## Best Zoroark-Hisui Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Tournaments (`championstournaments`) |
+| **Game** | Pokemon Champions |
+| **Category** | championstournaments |
+| **Usage** | 1% |
+| **Win Rate** | 40.935% |
+| **Record** | 214-309-1 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Zoroark-Hisui)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/championstournaments/Zoroark-Hisui
+- **Format Overview**: [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments)
+- **AI Format Index**: [/ai/pokedex/championstournaments](https://www.pikalytics.com/ai/pokedex/championstournaments)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Zoroark-Hisui.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Dark (2x) |
+| **Resists** | Poison (1/2x), Bug (1/2x) |
+| **Immune To** | Normal (0x), Fighting (0x), Ghost (0x) |
+
+## Common Moves
+- **Hyper Voice**: 63.855%
+- **Bitter Malice**: 63.855%
+- **Icy Wind**: 54.217%
+- **Protect**: 44.578%
+- **Shadow Ball**: 40.964%
+- **Psychic**: 14.458%
+- **Flamethrower**: 14.458%
+- **Nasty Plot**: 12.048%
+- **Taunt**: 12.048%
+- **Trick**: 8.434%
+
+## Common Abilities
+- **Illusion**: 98.795%
+
+## Common Items
+- **Focus Sash**: 33.735%
+- **Choice Scarf**: 32.530%
+- **Life Orb**: 19.277%
+- **Quick Claw**: 2.410%
+- **Silk Scarf**: 2.410%
+- **Nothing**: 2.410%
+- **Spell Tag**: 2.410%
+- **Bright Powder**: 2.410%
+- **Expert Belt**: 1.205%
+- **Colbur Berry**: 1.205%
+
+## Common Teammates
+- **Whimsicott**: 32.530%
+- **Incineroar**: 28.916%
+- **Garchomp**: 24.096%
+- **Raichu-Mega-Y**: 21.687%
+- **Sinistcha**: 18.072%
+- **Kingambit**: 15.663%
+
+## Featured Teams with Zoroark-Hisui
+
+### Team 1 by Dominik_KyloRen
+*Record: 6-1*
+*Event: limitless-6a427995c87cd9ff0a312b58*
+
+**Pokemon**: Swampert-Mega, Pelipper, Archaludon, Sableye, Zoroark-Hisui, Raichu-Mega-Y
+
+**Zoroark-Hisui Set**:
+- **Ability**: Illusion
+- **Item**: Choice Scarf
+- **Moves**: Bitter Malice, Hyper Voice, Icy Wind, Trick
+
+### Team 2 by Losandy
+*Record: 7-0*
+*Event: limitless-6a492540063cb29d318e305c*
+
+**Pokemon**: Kangaskhan, Farigiraf, Zoroark-Hisui, Maushold, Staraptor-Mega, Pyroar-Mega
+
+**Zoroark-Hisui Set**:
+- **Ability**: Illusion
+- **Item**: Focus Sash
+- **Moves**: Hyper Voice, Bitter Malice, Icy Wind, Protect
+
+
+## FAQ for Zoroark-Hisui in championstournaments-1760
+
+### What are the top moves for Zoroark-Hisui?
+The most common moves for Zoroark-Hisui are Hyper Voice, Bitter Malice, Icy Wind, Protect. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Zoroark-Hisui?
+Zoroark-Hisui is frequently paired with Whimsicott, Incineroar, Garchomp, Raichu-Mega-Y. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Zoroark-Hisui weak to and resistant against?
+Zoroark-Hisui is weak to Dark (2x), resists Poison (1/2x), Bug (1/2x), and is immune to Normal (0x), Fighting (0x), Ghost (0x).
+
+### Which Tera Types are best for Zoroark-Hisui?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Zoroark-Hisui?
+No EV spread or nature data available.
+
+### Which Ability and Item should I use on Zoroark-Hisui?
+Zoroark-Hisui is most effectively run with the ability **Illusion** (98.795%) and the item **Focus Sash** (33.735%).
+
+### What is the most common role for Zoroark-Hisui?
+Based on common item usage (Focus Sash), Zoroark-Hisui often functions as a **lead or glass-cannon** in the championstournaments-1760 meta.
+
+### What are the base stats for Zoroark-Hisui?
+| Stat | Value |
+|------|-------|
+| HP | 55 |
+| Attack | 100 |
+| Defense | 60 |
+| Sp. Atk | 125 |
+| Sp. Def | 60 |
+| Speed | 110 |
+| **BST** | **510** |
+
+---
+
+## Additional Resources
+
+- [View Zoroark-Hisui on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Zoroark-Hisui) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/championstournaments) - Build teams with Zoroark-Hisui
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

@@ -1,0 +1,48 @@
+Grimmsnarl @ Roseli Berry  
+Ability: Prankster  
+Careful Nature  
+- Parting Shot  
+- Reflect  
+- Foul Play  
+- Fake Out  
+
+Toxapex @ Leftovers  
+Ability: Regenerator  
+Bold Nature  
+- Infestation  
+- Toxic  
+- Recover  
+- Baneful Bunker  
+
+Charizard @ Charizardite Y  
+Ability: Blaze  
+Modest Nature  
+- Heat Wave  
+- Solar Beam  
+- Weather Ball  
+- Protect  
+
+Garchomp @ Sitrus Berry  
+Ability: Rough Skin  
+Adamant Nature  
+- Earthquake  
+- Dragon Claw  
+- Rock Slide  
+- Protect  
+
+Metagross @ Metagrossite  
+Ability: Clear Body  
+Adamant Nature  
+- Iron Head  
+- Hammer Arm  
+- Bullet Punch  
+- Protect  
+
+Kingambit @ Occa Berry  
+Ability: Defiant  
+Adamant Nature  
+- Kowtow Cleave  
+- Iron Head  
+- Sucker Punch  
+- Low Kick  
+

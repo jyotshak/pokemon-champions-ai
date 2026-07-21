@@ -1,0 +1,10190 @@
+{
+ "abomasnow": {
+  "abilities": {
+   "snowwarning": 100.0
+  },
+  "items": {
+   "abomasite": 97.1,
+   "lightclay": 2.9
+  },
+  "moves": {
+   "auroraveil": 22.9,
+   "blizzard": 100.0,
+   "earthpower": 34.3,
+   "energyball": 82.9,
+   "gigadrain": 17.1,
+   "iceshard": 51.4,
+   "lowkick": 2.9,
+   "protect": 88.6
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "incineroar",
+   "kingambit",
+   "staraptor",
+   "camerupt",
+   "milotic"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 40.0,
+   "points": [
+    32,
+    2,
+    0,
+    32,
+    0,
+    0
+   ]
+  },
+  "win_rate": 42.781
+ },
+ "absol": {
+  "abilities": {
+   "superluck": 100.0
+  },
+  "items": {
+   "scopelens": 100.0
+  },
+  "moves": {
+   "closecombat": 100.0,
+   "nightslash": 88.9,
+   "protect": 100.0,
+   "suckerpunch": 100.0,
+   "swordsdance": 11.1
+  },
+  "record": null,
+  "teammates": [
+   "skarmory",
+   "charizard",
+   "milotic",
+   "garchomp",
+   "whimsicott",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 88.9,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 21.875
+ },
+ "aegislash": {
+  "abilities": {
+   "stancechange": 100.0
+  },
+  "items": {
+   "expertbelt": 6.6,
+   "focussash": 18.2,
+   "kasibberry": 4.8,
+   "leftovers": 12.0,
+   "lifeorb": 15.9,
+   "lumberry": 5.6,
+   "metalcoat": 4.3,
+   "occaberry": 2.1,
+   "sitrusberry": 1.7,
+   "spelltag": 25.4
+  },
+  "moves": {
+   "closecombat": 9.5,
+   "flashcannon": 12.4,
+   "ironhead": 56.0,
+   "kingsshield": 80.6,
+   "poltergeist": 82.0,
+   "protect": 4.5,
+   "sacredsword": 28.5,
+   "shadowball": 14.5,
+   "shadowsneak": 72.1,
+   "wideguard": 36.8
+  },
+  "record": [
+   365,
+   415,
+   1
+  ],
+  "teammates": [
+   "staraptor",
+   "garchomp",
+   "whimsicott",
+   "sinistcha",
+   "grimmsnarl",
+   "pelipper"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 11.6,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    0,
+    2
+   ]
+  },
+  "win_rate": 46.799
+ },
+ "aerodactyl": {
+  "abilities": {
+   "pressure": 2.2,
+   "rockhead": 2.1,
+   "unnerve": 95.7
+  },
+  "items": {
+   "aerodactylite": 61.2,
+   "focussash": 34.7,
+   "lifeorb": 0.6,
+   "lumberry": 0.3,
+   "mentalherb": 0.2,
+   "nevermeltice": 0.2,
+   "passhoberry": 1.3,
+   "quickclaw": 0.2,
+   "sitrusberry": 0.3,
+   "widelens": 0.5
+  },
+  "moves": {
+   "dualwingbeat": 86.9,
+   "earthquake": 0.7,
+   "icefang": 26.0,
+   "protect": 56.8,
+   "raindance": 0.5,
+   "rockslide": 99.9,
+   "sunnyday": 0.8,
+   "tailwind": 92.7,
+   "taunt": 1.0,
+   "wideguard": 33.6
+  },
+  "record": [
+   4765,
+   4751,
+   6
+  ],
+  "teammates": [
+   "garchomp",
+   "kingambit",
+   "sylveon",
+   "charizard",
+   "basculegion",
+   "farigiraf"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 39.5,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 50.074
+ },
+ "aggron": {
+  "abilities": {
+   "heavymetal": 17.1,
+   "rockhead": 1.4,
+   "sturdy": 81.4
+  },
+  "items": {
+   "aggronite": 98.6,
+   "sitrusberry": 1.4
+  },
+  "moves": {
+   "bodypress": 100.0,
+   "crunch": 1.4,
+   "curse": 10.0,
+   "headsmash": 1.4,
+   "heavyslam": 98.6,
+   "irondefense": 72.9,
+   "ironhead": 1.4,
+   "protect": 97.1,
+   "shadowclaw": 17.1
+  },
+  "record": null,
+  "teammates": [
+   "pelipper",
+   "incineroar",
+   "basculegion",
+   "sinistcha",
+   "swampert",
+   "milotic"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    22,
+    0,
+    10,
+    0,
+    32,
+    2
+   ]
+  },
+  "win_rate": 36.406
+ },
+ "alakazam": {
+  "abilities": {
+   "innerfocus": 100.0
+  },
+  "items": {
+   "alakazite": 25.0,
+   "choicescarf": 43.8,
+   "focussash": 31.3
+  },
+  "moves": {
+   "allyswitch": 25.0,
+   "encore": 25.0,
+   "energyball": 18.8,
+   "expandingforce": 25.0,
+   "protect": 25.0,
+   "psychic": 56.3,
+   "shadowball": 62.5,
+   "skillswap": 31.3,
+   "speedswap": 43.8,
+   "trick": 31.3
+  },
+  "record": null,
+  "teammates": [
+   "swampert",
+   "pelipper",
+   "basculegion",
+   "sneasler",
+   "kingambit",
+   "sinistcha"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 75.0,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 34.247
+ },
+ "alcremie": {
+  "abilities": {
+   "aromaveil": 94.6,
+   "sweetveil": 5.4
+  },
+  "items": {
+   "brightpowder": 5.4,
+   "choicescarf": 59.5,
+   "sitrusberry": 35.1
+  },
+  "moves": {
+   "charm": 5.4,
+   "dazzlinggleam": 94.6,
+   "decorate": 100.0,
+   "encore": 13.5,
+   "energyball": 45.9,
+   "helpinghand": 18.9,
+   "mistyexplosion": 13.5,
+   "mistyterrain": 10.8,
+   "protect": 32.4,
+   "psychic": 51.4
+  },
+  "record": null,
+  "teammates": [
+   "mawile",
+   "sinistcha",
+   "sharpedo",
+   "lopunny",
+   "farigiraf",
+   "whimsicott"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 43.2,
+   "points": [
+    2,
+    0,
+    32,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 45.455
+ },
+ "altaria": {
+  "abilities": {
+   "cloudnine": 100.0
+  },
+  "items": {
+   "altarianite": 69.8,
+   "brightpowder": 1.6,
+   "leftovers": 1.6,
+   "sitrusberry": 27.0
+  },
+  "moves": {
+   "breakingswipe": 17.5,
+   "defog": 19.0,
+   "dracometeor": 14.3,
+   "helpinghand": 19.0,
+   "hurricane": 23.8,
+   "hypervoice": 69.8,
+   "protect": 54.0,
+   "roost": 30.2,
+   "tailwind": 88.9,
+   "willowisp": 41.3
+  },
+  "record": null,
+  "teammates": [
+   "archaludon",
+   "pelipper",
+   "sneasler",
+   "gyarados",
+   "garchomp",
+   "vanilluxe"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 28.6,
+   "points": [
+    32,
+    0,
+    0,
+    30,
+    0,
+    4
+   ]
+  },
+  "win_rate": 43.612
+ },
+ "ampharos": {
+  "abilities": {
+   "static": 100.0
+  },
+  "items": {
+   "ampharosite": 98.6,
+   "leftovers": 1.4
+  },
+  "moves": {
+   "charge": 2.9,
+   "cottonguard": 79.7,
+   "dragonpulse": 100.0,
+   "paraboliccharge": 2.9,
+   "protect": 97.1,
+   "risingvoltage": 1.4,
+   "thunderbolt": 97.1,
+   "voltswitch": 18.8
+  },
+  "record": [
+   86,
+   125,
+   1
+  ],
+  "teammates": [
+   "farigiraf",
+   "torkoal",
+   "armarouge",
+   "dragonite",
+   "swampert",
+   "sableye"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 31.9,
+   "points": [
+    32,
+    0,
+    0,
+    32,
+    2,
+    0
+   ]
+  },
+  "win_rate": 40.802
+ },
+ "annihilape": {
+  "abilities": {
+   "defiant": 99.3,
+   "innerfocus": 0.5,
+   "vitalspirit": 0.2
+  },
+  "items": {
+   "choicescarf": 11.4,
+   "focussash": 6.0,
+   "kasibberry": 2.6,
+   "leftovers": 50.7,
+   "lifeorb": 2.3,
+   "lumberry": 2.4,
+   "muscleband": 1.4,
+   "roseliberry": 3.2,
+   "sitrusberry": 17.5,
+   "spelltag": 0.8
+  },
+  "moves": {
+   "bulkup": 69.6,
+   "closecombat": 23.9,
+   "coaching": 13.0,
+   "drainpunch": 77.7,
+   "protect": 78.5,
+   "ragefist": 93.2,
+   "rockslide": 7.0,
+   "shadowclaw": 4.4,
+   "taunt": 7.9,
+   "uturn": 5.9
+  },
+  "record": [
+   721,
+   918,
+   1
+  ],
+  "teammates": [
+   "sinistcha",
+   "maushold",
+   "metagross",
+   "incineroar",
+   "grimmsnarl",
+   "whimsicott"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 12.8,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 43.994
+ },
+ "appletun": {
+  "abilities": {
+   "thickfat": 100.0
+  },
+  "items": {
+   "leftovers": 50.0,
+   "sitrusberry": 50.0
+  },
+  "moves": {
+   "appleacid": 100.0,
+   "dracometeor": 50.0,
+   "dragonpulse": 50.0,
+   "growth": 50.0,
+   "protect": 50.0,
+   "sunnyday": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "torkoal",
+   "blastoise",
+   "slowkinggalar",
+   "tyranitar",
+   "torterra",
+   "aurorus"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    27,
+    0,
+    4,
+    30,
+    5,
+    0
+   ]
+  },
+  "win_rate": 55.844
+ },
+ "araquanid": {
+  "abilities": {
+   "waterbubble": 100.0
+  },
+  "items": {
+   "leftovers": 7.3,
+   "lifeorb": 8.0,
+   "mysticwater": 64.0,
+   "sitrusberry": 14.7,
+   "whiteherb": 6.0
+  },
+  "moves": {
+   "entrainment": 18.0,
+   "icywind": 14.0,
+   "infestation": 13.3,
+   "leechlife": 29.3,
+   "liquidation": 93.3,
+   "lunge": 18.7,
+   "protect": 62.7,
+   "reflect": 8.0,
+   "skittersmack": 10.0,
+   "wideguard": 86.7
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "mawile",
+   "kingambit",
+   "sinistcha",
+   "archaludon",
+   "swampert"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 26.0,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 45.289
+ },
+ "arbok": {
+  "abilities": {
+   "intimidate": 100.0
+  },
+  "items": {
+   "leftovers": 55.6
+  },
+  "moves": {
+   "acidspray": 44.4,
+   "earthquake": 44.4,
+   "glare": 55.6,
+   "poisonfang": 55.6,
+   "poisonjab": 44.4,
+   "protect": 55.6,
+   "thunderfang": 44.4,
+   "toxicspikes": 55.6
+  },
+  "record": null,
+  "teammates": [
+   "slowbro",
+   "kommoo",
+   "sneasler",
+   "kingambit",
+   "sinistcha",
+   "venusaur"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 55.6,
+   "points": [
+    32,
+    0,
+    2,
+    0,
+    32,
+    0
+   ]
+  },
+  "win_rate": 20.0
+ },
+ "arcanine": {
+  "abilities": {
+   "flashfire": 10.8,
+   "intimidate": 89.2
+  },
+  "items": {
+   "charcoal": 36.7,
+   "choicescarf": 3.3,
+   "focussash": 0.8,
+   "leftovers": 0.8,
+   "lifeorb": 0.8,
+   "lumberry": 0.8,
+   "sitrusberry": 46.7,
+   "whiteherb": 1.7,
+   "widelens": 5.8
+  },
+  "moves": {
+   "closecombat": 4.2,
+   "extremespeed": 20.8,
+   "flareblitz": 60.0,
+   "heatwave": 36.7,
+   "helpinghand": 14.2,
+   "protect": 92.5,
+   "psychicfangs": 19.2,
+   "snarl": 53.3,
+   "wildcharge": 5.0,
+   "willowisp": 85.8
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "sneasler",
+   "gardevoir",
+   "staraptor",
+   "samurotthisui",
+   "talonflame"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 35.8,
+   "points": [
+    31,
+    0,
+    12,
+    7,
+    13,
+    3
+   ]
+  },
+  "win_rate": 35.714
+ },
+ "arcaninehisui": {
+  "abilities": {
+   "intimidate": 27.5,
+   "rockhead": 72.5
+  },
+  "items": {
+   "charcoal": 3.3,
+   "choicescarf": 16.1,
+   "chopleberry": 5.2,
+   "focussash": 56.0,
+   "lifeorb": 7.8,
+   "lumberry": 0.4,
+   "shucaberry": 1.9,
+   "sitrusberry": 7.1,
+   "whiteherb": 2.3
+  },
+  "moves": {
+   "closecombat": 6.5,
+   "extremespeed": 81.3,
+   "flareblitz": 99.2,
+   "headsmash": 62.5,
+   "protect": 79.3,
+   "psychicfangs": 3.3,
+   "rockslide": 45.9,
+   "snarl": 2.7,
+   "wildcharge": 6.7,
+   "willowisp": 5.4
+  },
+  "record": [
+   673,
+   615,
+   1
+  ],
+  "teammates": [
+   "whimsicott",
+   "sinistcha",
+   "garchomp",
+   "metagross",
+   "staraptor",
+   "froslass"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 54.9,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 52.25
+ },
+ "archaludon": {
+  "abilities": {
+   "stalwart": 1.3,
+   "stamina": 93.4,
+   "sturdy": 5.3
+  },
+  "items": {
+   "choicescarf": 2.4,
+   "chopleberry": 1.8,
+   "dragonfang": 0.3,
+   "leftovers": 88.6,
+   "lifeorb": 1.4,
+   "magnet": 0.4,
+   "scopelens": 0.3,
+   "sitrusberry": 1.7,
+   "whiteherb": 2.0,
+   "wiseglasses": 0.3
+  },
+  "moves": {
+   "aurasphere": 12.7,
+   "dracometeor": 21.2,
+   "dragonpulse": 73.5,
+   "electroshot": 96.7,
+   "flashcannon": 95.2,
+   "protect": 94.3,
+   "snarl": 2.4,
+   "steelbeam": 0.3,
+   "substitute": 0.3,
+   "thunderbolt": 2.3
+  },
+  "record": [
+   5919,
+   5733,
+   7
+  ],
+  "teammates": [
+   "pelipper",
+   "swampert",
+   "sinistcha",
+   "basculegion",
+   "sableye",
+   "grimmsnarl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 8.2,
+   "points": [
+    32,
+    0,
+    1,
+    5,
+    25,
+    3
+   ]
+  },
+  "win_rate": 50.798
+ },
+ "ariados": {
+  "abilities": {
+   "insomnia": 100.0
+  },
+  "items": {
+   "leftovers": 1.8,
+   "sitrusberry": 98.2
+  },
+  "moves": {
+   "knockoff": 96.5,
+   "protect": 100.0,
+   "ragepowder": 100.0,
+   "stringshot": 96.5,
+   "strugglebug": 3.5,
+   "toxicthread": 3.5
+  },
+  "record": null,
+  "teammates": [
+   "basculegion",
+   "garchomp",
+   "charizard",
+   "aerodactyl",
+   "sylveon",
+   "snorlax"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 96.5,
+   "points": [
+    31,
+    0,
+    20,
+    0,
+    15,
+    0
+   ]
+  },
+  "win_rate": 46.154
+ },
+ "armarouge": {
+  "abilities": {
+   "flashfire": 94.1,
+   "weakarmor": 5.9
+  },
+  "items": {
+   "colburberry": 8.6,
+   "focussash": 15.6,
+   "ironball": 12.9,
+   "leftovers": 4.3,
+   "lifeorb": 3.8,
+   "shucaberry": 4.8,
+   "sitrusberry": 31.2,
+   "twistedspoon": 2.7,
+   "whiteherb": 8.1,
+   "wiseglasses": 5.9
+  },
+  "moves": {
+   "armorcannon": 43.0,
+   "aurasphere": 21.0,
+   "destinybond": 10.8,
+   "expandingforce": 20.4,
+   "flamethrower": 10.8,
+   "heatwave": 51.1,
+   "protect": 45.7,
+   "psychic": 61.3,
+   "trickroom": 53.2,
+   "wideguard": 42.5
+  },
+  "record": null,
+  "teammates": [
+   "raichu",
+   "torkoal",
+   "vileplume",
+   "meowscarada",
+   "heliolisk",
+   "blastoise"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 33.3,
+   "points": [
+    17,
+    0,
+    26,
+    5,
+    18,
+    0
+   ]
+  },
+  "win_rate": 46.154
+ },
+ "aromatisse": {
+  "abilities": {
+   "aromaveil": 100.0
+  },
+  "items": {
+   "lightclay": 85.7,
+   "sitrusberry": 14.3
+  },
+  "moves": {
+   "allyswitch": 14.3,
+   "encore": 14.3,
+   "healpulse": 85.7,
+   "lightscreen": 85.7,
+   "moonblast": 100.0,
+   "reflect": 85.7,
+   "trickroom": 14.3
+  },
+  "record": null,
+  "teammates": [
+   "raichu",
+   "pelipper",
+   "basculegion",
+   "sinistcha",
+   "archaludon",
+   "aggron"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 85.7,
+   "points": [
+    23,
+    0,
+    32,
+    9,
+    2,
+    0
+   ]
+  },
+  "win_rate": 44.615
+ },
+ "audino": {
+  "abilities": {
+   "healer": 62.5,
+   "regenerator": 37.5
+  },
+  "items": {
+   "audinite": 37.5,
+   "leftovers": 4.2,
+   "mentalherb": 58.3
+  },
+  "moves": {
+   "allyswitch": 8.3,
+   "dazzlinggleam": 25.0,
+   "healingwish": 58.3,
+   "helpinghand": 8.3,
+   "lifedew": 87.5,
+   "lightscreen": 16.7,
+   "reflect": 16.7,
+   "simplebeam": 66.7,
+   "trickroom": 79.2,
+   "yawn": 8.3
+  },
+  "record": null,
+  "teammates": [
+   "blastoise",
+   "slowbro",
+   "zoroarkhisui",
+   "corviknight",
+   "farigiraf",
+   "swampert"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 58.3,
+   "points": [
+    32,
+    0,
+    17,
+    0,
+    17,
+    0
+   ]
+  },
+  "win_rate": 34.043
+ },
+ "aurorus": {
+  "abilities": {
+   "refrigerate": 8.6,
+   "snowwarning": 91.4
+  },
+  "items": {
+   "chopleberry": 2.9,
+   "focussash": 40.0,
+   "lifeorb": 5.7,
+   "nevermeltice": 5.7,
+   "sitrusberry": 45.7
+  },
+  "moves": {
+   "ancientpower": 85.7,
+   "auroraveil": 8.6,
+   "blizzard": 91.4,
+   "earthpower": 11.4,
+   "encore": 5.7,
+   "flashcannon": 2.9,
+   "freezedry": 88.6,
+   "hypervoice": 5.7,
+   "protect": 51.4,
+   "substitute": 42.9
+  },
+  "record": null,
+  "teammates": [
+   "sylveon",
+   "farigiraf",
+   "kingambit",
+   "blastoise",
+   "gengar",
+   "gallade"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 45.7,
+   "points": [
+    8,
+    0,
+    8,
+    32,
+    18,
+    0
+   ]
+  },
+  "win_rate": 40.0
+ },
+ "avalugg": {
+  "abilities": {
+   "sturdy": 100.0
+  },
+  "items": {
+   "leftovers": 100.0
+  },
+  "moves": {
+   "bodypress": 100.0,
+   "icespinner": 100.0,
+   "recover": 100.0,
+   "wideguard": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "blastoise",
+   "slowkinggalar",
+   "torkoal",
+   "torterra",
+   "appletun"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    32,
+    0,
+    6,
+    0,
+    28,
+    0
+   ]
+  },
+  "win_rate": 16.667
+ },
+ "avalugghisui": {
+  "abilities": {
+   "sturdy": 100.0
+  },
+  "items": {
+   "hardstone": 6.3,
+   "leftovers": 93.8
+  },
+  "moves": {
+   "bodypress": 100.0,
+   "icefang": 6.3,
+   "icespinner": 6.3,
+   "mountaingale": 93.8,
+   "protect": 6.3,
+   "rockblast": 6.3,
+   "rockslide": 93.8,
+   "wideguard": 87.5
+  },
+  "record": null,
+  "teammates": [
+   "gallade",
+   "dragonite",
+   "camerupt",
+   "hatterene",
+   "farigiraf",
+   "sneasler"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 93.8,
+   "points": [
+    2,
+    32,
+    32,
+    0,
+    0,
+    0
+   ]
+  },
+  "win_rate": 0.0
+ },
+ "azumarill": {
+  "abilities": {
+   "hugepower": 83.3,
+   "sapsipper": 16.7
+  },
+  "items": {
+   "leftovers": 8.0,
+   "lifeorb": 1.9,
+   "muscleband": 4.9,
+   "mysticwater": 9.3,
+   "nevermeltice": 3.1,
+   "quickclaw": 1.2,
+   "sitrusberry": 71.6
+  },
+  "moves": {
+   "aquajet": 96.9,
+   "bellydrum": 50.6,
+   "icepunch": 3.1,
+   "knockoff": 3.7,
+   "liquidation": 27.8,
+   "perishsong": 16.7,
+   "playrough": 100.0,
+   "protect": 80.9,
+   "superpower": 8.0,
+   "trailblaze": 7.4
+  },
+  "record": [
+   237,
+   304,
+   1
+  ],
+  "teammates": [
+   "sinistcha",
+   "raichu",
+   "farigiraf",
+   "incineroar",
+   "sableye",
+   "sylveon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 22.8,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 43.819
+ },
+ "banette": {
+  "abilities": {
+   "frisk": 100.0
+  },
+  "items": {
+   "banettite": 100.0
+  },
+  "moves": {
+   "destinybond": 62.9,
+   "disable": 48.6,
+   "encore": 37.1,
+   "poltergeist": 62.9,
+   "raindance": 51.4,
+   "scaryface": 2.9,
+   "shadowclaw": 2.9,
+   "shadowsneak": 34.3,
+   "willowisp": 97.1
+  },
+  "record": null,
+  "teammates": [
+   "archaludon",
+   "basculegion",
+   "sneasler",
+   "raichu",
+   "staraptor",
+   "pelipper"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 48.6,
+   "points": [
+    32,
+    27,
+    0,
+    0,
+    7,
+    0
+   ]
+  },
+  "win_rate": 26.667
+ },
+ "barbaracle": {
+  "abilities": {
+   "toughclaws": 100.0
+  },
+  "items": {
+   "barbaracite": 96.6,
+   "choicescarf": 3.4
+  },
+  "moves": {
+   "brutalswing": 15.3,
+   "closecombat": 76.3,
+   "liquidation": 32.2,
+   "poisonjab": 6.8,
+   "protect": 81.4,
+   "rockslide": 98.3,
+   "shellsmash": 88.1,
+   "waterfall": 1.7
+  },
+  "record": null,
+  "teammates": [
+   "kingambit",
+   "basculegion",
+   "sinistcha",
+   "incineroar",
+   "sneasler",
+   "maushold"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 18.6,
+   "points": [
+    1,
+    32,
+    1,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 45.588
+ },
+ "basculegion": {
+  "abilities": {
+   "adaptability": 93.2,
+   "moldbreaker": 0.0,
+   "swiftswim": 6.8
+  },
+  "items": {
+   "choicescarf": 44.7,
+   "colburberry": 0.6,
+   "focussash": 17.6,
+   "ironball": 0.1,
+   "kasibberry": 0.3,
+   "lifeorb": 11.8,
+   "muscleband": 0.2,
+   "mysticwater": 19.6,
+   "sitrusberry": 4.7,
+   "spelltag": 0.3
+  },
+  "moves": {
+   "aquajet": 94.9,
+   "flipturn": 43.1,
+   "headsmash": 0.6,
+   "lastrespects": 100.0,
+   "liquidation": 17.0,
+   "protect": 53.8,
+   "psychicfangs": 4.7,
+   "soak": 0.6,
+   "waterfall": 0.6,
+   "wavecrash": 82.3
+  },
+  "record": [
+   13083,
+   11807,
+   21
+  ],
+  "teammates": [
+   "garchomp",
+   "whimsicott",
+   "kingambit",
+   "charizard",
+   "staraptor",
+   "floetteeternal"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 33.3,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 52.561
+ },
+ "basculegionf": {
+  "abilities": {
+   "adaptability": 75.2,
+   "swiftswim": 24.8
+  },
+  "items": {
+   "choicescarf": 32.9,
+   "focussash": 15.5,
+   "leftovers": 2.3,
+   "lifeorb": 21.7,
+   "mysticwater": 25.6,
+   "wacanberry": 1.9
+  },
+  "moves": {
+   "aquajet": 41.9,
+   "flipturn": 14.3,
+   "hex": 8.5,
+   "icebeam": 33.7,
+   "icywind": 22.9,
+   "lastrespects": 27.9,
+   "muddywater": 74.4,
+   "protect": 68.6,
+   "shadowball": 72.1,
+   "wavecrash": 12.4
+  },
+  "record": null,
+  "teammates": [
+   "whimsicott",
+   "raichu",
+   "pelipper",
+   "incineroar",
+   "kingambit",
+   "sylveon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 16.7,
+   "points": [
+    2,
+    0,
+    16,
+    26,
+    3,
+    19
+   ]
+  },
+  "win_rate": 36.986
+ },
+ "bastiodon": {
+  "abilities": {
+   "soundproof": 90.5,
+   "sturdy": 9.5
+  },
+  "items": {
+   "brightpowder": 9.5,
+   "sitrusberry": 90.5
+  },
+  "moves": {
+   "bodypress": 90.5,
+   "fissure": 9.5,
+   "guardsplit": 9.5,
+   "irondefense": 90.5,
+   "sandstorm": 90.5,
+   "taunt": 9.5,
+   "wideguard": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "staraptor",
+   "vivillon",
+   "basculegion",
+   "espathra",
+   "kingambit",
+   "snorlax"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 90.5,
+   "points": [
+    32,
+    0,
+    2,
+    0,
+    32,
+    0
+   ]
+  },
+  "win_rate": 8.333
+ },
+ "beartic": {
+  "abilities": {
+   "swiftswim": 100.0
+  },
+  "items": {
+   "whiteherb": 100.0
+  },
+  "moves": {
+   "closecombat": 100.0,
+   "iciclecrash": 100.0,
+   "protect": 100.0,
+   "rockslide": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "politoed",
+   "swampert",
+   "pelipper",
+   "basculegion",
+   "archaludon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 45.455
+ },
+ "beedrill": {
+  "abilities": {
+   "swarm": 100.0
+  },
+  "items": {
+   "beedrillite": 100.0
+  },
+  "moves": {
+   "drillrun": 50.0,
+   "dualwingbeat": 50.0,
+   "poisonjab": 100.0,
+   "protect": 100.0,
+   "uturn": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "raichu",
+   "politoed",
+   "milotic",
+   "heliolisk",
+   "incineroar",
+   "kommoo"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    2,
+    16,
+    23,
+    0,
+    0,
+    25
+   ]
+  },
+  "win_rate": 40.217
+ },
+ "bellibolt": {
+  "abilities": {
+   "electromorphosis": 100.0
+  },
+  "items": {
+   "bigroot": 6.5,
+   "brightpowder": 2.6,
+   "leftovers": 15.6,
+   "magnet": 45.5,
+   "quickclaw": 3.9,
+   "shucaberry": 11.7,
+   "sitrusberry": 14.3
+  },
+  "moves": {
+   "acidspray": 11.7,
+   "charge": 11.7,
+   "chillingwater": 7.8,
+   "paraboliccharge": 96.1,
+   "protect": 79.2,
+   "slackoff": 31.2,
+   "soak": 39.0,
+   "thunderbolt": 71.4,
+   "voltswitch": 15.6,
+   "weatherball": 11.7
+  },
+  "record": null,
+  "teammates": [
+   "scrafty",
+   "sinistcha",
+   "farigiraf",
+   "camerupt",
+   "metagross",
+   "staraptor"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 27.3,
+   "points": [
+    8,
+    0,
+    32,
+    26,
+    0,
+    0
+   ]
+  },
+  "win_rate": 37.768
+ },
+ "blastoise": {
+  "abilities": {
+   "raindish": 71.6,
+   "torrent": 28.4
+  },
+  "items": {
+   "blastoisinite": 96.2,
+   "leftovers": 1.0,
+   "mysticwater": 2.4,
+   "sitrusberry": 0.1,
+   "whiteherb": 0.3
+  },
+  "moves": {
+   "aurasphere": 60.0,
+   "darkpulse": 83.4,
+   "dragonpulse": 3.4,
+   "fakeout": 57.6,
+   "icebeam": 9.4,
+   "muddywater": 3.1,
+   "protect": 33.6,
+   "shellsmash": 46.8,
+   "waterpulse": 5.0,
+   "waterspout": 93.4
+  },
+  "record": [
+   1211,
+   1060,
+   2
+  ],
+  "teammates": [
+   "farigiraf",
+   "basculegion",
+   "torkoal",
+   "sinistcha",
+   "sylveon",
+   "vivillon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 21.4,
+   "points": [
+    32,
+    0,
+    2,
+    32,
+    0,
+    0
+   ]
+  },
+  "win_rate": 53.322
+ },
+ "blaziken": {
+  "abilities": {
+   "blaze": 3.1,
+   "speedboost": 96.9
+  },
+  "items": {
+   "blazikenite": 61.2,
+   "focussash": 22.9,
+   "lifeorb": 7.6,
+   "lumberry": 0.2,
+   "mentalherb": 0.3,
+   "muscleband": 4.5,
+   "scopelens": 1.0,
+   "sitrusberry": 0.7,
+   "whiteherb": 0.5,
+   "widelens": 1.2
+  },
+  "moves": {
+   "aurasphere": 16.2,
+   "blazekick": 7.7,
+   "closecombat": 72.5,
+   "coaching": 24.7,
+   "detect": 48.6,
+   "flareblitz": 69.8,
+   "heatwave": 13.9,
+   "protect": 50.7,
+   "rockslide": 27.0,
+   "swordsdance": 15.5
+  },
+  "record": [
+   1038,
+   1020,
+   1
+  ],
+  "teammates": [
+   "kingambit",
+   "basculegion",
+   "sinistcha",
+   "whimsicott",
+   "metagross",
+   "garchomp"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 39.3,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 50.437
+ },
+ "camerupt": {
+  "abilities": {
+   "angerpoint": 1.1,
+   "magmaarmor": 2.3,
+   "solidrock": 96.6
+  },
+  "items": {
+   "cameruptite": 97.5,
+   "choicescarf": 2.3,
+   "wiseglasses": 0.2
+  },
+  "moves": {
+   "ancientpower": 66.0,
+   "earthpower": 99.1,
+   "eruption": 65.1,
+   "flamethrower": 5.4,
+   "flareblitz": 0.9,
+   "flashcannon": 2.5,
+   "heatwave": 68.0,
+   "protect": 86.8,
+   "rockslide": 2.9,
+   "stompingtantrum": 0.9
+  },
+  "record": [
+   323,
+   363,
+   5
+  ],
+  "teammates": [
+   "farigiraf",
+   "kingambit",
+   "sylveon",
+   "sinistcha",
+   "incineroar",
+   "blastoise"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 49.0,
+   "points": [
+    32,
+    0,
+    2,
+    32,
+    0,
+    0
+   ]
+  },
+  "win_rate": 47.106
+ },
+ "castform": {
+  "abilities": {
+   "forecast": 100.0
+  },
+  "items": {
+   "lifeorb": 100.0
+  },
+  "moves": {
+   "icebeam": 100.0,
+   "protect": 100.0,
+   "thunder": 100.0,
+   "weatherball": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "slowkinggalar",
+   "pelipper",
+   "spiritomb",
+   "basculegion",
+   "archaludon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    32,
+    0,
+    0,
+    32,
+    2,
+    0
+   ]
+  },
+  "win_rate": null
+ },
+ "ceruledge": {
+  "abilities": {
+   "flashfire": 89.5,
+   "weakarmor": 10.5
+  },
+  "items": {
+   "bigroot": 1.5,
+   "charcoal": 11.1,
+   "colburberry": 32.4,
+   "focussash": 22.6,
+   "leftovers": 16.4,
+   "lifeorb": 3.8,
+   "lumberry": 0.5,
+   "mentalherb": 2.3,
+   "shucaberry": 1.6,
+   "sitrusberry": 7.2
+  },
+  "moves": {
+   "allyswitch": 0.3,
+   "bitterblade": 100.0,
+   "bulkup": 62.0,
+   "closecombat": 1.3,
+   "poltergeist": 20.0,
+   "protect": 92.0,
+   "psychup": 1.6,
+   "shadowsneak": 89.4,
+   "swordsdance": 31.9,
+   "taunt": 0.8
+  },
+  "record": [
+   1043,
+   937,
+   1
+  ],
+  "teammates": [
+   "sinistcha",
+   "raichu",
+   "staraptor",
+   "kingambit",
+   "incineroar",
+   "garchomp"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 16.4,
+   "points": [
+    31,
+    1,
+    26,
+    0,
+    0,
+    8
+   ]
+  },
+  "win_rate": 52.675
+ },
+ "chandelure": {
+  "abilities": {
+   "flamebody": 2.1,
+   "flashfire": 96.6,
+   "infiltrator": 1.4
+  },
+  "items": {
+   "brightpowder": 0.7,
+   "chandelurite": 43.8,
+   "charcoal": 18.5,
+   "choicescarf": 0.7,
+   "colburberry": 1.4,
+   "focussash": 19.2,
+   "lifeorb": 11.0,
+   "quickclaw": 4.1
+  },
+  "moves": {
+   "calmmind": 14.4,
+   "energyball": 14.4,
+   "fireblast": 4.1,
+   "flamethrower": 4.1,
+   "heatwave": 91.8,
+   "imprison": 7.5,
+   "overheat": 5.5,
+   "protect": 89.7,
+   "shadowball": 95.2,
+   "trickroom": 64.4
+  },
+  "record": [
+   180,
+   229,
+   3
+  ],
+  "teammates": [
+   "sinistcha",
+   "farigiraf",
+   "whimsicott",
+   "garchomp",
+   "staraptor",
+   "mawile"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 27.4,
+   "points": [
+    32,
+    0,
+    2,
+    32,
+    0,
+    0
+   ]
+  },
+  "win_rate": 44.053
+ },
+ "charizard": {
+  "abilities": {
+   "blaze": 80.5,
+   "solarpower": 19.5
+  },
+  "items": {
+   "charcoal": 0.0,
+   "charizarditex": 3.9,
+   "charizarditey": 95.4,
+   "choicescarf": 0.0,
+   "focussash": 0.2,
+   "lifeorb": 0.1
+  },
+  "moves": {
+   "airslash": 6.0,
+   "ancientpower": 2.8,
+   "dragonclaw": 3.2,
+   "dragondance": 4.2,
+   "flareblitz": 3.4,
+   "heatwave": 95.4,
+   "overheat": 2.2,
+   "protect": 98.4,
+   "solarbeam": 92.2,
+   "weatherball": 83.9
+  },
+  "record": [
+   10085,
+   8982,
+   19
+  ],
+  "teammates": [
+   "garchomp",
+   "whimsicott",
+   "basculegion",
+   "kingambit",
+   "sylveon",
+   "floetteeternal"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 20.9,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 52.89
+ },
+ "chesnaught": {
+  "abilities": {
+   "bulletproof": 100.0
+  },
+  "items": {
+   "chesnaughtite": 40.5,
+   "leftovers": 59.5
+  },
+  "moves": {
+   "bodypress": 92.9,
+   "drainpunch": 7.1,
+   "irondefense": 64.3,
+   "ironhead": 7.1,
+   "leechseed": 59.5,
+   "spikyshield": 97.6,
+   "wideguard": 54.8,
+   "woodhammer": 16.7
+  },
+  "record": null,
+  "teammates": [
+   "maushold",
+   "sinistcha",
+   "swampert",
+   "pelipper",
+   "grimmsnarl",
+   "archaludon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 31.0,
+   "points": [
+    32,
+    0,
+    8,
+    0,
+    26,
+    0
+   ]
+  },
+  "win_rate": 48.667
+ },
+ "chimecho": {
+  "abilities": {
+   "levitate": 100.0
+  },
+  "items": {
+   "chimechite": 100.0
+  },
+  "moves": {
+   "calmmind": 31.4,
+   "faketears": 37.1,
+   "flashcannon": 62.9,
+   "protect": 62.9,
+   "psychic": 80.0,
+   "psychicnoise": 20.0,
+   "recover": 37.1,
+   "trickroom": 68.6
+  },
+  "record": null,
+  "teammates": [
+   "tyranitar",
+   "rotomwash",
+   "excadrill",
+   "vanilluxe",
+   "mimikyu",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 42.9,
+   "points": [
+    2,
+    0,
+    32,
+    32,
+    0,
+    0
+   ]
+  },
+  "win_rate": 36.486
+ },
+ "clawitzer": {
+  "abilities": {
+   "megalauncher": 100.0
+  },
+  "items": {
+   "choicescarf": 2.7,
+   "lifeorb": 62.2,
+   "wiseglasses": 35.1
+  },
+  "moves": {
+   "aurasphere": 100.0,
+   "darkpulse": 97.3,
+   "dragonpulse": 8.1,
+   "healpulse": 35.1,
+   "muddywater": 16.2,
+   "protect": 54.1,
+   "sludgebomb": 2.7,
+   "venoshock": 2.7,
+   "waterpulse": 83.8
+  },
+  "record": null,
+  "teammates": [
+   "raichu",
+   "mawile",
+   "metagross",
+   "goodra",
+   "armarouge",
+   "hydrapple"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 35.1,
+   "points": [
+    32,
+    0,
+    12,
+    0,
+    20,
+    2
+   ]
+  },
+  "win_rate": 44.03
+ },
+ "clefable": {
+  "abilities": {
+   "magicguard": 7.1,
+   "unaware": 92.9
+  },
+  "items": {
+   "babiriberry": 4.7,
+   "clefablite": 20.6,
+   "fairyfeather": 8.8,
+   "kebiaberry": 2.7,
+   "leftovers": 21.6,
+   "lifeorb": 0.7,
+   "lumberry": 3.9,
+   "mentalherb": 1.2,
+   "shellbell": 1.2,
+   "sitrusberry": 33.7
+  },
+  "moves": {
+   "calmmind": 9.3,
+   "dazzlinggleam": 7.9,
+   "followme": 92.1,
+   "helpinghand": 29.5,
+   "icebeam": 9.3,
+   "icywind": 9.6,
+   "lifedew": 22.4,
+   "moonblast": 94.3,
+   "moonlight": 7.1,
+   "protect": 74.2
+  },
+  "record": null,
+  "teammates": [
+   "pelipper",
+   "swampert",
+   "archaludon",
+   "garchomp",
+   "staraptor",
+   "torkoal"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 20.1,
+   "points": [
+    32,
+    0,
+    32,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 42.531
+ },
+ "cofagrigus": {
+  "abilities": {
+   "mummy": 100.0
+  },
+  "items": {
+   "colburberry": 73.9,
+   "leftovers": 4.3,
+   "mentalherb": 21.7
+  },
+  "moves": {
+   "allyswitch": 4.3,
+   "bodypress": 82.6,
+   "haze": 65.2,
+   "hex": 4.3,
+   "nightshade": 8.7,
+   "protect": 4.3,
+   "shadowball": 87.0,
+   "trickroom": 100.0,
+   "willowisp": 43.5
+  },
+  "record": null,
+  "teammates": [
+   "pelipper",
+   "incineroar",
+   "meganium",
+   "swampert",
+   "gholdengo",
+   "glimmora"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 91.3,
+   "points": [
+    32,
+    0,
+    9,
+    0,
+    25,
+    0
+   ]
+  },
+  "win_rate": 28.09
+ },
+ "conkeldurr": {
+  "abilities": {
+   "ironfist": 69.7,
+   "sheerforce": 30.3
+  },
+  "items": {
+   "blackbelt": 32.3,
+   "expertbelt": 3.0,
+   "focussash": 2.0,
+   "leftovers": 1.0,
+   "lifeorb": 58.6,
+   "lumberry": 1.0,
+   "muscleband": 2.0
+  },
+  "moves": {
+   "closecombat": 16.2,
+   "detect": 34.3,
+   "drainpunch": 75.8,
+   "firepunch": 7.1,
+   "icepunch": 33.3,
+   "knockoff": 16.2,
+   "machpunch": 81.8,
+   "poisonjab": 23.2,
+   "thunderpunch": 71.7,
+   "wideguard": 23.2
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "incineroar",
+   "mawile",
+   "kangaskhan",
+   "dragalge",
+   "sylveon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 37.4,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 40.708
+ },
+ "corviknight": {
+  "abilities": {
+   "mirrorarmor": 97.9,
+   "unnerve": 2.1
+  },
+  "items": {
+   "brightpowder": 0.6,
+   "focussash": 0.2,
+   "leftovers": 71.3,
+   "lifeorb": 1.0,
+   "lumberry": 0.1,
+   "metalcoat": 0.2,
+   "muscleband": 0.9,
+   "occaberry": 11.3,
+   "roseliberry": 0.7,
+   "sitrusberry": 13.2
+  },
+  "moves": {
+   "agility": 1.6,
+   "bodypress": 44.9,
+   "bravebird": 85.4,
+   "bulkup": 56.2,
+   "fly": 1.6,
+   "irondefense": 17.0,
+   "ironhead": 56.9,
+   "protect": 20.8,
+   "roost": 51.5,
+   "tailwind": 61.0
+  },
+  "record": [
+   905,
+   1058,
+   1
+  ],
+  "teammates": [
+   "garchomp",
+   "tyranitar",
+   "sinistcha",
+   "incineroar",
+   "raichu",
+   "rotomwash"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 8.2,
+   "points": [
+    32,
+    0,
+    32,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 46.105
+ },
+ "crabominable": {
+  "abilities": {
+   "angerpoint": 2.4,
+   "hypercutter": 89.0,
+   "ironfist": 8.7
+  },
+  "items": {
+   "crabominite": 100.0
+  },
+  "moves": {
+   "brickbreak": 3.9,
+   "closecombat": 26.8,
+   "crabhammer": 30.7,
+   "drainpunch": 66.9,
+   "icehammer": 66.1,
+   "icepunch": 33.9,
+   "machpunch": 58.3,
+   "protect": 70.1,
+   "thunderpunch": 11.0,
+   "wideguard": 25.2
+  },
+  "record": [
+   123,
+   139,
+   5
+  ],
+  "teammates": [
+   "farigiraf",
+   "torkoal",
+   "sinistcha",
+   "kingambit",
+   "incineroar",
+   "sylveon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 46.5,
+   "points": [
+    32,
+    32,
+    2,
+    0,
+    0,
+    0
+   ]
+  },
+  "win_rate": 47.004
+ },
+ "decidueye": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "decidueyehisui": {
+  "abilities": {
+   "scrappy": 100.0
+  },
+  "items": {
+   "lifeorb": 3.4,
+   "muscleband": 1.3,
+   "scopelens": 89.3,
+   "sitrusberry": 4.7,
+   "whiteherb": 1.3
+  },
+  "moves": {
+   "brickbreak": 2.7,
+   "coaching": 6.7,
+   "haze": 4.0,
+   "leafblade": 97.3,
+   "protect": 98.0,
+   "shadowsneak": 27.5,
+   "suckerpunch": 53.0,
+   "tailwind": 4.0,
+   "triplearrows": 96.0,
+   "upperhand": 6.7
+  },
+  "record": null,
+  "teammates": [
+   "whimsicott",
+   "zoroarkhisui",
+   "aerodactyl",
+   "charizard",
+   "raichu",
+   "maushold"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 38.3,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 42.857
+ },
+ "dedenne": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "delphox": {
+  "abilities": {
+   "blaze": 93.2,
+   "magician": 6.8
+  },
+  "items": {
+   "choicescarf": 0.1,
+   "delphoxite": 99.9,
+   "pyroarite": 0.1
+  },
+  "moves": {
+   "calmmind": 1.5,
+   "dazzlinggleam": 3.1,
+   "encore": 12.5,
+   "flamethrower": 1.1,
+   "heatwave": 98.6,
+   "nastyplot": 74.0,
+   "protect": 98.6,
+   "psychic": 52.5,
+   "psyshock": 46.1,
+   "substitute": 6.2
+  },
+  "record": [
+   2769,
+   2533,
+   5
+  ],
+  "teammates": [
+   "sinistcha",
+   "incineroar",
+   "staraptor",
+   "garchomp",
+   "grimmsnarl",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 15.2,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 52.223
+ },
+ "diggersby": {
+  "abilities": {
+   "hugepower": 100.0
+  },
+  "items": {
+   "choicescarf": 100.0
+  },
+  "moves": {
+   "earthquake": 100.0,
+   "gigaimpact": 100.0,
+   "icepunch": 100.0,
+   "rockslide": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "charizard",
+   "whimsicott",
+   "basculegion",
+   "sneasler",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 0.0
+ },
+ "ditto": {
+  "abilities": {
+   "imposter": 100.0
+  },
+  "items": {
+   "choicescarf": 45.5,
+   "focussash": 1.0,
+   "lifeorb": 35.6,
+   "quickclaw": 12.9,
+   "sitrusberry": 5.0
+  },
+  "moves": {
+   "transform": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "raichu",
+   "basculegion",
+   "whimsicott",
+   "gholdengo",
+   "sinistcha",
+   "floetteeternal"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 24.8,
+   "points": [
+    32,
+    0,
+    2,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 34.118
+ },
+ "dragalge": {
+  "abilities": {
+   "adaptability": 73.9,
+   "poisonpoint": 22.9,
+   "poisontouch": 3.2
+  },
+  "items": {
+   "choicescarf": 0.2,
+   "dragalgite": 88.8,
+   "drampanite": 0.4,
+   "expertbelt": 0.8,
+   "lifeorb": 8.2,
+   "sitrusberry": 0.2,
+   "wiseglasses": 1.3
+  },
+  "moves": {
+   "dracometeor": 61.5,
+   "dragonpulse": 39.0,
+   "flipturn": 25.9,
+   "haze": 15.2,
+   "protect": 91.8,
+   "scald": 6.7,
+   "sludgebomb": 89.0,
+   "sludgewave": 7.0,
+   "thunderbolt": 29.9,
+   "toxic": 11.2
+  },
+  "record": null,
+  "teammates": [
+   "incineroar",
+   "sinistcha",
+   "farigiraf",
+   "grimmsnarl",
+   "staraptor",
+   "basculegion"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 35.4,
+   "points": [
+    32,
+    0,
+    2,
+    32,
+    0,
+    0
+   ]
+  },
+  "win_rate": 40.343
+ },
+ "dragapult": {
+  "abilities": {
+   "clearbody": 73.7,
+   "cursedbody": 8.4,
+   "infiltrator": 18.0
+  },
+  "items": {
+   "brightpowder": 1.8,
+   "colburberry": 4.2,
+   "dragonfang": 1.2,
+   "focussash": 34.7,
+   "habanberry": 0.6,
+   "lifeorb": 41.3,
+   "lightclay": 7.2,
+   "sitrusberry": 0.6,
+   "spelltag": 6.6,
+   "yacheberry": 0.6
+  },
+  "moves": {
+   "dracometeor": 40.1,
+   "dragondarts": 38.3,
+   "lightscreen": 14.4,
+   "phantomforce": 32.3,
+   "protect": 60.5,
+   "psychicfangs": 31.7,
+   "shadowball": 31.1,
+   "thunderbolt": 13.2,
+   "uturn": 26.3,
+   "willowisp": 36.5
+  },
+  "record": [
+   279,
+   380,
+   1
+  ],
+  "teammates": [
+   "whimsicott",
+   "raichu",
+   "incineroar",
+   "farigiraf",
+   "sneasler",
+   "sinistcha"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 29.9,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 42.348
+ },
+ "dragonite": {
+  "abilities": {
+   "innerfocus": 27.2,
+   "multiscale": 72.8
+  },
+  "items": {
+   "dragonfang": 13.6,
+   "dragoninite": 67.7,
+   "expertbelt": 1.9,
+   "leftovers": 2.3,
+   "lifeorb": 4.7,
+   "muscleband": 1.8,
+   "roseliberry": 1.2,
+   "sharpbeak": 1.4,
+   "silkscarf": 1.0,
+   "yacheberry": 1.4
+  },
+  "moves": {
+   "dracometeor": 27.3,
+   "dragonclaw": 17.9,
+   "dragonpulse": 46.6,
+   "extremespeed": 39.1,
+   "heatwave": 13.8,
+   "hurricane": 45.5,
+   "protect": 67.6,
+   "tailwind": 36.5,
+   "thunder": 14.4,
+   "thunderbolt": 20.7
+  },
+  "record": [
+   1909,
+   1870,
+   5
+  ],
+  "teammates": [
+   "basculegion",
+   "pelipper",
+   "archaludon",
+   "sneasler",
+   "swampert",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 31.9,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 50.515
+ },
+ "drampa": {
+  "abilities": {
+   "berserk": 18.6,
+   "cloudnine": 81.4
+  },
+  "items": {
+   "charcoal": 0.8,
+   "drampanite": 80.5,
+   "focussash": 5.1,
+   "lifeorb": 4.2,
+   "quickclaw": 0.8,
+   "roseliberry": 0.8,
+   "silkscarf": 5.1,
+   "whiteherb": 0.8,
+   "wiseglasses": 1.7
+  },
+  "moves": {
+   "calmmind": 47.5,
+   "dracometeor": 28.8,
+   "dragonpulse": 25.4,
+   "earthpower": 60.2,
+   "energyball": 21.2,
+   "flamethrower": 10.2,
+   "hypervoice": 93.2,
+   "protect": 84.7,
+   "round": 5.1,
+   "thunderbolt": 15.3
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "torkoal",
+   "sylveon",
+   "sinistcha",
+   "oranguru",
+   "mawile"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 26.3,
+   "points": [
+    32,
+    0,
+    2,
+    32,
+    0,
+    0
+   ]
+  },
+  "win_rate": 40.476
+ },
+ "eelektross": {
+  "abilities": {
+   "levitate": 100.0
+  },
+  "items": {
+   "eelektrossite": 99.8,
+   "magnet": 0.2
+  },
+  "moves": {
+   "coil": 11.3,
+   "discharge": 20.2,
+   "dragonpulse": 25.0,
+   "drainpunch": 10.4,
+   "flamethrower": 47.4,
+   "gigadrain": 39.0,
+   "muddywater": 8.8,
+   "protect": 91.8,
+   "supercellslam": 11.6,
+   "thunderbolt": 67.7
+  },
+  "record": null,
+  "teammates": [
+   "garchomp",
+   "whimsicott",
+   "basculegion",
+   "sinistcha",
+   "incineroar",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 5.6,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 37.66
+ },
+ "emboar": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "emolga": {
+  "abilities": {
+   "static": 100.0
+  },
+  "items": {
+   "focussash": 100.0
+  },
+  "moves": {
+   "electroweb": 50.0,
+   "encore": 50.0,
+   "helpinghand": 50.0,
+   "nuzzle": 100.0,
+   "speedswap": 50.0,
+   "taunt": 50.0,
+   "voltswitch": 50.0
+  },
+  "record": null,
+  "teammates": [
+   "incineroar",
+   "metagross",
+   "staraptor",
+   "whimsicott",
+   "hydreigon",
+   "sylveon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 17.391
+ },
+ "empoleon": {
+  "abilities": {
+   "competitive": 100.0
+  },
+  "items": {
+   "chopleberry": 1.2,
+   "leftovers": 39.8,
+   "lifeorb": 9.6,
+   "mysticwater": 27.7,
+   "quickclaw": 1.2,
+   "shucaberry": 3.6,
+   "sitrusberry": 15.7,
+   "wiseglasses": 1.2
+  },
+  "moves": {
+   "flashcannon": 94.0,
+   "hydropump": 41.0,
+   "icebeam": 53.0,
+   "icywind": 14.5,
+   "irondefense": 13.3,
+   "protect": 97.6,
+   "roar": 20.5,
+   "surf": 39.8,
+   "waterpulse": 4.8,
+   "weatherball": 13.3
+  },
+  "record": null,
+  "teammates": [
+   "raichu",
+   "glimmora",
+   "mawile",
+   "toxicroak",
+   "musharna",
+   "whimsicott"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 27.7,
+   "points": [
+    28,
+    0,
+    0,
+    32,
+    0,
+    6
+   ]
+  },
+  "win_rate": 45.128
+ },
+ "espathra": {
+  "abilities": {
+   "speedboost": 100.0
+  },
+  "items": {
+   "colburberry": 11.2,
+   "focussash": 6.9,
+   "leftovers": 15.0,
+   "mentalherb": 27.7,
+   "sitrusberry": 32.7,
+   "twistedspoon": 6.5
+  },
+  "moves": {
+   "batonpass": 77.3,
+   "calmmind": 83.1,
+   "dazzlinggleam": 9.6,
+   "expandingforce": 10.8,
+   "featherdance": 12.7,
+   "luminacrash": 80.4,
+   "protect": 100.0,
+   "psychicterrain": 10.8,
+   "skillswap": 1.9,
+   "storedpower": 6.9
+  },
+  "record": [
+   306,
+   292,
+   2
+  ],
+  "teammates": [
+   "archaludon",
+   "scovillain",
+   "politoed",
+   "incineroar",
+   "sneasler",
+   "sinistcha"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 21.2,
+   "points": [
+    32,
+    0,
+    9,
+    0,
+    6,
+    19
+   ]
+  },
+  "win_rate": 51.167
+ },
+ "espeon": {
+  "abilities": {
+   "magicbounce": 100.0
+  },
+  "items": {
+   "brightpowder": 12.5,
+   "focussash": 12.5,
+   "lifeorb": 25.0,
+   "lightclay": 25.0,
+   "twistedspoon": 12.5,
+   "wiseglasses": 12.5
+  },
+  "moves": {
+   "detect": 12.5,
+   "helpinghand": 12.5,
+   "lightscreen": 25.0,
+   "powergem": 87.5,
+   "protect": 25.0,
+   "psychic": 87.5,
+   "reflect": 25.0,
+   "shadowball": 12.5,
+   "trickroom": 25.0,
+   "yawn": 12.5
+  },
+  "record": null,
+  "teammates": [
+   "whimsicott",
+   "charizard",
+   "raichu",
+   "typhlosionhisui",
+   "tyranitar",
+   "metagross"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    0,
+    0,
+    0,
+    32,
+    2,
+    32
+   ]
+  },
+  "win_rate": 52.632
+ },
+ "excadrill": {
+  "abilities": {
+   "moldbreaker": 15.1,
+   "sandforce": 0.5,
+   "sandrush": 84.4
+  },
+  "items": {
+   "choicescarf": 4.9,
+   "excadrite": 4.1,
+   "focussash": 74.4,
+   "kingsrock": 2.2,
+   "lifeorb": 10.5,
+   "lumberry": 0.5,
+   "metalcoat": 0.2,
+   "shucaberry": 0.5,
+   "softsand": 2.5,
+   "whiteherb": 0.2
+  },
+  "moves": {
+   "brickbreak": 0.2,
+   "drillrun": 1.0,
+   "earthquake": 63.7,
+   "highhorsepower": 52.2,
+   "ironhead": 96.8,
+   "megahorn": 0.2,
+   "protect": 93.7,
+   "rockslide": 82.4,
+   "rocktomb": 3.1,
+   "swordsdance": 6.6
+  },
+  "record": [
+   867,
+   892,
+   2
+  ],
+  "teammates": [
+   "tyranitar",
+   "staraptor",
+   "rotomwash",
+   "sinistcha",
+   "raichu",
+   "basculegion"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 39.5,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 49.29
+ },
+ "falinks": {
+  "abilities": {
+   "defiant": 100.0
+  },
+  "items": {
+   "blackbelt": 4.2,
+   "falinksite": 95.8
+  },
+  "moves": {
+   "brickbreak": 5.6,
+   "closecombat": 94.4,
+   "ironhead": 16.7,
+   "knockoff": 12.5,
+   "noretreat": 88.9,
+   "poisonjab": 5.6,
+   "protect": 84.7,
+   "rockslide": 47.2,
+   "rocktomb": 13.9,
+   "throatchop": 22.2
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "whimsicott",
+   "incineroar",
+   "raichu",
+   "kingambit",
+   "sylveon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 22.2,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    0,
+    2
+   ]
+  },
+  "win_rate": 38.028
+ },
+ "farigiraf": {
+  "abilities": {
+   "armortail": 99.9,
+   "cudchew": 0.0,
+   "sapsipper": 0.0
+  },
+  "items": {
+   "brightpowder": 0.3,
+   "colburberry": 24.9,
+   "focussash": 2.9,
+   "leftovers": 2.2,
+   "lifeorb": 0.8,
+   "lumberry": 0.5,
+   "mentalherb": 4.4,
+   "silkscarf": 0.5,
+   "sitrusberry": 62.0,
+   "twistedspoon": 0.4
+  },
+  "moves": {
+   "foulplay": 6.4,
+   "helpinghand": 48.9,
+   "hypervoice": 30.2,
+   "imprison": 13.9,
+   "protect": 39.1,
+   "psychic": 60.7,
+   "roar": 11.6,
+   "thunderbolt": 30.3,
+   "trickroom": 95.7,
+   "twinbeam": 24.7
+  },
+  "record": [
+   6329,
+   6344,
+   6
+  ],
+  "teammates": [
+   "sylveon",
+   "kingambit",
+   "torkoal",
+   "garchomp",
+   "basculegion",
+   "mawile"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 7.4,
+   "points": [
+    17,
+    0,
+    19,
+    10,
+    20,
+    0
+   ]
+  },
+  "win_rate": 49.941
+ },
+ "feraligatr": {
+  "abilities": {
+   "sheerforce": 96.5,
+   "torrent": 3.5
+  },
+  "items": {
+   "feraligite": 65.9,
+   "lifeorb": 34.1
+  },
+  "moves": {
+   "aquajet": 15.3,
+   "bodyslam": 14.1,
+   "crunch": 11.8,
+   "doubleedge": 38.8,
+   "dragondance": 69.4,
+   "facade": 10.6,
+   "icepunch": 47.1,
+   "liquidation": 89.4,
+   "protect": 85.9,
+   "swordsdance": 11.8
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "raichu",
+   "whimsicott",
+   "kingambit",
+   "charizard",
+   "sneasler"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 23.5,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 35.849
+ },
+ "flapple": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "flareon": {
+  "abilities": {
+   "flashfire": 100.0
+  },
+  "items": {
+   "chartiberry": 100.0
+  },
+  "moves": {
+   "babydolleyes": 100.0,
+   "flareblitz": 100.0,
+   "protect": 100.0,
+   "superpower": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "garchomp",
+   "whimsicott",
+   "pyroar",
+   "sneasler",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    23,
+    32,
+    0,
+    0,
+    0,
+    11
+   ]
+  },
+  "win_rate": null
+ },
+ "floetteeternal": {
+  "abilities": {
+   "flowerveil": 98.9,
+   "symbiosis": 1.1
+  },
+  "items": {
+   "choicescarf": 0.1,
+   "fairyfeather": 0.1,
+   "floettite": 99.4,
+   "lifeorb": 0.4
+  },
+  "moves": {
+   "calmmind": 42.7,
+   "dazzlinggleam": 97.1,
+   "drainingkiss": 19.3,
+   "energyball": 0.2,
+   "gigadrain": 0.3,
+   "grassknot": 0.3,
+   "lightofruin": 58.0,
+   "moonblast": 79.0,
+   "protect": 99.8,
+   "psychic": 2.6
+  },
+  "record": [
+   8993,
+   7346,
+   17
+  ],
+  "teammates": [
+   "garchomp",
+   "basculegion",
+   "whimsicott",
+   "kingambit",
+   "charizard",
+   "sinistcha"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 24.2,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 55.035
+ },
+ "florges": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "forretress": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "froslass": {
+  "abilities": {
+   "cursedbody": 79.0,
+   "snowcloak": 21.0
+  },
+  "items": {
+   "choicescarf": 0.1,
+   "focussash": 0.2,
+   "froslassite": 99.6,
+   "nevermeltice": 0.1
+  },
+  "moves": {
+   "auroraveil": 80.2,
+   "blizzard": 98.9,
+   "nastyplot": 4.1,
+   "protect": 96.3,
+   "raindance": 10.6,
+   "shadowball": 86.0,
+   "substitute": 2.6,
+   "taunt": 3.7,
+   "thunderbolt": 2.8,
+   "weatherball": 3.7
+  },
+  "record": [
+   2822,
+   2372,
+   5
+  ],
+  "teammates": [
+   "kingambit",
+   "sneasler",
+   "basculegion",
+   "garchomp",
+   "incineroar",
+   "whimsicott"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 21.5,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 54.328
+ },
+ "furfrou": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "gallade": {
+  "abilities": {
+   "justified": 5.1,
+   "sharpness": 94.9
+  },
+  "items": {
+   "blackbelt": 8.0,
+   "choicescarf": 5.7,
+   "focussash": 31.8,
+   "galladite": 10.5,
+   "ironball": 3.5,
+   "lifeorb": 10.1,
+   "lumberry": 7.4,
+   "roseliberry": 2.9,
+   "scopelens": 13.8,
+   "whiteherb": 2.3
+  },
+  "moves": {
+   "closecombat": 4.3,
+   "leafblade": 54.0,
+   "nightslash": 16.0,
+   "protect": 65.5,
+   "psychocut": 87.3,
+   "sacredsword": 94.7,
+   "shadowsneak": 4.5,
+   "trickroom": 27.1,
+   "wideguard": 13.3,
+   "zenheadbutt": 5.3
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "metagross",
+   "sinistcha",
+   "whimsicott",
+   "sylveon",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 41.7,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 46.905
+ },
+ "garbodor": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "garchomp": {
+  "abilities": {
+   "roughskin": 98.5,
+   "sandveil": 1.5
+  },
+  "items": {
+   "choicescarf": 12.7,
+   "expertbelt": 0.9,
+   "focussash": 1.1,
+   "habanberry": 1.1,
+   "lifeorb": 51.5,
+   "lumberry": 0.9,
+   "roseliberry": 10.8,
+   "sitrusberry": 13.6,
+   "softsand": 3.6,
+   "whiteherb": 1.3
+  },
+  "moves": {
+   "dragonclaw": 89.4,
+   "dragontail": 2.0,
+   "earthquake": 80.7,
+   "poisonjab": 18.3,
+   "protect": 70.2,
+   "rockslide": 82.0,
+   "rocktomb": 8.0,
+   "scaleshot": 3.1,
+   "stompingtantrum": 40.3,
+   "swordsdance": 2.5
+  },
+  "record": [
+   13846,
+   13548,
+   28
+  ],
+  "teammates": [
+   "whimsicott",
+   "charizard",
+   "basculegion",
+   "kingambit",
+   "staraptor",
+   "sinistcha"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 32.7,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 50.543
+ },
+ "gardevoir": {
+  "abilities": {
+   "synchronize": 1.7,
+   "telepathy": 25.8,
+   "trace": 72.5
+  },
+  "items": {
+   "choicescarf": 7.3,
+   "expertbelt": 0.9,
+   "focussash": 0.8,
+   "gardevoirite": 89.9,
+   "leftovers": 0.2,
+   "shellbell": 0.9
+  },
+  "moves": {
+   "aurasphere": 7.7,
+   "calmmind": 15.9,
+   "dazzlinggleam": 7.5,
+   "hypervoice": 89.6,
+   "moonblast": 11.2,
+   "protect": 88.8,
+   "psychic": 47.8,
+   "psyshock": 42.4,
+   "trickroom": 41.6,
+   "vacuumwave": 17.3
+  },
+  "record": [
+   729,
+   742,
+   1
+  ],
+  "teammates": [
+   "maushold",
+   "basculegion",
+   "garchomp",
+   "incineroar",
+   "talonflame",
+   "pelipper"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 19.8,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 49.558
+ },
+ "garganacl": {
+  "abilities": {
+   "clearbody": 25.0,
+   "purifyingsalt": 75.0
+  },
+  "items": {
+   "leftovers": 75.0,
+   "silkscarf": 25.0
+  },
+  "moves": {
+   "earthquake": 25.0,
+   "explosion": 25.0,
+   "heavyslam": 50.0,
+   "protect": 75.0,
+   "recover": 75.0,
+   "saltcure": 100.0,
+   "stealthrock": 25.0,
+   "wideguard": 25.0
+  },
+  "record": null,
+  "teammates": [
+   "whimsicott",
+   "charizard",
+   "staraptor",
+   "garchomp",
+   "eelektross",
+   "mamoswine"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    32,
+    13,
+    1,
+    0,
+    20,
+    0
+   ]
+  },
+  "win_rate": 35.0
+ },
+ "gengar": {
+  "abilities": {
+   "cursedbody": 100.0
+  },
+  "items": {
+   "choicescarf": 2.1,
+   "expertbelt": 0.3,
+   "focussash": 10.5,
+   "gengarite": 84.4,
+   "lifeorb": 1.9,
+   "quickclaw": 0.8
+  },
+  "moves": {
+   "destinybond": 2.3,
+   "disable": 46.9,
+   "icywind": 12.0,
+   "perishsong": 66.0,
+   "protect": 87.1,
+   "psychic": 10.9,
+   "shadowball": 94.4,
+   "sludgebomb": 55.4,
+   "sludgewave": 4.5,
+   "trickroom": 6.3
+  },
+  "record": [
+   1327,
+   1433,
+   3
+  ],
+  "teammates": [
+   "incineroar",
+   "sinistcha",
+   "politoed",
+   "archaludon",
+   "kingambit",
+   "grimmsnarl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 20.2,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 48.082
+ },
+ "gholdengo": {
+  "abilities": {
+   "goodasgold": 100.0
+  },
+  "items": {
+   "choicescarf": 27.1,
+   "focussash": 2.6,
+   "kasibberry": 0.5,
+   "leftovers": 7.3,
+   "lifeorb": 37.9,
+   "metalcoat": 11.3,
+   "shucaberry": 1.4,
+   "sitrusberry": 2.8,
+   "whiteherb": 6.5,
+   "wiseglasses": 0.8
+  },
+  "moves": {
+   "dazzlinggleam": 5.8,
+   "flashcannon": 3.5,
+   "makeitrain": 99.0,
+   "nastyplot": 58.5,
+   "powergem": 27.1,
+   "protect": 70.9,
+   "shadowball": 99.0,
+   "thunder": 1.7,
+   "thunderbolt": 11.4,
+   "trick": 17.3
+  },
+  "record": [
+   3029,
+   3186,
+   5
+  ],
+  "teammates": [
+   "staraptor",
+   "garchomp",
+   "whimsicott",
+   "sinistcha",
+   "raichu",
+   "grimmsnarl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 28.6,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 48.738
+ },
+ "glaceon": {
+  "abilities": {
+   "icebody": 18.4,
+   "snowcloak": 81.6
+  },
+  "items": {
+   "brightpowder": 12.2,
+   "nevermeltice": 87.8
+  },
+  "moves": {
+   "blizzard": 100.0,
+   "calmmind": 10.2,
+   "detect": 51.0,
+   "freezedry": 100.0,
+   "frostbreath": 2.0,
+   "iceshard": 85.7,
+   "protect": 30.6,
+   "roar": 6.1,
+   "shadowball": 12.2,
+   "weatherball": 2.0
+  },
+  "record": null,
+  "teammates": [
+   "froslass",
+   "sneasler",
+   "kingambit",
+   "garchomp",
+   "whimsicott",
+   "chandelure"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 26.5,
+   "points": [
+    25,
+    0,
+    1,
+    30,
+    0,
+    10
+   ]
+  },
+  "win_rate": 36.735
+ },
+ "glalie": {
+  "abilities": {
+   "innerfocus": 100.0
+  },
+  "items": {
+   "glalitite": 100.0
+  },
+  "moves": {
+   "bodyslam": 54.1,
+   "explosion": 100.0,
+   "helpinghand": 12.9,
+   "iceshard": 27.1,
+   "icespinner": 24.7,
+   "iciclecrash": 5.9,
+   "icywind": 7.1,
+   "protect": 100.0,
+   "substitute": 1.2,
+   "taunt": 64.7
+  },
+  "record": null,
+  "teammates": [
+   "oranguru",
+   "sylveon",
+   "torkoal",
+   "mudsdale",
+   "clefable",
+   "rhyperior"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 57.6,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 51.282
+ },
+ "glimmora": {
+  "abilities": {
+   "corrosion": 0.1,
+   "toxicdebris": 99.9
+  },
+  "items": {
+   "babiriberry": 0.1,
+   "choicescarf": 2.5,
+   "expertbelt": 0.1,
+   "focussash": 76.5,
+   "glimmoranite": 19.0,
+   "lifeorb": 0.7,
+   "poisonbarb": 0.1,
+   "quickclaw": 0.2,
+   "shucaberry": 0.2,
+   "sitrusberry": 0.7
+  },
+  "moves": {
+   "dazzlinggleam": 1.4,
+   "earthpower": 94.3,
+   "energyball": 15.3,
+   "mortalspin": 1.3,
+   "powergem": 99.7,
+   "protect": 1.3,
+   "sludgebomb": 94.2,
+   "sludgewave": 4.4,
+   "spikyshield": 84.5,
+   "stealthrock": 1.3
+  },
+  "record": [
+   1004,
+   1118,
+   3
+  ],
+  "teammates": [
+   "whimsicott",
+   "basculegion",
+   "garchomp",
+   "staraptor",
+   "kingambit",
+   "charizard"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 51.9,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 47.318
+ },
+ "gliscor": {
+  "abilities": {
+   "hypercutter": 87.9,
+   "poisonheal": 9.1,
+   "sandveil": 3.0
+  },
+  "items": {
+   "brightpowder": 3.0,
+   "choicescarf": 21.2,
+   "leftovers": 30.3,
+   "lifeorb": 21.2,
+   "quickclaw": 12.1,
+   "sitrusberry": 9.1,
+   "whiteherb": 3.0
+  },
+  "moves": {
+   "dualwingbeat": 72.7,
+   "earthquake": 66.7,
+   "highhorsepower": 33.3,
+   "icefang": 21.2,
+   "knockoff": 30.3,
+   "poisonjab": 15.2,
+   "protect": 24.2,
+   "rockslide": 51.5,
+   "tailwind": 33.3,
+   "uturn": 12.1
+  },
+  "record": null,
+  "teammates": [
+   "incineroar",
+   "raichu",
+   "kingambit",
+   "jolteon",
+   "sceptile",
+   "metagross"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 30.3,
+   "points": [
+    23,
+    15,
+    0,
+    0,
+    15,
+    13
+   ]
+  },
+  "win_rate": 30.909
+ },
+ "golurk": {
+  "abilities": {
+   "ironfist": 70.7,
+   "klutz": 12.1,
+   "noguard": 17.2
+  },
+  "items": {
+   "golurkite": 99.0,
+   "whiteherb": 1.0
+  },
+  "moves": {
+   "closecombat": 12.1,
+   "drainpunch": 12.1,
+   "headlongrush": 97.0,
+   "highhorsepower": 3.0,
+   "icepunch": 54.5,
+   "phantomforce": 9.1,
+   "poltergeist": 90.9,
+   "protect": 99.0,
+   "rockslide": 9.1,
+   "thunderpunch": 10.1
+  },
+  "record": [
+   151,
+   241,
+   1
+  ],
+  "teammates": [
+   "farigiraf",
+   "torkoal",
+   "staraptor",
+   "sylveon",
+   "incineroar",
+   "hatterene"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 24.2,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 38.55
+ },
+ "goodra": {
+  "abilities": {
+   "gooey": 54.2,
+   "hydration": 29.2,
+   "sapsipper": 16.7
+  },
+  "items": {
+   "choicescarf": 8.3,
+   "habanberry": 83.3,
+   "wiseglasses": 8.3
+  },
+  "moves": {
+   "dracometeor": 37.5,
+   "dragonpulse": 8.3,
+   "feint": 29.2,
+   "flamethrower": 16.7,
+   "icebeam": 100.0,
+   "scald": 54.2,
+   "tearfullook": 54.2,
+   "thunder": 29.2,
+   "thunderbolt": 70.8
+  },
+  "record": null,
+  "teammates": [
+   "metagross",
+   "raichu",
+   "clawitzer",
+   "armarouge",
+   "hydrapple",
+   "sinistcha"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 54.2,
+   "points": [
+    31,
+    0,
+    32,
+    3,
+    0,
+    0
+   ]
+  },
+  "win_rate": 26.087
+ },
+ "goodrahisui": {
+  "abilities": {
+   "gooey": 31.8,
+   "sapsipper": 35.5,
+   "shellarmor": 32.7
+  },
+  "items": {
+   "expertbelt": 20.6,
+   "leftovers": 63.6,
+   "lifeorb": 2.8,
+   "lumberry": 2.8,
+   "scopelens": 10.3
+  },
+  "moves": {
+   "bodypress": 63.6,
+   "breakingswipe": 27.1,
+   "feint": 10.3,
+   "flamethrower": 20.6,
+   "flashcannon": 53.3,
+   "heavyslam": 42.1,
+   "icebeam": 20.6,
+   "protect": 47.7,
+   "shelter": 63.6,
+   "thunderbolt": 23.4
+  },
+  "record": [
+   35,
+   54,
+   2
+  ],
+  "teammates": [
+   "raichu",
+   "sinistcha",
+   "incineroar",
+   "staraptor",
+   "sylveon",
+   "mawile"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.5,
+   "points": [
+    32,
+    0,
+    32,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 39.56
+ },
+ "gourgeist": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "greninja": {
+  "abilities": {
+   "protean": 89.7,
+   "torrent": 10.3
+  },
+  "items": {
+   "choicescarf": 2.4,
+   "expertbelt": 0.8,
+   "focussash": 11.1,
+   "greninjite": 59.5,
+   "kingsrock": 0.8,
+   "lifeorb": 22.2
+  },
+  "moves": {
+   "darkpulse": 57.9,
+   "extrasensory": 25.4,
+   "grassknot": 26.2,
+   "hydropump": 18.3,
+   "icebeam": 73.8,
+   "protect": 56.3,
+   "rockslide": 15.1,
+   "rocktomb": 19.8,
+   "taunt": 25.4,
+   "watershuriken": 23.0
+  },
+  "record": [
+   102,
+   196,
+   1
+  ],
+  "teammates": [
+   "whimsicott",
+   "raichu",
+   "kingambit",
+   "scizor",
+   "garchomp",
+   "aerodactyl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 38.1,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 34.281
+ },
+ "grimmsnarl": {
+  "abilities": {
+   "frisk": 0.3,
+   "pickpocket": 0.1,
+   "prankster": 99.6
+  },
+  "items": {
+   "babiriberry": 0.2,
+   "blackglasses": 0.5,
+   "focussash": 0.7,
+   "ironball": 0.2,
+   "leftovers": 2.0,
+   "lifeorb": 0.3,
+   "lightclay": 83.0,
+   "mentalherb": 0.4,
+   "roseliberry": 9.3,
+   "sitrusberry": 3.0
+  },
+  "moves": {
+   "fakeout": 27.1,
+   "faketears": 7.8,
+   "foulplay": 12.9,
+   "lightscreen": 87.0,
+   "partingshot": 82.8,
+   "reflect": 81.8,
+   "scaryface": 22.0,
+   "spiritbreak": 61.9,
+   "suckerpunch": 4.9,
+   "taunt": 2.8
+  },
+  "record": [
+   4166,
+   4502,
+   11
+  ],
+  "teammates": [
+   "sinistcha",
+   "staraptor",
+   "garchomp",
+   "pelipper",
+   "incineroar",
+   "archaludon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 12.4,
+   "points": [
+    32,
+    0,
+    19,
+    0,
+    15,
+    0
+   ]
+  },
+  "win_rate": 48.064
+ },
+ "gyarados": {
+  "abilities": {
+   "intimidate": 99.4,
+   "moxie": 0.6
+  },
+  "items": {
+   "focussash": 1.0,
+   "gyaradosite": 61.0,
+   "leftovers": 4.5,
+   "lifeorb": 1.0,
+   "lumberry": 1.4,
+   "mysticwater": 0.2,
+   "sitrusberry": 28.8,
+   "whiteherb": 1.9,
+   "widelens": 0.2
+  },
+  "moves": {
+   "crunch": 33.3,
+   "dragondance": 68.8,
+   "earthquake": 7.4,
+   "helpinghand": 10.1,
+   "icefang": 17.5,
+   "lashout": 26.7,
+   "protect": 79.7,
+   "taunt": 20.7,
+   "thunderwave": 14.4,
+   "waterfall": 98.6
+  },
+  "record": [
+   477,
+   505,
+   1
+  ],
+  "teammates": [
+   "sneasler",
+   "garchomp",
+   "sinistcha",
+   "raichu",
+   "kingambit",
+   "metagross"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 18.7,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 48.576
+ },
+ "hatterene": {
+  "abilities": {
+   "anticipation": 0.6,
+   "healer": 1.5,
+   "magicbounce": 98.0
+  },
+  "items": {
+   "babiriberry": 5.2,
+   "fairyfeather": 25.6,
+   "focussash": 15.1,
+   "ironball": 0.9,
+   "kebiaberry": 1.5,
+   "lifeorb": 48.0,
+   "quickclaw": 0.3,
+   "sitrusberry": 3.2,
+   "twistedspoon": 0.3
+  },
+  "moves": {
+   "dazzlinggleam": 99.7,
+   "expandingforce": 24.1,
+   "magicpowder": 2.6,
+   "mysticalfire": 16.0,
+   "protect": 81.7,
+   "psychic": 51.2,
+   "psychicnoise": 5.5,
+   "psychicterrain": 9.0,
+   "psyshock": 17.7,
+   "trickroom": 87.2
+  },
+  "record": [
+   159,
+   277,
+   3
+  ],
+  "teammates": [
+   "farigiraf",
+   "torkoal",
+   "incineroar",
+   "kingambit",
+   "camerupt",
+   "mawile"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 37.8,
+   "points": [
+    32,
+    0,
+    2,
+    32,
+    0,
+    0
+   ]
+  },
+  "win_rate": 36.56
+ },
+ "hawlucha": {
+  "abilities": {
+   "limber": 12.8,
+   "moldbreaker": 56.4,
+   "unburden": 30.8
+  },
+  "items": {
+   "focussash": 1.3,
+   "hawluchanite": 97.4,
+   "whiteherb": 1.3
+  },
+  "moves": {
+   "bravebird": 20.5,
+   "closecombat": 55.1,
+   "coaching": 24.4,
+   "crosschop": 34.6,
+   "detect": 56.4,
+   "dualwingbeat": 53.8,
+   "entrainment": 65.4,
+   "feint": 25.6,
+   "protect": 17.9,
+   "stoneedge": 32.1
+  },
+  "record": null,
+  "teammates": [
+   "snorlax",
+   "raichu",
+   "whimsicott",
+   "mudsdale",
+   "corviknight",
+   "sinistcha"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 24.4,
+   "points": [
+    32,
+    0,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 39.464
+ },
+ "heliolisk": {
+  "abilities": {
+   "dryskin": 77.8,
+   "solarpower": 22.2
+  },
+  "items": {
+   "choicescarf": 19.7,
+   "focussash": 36.4,
+   "lifeorb": 14.2,
+   "lumberry": 2.9,
+   "magnet": 13.8,
+   "sitrusberry": 9.6,
+   "wiseglasses": 3.3
+  },
+  "moves": {
+   "allyswitch": 20.1,
+   "dragonpulse": 31.4,
+   "eerieimpulse": 18.0,
+   "electroweb": 19.2,
+   "glare": 19.2,
+   "hypervoice": 31.0,
+   "protect": 73.2,
+   "shedtail": 28.0,
+   "thunderbolt": 54.0,
+   "voltswitch": 18.0
+  },
+  "record": [
+   68,
+   123,
+   1
+  ],
+  "teammates": [
+   "raichu",
+   "vileplume",
+   "pelipper",
+   "sylveon",
+   "torkoal",
+   "froslass"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 64.4,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 35.677
+ },
+ "heracross": {
+  "abilities": {
+   "guts": 52.6,
+   "moxie": 47.4
+  },
+  "items": {
+   "heracronite": 100.0
+  },
+  "moves": {
+   "brickbreak": 18.4,
+   "bulletseed": 15.8,
+   "closecombat": 73.7,
+   "detect": 68.4,
+   "earthquake": 2.6,
+   "pinmissile": 100.0,
+   "protect": 21.1,
+   "rockblast": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "whimsicott",
+   "basculegion",
+   "archaludon",
+   "staraptor",
+   "sylveon",
+   "garchomp"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    17,
+    32,
+    0,
+    0,
+    0,
+    17
+   ]
+  },
+  "win_rate": 36.264
+ },
+ "hippowdon": {
+  "abilities": {
+   "sandstream": 100.0
+  },
+  "items": {
+   "leftovers": 58.3,
+   "sitrusberry": 23.6,
+   "zoomlens": 18.1
+  },
+  "moves": {
+   "bodypress": 18.1,
+   "earthquake": 33.3,
+   "highhorsepower": 66.7,
+   "icefang": 9.7,
+   "protect": 80.6,
+   "rocktomb": 65.3,
+   "slackoff": 19.4,
+   "stoneedge": 18.1,
+   "whirlwind": 31.9,
+   "yawn": 50.0
+  },
+  "record": null,
+  "teammates": [
+   "gengar",
+   "dragonite",
+   "incineroar",
+   "kingambit",
+   "annihilape",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    32,
+    0,
+    2,
+    0,
+    32,
+    0
+   ]
+  },
+  "win_rate": 43.396
+ },
+ "houndoom": {
+  "abilities": {
+   "flashfire": 100.0
+  },
+  "items": {
+   "focussash": 17.6,
+   "houndoominite": 82.4
+  },
+  "moves": {
+   "darkpulse": 82.4,
+   "heatwave": 100.0,
+   "protect": 100.0,
+   "sludgebomb": 76.5,
+   "snarl": 17.6,
+   "substitute": 5.9,
+   "suckerpunch": 17.6
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "garchomp",
+   "talonflame",
+   "floetteeternal",
+   "basculegion",
+   "gholdengo"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 76.5,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 41.176
+ },
+ "houndstone": {
+  "abilities": {
+   "fluffy": 23.8,
+   "sandrush": 76.2
+  },
+  "items": {
+   "choicescarf": 4.0,
+   "colburberry": 6.3,
+   "expertbelt": 2.4,
+   "focussash": 6.3,
+   "leftovers": 19.8,
+   "lifeorb": 47.6,
+   "muscleband": 3.2,
+   "sitrusberry": 7.1,
+   "spelltag": 0.8,
+   "widelens": 2.4
+  },
+  "moves": {
+   "allyswitch": 42.1,
+   "bulldoze": 9.5,
+   "howl": 15.9,
+   "lastrespects": 89.7,
+   "phantomforce": 13.5,
+   "protect": 79.4,
+   "psychicfangs": 10.3,
+   "shadowsneak": 41.3,
+   "snarl": 17.5,
+   "willowisp": 47.6
+  },
+  "record": [
+   164,
+   153,
+   1
+  ],
+  "teammates": [
+   "tyranitar",
+   "staraptor",
+   "excadrill",
+   "rotomwash",
+   "sylveon",
+   "gholdengo"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 34.9,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    3,
+    29
+   ]
+  },
+  "win_rate": 51.73
+ },
+ "hydrapple": {
+  "abilities": {
+   "regenerator": 88.7,
+   "stickyhold": 1.4,
+   "supersweetsyrup": 9.9
+  },
+  "items": {
+   "leftovers": 11.3,
+   "lifeorb": 32.4,
+   "lumberry": 1.4,
+   "miracleseed": 8.5,
+   "sitrusberry": 26.8,
+   "yacheberry": 19.7
+  },
+  "moves": {
+   "bodypress": 18.3,
+   "curse": 18.3,
+   "earthpower": 76.1,
+   "energyball": 42.3,
+   "ficklebeam": 80.3,
+   "gigadrain": 56.3,
+   "pollenpuff": 29.6,
+   "protect": 33.8,
+   "solarbeam": 4.2,
+   "yawn": 36.6
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "raichu",
+   "mawile",
+   "ninetalesalola",
+   "volcarona",
+   "blastoise"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 28.2,
+   "points": [
+    31,
+    0,
+    0,
+    32,
+    3,
+    0
+   ]
+  },
+  "win_rate": 37.584
+ },
+ "hydreigon": {
+  "abilities": {
+   "levitate": 100.0
+  },
+  "items": {
+   "blackglasses": 1.3,
+   "choicescarf": 73.3,
+   "chopleberry": 1.7,
+   "focussash": 1.1,
+   "habanberry": 1.7,
+   "lifeorb": 18.2,
+   "roseliberry": 0.6,
+   "scopelens": 1.2,
+   "sitrusberry": 0.3,
+   "whiteherb": 0.1
+  },
+  "moves": {
+   "darkpulse": 96.9,
+   "dracometeor": 91.9,
+   "dragonpulse": 7.3,
+   "earthpower": 56.4,
+   "flamethrower": 7.9,
+   "heatwave": 20.0,
+   "protect": 23.5,
+   "snarl": 61.1,
+   "tailwind": 9.1,
+   "uturn": 12.3
+  },
+  "record": [
+   2011,
+   2042,
+   6
+  ],
+  "teammates": [
+   "metagross",
+   "sinistcha",
+   "sneasler",
+   "whimsicott",
+   "incineroar",
+   "pelipper"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 57.4,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 49.618
+ },
+ "incineroar": {
+  "abilities": {
+   "blaze": 0.2,
+   "intimidate": 99.8
+  },
+  "items": {
+   "charcoal": 3.7,
+   "chopleberry": 15.0,
+   "expertbelt": 0.2,
+   "leftovers": 4.0,
+   "lifeorb": 0.7,
+   "lumberry": 0.5,
+   "passhoberry": 12.0,
+   "shucaberry": 2.6,
+   "sitrusberry": 59.8,
+   "whiteherb": 1.0
+  },
+  "moves": {
+   "darkestlariat": 29.4,
+   "fakeout": 99.9,
+   "flareblitz": 92.6,
+   "helpinghand": 3.2,
+   "partingshot": 96.8,
+   "protect": 9.5,
+   "snarl": 2.4,
+   "taunt": 3.4,
+   "throatchop": 53.7,
+   "willowisp": 3.5
+  },
+  "record": [
+   11934,
+   11434,
+   30
+  ],
+  "teammates": [
+   "sinistcha",
+   "garchomp",
+   "staraptor",
+   "whimsicott",
+   "basculegion",
+   "sneasler"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 6.2,
+   "points": [
+    32,
+    0,
+    14,
+    0,
+    20,
+    0
+   ]
+  },
+  "win_rate": 51.068
+ },
+ "infernape": {
+  "abilities": {
+   "blaze": 6.3,
+   "ironfist": 93.8
+  },
+  "items": {
+   "choicescarf": 6.3,
+   "focussash": 81.3,
+   "lifeorb": 12.5
+  },
+  "moves": {
+   "aurasphere": 6.3,
+   "closecombat": 12.5,
+   "drainpunch": 81.3,
+   "fakeout": 12.5,
+   "firepunch": 93.8,
+   "flamethrower": 6.3,
+   "protect": 18.8,
+   "swordsdance": 75.0,
+   "thunderpunch": 81.3,
+   "uturn": 12.5
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "gyarados",
+   "torterra",
+   "liepard",
+   "malamar",
+   "ninetalesalola"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 75.0,
+   "points": [
+    1,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 40.336
+ },
+ "jolteon": {
+  "abilities": {
+   "quickfeet": 0.6,
+   "voltabsorb": 99.4
+  },
+  "items": {
+   "choicescarf": 0.6,
+   "focussash": 24.4,
+   "lifeorb": 50.6,
+   "magnet": 23.3,
+   "shucaberry": 1.2
+  },
+  "moves": {
+   "alluringvoice": 21.5,
+   "detect": 22.1,
+   "discharge": 48.8,
+   "electroweb": 32.6,
+   "protect": 66.9,
+   "risingvoltage": 76.2,
+   "shadowball": 9.3,
+   "thunder": 11.0,
+   "voltswitch": 39.5,
+   "weatherball": 45.3
+  },
+  "record": null,
+  "teammates": [
+   "raichu",
+   "incineroar",
+   "whimsicott",
+   "ninetalesalola",
+   "gholdengo",
+   "staraptor"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 84.9,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 32.903
+ },
+ "kangaskhan": {
+  "abilities": {
+   "innerfocus": 1.1,
+   "scrappy": 98.9
+  },
+  "items": {
+   "chopleberry": 1.1,
+   "focussash": 0.9,
+   "ironball": 1.4,
+   "kangaskhanite": 52.0,
+   "kingsrock": 0.4,
+   "leftovers": 0.3,
+   "lifeorb": 2.8,
+   "metronome": 2.8,
+   "silkscarf": 37.6,
+   "sitrusberry": 0.6
+  },
+  "moves": {
+   "doubleedge": 45.3,
+   "drainpunch": 13.7,
+   "facade": 2.6,
+   "fakeout": 99.8,
+   "hammerarm": 8.2,
+   "icepunch": 32.4,
+   "lastresort": 49.6,
+   "lowkick": 24.0,
+   "protect": 2.7,
+   "suckerpunch": 15.3
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "torkoal",
+   "blastoise",
+   "basculegion",
+   "vivillon",
+   "sylveon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 37.2,
+   "points": [
+    32,
+    32,
+    1,
+    0,
+    1,
+    0
+   ]
+  },
+  "win_rate": 49.91
+ },
+ "kingambit": {
+  "abilities": {
+   "defiant": 96.1,
+   "supremeoverlord": 3.9
+  },
+  "items": {
+   "blackglasses": 31.8,
+   "chopleberry": 42.9,
+   "focussash": 12.8,
+   "leftovers": 0.3,
+   "lifeorb": 5.7,
+   "lumberry": 0.3,
+   "muscleband": 0.3,
+   "occaberry": 4.8,
+   "shucaberry": 0.2,
+   "sitrusberry": 0.4
+  },
+  "moves": {
+   "assurance": 0.1,
+   "brickbreak": 1.1,
+   "ironhead": 73.5,
+   "kowtowcleave": 97.9,
+   "lowkick": 43.7,
+   "lowsweep": 0.1,
+   "protect": 68.6,
+   "quickguard": 0.2,
+   "suckerpunch": 99.5,
+   "swordsdance": 15.0
+  },
+  "record": [
+   12916,
+   10856,
+   30
+  ],
+  "teammates": [
+   "garchomp",
+   "basculegion",
+   "whimsicott",
+   "charizard",
+   "sneasler",
+   "floetteeternal"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 13.7,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 54.327
+ },
+ "kleavor": {
+  "abilities": {
+   "sharpness": 97.9,
+   "sheerforce": 2.1
+  },
+  "items": {
+   "choicescarf": 45.0,
+   "focussash": 33.5,
+   "lifeorb": 2.7,
+   "quickclaw": 0.3,
+   "silverpowder": 1.2,
+   "whiteherb": 16.9
+  },
+  "moves": {
+   "closecombat": 58.9,
+   "feint": 9.1,
+   "nightslash": 31.1,
+   "protect": 37.5,
+   "rockslide": 28.4,
+   "rocktomb": 6.3,
+   "stoneaxe": 97.9,
+   "tailwind": 24.2,
+   "uturn": 30.8,
+   "xscissor": 66.5
+  },
+  "record": null,
+  "teammates": [
+   "whimsicott",
+   "kingambit",
+   "basculegion",
+   "raichu",
+   "sneasler",
+   "froslass"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 61.3,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 46.367
+ },
+ "klefki": {
+  "abilities": {
+   "prankster": 100.0
+  },
+  "items": {
+   "brightpowder": 1.6,
+   "focussash": 0.8,
+   "leftovers": 0.8,
+   "lightclay": 70.7,
+   "mentalherb": 13.8,
+   "sitrusberry": 0.8,
+   "widelens": 11.4
+  },
+  "moves": {
+   "dazzlinggleam": 35.8,
+   "flashcannon": 8.1,
+   "foulplay": 37.4,
+   "imprison": 2.4,
+   "lightscreen": 83.7,
+   "metalsound": 13.0,
+   "raindance": 82.9,
+   "reflect": 83.7,
+   "thunderwave": 23.6,
+   "trickroom": 22.8
+  },
+  "record": null,
+  "teammates": [
+   "archaludon",
+   "pelipper",
+   "swampert",
+   "sinistcha",
+   "annihilape",
+   "maushold"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 25.2,
+   "points": [
+    32,
+    0,
+    2,
+    0,
+    32,
+    0
+   ]
+  },
+  "win_rate": 47.514
+ },
+ "kommoo": {
+  "abilities": {
+   "bulletproof": 4.5,
+   "overcoat": 14.9,
+   "soundproof": 80.6
+  },
+  "items": {
+   "choicescarf": 1.4,
+   "dragonfang": 14.1,
+   "habanberry": 1.5,
+   "leftovers": 71.2,
+   "lifeorb": 6.9,
+   "payapaberry": 2.2,
+   "roseliberry": 0.2,
+   "sitrusberry": 2.4,
+   "wiseglasses": 0.2
+  },
+  "moves": {
+   "aurasphere": 79.2,
+   "bodypress": 4.1,
+   "clangingscales": 95.7,
+   "clangoroussoul": 83.2,
+   "drainpunch": 9.8,
+   "flashcannon": 7.4,
+   "helpinghand": 3.4,
+   "irondefense": 3.9,
+   "protect": 94.9,
+   "vacuumwave": 4.8
+  },
+  "record": [
+   549,
+   665,
+   4
+  ],
+  "teammates": [
+   "incineroar",
+   "sinistcha",
+   "metagross",
+   "sneasler",
+   "kingambit",
+   "froslass"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 11.1,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 45.238
+ },
+ "krookodile": {
+  "abilities": {
+   "angerpoint": 26.8,
+   "intimidate": 53.7,
+   "moxie": 19.5
+  },
+  "items": {
+   "choicescarf": 17.1,
+   "chopleberry": 19.5,
+   "focussash": 2.4,
+   "muscleband": 7.3,
+   "passhoberry": 26.8,
+   "quickclaw": 17.1,
+   "sitrusberry": 9.8
+  },
+  "moves": {
+   "closecombat": 34.1,
+   "earthquake": 53.7,
+   "highhorsepower": 36.6,
+   "ironhead": 19.5,
+   "knockoff": 70.7,
+   "powertrip": 26.8,
+   "protect": 65.9,
+   "rockslide": 26.8,
+   "scaleshot": 26.8,
+   "thunderfang": 17.1
+  },
+  "record": null,
+  "teammates": [
+   "staraptor",
+   "talonflame",
+   "clefable",
+   "garchomp",
+   "goodrahisui",
+   "grimmsnarl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 26.8,
+   "points": [
+    32,
+    0,
+    0,
+    0,
+    2,
+    29
+   ]
+  },
+  "win_rate": 47.368
+ },
+ "leafeon": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "liepard": {
+  "abilities": {
+   "prankster": 100.0
+  },
+  "items": {
+   "chopleberry": 34.3,
+   "focussash": 63.6,
+   "lumberry": 0.7,
+   "roseliberry": 1.4
+  },
+  "moves": {
+   "charm": 67.1,
+   "encore": 59.4,
+   "fakeout": 98.6,
+   "faketears": 43.4,
+   "knockoff": 34.3,
+   "protect": 11.2,
+   "raindance": 9.1,
+   "screech": 23.1,
+   "sunnyday": 12.6,
+   "yawn": 18.9
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "staraptor",
+   "basculegion",
+   "raichu",
+   "garchomp",
+   "whimsicott"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 28.7,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 38.095
+ },
+ "lopunny": {
+  "abilities": {
+   "cutecharm": 40.4,
+   "klutz": 3.2,
+   "limber": 56.5
+  },
+  "items": {
+   "lopunnite": 99.6,
+   "venusaurite": 0.4
+  },
+  "moves": {
+   "afteryou": 9.5,
+   "closecombat": 96.8,
+   "encore": 53.0,
+   "facade": 7.4,
+   "fakeout": 100.0,
+   "gigaimpact": 37.2,
+   "irontail": 4.9,
+   "protect": 4.9,
+   "tripleaxel": 42.8,
+   "uturn": 28.1
+  },
+  "record": null,
+  "teammates": [
+   "basculegion",
+   "sylveon",
+   "sinistcha",
+   "incineroar",
+   "ceruledge",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 24.6,
+   "points": [
+    5,
+    29,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 49.105
+ },
+ "lucario": {
+  "abilities": {
+   "innerfocus": 80.5,
+   "justified": 9.1,
+   "steadfast": 10.5
+  },
+  "items": {
+   "blackbelt": 0.9,
+   "choicescarf": 36.4,
+   "expertbelt": 10.0,
+   "focussash": 7.3,
+   "lifeorb": 0.9,
+   "lucarionite": 44.1
+  },
+  "moves": {
+   "aurasphere": 28.2,
+   "bulletpunch": 31.8,
+   "closecombat": 42.3,
+   "darkpulse": 20.5,
+   "finalgambit": 36.8,
+   "flashcannon": 28.6,
+   "focusblast": 18.6,
+   "meteormash": 30.5,
+   "protect": 41.8,
+   "steelbeam": 19.5
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "farigiraf",
+   "staraptor",
+   "sylveon",
+   "sableye",
+   "garchomp"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 20.5,
+   "points": [
+    32,
+    0,
+    0,
+    2,
+    0,
+    32
+   ]
+  },
+  "win_rate": 36.951
+ },
+ "luxray": {
+  "abilities": {
+   "guts": 17.3,
+   "intimidate": 82.7
+  },
+  "items": {
+   "choicescarf": 13.5,
+   "leftovers": 48.1,
+   "quickclaw": 19.2,
+   "sitrusberry": 1.9,
+   "whiteherb": 17.3
+  },
+  "moves": {
+   "helpinghand": 1.9,
+   "icefang": 80.8,
+   "playrough": 17.3,
+   "protect": 65.4,
+   "psychicfangs": 19.2,
+   "quickattack": 19.2,
+   "supercellslam": 19.2,
+   "superpower": 82.7,
+   "voltswitch": 15.4,
+   "wildcharge": 78.8
+  },
+  "record": null,
+  "teammates": [
+   "pelipper",
+   "sinistcha",
+   "gallade",
+   "malamar",
+   "basculegion",
+   "altaria"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 38.5,
+   "points": [
+    28,
+    0,
+    2,
+    0,
+    32,
+    4
+   ]
+  },
+  "win_rate": 42.857
+ },
+ "lycanroc": {
+  "abilities": {
+   "sandrush": 86.0,
+   "steadfast": 14.0
+  },
+  "items": {
+   "focussash": 88.0,
+   "hardstone": 10.0,
+   "kingsrock": 2.0
+  },
+  "moves": {
+   "accelerock": 58.0,
+   "closecombat": 82.0,
+   "endeavor": 16.0,
+   "protect": 84.0,
+   "psychicfangs": 48.0,
+   "quickguard": 10.0,
+   "rockslide": 72.0,
+   "snarl": 12.0,
+   "sunnyday": 2.0,
+   "taunt": 16.0
+  },
+  "record": null,
+  "teammates": [
+   "tyranitar",
+   "raichu",
+   "gholdengo",
+   "sinistcha",
+   "whimsicott",
+   "hydreigon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 42.0,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 44.828
+ },
+ "lycanrocdusk": {
+  "abilities": {
+   "toughclaws": 100.0
+  },
+  "items": {
+   "expertbelt": 3.0,
+   "focussash": 84.5,
+   "hardstone": 7.5,
+   "lifeorb": 5.1
+  },
+  "moves": {
+   "accelerock": 100.0,
+   "closecombat": 94.6,
+   "drillrun": 4.8,
+   "ironhead": 3.9,
+   "protect": 94.6,
+   "psychicfangs": 1.5,
+   "roar": 1.5,
+   "rockslide": 93.7,
+   "suckerpunch": 3.0,
+   "throatchop": 1.5
+  },
+  "record": [
+   1203,
+   851,
+   1
+  ],
+  "teammates": [
+   "sneasler",
+   "froslass",
+   "kingambit",
+   "basculegion",
+   "scovillain",
+   "metagross"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 47.5,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 58.564
+ },
+ "lycanrocmidnight": {
+  "abilities": {
+   "noguard": 100.0
+  },
+  "items": {
+   "choicescarf": 100.0
+  },
+  "moves": {
+   "closecombat": 100.0,
+   "irontail": 100.0,
+   "rockslide": 100.0,
+   "stoneedge": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "chandelure",
+   "glaceon",
+   "froslass",
+   "sneasler",
+   "sableye",
+   "delphox"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    5,
+    32,
+    0,
+    0,
+    0,
+    29
+   ]
+  },
+  "win_rate": 16.667
+ },
+ "machamp": {
+  "abilities": {
+   "noguard": 100.0
+  },
+  "items": {
+   "blackbelt": 2.6,
+   "cobaberry": 5.1,
+   "muscleband": 15.4,
+   "quickclaw": 12.8,
+   "scopelens": 17.9,
+   "sitrusberry": 46.2
+  },
+  "moves": {
+   "bulletpunch": 17.9,
+   "crosschop": 17.9,
+   "dynamicpunch": 69.2,
+   "icepunch": 30.8,
+   "knockoff": 33.3,
+   "protect": 17.9,
+   "rockslide": 15.4,
+   "stoneedge": 84.6,
+   "sunnyday": 15.4,
+   "wideguard": 53.8
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "sylveon",
+   "torkoal",
+   "meganium",
+   "drampa",
+   "basculegion"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 48.7,
+   "points": [
+    32,
+    32,
+    2,
+    0,
+    0,
+    0
+   ]
+  },
+  "win_rate": 23.148
+ },
+ "malamar": {
+  "abilities": {
+   "contrary": 100.0
+  },
+  "items": {
+   "colburberry": 0.5,
+   "leftovers": 5.0,
+   "lumberry": 0.2,
+   "malamarite": 78.9,
+   "mentalherb": 5.9,
+   "roseliberry": 5.7,
+   "sitrusberry": 3.8
+  },
+  "moves": {
+   "hypnosis": 6.7,
+   "knockoff": 72.7,
+   "poisonjab": 8.8,
+   "protect": 78.9,
+   "psychocut": 46.3,
+   "storedpower": 18.8,
+   "superpower": 94.1,
+   "topsyturvy": 17.6,
+   "trickroom": 22.1,
+   "zenheadbutt": 6.9
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "grimmsnarl",
+   "incineroar",
+   "pelipper",
+   "whimsicott",
+   "basculegion"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 16.4,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 39.791
+ },
+ "mamoswine": {
+  "abilities": {
+   "oblivious": 77.5,
+   "thickfat": 22.5
+  },
+  "items": {
+   "choicescarf": 27.3,
+   "expertbelt": 7.1,
+   "focussash": 39.3,
+   "lifeorb": 15.6,
+   "nevermeltice": 2.6,
+   "occaberry": 0.5,
+   "sitrusberry": 4.7,
+   "softsand": 2.1,
+   "widelens": 0.7
+  },
+  "moves": {
+   "earthquake": 39.8,
+   "freezedry": 5.2,
+   "highhorsepower": 63.7,
+   "iceshard": 85.5,
+   "iciclecrash": 75.8,
+   "iciclespear": 11.4,
+   "ironhead": 9.0,
+   "protect": 66.6,
+   "rockslide": 18.5,
+   "rocktomb": 5.5
+  },
+  "record": [
+   631,
+   574,
+   1
+  ],
+  "teammates": [
+   "incineroar",
+   "raichu",
+   "sinistcha",
+   "aerodactyl",
+   "floetteeternal",
+   "whimsicott"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 54.5,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 52.363
+ },
+ "manectric": {
+  "abilities": {
+   "lightningrod": 61.2,
+   "minus": 37.6,
+   "static": 1.2
+  },
+  "items": {
+   "focussash": 11.8,
+   "magnet": 1.2,
+   "manectite": 84.7,
+   "whiteherb": 2.4
+  },
+  "moves": {
+   "discharge": 1.2,
+   "eerieimpulse": 22.4,
+   "flamethrower": 7.1,
+   "lightscreen": 37.6,
+   "overheat": 42.4,
+   "protect": 62.4,
+   "snarl": 29.4,
+   "thunder": 29.4,
+   "thunderbolt": 68.2,
+   "voltswitch": 98.8
+  },
+  "record": null,
+  "teammates": [
+   "pelipper",
+   "farigiraf",
+   "archaludon",
+   "swampert",
+   "sinistcha",
+   "annihilape"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 34.1,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 45.763
+ },
+ "maushold": {
+  "abilities": {
+   "cheekpouch": 0.5,
+   "friendguard": 73.2,
+   "technician": 26.3
+  },
+  "items": {
+   "brightpowder": 0.1,
+   "choicescarf": 0.3,
+   "chopleberry": 38.7,
+   "focussash": 24.2,
+   "leftovers": 0.4,
+   "mentalherb": 0.6,
+   "silkscarf": 0.1,
+   "sitrusberry": 6.0,
+   "widelens": 29.4,
+   "zoomlens": 0.1
+  },
+  "moves": {
+   "beatup": 31.0,
+   "charm": 10.5,
+   "encore": 24.2,
+   "feint": 20.8,
+   "followme": 95.4,
+   "helpinghand": 11.5,
+   "populationbomb": 31.5,
+   "protect": 89.4,
+   "superfang": 40.2,
+   "taunt": 21.8
+  },
+  "record": [
+   1868,
+   1968,
+   2
+  ],
+  "teammates": [
+   "annihilape",
+   "sinistcha",
+   "garchomp",
+   "staraptor",
+   "incineroar",
+   "basculegion"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 16.5,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 48.697
+ },
+ "mawile": {
+  "abilities": {
+   "hypercutter": 27.9,
+   "intimidate": 71.7,
+   "sheerforce": 0.4
+  },
+  "items": {
+   "mawilite": 100.0
+  },
+  "moves": {
+   "brickbreak": 1.9,
+   "ironhead": 80.8,
+   "knockoff": 3.7,
+   "playrough": 97.2,
+   "protect": 89.0,
+   "rockslide": 12.4,
+   "stoneedge": 1.0,
+   "suckerpunch": 92.9,
+   "swordsdance": 17.0,
+   "thunderpunch": 2.2
+  },
+  "record": [
+   1886,
+   2100,
+   2
+  ],
+  "teammates": [
+   "farigiraf",
+   "sinistcha",
+   "incineroar",
+   "torkoal",
+   "garchomp",
+   "basculegion"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 45.8,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 47.317
+ },
+ "medicham": {
+  "abilities": {
+   "purepower": 98.3,
+   "telepathy": 1.7
+  },
+  "items": {
+   "focussash": 12.7,
+   "ironball": 11.0,
+   "medichamite": 76.3
+  },
+  "moves": {
+   "bulletpunch": 3.4,
+   "closecombat": 100.0,
+   "fakeout": 100.0,
+   "feint": 1.7,
+   "poisonjab": 73.7,
+   "psychocut": 50.0,
+   "rockslide": 61.0,
+   "thunderpunch": 6.8,
+   "trickroom": 0.8,
+   "zenheadbutt": 1.7
+  },
+  "record": null,
+  "teammates": [
+   "torkoal",
+   "farigiraf",
+   "hatterene",
+   "kingambit",
+   "basculegion",
+   "scrafty"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 42.4,
+   "points": [
+    32,
+    32,
+    1,
+    0,
+    1,
+    0
+   ]
+  },
+  "win_rate": 41.667
+ },
+ "meganium": {
+  "abilities": {
+   "leafguard": 29.0,
+   "overgrow": 71.0
+  },
+  "items": {
+   "meganiumite": 100.0
+  },
+  "moves": {
+   "dazzlinggleam": 97.0,
+   "earthpower": 2.2,
+   "encore": 1.0,
+   "gigadrain": 0.2,
+   "protect": 92.5,
+   "solarbeam": 100.0,
+   "synthesis": 8.9,
+   "weatherball": 98.2
+  },
+  "record": [
+   257,
+   348,
+   1
+  ],
+  "teammates": [
+   "pelipper",
+   "archaludon",
+   "basculegion",
+   "swampert",
+   "sneasler",
+   "incineroar"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 28.4,
+   "points": [
+    32,
+    0,
+    0,
+    32,
+    0,
+    2
+   ]
+  },
+  "win_rate": 42.492
+ },
+ "meowscarada": {
+  "abilities": {
+   "overgrow": 16.4,
+   "protean": 83.6
+  },
+  "items": {
+   "blackglasses": 0.7,
+   "choicescarf": 52.6,
+   "expertbelt": 2.8,
+   "fairyfeather": 0.5,
+   "focussash": 24.6,
+   "lifeorb": 13.9,
+   "miracleseed": 0.7,
+   "sitrusberry": 0.7,
+   "whiteherb": 0.2,
+   "widelens": 3.0
+  },
+  "moves": {
+   "brickbreak": 7.7,
+   "flowertrick": 97.4,
+   "knockoff": 63.0,
+   "lowkick": 9.0,
+   "playrough": 24.1,
+   "protect": 18.5,
+   "suckerpunch": 37.3,
+   "throatchop": 9.2,
+   "tripleaxel": 85.2,
+   "uturn": 30.1
+  },
+  "record": [
+   339,
+   480,
+   1
+  ],
+  "teammates": [
+   "raichu",
+   "sneasler",
+   "whimsicott",
+   "basculegion",
+   "pelipper",
+   "staraptor"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 45.2,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 41.402
+ },
+ "meowstic": {
+  "abilities": {
+   "prankster": 100.0
+  },
+  "items": {
+   "brightpowder": 7.7,
+   "chestoberry": 2.8,
+   "colburberry": 3.5,
+   "focussash": 18.3,
+   "kasibberry": 12.0,
+   "lightclay": 21.1,
+   "mentalherb": 19.0,
+   "meowsticite": 3.5,
+   "sitrusberry": 3.5,
+   "twistedspoon": 8.5
+  },
+  "moves": {
+   "charm": 28.2,
+   "expandingforce": 26.1,
+   "fakeout": 70.4,
+   "faketears": 24.6,
+   "lightscreen": 35.9,
+   "psychic": 19.0,
+   "psychicterrain": 26.1,
+   "reflect": 39.4,
+   "skillswap": 14.8,
+   "thunderwave": 13.4
+  },
+  "record": null,
+  "teammates": [
+   "staraptor",
+   "sinistcha",
+   "incineroar",
+   "raichu",
+   "sylveon",
+   "basculegion"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 12.0,
+   "points": [
+    32,
+    0,
+    14,
+    0,
+    20,
+    0
+   ]
+  },
+  "win_rate": 32.389
+ },
+ "meowsticf": {
+  "abilities": {
+   "competitive": 100.0
+  },
+  "items": {
+   "meowsticite": 100.0
+  },
+  "moves": {
+   "energyball": 100.0,
+   "fakeout": 33.3,
+   "protect": 100.0,
+   "psychic": 100.0,
+   "thunderbolt": 66.7
+  },
+  "record": null,
+  "teammates": [
+   "swampert",
+   "pelipper",
+   "sableye",
+   "sinistcha",
+   "archaludon",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 66.7,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": null
+ },
+ "metagross": {
+  "abilities": {
+   "clearbody": 99.5,
+   "lightmetal": 0.5
+  },
+  "items": {
+   "choicescarf": 0.4,
+   "expertbelt": 0.4,
+   "leftovers": 0.5,
+   "lifeorb": 2.3,
+   "metagrossite": 94.5,
+   "metalcoat": 0.8,
+   "occaberry": 0.2,
+   "shellbell": 0.1,
+   "shucaberry": 0.1,
+   "sitrusberry": 0.4
+  },
+  "moves": {
+   "bodypress": 8.8,
+   "bulletpunch": 38.5,
+   "icepunch": 23.2,
+   "ironhead": 58.7,
+   "meteormash": 28.8,
+   "protect": 89.8,
+   "psychicfangs": 86.7,
+   "rockslide": 9.0,
+   "stompingtantrum": 31.8,
+   "thunderpunch": 5.9
+  },
+  "record": [
+   3735,
+   4023,
+   9
+  ],
+  "teammates": [
+   "garchomp",
+   "sinistcha",
+   "whimsicott",
+   "basculegion",
+   "sneasler",
+   "incineroar"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 25.7,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 48.146
+ },
+ "milotic": {
+  "abilities": {
+   "competitive": 99.1,
+   "cutecharm": 0.7,
+   "marvelscale": 0.3
+  },
+  "items": {
+   "brightpowder": 0.2,
+   "leftovers": 74.5,
+   "lifeorb": 1.5,
+   "mentalherb": 0.7,
+   "mysticwater": 2.0,
+   "rindoberry": 0.5,
+   "shellbell": 1.3,
+   "sitrusberry": 18.2,
+   "wacanberry": 0.7,
+   "wiseglasses": 0.2
+  },
+  "moves": {
+   "coil": 39.4,
+   "hypnosis": 38.2,
+   "icebeam": 32.5,
+   "icywind": 38.7,
+   "lifedew": 33.5,
+   "muddywater": 42.0,
+   "protect": 54.1,
+   "psychup": 4.8,
+   "recover": 45.0,
+   "scald": 58.6
+  },
+  "record": [
+   1603,
+   1740,
+   6
+  ],
+  "teammates": [
+   "sinistcha",
+   "garchomp",
+   "incineroar",
+   "sneasler",
+   "staraptor",
+   "whimsicott"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 9.8,
+   "points": [
+    32,
+    0,
+    32,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 47.955
+ },
+ "mimikyu": {
+  "abilities": {
+   "disguise": 100.0
+  },
+  "items": {
+   "brightpowder": 0.6,
+   "fairyfeather": 1.9,
+   "leftovers": 1.3,
+   "lifeorb": 49.4,
+   "lumberry": 5.0,
+   "mentalherb": 22.5,
+   "quickclaw": 3.1,
+   "spelltag": 14.4,
+   "whiteherb": 1.9
+  },
+  "moves": {
+   "curse": 8.1,
+   "drainpunch": 8.8,
+   "playrough": 88.8,
+   "protect": 26.9,
+   "shadowclaw": 42.5,
+   "shadowsneak": 81.3,
+   "swordsdance": 30.0,
+   "trickroom": 54.4,
+   "willowisp": 26.3,
+   "woodhammer": 12.5
+  },
+  "record": [
+   202,
+   281,
+   1
+  ],
+  "teammates": [
+   "dragonite",
+   "torkoal",
+   "tyranitar",
+   "mawile",
+   "sylveon",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 28.1,
+   "points": [
+    32,
+    32,
+    2,
+    0,
+    0,
+    0
+   ]
+  },
+  "win_rate": 41.839
+ },
+ "morpeko": {
+  "abilities": {
+   "hungerswitch": 100.0
+  },
+  "items": {
+   "focussash": 87.5,
+   "lifeorb": 12.5
+  },
+  "moves": {
+   "aurawheel": 100.0,
+   "fakeout": 100.0,
+   "knockoff": 12.5,
+   "partingshot": 50.0,
+   "protect": 87.5,
+   "seedbomb": 37.5,
+   "taunt": 12.5
+  },
+  "record": null,
+  "teammates": [
+   "scizor",
+   "blaziken",
+   "milotic",
+   "torterra",
+   "dragapult",
+   "sneasler"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 87.5,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 37.879
+ },
+ "mrrime": {
+  "abilities": {
+   "icebody": 18.2,
+   "screencleaner": 81.8
+  },
+  "items": {
+   "focussash": 27.3,
+   "sitrusberry": 72.7
+  },
+  "moves": {
+   "fakeout": 100.0,
+   "freezedry": 9.1,
+   "hypnosis": 27.3,
+   "icebeam": 72.7,
+   "psychic": 81.8,
+   "roleplay": 18.2,
+   "sheercold": 18.2,
+   "thunderbolt": 72.7
+  },
+  "record": null,
+  "teammates": [
+   "garchomp",
+   "charizard",
+   "whimsicott",
+   "araquanid",
+   "kingambit",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 72.7,
+   "points": [
+    5,
+    0,
+    5,
+    12,
+    10,
+    32
+   ]
+  },
+  "win_rate": 35.135
+ },
+ "mudsdale": {
+  "abilities": {
+   "innerfocus": 47.5,
+   "owntempo": 3.1,
+   "stamina": 49.4
+  },
+  "items": {
+   "leftovers": 31.5,
+   "lifeorb": 15.4,
+   "quickclaw": 17.9,
+   "softsand": 35.2
+  },
+  "moves": {
+   "bodypress": 49.4,
+   "closecombat": 10.5,
+   "earthquake": 55.6,
+   "heavyslam": 22.8,
+   "highhorsepower": 77.8,
+   "ironhead": 17.9,
+   "protect": 82.1,
+   "rockslide": 59.3,
+   "stoneedge": 24.7
+  },
+  "record": null,
+  "teammates": [
+   "sylveon",
+   "torkoal",
+   "oranguru",
+   "glalie",
+   "sinistcha",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 17.9,
+   "points": [
+    2,
+    0,
+    32,
+    0,
+    32,
+    0
+   ]
+  },
+  "win_rate": 44.094
+ },
+ "musharna": {
+  "abilities": {
+   "synchronize": 7.1,
+   "telepathy": 92.9
+  },
+  "items": {
+   "colburberry": 9.5,
+   "mentalherb": 26.2,
+   "sitrusberry": 64.3
+  },
+  "moves": {
+   "allyswitch": 81.0,
+   "charm": 2.4,
+   "healingwish": 2.4,
+   "helpinghand": 90.5,
+   "moonblast": 9.5,
+   "protect": 7.1,
+   "psychic": 100.0,
+   "shadowball": 2.4,
+   "trickroom": 100.0,
+   "yawn": 4.8
+  },
+  "record": null,
+  "teammates": [
+   "mawile",
+   "tsareena",
+   "empoleon",
+   "toxicroak",
+   "glimmora",
+   "vileplume"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 85.7,
+   "points": [
+    32,
+    0,
+    16,
+    0,
+    18,
+    0
+   ]
+  },
+  "win_rate": 39.024
+ },
+ "ninetales": {
+  "abilities": {
+   "drought": 100.0
+  },
+  "items": {
+   "brightpowder": 5.4,
+   "charcoal": 30.2,
+   "choicescarf": 9.3,
+   "focussash": 2.3,
+   "heatrock": 3.1,
+   "lifeorb": 20.2,
+   "passhoberry": 7.8,
+   "quickclaw": 0.8,
+   "shucaberry": 19.4,
+   "widelens": 1.6
+  },
+  "moves": {
+   "disable": 26.4,
+   "encore": 29.5,
+   "heatwave": 73.6,
+   "helpinghand": 28.7,
+   "mysticalfire": 14.0,
+   "overheat": 41.1,
+   "painsplit": 14.0,
+   "protect": 84.5,
+   "solarbeam": 21.7,
+   "willowisp": 30.2
+  },
+  "record": [
+   429,
+   435,
+   1
+  ],
+  "teammates": [
+   "whimsicott",
+   "pyroar",
+   "aerodactyl",
+   "raichu",
+   "garchomp",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 24.0,
+   "points": [
+    2,
+    0,
+    2,
+    32,
+    0,
+    30
+   ]
+  },
+  "win_rate": 49.653
+ },
+ "ninetalesalola": {
+  "abilities": {
+   "snowcloak": 0.1,
+   "snowwarning": 99.9
+  },
+  "items": {
+   "babiriberry": 0.3,
+   "choicescarf": 18.4,
+   "focussash": 19.8,
+   "icyrock": 1.1,
+   "kebiaberry": 0.4,
+   "leftovers": 0.2,
+   "lifeorb": 5.3,
+   "lightclay": 36.6,
+   "nevermeltice": 16.4,
+   "sitrusberry": 1.3
+  },
+  "moves": {
+   "auroraveil": 63.1,
+   "blizzard": 95.2,
+   "dazzlinggleam": 5.9,
+   "disable": 4.4,
+   "encore": 26.3,
+   "freezedry": 63.3,
+   "iciclespear": 2.0,
+   "icywind": 20.6,
+   "moonblast": 43.7,
+   "protect": 67.4
+  },
+  "record": [
+   1631,
+   1634,
+   2
+  ],
+  "teammates": [
+   "raichu",
+   "garchomp",
+   "incineroar",
+   "sinistcha",
+   "whimsicott",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 33.8,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 49.954
+ },
+ "noivern": {
+  "abilities": {
+   "infiltrator": 43.8,
+   "telepathy": 56.3
+  },
+  "items": {
+   "focussash": 62.5,
+   "lifeorb": 37.5
+  },
+  "moves": {
+   "airslash": 100.0,
+   "boomburst": 37.5,
+   "dracometeor": 100.0,
+   "heatwave": 12.5,
+   "protect": 87.5,
+   "tailwind": 62.5
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "metagross",
+   "garchomp",
+   "rotomwash",
+   "eelektross",
+   "grimmsnarl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 35.294
+ },
+ "oranguru": {
+  "abilities": {
+   "innerfocus": 69.6,
+   "telepathy": 30.4
+  },
+  "items": {
+   "colburberry": 28.2,
+   "focussash": 3.1,
+   "leftovers": 1.6,
+   "mentalherb": 56.7,
+   "sitrusberry": 9.1,
+   "twistedspoon": 1.3
+  },
+  "moves": {
+   "afteryou": 8.8,
+   "encore": 28.2,
+   "energyball": 10.3,
+   "imprison": 10.7,
+   "instruct": 88.4,
+   "protect": 47.0,
+   "psychic": 39.2,
+   "psychicterrain": 22.3,
+   "terrainpulse": 10.3,
+   "trickroom": 96.9
+  },
+  "record": null,
+  "teammates": [
+   "torkoal",
+   "sylveon",
+   "glalie",
+   "sinistcha",
+   "mudsdale",
+   "camerupt"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 22.6,
+   "points": [
+    32,
+    0,
+    32,
+    0,
+    0,
+    2
+   ]
+  },
+  "win_rate": 40.887
+ },
+ "orthworm": {
+  "abilities": {
+   "eartheater": 100.0
+  },
+  "items": {
+   "choicescarf": 0.9,
+   "leftovers": 6.5,
+   "sitrusberry": 92.5
+  },
+  "moves": {
+   "bodypress": 93.5,
+   "bulldoze": 0.9,
+   "coil": 6.5,
+   "heavyslam": 77.6,
+   "helpinghand": 9.3,
+   "irondefense": 19.6,
+   "ironhead": 21.5,
+   "protect": 72.0,
+   "shedtail": 93.5,
+   "stealthrock": 5.6
+  },
+  "record": null,
+  "teammates": [
+   "blastoise",
+   "sableye",
+   "maushold",
+   "vivillon",
+   "sylveon",
+   "pelipper"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 43.9,
+   "points": [
+    32,
+    0,
+    5,
+    0,
+    29,
+    0
+   ]
+  },
+  "win_rate": 49.565
+ },
+ "overqwil": {
+  "abilities": {
+   "intimidate": 24.1,
+   "poisonpoint": 2.5,
+   "swiftswim": 73.3
+  },
+  "items": {
+   "blackglasses": 0.6,
+   "choicescarf": 0.6,
+   "expertbelt": 3.2,
+   "focussash": 3.5,
+   "leftovers": 2.9,
+   "lifeorb": 59.0,
+   "metronome": 0.3,
+   "poisonbarb": 0.3,
+   "shucaberry": 9.8,
+   "sitrusberry": 19.7
+  },
+  "moves": {
+   "aquajet": 37.1,
+   "barbbarrage": 55.6,
+   "crunch": 15.2,
+   "fellstinger": 13.3,
+   "haze": 12.7,
+   "lashout": 17.8,
+   "poisonjab": 34.6,
+   "protect": 77.8,
+   "taunt": 21.0,
+   "throatchop": 61.0
+  },
+  "record": null,
+  "teammates": [
+   "swampert",
+   "pelipper",
+   "archaludon",
+   "basculegion",
+   "glimmora",
+   "whimsicott"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 26.3,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 47.176
+ },
+ "palafin": {
+  "abilities": {
+   "zerotohero": 100.0
+  },
+  "items": {
+   "choicescarf": 5.1,
+   "leftovers": 16.7,
+   "lifeorb": 7.4,
+   "lumberry": 0.8,
+   "mysticwater": 65.0,
+   "sitrusberry": 4.7
+  },
+  "moves": {
+   "bulkup": 14.0,
+   "closecombat": 56.0,
+   "drainpunch": 4.3,
+   "flipturn": 37.7,
+   "icepunch": 5.4,
+   "jetpunch": 100.0,
+   "liquidation": 5.4,
+   "protect": 74.7,
+   "taunt": 5.8,
+   "wavecrash": 91.8
+  },
+  "record": [
+   299,
+   352,
+   1
+  ],
+  "teammates": [
+   "incineroar",
+   "sinistcha",
+   "sneasler",
+   "kingambit",
+   "froslass",
+   "kommoo"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 39.7,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    0,
+    2
+   ]
+  },
+  "win_rate": 45.936
+ },
+ "pangoro": {
+  "abilities": {
+   "scrappy": 100.0
+  },
+  "items": {
+   "expertbelt": 100.0
+  },
+  "moves": {
+   "brickbreak": 100.0,
+   "closecombat": 100.0,
+   "darkestlariat": 100.0,
+   "poisonjab": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "slowbro",
+   "torkoal",
+   "reuniclus",
+   "golurk",
+   "maushold"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    27,
+    32,
+    7,
+    0,
+    0,
+    0
+   ]
+  },
+  "win_rate": 34.375
+ },
+ "passimian": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "pelipper": {
+  "abilities": {
+   "drizzle": 100.0,
+   "keeneye": 0.0
+  },
+  "items": {
+   "choicescarf": 4.1,
+   "damprock": 13.1,
+   "expertbelt": 0.4,
+   "focussash": 45.3,
+   "leftovers": 0.5,
+   "lifeorb": 2.4,
+   "mysticwater": 0.6,
+   "sharpbeak": 0.5,
+   "sitrusberry": 31.4,
+   "wacanberry": 0.6
+  },
+  "moves": {
+   "helpinghand": 5.2,
+   "hurricane": 98.9,
+   "icebeam": 3.4,
+   "muddywater": 6.6,
+   "protect": 42.5,
+   "raindance": 6.1,
+   "tailwind": 86.5,
+   "uturn": 4.2,
+   "weatherball": 87.7,
+   "wideguard": 51.2
+  },
+  "record": [
+   5750,
+   5806,
+   6
+  ],
+  "teammates": [
+   "archaludon",
+   "swampert",
+   "sinistcha",
+   "basculegion",
+   "sableye",
+   "grimmsnarl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 30.6,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 49.758
+ },
+ "pidgeot": {
+  "abilities": {
+   "bigpecks": 40.0,
+   "keeneye": 50.0,
+   "tangledfeet": 10.0
+  },
+  "items": {
+   "pidgeotite": 100.0
+  },
+  "moves": {
+   "heatwave": 100.0,
+   "hurricane": 100.0,
+   "hyperbeam": 10.0,
+   "protect": 100.0,
+   "tailwind": 80.0,
+   "whirlwind": 10.0
+  },
+  "record": null,
+  "teammates": [
+   "garchomp",
+   "ninetales",
+   "aegislash",
+   "incineroar",
+   "farigiraf",
+   "talonflame"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    0,
+    0,
+    1,
+    32,
+    1,
+    32
+   ]
+  },
+  "win_rate": 41.096
+ },
+ "pikachu": {
+  "abilities": {
+   "lightningrod": 97.1,
+   "static": 2.9
+  },
+  "items": {
+   "lightball": 97.1
+  },
+  "moves": {
+   "brickbreak": 2.9,
+   "endeavor": 2.9,
+   "fakeout": 97.1,
+   "feint": 2.9,
+   "protect": 97.1,
+   "quickattack": 94.3,
+   "reversal": 2.9,
+   "thunderbolt": 94.3,
+   "upperhand": 2.9,
+   "volttackle": 2.9
+  },
+  "record": null,
+  "teammates": [
+   "charizard",
+   "garchomp",
+   "whimsicott",
+   "incineroar",
+   "kingambit",
+   "venusaur"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 94.3,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 50.0
+ },
+ "pinsir": {
+  "abilities": {
+   "hypercutter": 89.7,
+   "moldbreaker": 10.3
+  },
+  "items": {
+   "pinsirite": 100.0
+  },
+  "moves": {
+   "bodyslam": 100.0,
+   "feint": 100.0,
+   "protect": 100.0,
+   "stormthrow": 59.0,
+   "swordsdance": 41.0
+  },
+  "record": null,
+  "teammates": [
+   "taurospaldeaaqua",
+   "farigiraf",
+   "whimsicott",
+   "talonflame",
+   "raichu",
+   "garchomp"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 56.4,
+   "points": [
+    32,
+    0,
+    2,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 50.0
+ },
+ "politoed": {
+  "abilities": {
+   "damp": 0.1,
+   "drizzle": 99.9
+  },
+  "items": {
+   "choicescarf": 6.9,
+   "damprock": 10.0,
+   "focussash": 0.4,
+   "leftovers": 9.4,
+   "lifeorb": 3.2,
+   "mysticwater": 8.6,
+   "quickclaw": 1.0,
+   "sitrusberry": 58.3,
+   "wacanberry": 1.2,
+   "widelens": 0.5
+  },
+  "moves": {
+   "encore": 21.6,
+   "helpinghand": 11.0,
+   "hypnosis": 26.8,
+   "icebeam": 32.4,
+   "icywind": 18.7,
+   "muddywater": 31.9,
+   "perishsong": 51.9,
+   "protect": 86.8,
+   "raindance": 16.8,
+   "weatherball": 89.9
+  },
+  "record": [
+   1010,
+   1043,
+   3
+  ],
+  "teammates": [
+   "archaludon",
+   "sinistcha",
+   "incineroar",
+   "gengar",
+   "swampert",
+   "grimmsnarl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 16.5,
+   "points": [
+    31,
+    0,
+    23,
+    0,
+    12,
+    0
+   ]
+  },
+  "win_rate": 49.197
+ },
+ "polteageist": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "primarina": {
+  "abilities": {
+   "liquidvoice": 97.1,
+   "torrent": 2.9
+  },
+  "items": {
+   "choicescarf": 6.6,
+   "expertbelt": 2.2,
+   "fairyfeather": 0.4,
+   "leftovers": 32.7,
+   "lifeorb": 18.9,
+   "mysticwater": 14.8,
+   "nevermeltice": 2.4,
+   "quickclaw": 3.8,
+   "sitrusberry": 15.8,
+   "wiseglasses": 1.7
+  },
+  "moves": {
+   "aquajet": 5.6,
+   "calmmind": 37.1,
+   "dazzlinggleam": 10.1,
+   "drainingkiss": 6.2,
+   "energyball": 6.9,
+   "hydrocannon": 9.2,
+   "hypervoice": 97.1,
+   "icebeam": 14.0,
+   "moonblast": 83.9,
+   "protect": 89.5
+  },
+  "record": null,
+  "teammates": [
+   "incineroar",
+   "sinistcha",
+   "metagross",
+   "garchomp",
+   "sneasler",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 8.4,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 42.844
+ },
+ "pyroar": {
+  "abilities": {
+   "moxie": 6.4,
+   "rivalry": 5.1,
+   "unnerve": 88.5
+  },
+  "items": {
+   "pyroarite": 99.9
+  },
+  "moves": {
+   "darkpulse": 6.0,
+   "flamethrower": 27.8,
+   "heatwave": 99.6,
+   "hypervoice": 30.9,
+   "overheat": 72.9,
+   "protect": 99.2,
+   "round": 4.8,
+   "scorchingsands": 12.3,
+   "snarl": 3.9,
+   "solarbeam": 25.8
+  },
+  "record": [
+   1093,
+   1004,
+   3
+  ],
+  "teammates": [
+   "whimsicott",
+   "garchomp",
+   "kingambit",
+   "basculegion",
+   "staraptor",
+   "farigiraf"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 52.0,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 52.119
+ },
+ "quaquaval": {
+  "abilities": {
+   "moxie": 100.0
+  },
+  "items": {
+   "focussash": 10.0,
+   "lifeorb": 60.0,
+   "mysticwater": 30.0
+  },
+  "moves": {
+   "aquastep": 70.0,
+   "bulkup": 30.0,
+   "closecombat": 100.0,
+   "detect": 30.0,
+   "flipturn": 20.0,
+   "knockoff": 10.0,
+   "protect": 70.0,
+   "tripleaxel": 40.0,
+   "wavecrash": 30.0
+  },
+  "record": null,
+  "teammates": [
+   "raichu",
+   "incineroar",
+   "pelipper",
+   "archaludon",
+   "swampert",
+   "basculegion"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 40.0,
+   "points": [
+    2,
+    32,
+    32,
+    0,
+    0,
+    0
+   ]
+  },
+  "win_rate": 44.872
+ },
+ "qwilfish": {
+  "abilities": {
+   "intimidate": 100.0
+  },
+  "items": {
+   "sitrusberry": 100.0
+  },
+  "moves": {
+   "flipturn": 100.0,
+   "haze": 100.0,
+   "taunt": 100.0,
+   "toxic": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "swampert",
+   "pelipper",
+   "klefki",
+   "sinistcha",
+   "archaludon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    32,
+    0,
+    32,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 42.857
+ },
+ "raichu": {
+  "abilities": {
+   "lightningrod": 98.3,
+   "static": 1.7
+  },
+  "items": {
+   "choicescarf": 0.2,
+   "focusband": 0.3,
+   "focussash": 14.7,
+   "kingsrock": 0.3,
+   "lightclay": 0.4,
+   "magnet": 0.7,
+   "raichunitex": 18.2,
+   "raichunitey": 60.5,
+   "shucaberry": 3.8,
+   "sitrusberry": 0.5
+  },
+  "moves": {
+   "charm": 14.8,
+   "encore": 14.4,
+   "fakeout": 71.6,
+   "focusblast": 56.3,
+   "grassknot": 12.1,
+   "nuzzle": 10.4,
+   "protect": 66.4,
+   "voltswitch": 30.3,
+   "volttackle": 10.6,
+   "zapcannon": 60.4
+  },
+  "record": [
+   2496,
+   3125,
+   8
+  ],
+  "teammates": [
+   "sinistcha",
+   "garchomp",
+   "basculegion",
+   "staraptor",
+   "whimsicott",
+   "incineroar"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 43.3,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 44.413
+ },
+ "raichualola": {
+  "abilities": {
+   "surgesurfer": 100.0
+  },
+  "items": {
+   "focussash": 96.2,
+   "twistedspoon": 3.8
+  },
+  "moves": {
+   "fakeout": 7.7,
+   "grassknot": 3.8,
+   "nuzzle": 92.3,
+   "protect": 3.8,
+   "psychic": 100.0,
+   "thunder": 92.3,
+   "thunderbolt": 7.7,
+   "voltswitch": 92.3
+  },
+  "record": null,
+  "teammates": [
+   "swampert",
+   "archaludon",
+   "pelipper",
+   "metagross",
+   "basculegion",
+   "slowbro"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 96.2,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 51.429
+ },
+ "rampardos": {
+  "abilities": {
+   "sheerforce": 100.0
+  },
+  "items": {
+   "focussash": 13.3,
+   "lifeorb": 86.7
+  },
+  "moves": {
+   "breakingswipe": 6.7,
+   "dragonclaw": 53.3,
+   "earthquake": 6.7,
+   "firepunch": 80.0,
+   "headsmash": 6.7,
+   "ironhead": 26.7,
+   "protect": 100.0,
+   "rockslide": 100.0,
+   "thunderpunch": 13.3,
+   "zenheadbutt": 6.7
+  },
+  "record": null,
+  "teammates": [
+   "sylveon",
+   "oranguru",
+   "lopunny",
+   "lucario",
+   "meowscarada",
+   "farigiraf"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 53.3,
+   "points": [
+    31,
+    32,
+    0,
+    0,
+    3,
+    0
+   ]
+  },
+  "win_rate": 32.813
+ },
+ "reuniclus": {
+  "abilities": {
+   "magicguard": 98.8,
+   "regenerator": 1.2
+  },
+  "items": {
+   "ironball": 4.9,
+   "lifeorb": 95.1
+  },
+  "moves": {
+   "energyball": 39.0,
+   "expandingforce": 59.8,
+   "flashcannon": 40.2,
+   "focusblast": 32.9,
+   "protect": 73.2,
+   "psychic": 39.0,
+   "shadowball": 4.9,
+   "sunnyday": 4.9,
+   "thunder": 4.9,
+   "trickroom": 90.2
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "torkoal",
+   "crabominable",
+   "sylveon",
+   "oranguru",
+   "mawile"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 56.1,
+   "points": [
+    32,
+    0,
+    2,
+    32,
+    0,
+    0
+   ]
+  },
+  "win_rate": 37.778
+ },
+ "rhyperior": {
+  "abilities": {
+   "lightningrod": 52.6,
+   "reckless": 0.7,
+   "solidrock": 46.7
+  },
+  "items": {
+   "choicescarf": 9.9,
+   "expertbelt": 13.2,
+   "focussash": 2.6,
+   "leftovers": 2.0,
+   "lifeorb": 19.7,
+   "metronome": 14.5,
+   "muscleband": 4.6,
+   "passhoberry": 8.6,
+   "quickclaw": 16.4,
+   "shucaberry": 5.9
+  },
+  "moves": {
+   "brickbreak": 5.9,
+   "earthquake": 63.2,
+   "heatcrash": 19.7,
+   "highhorsepower": 46.7,
+   "icepunch": 46.7,
+   "protect": 82.2,
+   "rockblast": 7.9,
+   "rockslide": 76.3,
+   "rockwrecker": 13.2,
+   "scaryface": 13.2
+  },
+  "record": null,
+  "teammates": [
+   "staraptor",
+   "charizard",
+   "whimsicott",
+   "sinistcha",
+   "farigiraf",
+   "torkoal"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 33.6,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 36.17
+ },
+ "roserade": {
+  "abilities": {
+   "poisonpoint": 100.0
+  },
+  "items": {
+   "bigroot": 100.0
+  },
+  "moves": {
+   "gigadrain": 100.0,
+   "leechseed": 100.0,
+   "protect": 100.0,
+   "sludgebomb": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "charizard",
+   "milotic",
+   "staraptor",
+   "garchomp",
+   "gholdengo"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    32,
+    0,
+    32,
+    0,
+    0,
+    0
+   ]
+  },
+  "win_rate": 66.667
+ },
+ "rotom": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "rotomfan": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "rotomfrost": {
+  "abilities": {
+   "levitate": 100.0
+  },
+  "items": {
+   "choicescarf": 78.1,
+   "focussash": 18.8,
+   "nevermeltice": 3.1
+  },
+  "moves": {
+   "blizzard": 100.0,
+   "electroweb": 71.9,
+   "helpinghand": 18.8,
+   "protect": 21.9,
+   "risingvoltage": 18.8,
+   "shadowball": 9.4,
+   "thunderbolt": 68.8,
+   "trick": 3.1,
+   "voltswitch": 78.1,
+   "willowisp": 3.1
+  },
+  "record": null,
+  "teammates": [
+   "froslass",
+   "kingambit",
+   "garchomp",
+   "incineroar",
+   "milotic",
+   "sneasler"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 84.4,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 38.095
+ },
+ "rotomheat": {
+  "abilities": {
+   "levitate": 100.0
+  },
+  "items": {
+   "brightpowder": 0.7,
+   "choicescarf": 69.5,
+   "focussash": 0.2,
+   "leftovers": 2.4,
+   "lifeorb": 3.5,
+   "magnet": 0.2,
+   "passhoberry": 0.7,
+   "shellbell": 0.4,
+   "sitrusberry": 20.0,
+   "widelens": 2.4
+  },
+  "moves": {
+   "discharge": 45.1,
+   "eerieimpulse": 6.1,
+   "electroweb": 38.3,
+   "nastyplot": 3.7,
+   "overheat": 97.8,
+   "protect": 18.1,
+   "thunderbolt": 48.6,
+   "trick": 18.3,
+   "voltswitch": 69.1,
+   "willowisp": 48.6
+  },
+  "record": null,
+  "teammates": [
+   "garchomp",
+   "sceptile",
+   "basculegion",
+   "metagross",
+   "sneasler",
+   "staraptor"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 33.8,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 42.291
+ },
+ "rotommow": {
+  "abilities": {
+   "levitate": 100.0
+  },
+  "items": {
+   "choicescarf": 14.3,
+   "expertbelt": 19.5,
+   "leftovers": 6.5,
+   "sitrusberry": 37.7,
+   "widelens": 10.4,
+   "yacheberry": 11.7
+  },
+  "moves": {
+   "eerieimpulse": 19.5,
+   "electroweb": 28.6,
+   "leafstorm": 100.0,
+   "nastyplot": 5.2,
+   "painsplit": 1.3,
+   "protect": 46.8,
+   "shadowball": 3.9,
+   "thunderbolt": 84.4,
+   "voltswitch": 58.4,
+   "willowisp": 51.9
+  },
+  "record": [
+   88,
+   130,
+   5
+  ],
+  "teammates": [
+   "garchomp",
+   "whimsicott",
+   "staraptor",
+   "gholdengo",
+   "grimmsnarl",
+   "annihilape"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 19.5,
+   "points": [
+    32,
+    0,
+    0,
+    5,
+    27,
+    0
+   ]
+  },
+  "win_rate": 40.583
+ },
+ "rotomwash": {
+  "abilities": {
+   "levitate": 100.0
+  },
+  "items": {
+   "choicescarf": 21.6,
+   "focussash": 0.4,
+   "leftovers": 29.7,
+   "lifeorb": 2.3,
+   "magnet": 4.0,
+   "mysticwater": 0.2,
+   "quickclaw": 0.5,
+   "rindoberry": 0.7,
+   "sitrusberry": 39.1,
+   "widelens": 1.2
+  },
+  "moves": {
+   "discharge": 8.9,
+   "eerieimpulse": 5.4,
+   "electroweb": 22.8,
+   "hydropump": 96.4,
+   "lightscreen": 11.0,
+   "protect": 54.2,
+   "thunderbolt": 71.5,
+   "trick": 5.3,
+   "voltswitch": 41.2,
+   "willowisp": 77.9
+  },
+  "record": [
+   1664,
+   1912,
+   2
+  ],
+  "teammates": [
+   "garchomp",
+   "whimsicott",
+   "sinistcha",
+   "sneasler",
+   "incineroar",
+   "metagross"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 8.0,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 46.534
+ },
+ "runerigus": {
+  "abilities": {
+   "wanderingspirit": 100.0
+  },
+  "items": {
+   "leftovers": 3.0,
+   "mentalherb": 12.1,
+   "passhoberry": 84.8
+  },
+  "moves": {
+   "bodypress": 6.1,
+   "destinybond": 6.1,
+   "earthquake": 87.9,
+   "guardswap": 3.0,
+   "irondefense": 3.0,
+   "poltergeist": 90.9,
+   "protect": 6.1,
+   "shadowclaw": 6.1,
+   "trickroom": 100.0,
+   "willowisp": 84.8
+  },
+  "record": null,
+  "teammates": [
+   "metagross",
+   "vileplume",
+   "scrafty",
+   "heliolisk",
+   "maushold",
+   "ampharos"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 84.8,
+   "points": [
+    32,
+    13,
+    6,
+    0,
+    15,
+    0
+   ]
+  },
+  "win_rate": 21.277
+ },
+ "sableye": {
+  "abilities": {
+   "prankster": 100.0,
+   "stall": 0.0
+  },
+  "items": {
+   "brightpowder": 0.6,
+   "damprock": 1.0,
+   "focussash": 2.6,
+   "leftovers": 1.6,
+   "lightclay": 41.5,
+   "mentalherb": 0.8,
+   "roseliberry": 48.0,
+   "sablenite": 0.2,
+   "sitrusberry": 2.7,
+   "widelens": 0.8
+  },
+  "moves": {
+   "disable": 30.4,
+   "encore": 56.2,
+   "fakeout": 20.5,
+   "foulplay": 17.8,
+   "lightscreen": 67.0,
+   "quash": 15.1,
+   "raindance": 78.8,
+   "reflect": 52.4,
+   "taunt": 4.8,
+   "willowisp": 38.9
+  },
+  "record": [
+   1760,
+   2073,
+   2
+  ],
+  "teammates": [
+   "archaludon",
+   "pelipper",
+   "swampert",
+   "sinistcha",
+   "basculegion",
+   "sneasler"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 33.5,
+   "points": [
+    32,
+    0,
+    9,
+    0,
+    25,
+    0
+   ]
+  },
+  "win_rate": 45.919
+ },
+ "salazzle": {
+  "abilities": {
+   "corrosion": 69.2,
+   "oblivious": 30.8
+  },
+  "items": {
+   "expertbelt": 15.4,
+   "focussash": 73.1,
+   "passhoberry": 11.5
+  },
+  "moves": {
+   "disable": 3.8,
+   "dragonpulse": 11.5,
+   "encore": 19.2,
+   "fakeout": 100.0,
+   "heatwave": 65.4,
+   "overheat": 26.9,
+   "protect": 61.5,
+   "sludgebomb": 88.5,
+   "toxic": 7.7,
+   "willowisp": 7.7
+  },
+  "record": null,
+  "teammates": [
+   "dragonite",
+   "sableye",
+   "sylveon",
+   "sharpedo",
+   "glimmora",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 96.2,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 56.818
+ },
+ "samurott": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "samurotthisui": {
+  "abilities": {
+   "sharpness": 100.0
+  },
+  "items": {
+   "blackglasses": 18.7,
+   "choicescarf": 15.8,
+   "focussash": 31.1,
+   "leftovers": 1.9,
+   "lifeorb": 21.1,
+   "muscleband": 4.3,
+   "scopelens": 6.7,
+   "whiteherb": 0.5
+  },
+  "moves": {
+   "aquacutter": 70.3,
+   "ceaselessedge": 52.6,
+   "detect": 13.9,
+   "flipturn": 26.8,
+   "nightslash": 49.8,
+   "protect": 48.8,
+   "razorshell": 8.6,
+   "sacredsword": 75.1,
+   "suckerpunch": 47.8,
+   "taunt": 2.9
+  },
+  "record": null,
+  "teammates": [
+   "sneasler",
+   "talonflame",
+   "sinistcha",
+   "metagross",
+   "staraptor",
+   "gardevoir"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 39.2,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 51.438
+ },
+ "sandaconda": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "sceptile": {
+  "abilities": {
+   "overgrow": 83.6,
+   "unburden": 16.4
+  },
+  "items": {
+   "choicescarf": 0.2,
+   "focussash": 0.2,
+   "miracleseed": 0.2,
+   "sceptilite": 98.2,
+   "scovillainite": 0.7,
+   "whiteherb": 0.4
+  },
+  "moves": {
+   "detect": 57.3,
+   "dragonpulse": 99.1,
+   "earthpower": 95.3,
+   "energyball": 46.3,
+   "gigadrain": 6.1,
+   "grassknot": 15.1,
+   "leafstorm": 36.2,
+   "protect": 38.0,
+   "shedtail": 2.2,
+   "vacuumwave": 1.8
+  },
+  "record": null,
+  "teammates": [
+   "garchomp",
+   "rotomheat",
+   "rotomwash",
+   "basculegion",
+   "whimsicott",
+   "aerodactyl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.1,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 36.891
+ },
+ "scizor": {
+  "abilities": {
+   "technician": 100.0
+  },
+  "items": {
+   "expertbelt": 0.8,
+   "focussash": 0.5,
+   "kingsrock": 0.2,
+   "lifeorb": 25.0,
+   "lumberry": 1.0,
+   "metalcoat": 14.0,
+   "scizorite": 53.5,
+   "sitrusberry": 2.3,
+   "whiteherb": 2.8
+  },
+  "moves": {
+   "brickbreak": 5.9,
+   "bugbite": 73.4,
+   "bulletpunch": 100.0,
+   "closecombat": 25.9,
+   "dualwingbeat": 9.4,
+   "knockoff": 7.9,
+   "pounce": 1.5,
+   "protect": 88.7,
+   "swordsdance": 80.6,
+   "uturn": 3.4
+  },
+  "record": null,
+  "teammates": [
+   "pelipper",
+   "sinistcha",
+   "basculegion",
+   "archaludon",
+   "staraptor",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 23.6,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 48.693
+ },
+ "scolipede": {
+  "abilities": {
+   "speedboost": 100.0
+  },
+  "items": {
+   "expertbelt": 4.5,
+   "focussash": 5.3,
+   "leftovers": 1.5,
+   "mentalherb": 25.8,
+   "poisonbarb": 2.3,
+   "scolipite": 60.6
+  },
+  "moves": {
+   "batonpass": 34.1,
+   "crosspoison": 2.3,
+   "earthquake": 13.6,
+   "gunkshot": 15.9,
+   "leechlife": 47.0,
+   "megahorn": 12.9,
+   "poisonjab": 76.5,
+   "protect": 97.7,
+   "rockslide": 18.9,
+   "swordsdance": 72.7
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "staraptor",
+   "grimmsnarl",
+   "incineroar",
+   "garchomp",
+   "sableye"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 24.2,
+   "points": [
+    32,
+    0,
+    11,
+    0,
+    23,
+    0
+   ]
+  },
+  "win_rate": 32.692
+ },
+ "scovillain": {
+  "abilities": {
+   "chlorophyll": 9.6,
+   "insomnia": 2.2,
+   "moody": 88.2
+  },
+  "items": {
+   "focusband": 0.1,
+   "kebiaberry": 0.3,
+   "sceptilite": 0.3,
+   "scovillainite": 99.3
+  },
+  "moves": {
+   "fireblast": 2.8,
+   "flamethrower": 14.4,
+   "gigadrain": 36.0,
+   "leafstorm": 9.5,
+   "leechseed": 53.6,
+   "overheat": 77.7,
+   "protect": 98.9,
+   "ragepowder": 96.5,
+   "superfang": 3.0,
+   "temperflare": 3.4
+  },
+  "record": [
+   1813,
+   1336,
+   5
+  ],
+  "teammates": [
+   "sneasler",
+   "basculegion",
+   "archaludon",
+   "kingambit",
+   "froslass",
+   "lycanrocdusk"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 27.8,
+   "points": [
+    32,
+    0,
+    19,
+    0,
+    15,
+    0
+   ]
+  },
+  "win_rate": 57.562
+ },
+ "scrafty": {
+  "abilities": {
+   "intimidate": 98.8,
+   "moxie": 0.8,
+   "shedskin": 0.4
+  },
+  "items": {
+   "expertbelt": 1.3,
+   "focussash": 0.7,
+   "leftovers": 1.8,
+   "lifeorb": 1.0,
+   "lumberry": 1.9,
+   "roseliberry": 1.2,
+   "scraftinite": 85.5,
+   "sitrusberry": 6.4,
+   "whiteherb": 0.1
+  },
+  "moves": {
+   "closecombat": 44.2,
+   "coaching": 7.9,
+   "detect": 23.8,
+   "drainpunch": 51.0,
+   "fakeout": 91.1,
+   "icepunch": 11.7,
+   "knockoff": 87.3,
+   "poisonjab": 12.7,
+   "protect": 17.8,
+   "throatchop": 8.6
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "sinistcha",
+   "sylveon",
+   "torkoal",
+   "garchomp",
+   "basculegion"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 23.2,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 46.917
+ },
+ "serperior": {
+  "abilities": {
+   "contrary": 100.0
+  },
+  "items": {
+   "cobaberry": 0.9,
+   "expertbelt": 4.6,
+   "focussash": 26.6,
+   "leftovers": 10.1,
+   "lifeorb": 7.3,
+   "lightclay": 11.9,
+   "miracleseed": 3.7,
+   "occaberry": 2.8,
+   "sitrusberry": 20.2,
+   "widelens": 11.9
+  },
+  "moves": {
+   "dragonpulse": 30.3,
+   "gigadrain": 10.1,
+   "glare": 56.9,
+   "helpinghand": 6.4,
+   "leafstorm": 100.0,
+   "lightscreen": 26.6,
+   "protect": 75.2,
+   "reflect": 25.7,
+   "solarbeam": 7.3,
+   "taunt": 29.4
+  },
+  "record": null,
+  "teammates": [
+   "garchomp",
+   "whimsicott",
+   "sinistcha",
+   "swampert",
+   "grimmsnarl",
+   "staraptor"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 19.3,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 40.994
+ },
+ "sharpedo": {
+  "abilities": {
+   "speedboost": 100.0
+  },
+  "items": {
+   "focussash": 28.7,
+   "sharpedonite": 71.3
+  },
+  "moves": {
+   "closecombat": 7.9,
+   "crunch": 94.1,
+   "destinybond": 32.7,
+   "icefang": 12.9,
+   "liquidation": 28.7,
+   "poisonfang": 18.8,
+   "protect": 100.0,
+   "psychicfangs": 70.3,
+   "rocktomb": 22.8,
+   "waterfall": 5.9
+  },
+  "record": [
+   12,
+   14,
+   1
+  ],
+  "teammates": [
+   "sableye",
+   "sylveon",
+   "incineroar",
+   "charizard",
+   "victreebel",
+   "azumarill"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 39.6,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 46.296
+ },
+ "simipour": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "simisage": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "simisear": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "sinistcha": {
+  "abilities": {
+   "heatproof": 0.5,
+   "hospitality": 99.5
+  },
+  "items": {
+   "bigroot": 1.4,
+   "brightpowder": 0.8,
+   "cobaberry": 5.1,
+   "colburberry": 14.3,
+   "focussash": 0.9,
+   "kasibberry": 30.4,
+   "leftovers": 6.7,
+   "mentalherb": 0.4,
+   "occaberry": 4.0,
+   "sitrusberry": 35.2
+  },
+  "moves": {
+   "imprison": 2.2,
+   "leafstorm": 0.8,
+   "lifedew": 58.7,
+   "matchagotcha": 98.8,
+   "protect": 54.5,
+   "psychup": 1.1,
+   "ragepowder": 99.2,
+   "shadowball": 8.8,
+   "strengthsap": 15.1,
+   "trickroom": 58.6
+  },
+  "record": [
+   10827,
+   11096,
+   23
+  ],
+  "teammates": [
+   "staraptor",
+   "incineroar",
+   "grimmsnarl",
+   "garchomp",
+   "pelipper",
+   "archaludon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 20.5,
+   "points": [
+    32,
+    0,
+    14,
+    0,
+    20,
+    0
+   ]
+  },
+  "win_rate": 49.387
+ },
+ "skarmory": {
+  "abilities": {
+   "sturdy": 91.8,
+   "weakarmor": 8.2
+  },
+  "items": {
+   "skarmorite": 100.0
+  },
+  "moves": {
+   "bravebird": 88.5,
+   "drillrun": 4.9,
+   "ironhead": 95.1,
+   "protect": 78.7,
+   "rockslide": 26.2,
+   "rocktomb": 19.7,
+   "swordsdance": 47.5,
+   "tailwind": 9.8,
+   "taunt": 6.6,
+   "whirlwind": 8.2
+  },
+  "record": null,
+  "teammates": [
+   "grimmsnarl",
+   "pelipper",
+   "archaludon",
+   "swampert",
+   "sinistcha",
+   "garchomp"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 29.5,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 40.152
+ },
+ "skeledirge": {
+  "abilities": {
+   "blaze": 0.6,
+   "unaware": 99.4
+  },
+  "items": {
+   "kasibberry": 1.2,
+   "leftovers": 64.9,
+   "lifeorb": 8.2,
+   "shucaberry": 1.2,
+   "sitrusberry": 24.6
+  },
+  "moves": {
+   "earthpower": 5.3,
+   "heatwave": 4.1,
+   "hex": 5.8,
+   "protect": 66.7,
+   "shadowball": 87.1,
+   "slackoff": 74.9,
+   "snarl": 4.7,
+   "torchsong": 98.8,
+   "willowisp": 32.7,
+   "yawn": 8.8
+  },
+  "record": null,
+  "teammates": [
+   "staraptor",
+   "whimsicott",
+   "grimmsnarl",
+   "raichu",
+   "sinistcha",
+   "farigiraf"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 21.1,
+   "points": [
+    17,
+    0,
+    24,
+    0,
+    25,
+    0
+   ]
+  },
+  "win_rate": 42.336
+ },
+ "slowbro": {
+  "abilities": {
+   "oblivious": 83.3,
+   "regenerator": 16.7
+  },
+  "items": {
+   "leftovers": 6.7,
+   "sitrusberry": 3.3,
+   "slowbronite": 90.0
+  },
+  "moves": {
+   "bodypress": 73.3,
+   "calmmind": 63.3,
+   "expandingforce": 10.0,
+   "irondefense": 56.7,
+   "psychic": 20.0,
+   "psyshock": 10.0,
+   "scald": 30.0,
+   "slackoff": 40.0,
+   "storedpower": 53.3,
+   "trickroom": 33.3
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "blastoise",
+   "audino",
+   "zoroarkhisui",
+   "corviknight",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 46.7,
+   "points": [
+    32,
+    0,
+    0,
+    0,
+    20,
+    14
+   ]
+  },
+  "win_rate": 35.484
+ },
+ "slowbrogalar": {
+  "abilities": {
+   "quickdraw": 97.6,
+   "regenerator": 2.4
+  },
+  "items": {
+   "quickclaw": 95.2,
+   "shucaberry": 4.8
+  },
+  "moves": {
+   "bellydrum": 11.9,
+   "drainpunch": 19.0,
+   "flamethrower": 42.9,
+   "healpulse": 9.5,
+   "icebeam": 69.0,
+   "protect": 19.0,
+   "psychic": 69.0,
+   "shellsidearm": 100.0,
+   "trickroom": 26.2,
+   "zenheadbutt": 19.0
+  },
+  "record": null,
+  "teammates": [
+   "froslass",
+   "garchomp",
+   "glimmora",
+   "scrafty",
+   "basculegion",
+   "gengar"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 69.0,
+   "points": [
+    32,
+    0,
+    0,
+    32,
+    2,
+    0
+   ]
+  },
+  "win_rate": 37.838
+ },
+ "slowking": {
+  "abilities": {
+   "oblivious": 50.0,
+   "regenerator": 50.0
+  },
+  "items": {
+   "colburberry": 50.0,
+   "leftovers": 50.0
+  },
+  "moves": {
+   "chillyreception": 100.0,
+   "foulplay": 25.0,
+   "hydropump": 25.0,
+   "protect": 50.0,
+   "psychic": 25.0,
+   "scald": 50.0,
+   "skillswap": 25.0,
+   "trickroom": 50.0,
+   "yawn": 50.0
+  },
+  "record": null,
+  "teammates": [
+   "raichu",
+   "kangaskhan",
+   "aerodactyl",
+   "blaziken",
+   "milotic",
+   "zoroarkhisui"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    31,
+    0,
+    23,
+    0,
+    12,
+    0
+   ]
+  },
+  "win_rate": 27.941
+ },
+ "slowkinggalar": {
+  "abilities": {
+   "regenerator": 100.0
+  },
+  "items": {
+   "colburberry": 25.8,
+   "kasibberry": 0.8,
+   "leftovers": 9.8,
+   "mentalherb": 29.5,
+   "quickclaw": 6.1,
+   "shucaberry": 2.3,
+   "sitrusberry": 25.0
+  },
+  "moves": {
+   "acidspray": 59.8,
+   "chillyreception": 28.8,
+   "healpulse": 25.0,
+   "icebeam": 10.6,
+   "protect": 12.1,
+   "psychic": 45.5,
+   "psychicnoise": 18.2,
+   "raindance": 30.3,
+   "sludgebomb": 23.5,
+   "trickroom": 85.6
+  },
+  "record": [
+   32,
+   42,
+   5
+  ],
+  "teammates": [
+   "pelipper",
+   "sinistcha",
+   "archaludon",
+   "blastoise",
+   "malamar",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 22.7,
+   "points": [
+    32,
+    0,
+    32,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 43.671
+ },
+ "slurpuff": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "sneasler": {
+  "abilities": {
+   "poisontouch": 11.2,
+   "pressure": 0.1,
+   "unburden": 88.7
+  },
+  "items": {
+   "blackbelt": 0.4,
+   "choicescarf": 0.2,
+   "expertbelt": 0.2,
+   "focussash": 26.0,
+   "kingsrock": 0.2,
+   "lifeorb": 0.4,
+   "lumberry": 0.5,
+   "mentalherb": 0.2,
+   "sitrusberry": 0.6,
+   "whiteherb": 71.1
+  },
+  "moves": {
+   "closecombat": 99.3,
+   "coaching": 21.7,
+   "direclaw": 93.6,
+   "fakeout": 94.4,
+   "feint": 3.5,
+   "gunkshot": 3.6,
+   "protect": 59.3,
+   "rockslide": 7.8,
+   "rocktomb": 2.4,
+   "throatchop": 3.2
+  },
+  "record": [
+   9358,
+   8714,
+   17
+  ],
+  "teammates": [
+   "basculegion",
+   "kingambit",
+   "sinistcha",
+   "garchomp",
+   "whimsicott",
+   "incineroar"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 48.2,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 51.78
+ },
+ "snorlax": {
+  "abilities": {
+   "immunity": 0.9,
+   "thickfat": 99.1
+  },
+  "items": {
+   "chopleberry": 31.2,
+   "expertbelt": 10.1,
+   "leftovers": 40.4,
+   "lifeorb": 0.9,
+   "sitrusberry": 17.4
+  },
+  "moves": {
+   "bodyslam": 14.7,
+   "doubleedge": 18.3,
+   "fissure": 67.9,
+   "heatcrash": 24.8,
+   "heavyslam": 22.9,
+   "highhorsepower": 22.0,
+   "icepunch": 24.8,
+   "protect": 71.6,
+   "stockpile": 28.4,
+   "yawn": 49.5
+  },
+  "record": [
+   247,
+   249,
+   1
+  ],
+  "teammates": [
+   "hawlucha",
+   "sinistcha",
+   "basculegion",
+   "whimsicott",
+   "scovillain",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 23.9,
+   "points": [
+    0,
+    32,
+    32,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": 49.799
+ },
+ "spiritomb": {
+  "abilities": {
+   "infiltrator": 94.2,
+   "pressure": 5.8
+  },
+  "items": {
+   "blackglasses": 13.5,
+   "leftovers": 3.8,
+   "roseliberry": 44.2,
+   "sitrusberry": 38.5
+  },
+  "moves": {
+   "foulplay": 26.9,
+   "helpinghand": 15.4,
+   "imprison": 21.2,
+   "nightshade": 30.8,
+   "protect": 21.2,
+   "raindance": 26.9,
+   "skillswap": 30.8,
+   "snarl": 44.2,
+   "trickroom": 100.0,
+   "willowisp": 78.8
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "archaludon",
+   "pelipper",
+   "sylveon",
+   "torkoal",
+   "scrafty"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 30.8,
+   "points": [
+    32,
+    0,
+    19,
+    0,
+    15,
+    0
+   ]
+  },
+  "win_rate": 45.614
+ },
+ "staraptor": {
+  "abilities": {
+   "intimidate": 97.1,
+   "reckless": 2.9
+  },
+  "items": {
+   "choicescarf": 5.4,
+   "lifeorb": 0.1,
+   "lopunnite": 0.0,
+   "sitrusberry": 0.0,
+   "skarmorite": 0.0,
+   "staraptite": 94.5,
+   "whiteherb": 0.0
+  },
+  "moves": {
+   "blazekick": 5.0,
+   "bravebird": 81.2,
+   "closecombat": 98.2,
+   "dualwingbeat": 19.4,
+   "finalgambit": 6.2,
+   "protect": 90.2,
+   "quickattack": 4.1,
+   "roost": 71.5,
+   "tailwind": 11.4,
+   "uturn": 6.2
+  },
+  "record": [
+   3061,
+   3726,
+   5
+  ],
+  "teammates": [
+   "sinistcha",
+   "garchomp",
+   "whimsicott",
+   "grimmsnarl",
+   "incineroar",
+   "basculegion"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 20.1,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 45.105
+ },
+ "starmie": {
+  "abilities": {
+   "analytic": 1.0,
+   "illuminate": 12.2,
+   "naturalcure": 86.7
+  },
+  "items": {
+   "choicescarf": 12.2,
+   "leftovers": 4.1,
+   "starminite": 83.7
+  },
+  "moves": {
+   "aquajet": 66.3,
+   "flipturn": 27.6,
+   "icespinner": 35.7,
+   "icywind": 12.2,
+   "liquidation": 80.6,
+   "protect": 61.2,
+   "psychic": 12.2,
+   "psychocut": 40.8,
+   "scald": 16.3,
+   "zenheadbutt": 16.3
+  },
+  "record": null,
+  "teammates": [
+   "whimsicott",
+   "kingambit",
+   "raichu",
+   "zoroarkhisui",
+   "kleavor",
+   "decidueyehisui"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 80.6,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 42.071
+ },
+ "steelix": {
+  "abilities": {
+   "sheerforce": 16.7,
+   "sturdy": 83.3
+  },
+  "items": {
+   "lifeorb": 16.7,
+   "sitrusberry": 5.6,
+   "steelixite": 77.8
+  },
+  "moves": {
+   "bodypress": 22.2,
+   "crunch": 27.8,
+   "earthquake": 22.2,
+   "heavyslam": 83.3,
+   "highhorsepower": 50.0,
+   "icefang": 16.7,
+   "ironhead": 16.7,
+   "protect": 77.8,
+   "thunderfang": 11.1,
+   "wideguard": 55.6
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "tyranitar",
+   "rotomwash",
+   "sneasler",
+   "talonflame",
+   "charizard"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 38.9,
+   "points": [
+    32,
+    30,
+    0,
+    0,
+    4,
+    0
+   ]
+  },
+  "win_rate": 34.155
+ },
+ "stunfisk": {
+  "abilities": {
+   "static": 100.0
+  },
+  "items": {
+   "expertbelt": 100.0
+  },
+  "moves": {
+   "earthpower": 100.0,
+   "protect": 100.0,
+   "suckerpunch": 100.0,
+   "thunderbolt": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "metagross",
+   "staraptor",
+   "basculegion",
+   "kingambit",
+   "sinistcha"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    0,
+    0,
+    32,
+    32,
+    2,
+    0
+   ]
+  },
+  "win_rate": 33.333
+ },
+ "stunfiskgalar": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "swampert": {
+  "abilities": {
+   "damp": 46.4,
+   "torrent": 53.6
+  },
+  "items": {
+   "blackbelt": 0.0,
+   "expertbelt": 0.0,
+   "leftovers": 0.2,
+   "lifeorb": 0.7,
+   "mysticwater": 0.0,
+   "rindoberry": 0.3,
+   "sitrusberry": 0.2,
+   "swampertite": 98.5,
+   "whiteherb": 0.0
+  },
+  "moves": {
+   "bulkup": 4.9,
+   "earthquake": 66.2,
+   "flipturn": 8.7,
+   "highhorsepower": 37.2,
+   "icepunch": 57.0,
+   "knockoff": 7.2,
+   "liquidation": 7.7,
+   "protect": 94.2,
+   "rockslide": 12.2,
+   "wavecrash": 88.2
+  },
+  "record": [
+   4386,
+   4335,
+   7
+  ],
+  "teammates": [
+   "pelipper",
+   "archaludon",
+   "sinistcha",
+   "sableye",
+   "basculegion",
+   "grimmsnarl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 30.6,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 50.292
+ },
+ "sylveon": {
+  "abilities": {
+   "cutecharm": 0.1,
+   "pixilate": 99.9
+  },
+  "items": {
+   "babiriberry": 0.5,
+   "brightpowder": 0.0,
+   "choicescarf": 1.2,
+   "fairyfeather": 89.6,
+   "leftovers": 1.5,
+   "lifeorb": 5.1,
+   "metronome": 0.1,
+   "quickclaw": 0.6,
+   "sitrusberry": 1.5,
+   "wiseglasses": 0.0
+  },
+  "moves": {
+   "calmmind": 10.5,
+   "detect": 61.1,
+   "hyperbeam": 71.2,
+   "hypervoice": 99.9,
+   "moonblast": 13.1,
+   "mysticalfire": 3.7,
+   "protect": 35.0,
+   "quickattack": 81.6,
+   "shadowball": 3.6,
+   "yawn": 8.9
+  },
+  "record": [
+   5712,
+   5667,
+   12
+  ],
+  "teammates": [
+   "garchomp",
+   "charizard",
+   "kingambit",
+   "basculegion",
+   "farigiraf",
+   "aerodactyl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 10.5,
+   "points": [
+    9,
+    0,
+    22,
+    30,
+    0,
+    5
+   ]
+  },
+  "win_rate": 50.198
+ },
+ "talonflame": {
+  "abilities": {
+   "flamebody": 0.1,
+   "galewings": 99.9
+  },
+  "items": {
+   "charcoal": 1.0,
+   "chartiberry": 2.8,
+   "expertbelt": 2.4,
+   "focussash": 17.5,
+   "leftovers": 1.8,
+   "lifeorb": 13.1,
+   "mentalherb": 2.4,
+   "sharpbeak": 30.9,
+   "sitrusberry": 0.3,
+   "whiteherb": 0.2
+  },
+  "moves": {
+   "acrobatics": 27.6,
+   "bravebird": 46.4,
+   "dualwingbeat": 23.9,
+   "flareblitz": 61.0,
+   "protect": 63.3,
+   "quickguard": 25.5,
+   "raindance": 7.4,
+   "tailwind": 97.8,
+   "taunt": 12.7,
+   "willowisp": 15.2
+  },
+  "record": [
+   1244,
+   1468,
+   1
+  ],
+  "teammates": [
+   "garchomp",
+   "basculegion",
+   "sinistcha",
+   "raichu",
+   "kingambit",
+   "sneasler"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 52.1,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 45.872
+ },
+ "tauros": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "taurospaldeaaqua": {
+  "abilities": {
+   "angerpoint": 21.4,
+   "intimidate": 78.6
+  },
+  "items": {
+   "cobaberry": 0.9,
+   "focussash": 1.8,
+   "lifeorb": 21.4,
+   "mysticwater": 17.9,
+   "sitrusberry": 26.8,
+   "softsand": 10.7,
+   "whiteherb": 13.4,
+   "widelens": 6.3
+  },
+  "moves": {
+   "aquajet": 92.9,
+   "closecombat": 75.0,
+   "earthquake": 20.5,
+   "facade": 0.9,
+   "ironhead": 0.9,
+   "protect": 98.2,
+   "ragingbull": 30.4,
+   "rockslide": 24.1,
+   "sandstorm": 0.9,
+   "wavecrash": 54.5
+  },
+  "record": [
+   17,
+   45,
+   1
+  ],
+  "teammates": [
+   "raichu",
+   "whimsicott",
+   "farigiraf",
+   "aerodactyl",
+   "ninetales",
+   "pinsir"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 21.4,
+   "points": [
+    32,
+    10,
+    0,
+    0,
+    10,
+    14
+   ]
+  },
+  "win_rate": 27.778
+ },
+ "taurospaldeablaze": {
+  "abilities": {
+   "angerpoint": 28.8,
+   "intimidate": 71.2
+  },
+  "items": {
+   "brightpowder": 4.1,
+   "expertbelt": 13.7,
+   "focussash": 19.2,
+   "lifeorb": 21.9,
+   "sitrusberry": 30.1,
+   "whiteherb": 11.0
+  },
+  "moves": {
+   "closecombat": 100.0,
+   "earthquake": 6.8,
+   "flareblitz": 12.3,
+   "protect": 90.4,
+   "ragingbull": 100.0,
+   "rockslide": 57.5,
+   "trailblaze": 12.3,
+   "wildcharge": 15.1,
+   "willowisp": 5.5
+  },
+  "record": null,
+  "teammates": [
+   "whimsicott",
+   "sneasler",
+   "basculegion",
+   "froslass",
+   "sinistcha",
+   "pelipper"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 56.2,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": null
+ },
+ "tinkaton": {
+  "abilities": {
+   "moldbreaker": 67.7,
+   "owntempo": 32.3
+  },
+  "items": {
+   "kingsrock": 0.5,
+   "leftovers": 17.4,
+   "mentalherb": 1.0,
+   "metalcoat": 26.4,
+   "muscleband": 3.0,
+   "occaberry": 26.9,
+   "shucaberry": 7.0,
+   "sitrusberry": 9.5,
+   "whiteherb": 5.0,
+   "widelens": 3.0
+  },
+  "moves": {
+   "babydolleyes": 9.0,
+   "encore": 56.2,
+   "fakeout": 97.0,
+   "feint": 7.5,
+   "gigatonhammer": 100.0,
+   "knockoff": 10.4,
+   "lightscreen": 1.0,
+   "playrough": 58.7,
+   "protect": 55.2,
+   "woodhammer": 2.5
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "politoed",
+   "incineroar",
+   "staraptor",
+   "pelipper",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 14.4,
+   "points": [
+    19,
+    32,
+    15,
+    0,
+    0,
+    0
+   ]
+  },
+  "win_rate": 40.0
+ },
+ "torkoal": {
+  "abilities": {
+   "drought": 99.8,
+   "shellarmor": 0.0,
+   "whitesmoke": 0.1
+  },
+  "items": {
+   "charcoal": 88.8,
+   "expertbelt": 0.1,
+   "heatrock": 2.6,
+   "leftovers": 2.2,
+   "lifeorb": 4.6,
+   "metronome": 0.0,
+   "quickclaw": 0.3,
+   "sitrusberry": 0.7,
+   "wiseglasses": 0.7
+  },
+  "moves": {
+   "ancientpower": 3.6,
+   "earthpower": 34.0,
+   "eruption": 97.2,
+   "flamethrower": 4.2,
+   "heatwave": 52.7,
+   "helpinghand": 8.7,
+   "protect": 86.2,
+   "solarbeam": 32.9,
+   "sunnyday": 5.8,
+   "weatherball": 62.8
+  },
+  "record": [
+   2341,
+   2486,
+   6
+  ],
+  "teammates": [
+   "farigiraf",
+   "sylveon",
+   "mawile",
+   "kangaskhan",
+   "basculegion",
+   "blastoise"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 42.1,
+   "points": [
+    32,
+    0,
+    0,
+    32,
+    2,
+    0
+   ]
+  },
+  "win_rate": 48.5
+ },
+ "torterra": {
+  "abilities": {
+   "overgrow": 70.3,
+   "shellarmor": 29.7
+  },
+  "items": {
+   "lifeorb": 70.3,
+   "lumberry": 3.1,
+   "sitrusberry": 4.7,
+   "whiteherb": 21.9
+  },
+  "moves": {
+   "amnesia": 3.1,
+   "gigadrain": 18.8,
+   "headlongrush": 78.1,
+   "protect": 23.4,
+   "roar": 6.3,
+   "scorchingsands": 18.8,
+   "shellsmash": 20.3,
+   "stoneedge": 70.3,
+   "wideguard": 76.6,
+   "woodhammer": 75.0
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "blastoise",
+   "pelipper",
+   "toxicroak",
+   "sylveon",
+   "sinistcha"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 70.3,
+   "points": [
+    27,
+    32,
+    1,
+    5,
+    1,
+    0
+   ]
+  },
+  "win_rate": 44.0
+ },
+ "toucannon": {
+  "abilities": {
+   "skilllink": 100.0
+  },
+  "items": {
+   "focussash": 91.7,
+   "kingsrock": 8.3
+  },
+  "moves": {
+   "beakblast": 100.0,
+   "bulletseed": 100.0,
+   "protect": 100.0,
+   "rockblast": 91.7,
+   "tailwind": 8.3
+  },
+  "record": null,
+  "teammates": [
+   "basculegion",
+   "charizard",
+   "sylveon",
+   "mudsdale",
+   "sinistcha",
+   "staraptor"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 91.7,
+   "points": [
+    0,
+    2,
+    22,
+    0,
+    10,
+    32
+   ]
+  },
+  "win_rate": 43.182
+ },
+ "toxapex": {
+  "abilities": {
+   "regenerator": 100.0
+  },
+  "items": {
+   "brightpowder": 2.0,
+   "leftovers": 92.2,
+   "lumberry": 3.1,
+   "mentalherb": 0.8,
+   "payapaberry": 0.4,
+   "quickclaw": 0.8,
+   "sitrusberry": 0.8
+  },
+  "moves": {
+   "banefulbunker": 87.5,
+   "haze": 18.4,
+   "icebeam": 0.8,
+   "infestation": 95.3,
+   "protect": 4.7,
+   "recover": 28.9,
+   "stockpile": 4.3,
+   "toxic": 92.2,
+   "wideguard": 68.0
+  },
+  "record": [
+   820,
+   802,
+   3
+  ],
+  "teammates": [
+   "incineroar",
+   "grimmsnarl",
+   "garchomp",
+   "charizard",
+   "staraptor",
+   "hydreigon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 22.7,
+   "points": [
+    32,
+    0,
+    16,
+    0,
+    18,
+    0
+   ]
+  },
+  "win_rate": 50.554
+ },
+ "toxicroak": {
+  "abilities": {
+   "dryskin": 48.7,
+   "poisontouch": 51.3
+  },
+  "items": {
+   "expertbelt": 10.3,
+   "focussash": 75.6,
+   "lifeorb": 1.3,
+   "muscleband": 1.3,
+   "whiteherb": 11.5
+  },
+  "moves": {
+   "brickbreak": 1.3,
+   "closecombat": 93.6,
+   "encore": 29.5,
+   "fakeout": 100.0,
+   "gunkshot": 10.3,
+   "icepunch": 10.3,
+   "poisonjab": 60.3,
+   "protect": 6.4,
+   "reversal": 5.1,
+   "suckerpunch": 82.1
+  },
+  "record": null,
+  "teammates": [
+   "blastoise",
+   "farigiraf",
+   "pelipper",
+   "torterra",
+   "mawile",
+   "sylveon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 51.3,
+   "points": [
+    27,
+    32,
+    1,
+    0,
+    1,
+    5
+   ]
+  },
+  "win_rate": 35.0
+ },
+ "trevenant": {
+  "abilities": {},
+  "items": {},
+  "moves": {},
+  "record": null,
+  "teammates": [],
+  "top_spread": null,
+  "win_rate": null
+ },
+ "tsareena": {
+  "abilities": {
+   "leafguard": 0.1,
+   "queenlymajesty": 99.9
+  },
+  "items": {
+   "choicescarf": 27.6,
+   "expertbelt": 2.4,
+   "focussash": 6.2,
+   "leftovers": 2.7,
+   "lifeorb": 5.3,
+   "miracleseed": 5.5,
+   "occaberry": 2.2,
+   "sitrusberry": 19.3,
+   "whiteherb": 1.0,
+   "widelens": 23.3
+  },
+  "moves": {
+   "helpinghand": 11.1,
+   "highjumpkick": 17.1,
+   "lowkick": 48.2,
+   "powerwhip": 35.4,
+   "protect": 52.5,
+   "taunt": 23.6,
+   "tripleaxel": 86.6,
+   "tropkick": 62.0,
+   "uturn": 22.0,
+   "zenheadbutt": 15.1
+  },
+  "record": [
+   527,
+   540,
+   1
+  ],
+  "teammates": [
+   "raichu",
+   "basculegion",
+   "talonflame",
+   "kingambit",
+   "incineroar",
+   "garchomp"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 28.6,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 49.391
+ },
+ "typhlosion": {
+  "abilities": {
+   "blaze": 24.2,
+   "flashfire": 75.8
+  },
+  "items": {
+   "charcoal": 33.3,
+   "choicescarf": 33.3,
+   "focussash": 3.0,
+   "lifeorb": 21.2,
+   "wiseglasses": 9.1
+  },
+  "moves": {
+   "burnup": 3.0,
+   "eruption": 100.0,
+   "flamethrower": 9.1,
+   "focusblast": 30.3,
+   "heatwave": 57.6,
+   "protect": 60.6,
+   "scorchingsands": 63.6,
+   "shadowball": 33.3,
+   "solarbeam": 39.4,
+   "willowisp": 3.0
+  },
+  "record": [
+   21,
+   27,
+   1
+  ],
+  "teammates": [
+   "whimsicott",
+   "farigiraf",
+   "sneasler",
+   "gardevoir",
+   "charizard",
+   "torkoal"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 60.6,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 43.878
+ },
+ "typhlosionhisui": {
+  "abilities": {
+   "blaze": 24.1,
+   "frisk": 75.9
+  },
+  "items": {
+   "charcoal": 22.5,
+   "choicescarf": 56.5,
+   "colburberry": 8.4,
+   "focussash": 1.8,
+   "lifeorb": 10.6,
+   "wiseglasses": 0.3
+  },
+  "moves": {
+   "burnup": 13.4,
+   "eruption": 99.5,
+   "extrasensory": 18.2,
+   "flamethrower": 6.3,
+   "focusblast": 14.4,
+   "heatwave": 63.3,
+   "infernalparade": 10.1,
+   "overheat": 30.9,
+   "protect": 43.8,
+   "shadowball": 92.2
+  },
+  "record": [
+   143,
+   172,
+   2
+  ],
+  "teammates": [
+   "whimsicott",
+   "garchomp",
+   "farigiraf",
+   "kingambit",
+   "raichu",
+   "staraptor"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 72.4,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 45.426
+ },
+ "tyranitar": {
+  "abilities": {
+   "sandstream": 99.7,
+   "unnerve": 0.3
+  },
+  "items": {
+   "choicescarf": 5.8,
+   "chopleberry": 7.2,
+   "expertbelt": 0.9,
+   "focussash": 4.7,
+   "lifeorb": 2.6,
+   "quickclaw": 1.4,
+   "sitrusberry": 4.0,
+   "smoothrock": 0.6,
+   "tyranitarite": 69.9,
+   "whiteherb": 0.6
+  },
+  "moves": {
+   "brickbreak": 2.5,
+   "crunch": 6.0,
+   "dragondance": 31.0,
+   "earthquake": 1.8,
+   "highhorsepower": 6.3,
+   "icepunch": 17.0,
+   "knockoff": 92.9,
+   "lowkick": 43.5,
+   "protect": 91.9,
+   "rockslide": 98.8
+  },
+  "record": [
+   1848,
+   2151,
+   4
+  ],
+  "teammates": [
+   "sinistcha",
+   "excadrill",
+   "staraptor",
+   "garchomp",
+   "metagross",
+   "sneasler"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 15.0,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 46.215
+ },
+ "tyrantrum": {
+  "abilities": {
+   "rockhead": 4.5,
+   "strongjaw": 95.5
+  },
+  "items": {
+   "choicescarf": 59.1,
+   "focussash": 31.8,
+   "whiteherb": 4.5,
+   "widelens": 4.5
+  },
+  "moves": {
+   "closecombat": 4.5,
+   "crunch": 59.1,
+   "dragondance": 36.4,
+   "dragontail": 40.9,
+   "headsmash": 9.1,
+   "icefang": 45.5,
+   "protect": 4.5,
+   "psychicfangs": 72.7,
+   "rockslide": 86.4,
+   "superpower": 31.8
+  },
+  "record": null,
+  "teammates": [
+   "blastoise",
+   "hatterene",
+   "camerupt",
+   "tsareena",
+   "oranguru",
+   "meowscarada"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 63.6,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 45.455
+ },
+ "umbreon": {
+  "abilities": {
+   "innerfocus": 100.0
+  },
+  "items": {
+   "chopleberry": 0.8,
+   "leftovers": 93.8,
+   "sitrusberry": 5.4
+  },
+  "moves": {
+   "babydolleyes": 31.8,
+   "batonpass": 25.6,
+   "detect": 30.2,
+   "foulplay": 47.3,
+   "moonlight": 45.7,
+   "protect": 16.3,
+   "psychup": 25.6,
+   "scaryface": 25.6,
+   "snarl": 69.8,
+   "taunt": 62.0
+  },
+  "record": null,
+  "teammates": [
+   "staraptor",
+   "whimsicott",
+   "garchomp",
+   "pelipper",
+   "gholdengo",
+   "raichu"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 27.1,
+   "points": [
+    32,
+    0,
+    2,
+    0,
+    32,
+    0
+   ]
+  },
+  "win_rate": 43.827
+ },
+ "vanilluxe": {
+  "abilities": {
+   "snowwarning": 99.0,
+   "weakarmor": 1.0
+  },
+  "items": {
+   "choicescarf": 57.0,
+   "chopleberry": 0.7,
+   "focussash": 11.2,
+   "lightclay": 10.5,
+   "nevermeltice": 14.7,
+   "occaberry": 0.3,
+   "silkscarf": 3.8,
+   "sitrusberry": 1.7
+  },
+  "moves": {
+   "auroraveil": 36.4,
+   "blizzard": 95.8,
+   "explosion": 6.6,
+   "flashcannon": 19.6,
+   "freezedry": 93.4,
+   "iceshard": 32.5,
+   "icywind": 42.7,
+   "protect": 26.2,
+   "raindance": 5.9,
+   "sheercold": 23.1
+  },
+  "record": null,
+  "teammates": [
+   "raichu",
+   "whimsicott",
+   "garchomp",
+   "farigiraf",
+   "basculegion",
+   "incineroar"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 37.4,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 44.928
+ },
+ "vaporeon": {
+  "abilities": {
+   "waterabsorb": 100.0
+  },
+  "items": {
+   "leftovers": 18.8,
+   "rindoberry": 81.3
+  },
+  "moves": {
+   "acidarmor": 87.5,
+   "batonpass": 93.8,
+   "calmmind": 100.0,
+   "icebeam": 12.5,
+   "scald": 100.0,
+   "wish": 6.3
+  },
+  "record": null,
+  "teammates": [
+   "politoed",
+   "sableye",
+   "scovillain",
+   "espathra",
+   "archaludon",
+   "rotomwash"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 81.3,
+   "points": [
+    32,
+    0,
+    19,
+    0,
+    15,
+    0
+   ]
+  },
+  "win_rate": 28.571
+ },
+ "venusaur": {
+  "abilities": {
+   "chlorophyll": 98.6,
+   "overgrow": 1.4
+  },
+  "items": {
+   "expertbelt": 0.8,
+   "focussash": 18.7,
+   "leftovers": 2.4,
+   "lifeorb": 10.0,
+   "lumberry": 1.7,
+   "miracleseed": 2.4,
+   "occaberry": 2.0,
+   "sitrusberry": 3.7,
+   "venusaurite": 47.3,
+   "widelens": 9.6
+  },
+  "moves": {
+   "earthpower": 73.5,
+   "energyball": 22.5,
+   "gigadrain": 57.3,
+   "leafstorm": 6.1,
+   "leechseed": 3.9,
+   "protect": 83.0,
+   "sleeppowder": 46.3,
+   "sludgebomb": 95.4,
+   "solarbeam": 2.7,
+   "weatherball": 3.0
+  },
+  "record": [
+   2942,
+   2906,
+   4
+  ],
+  "teammates": [
+   "charizard",
+   "garchomp",
+   "basculegion",
+   "incineroar",
+   "whimsicott",
+   "archaludon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 27.2,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 50.308
+ },
+ "victreebel": {
+  "abilities": {
+   "chlorophyll": 100.0
+  },
+  "items": {
+   "victreebelite": 100.0
+  },
+  "moves": {
+   "poisonjab": 100.0,
+   "powerwhip": 100.0,
+   "protect": 100.0,
+   "suckerpunch": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "azumarill",
+   "sableye",
+   "sharpedo",
+   "lucario",
+   "incineroar"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    0,
+    2
+   ]
+  },
+  "win_rate": 43.038
+ },
+ "vileplume": {
+  "abilities": {
+   "chlorophyll": 88.5,
+   "effectspore": 11.5
+  },
+  "items": {
+   "bigroot": 3.1,
+   "expertbelt": 0.5,
+   "focussash": 18.3,
+   "leftovers": 1.0,
+   "lifeorb": 26.2,
+   "lumberry": 5.8,
+   "widelens": 45.0
+  },
+  "moves": {
+   "afteryou": 60.7,
+   "gigadrain": 17.3,
+   "leafstorm": 36.1,
+   "moonblast": 16.8,
+   "protect": 39.3,
+   "sleeppowder": 78.0,
+   "sludgebomb": 73.8,
+   "solarbeam": 25.1,
+   "strengthsap": 23.0,
+   "weatherball": 10.5
+  },
+  "record": null,
+  "teammates": [
+   "torkoal",
+   "raichu",
+   "heliolisk",
+   "farigiraf",
+   "meowscarada",
+   "armarouge"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 55.5,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 49.008
+ },
+ "vivillon": {
+  "abilities": {
+   "compoundeyes": 84.5,
+   "friendguard": 8.9,
+   "shielddust": 6.5
+  },
+  "items": {
+   "chartiberry": 4.0,
+   "choicescarf": 54.8,
+   "focussash": 41.1,
+   "leftovers": 0.1
+  },
+  "moves": {
+   "airslash": 4.8,
+   "bugbuzz": 3.6,
+   "hurricane": 81.2,
+   "pollenpuff": 31.3,
+   "protect": 23.7,
+   "ragepowder": 75.6,
+   "raindance": 34.7,
+   "sleeppowder": 92.3,
+   "strugglebug": 2.9,
+   "tailwind": 40.3
+  },
+  "record": null,
+  "teammates": [
+   "basculegion",
+   "blastoise",
+   "farigiraf",
+   "torkoal",
+   "kangaskhan",
+   "sinistcha"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 28.1,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 49.306
+ },
+ "volcarona": {
+  "abilities": {
+   "flamebody": 99.3,
+   "swarm": 0.7
+  },
+  "items": {
+   "charcoal": 4.8,
+   "chartiberry": 5.1,
+   "choicescarf": 0.5,
+   "expertbelt": 0.2,
+   "focussash": 3.9,
+   "leftovers": 45.2,
+   "lifeorb": 3.1,
+   "passhoberry": 0.5,
+   "silverpowder": 3.4,
+   "sitrusberry": 33.3
+  },
+  "moves": {
+   "bugbuzz": 37.9,
+   "fierydance": 24.6,
+   "gigadrain": 18.6,
+   "heatwave": 65.5,
+   "protect": 61.8,
+   "quiverdance": 65.2,
+   "ragepowder": 51.9,
+   "strugglebug": 17.6,
+   "tailwind": 15.0,
+   "willowisp": 10.1
+  },
+  "record": [
+   250,
+   257,
+   5
+  ],
+  "teammates": [
+   "garchomp",
+   "basculegion",
+   "raichu",
+   "whimsicott",
+   "staraptor",
+   "grimmsnarl"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 9.4,
+   "points": [
+    32,
+    0,
+    32,
+    1,
+    0,
+    1
+   ]
+  },
+  "win_rate": 49.316
+ },
+ "watchog": {
+  "abilities": {
+   "analytic": 100.0
+  },
+  "items": {
+   "quickclaw": 100.0
+  },
+  "moves": {
+   "crunch": 100.0,
+   "gigaimpact": 100.0,
+   "icepunch": 100.0,
+   "lowkick": 100.0
+  },
+  "record": null,
+  "teammates": [
+   "froslass",
+   "whimsicott",
+   "incineroar",
+   "annihilape",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 100.0,
+   "points": [
+    32,
+    32,
+    0,
+    0,
+    2,
+    0
+   ]
+  },
+  "win_rate": null
+ },
+ "weavile": {
+  "abilities": {
+   "pickpocket": 59.2,
+   "pressure": 40.8
+  },
+  "items": {
+   "expertbelt": 3.9,
+   "focussash": 65.5,
+   "kingsrock": 4.9,
+   "lifeorb": 1.5,
+   "muscleband": 1.9,
+   "nevermeltice": 3.9,
+   "whiteherb": 0.5,
+   "widelens": 17.5
+  },
+  "moves": {
+   "fakeout": 98.1,
+   "feint": 20.9,
+   "iceshard": 10.7,
+   "icespinner": 20.4,
+   "iciclecrash": 11.7,
+   "knockoff": 71.4,
+   "lowkick": 16.0,
+   "protect": 38.3,
+   "tripleaxel": 58.3,
+   "upperhand": 10.2
+  },
+  "record": null,
+  "teammates": [
+   "sinistcha",
+   "whimsicott",
+   "raichu",
+   "archaludon",
+   "garchomp",
+   "pelipper"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 49.5,
+   "points": [
+    2,
+    32,
+    0,
+    0,
+    0,
+    32
+   ]
+  },
+  "win_rate": 46.9
+ },
+ "whimsicott": {
+  "abilities": {
+   "chlorophyll": 0.5,
+   "infiltrator": 0.0,
+   "prankster": 99.4
+  },
+  "items": {
+   "babiriberry": 0.8,
+   "cobaberry": 2.7,
+   "fairyfeather": 11.4,
+   "focussash": 75.5,
+   "heatrock": 0.3,
+   "kebiaberry": 1.3,
+   "lightclay": 0.4,
+   "mentalherb": 3.6,
+   "occaberry": 1.4,
+   "sitrusberry": 1.9
+  },
+  "moves": {
+   "charm": 28.0,
+   "encore": 74.1,
+   "energyball": 4.6,
+   "faketears": 8.6,
+   "moonblast": 92.0,
+   "protect": 56.5,
+   "sunnyday": 11.9,
+   "tailwind": 98.5,
+   "taunt": 3.8,
+   "tickle": 5.6
+  },
+  "record": [
+   9086,
+   8801,
+   19
+  ],
+  "teammates": [
+   "garchomp",
+   "basculegion",
+   "staraptor",
+   "kingambit",
+   "charizard",
+   "floetteeternal"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.7,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 50.796
+ },
+ "wyrdeer": {
+  "abilities": {
+   "intimidate": 75.9,
+   "sapsipper": 24.1
+  },
+  "items": {
+   "colburberry": 34.0,
+   "mentalherb": 27.7,
+   "sitrusberry": 31.9,
+   "twistedspoon": 5.8,
+   "wiseglasses": 0.5
+  },
+  "moves": {
+   "earthpower": 15.7,
+   "gravity": 32.5,
+   "highhorsepower": 24.1,
+   "hypnosis": 34.6,
+   "protect": 25.1,
+   "psychic": 22.0,
+   "psyshieldbash": 64.9,
+   "psyshock": 12.6,
+   "skillswap": 46.6,
+   "trickroom": 72.8
+  },
+  "record": [
+   78,
+   105,
+   1
+  ],
+  "teammates": [
+   "sneasler",
+   "milotic",
+   "kingambit",
+   "sinistcha",
+   "charizard",
+   "sylveon"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 25.7,
+   "points": [
+    28,
+    2,
+    8,
+    0,
+    21,
+    7
+   ]
+  },
+  "win_rate": 42.663
+ },
+ "zoroark": {
+  "abilities": {
+   "illusion": 100.0
+  },
+  "items": {
+   "choicescarf": 50.0,
+   "focussash": 50.0
+  },
+  "moves": {
+   "counter": 50.0,
+   "darkpulse": 50.0,
+   "flamethrower": 50.0,
+   "nightdaze": 50.0,
+   "sludgebomb": 100.0,
+   "trick": 50.0,
+   "uturn": 50.0
+  },
+  "record": null,
+  "teammates": [
+   "farigiraf",
+   "sinistcha",
+   "pelipper",
+   "gardevoir",
+   "camerupt",
+   "scrafty"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 50.0,
+   "points": [
+    0,
+    0,
+    0,
+    32,
+    2,
+    32
+   ]
+  },
+  "win_rate": 6.25
+ },
+ "zoroarkhisui": {
+  "abilities": {
+   "illusion": 100.0
+  },
+  "items": {
+   "brightpowder": 3.6,
+   "choicescarf": 46.2,
+   "colburberry": 1.1,
+   "focussash": 20.9,
+   "lifeorb": 25.6,
+   "silkscarf": 0.4,
+   "spelltag": 2.2
+  },
+  "moves": {
+   "bittermalice": 31.0,
+   "flamethrower": 29.6,
+   "hypervoice": 54.5,
+   "icywind": 52.0,
+   "protect": 26.0,
+   "psychic": 30.0,
+   "shadowball": 63.9,
+   "taunt": 15.5,
+   "trick": 23.1,
+   "willowisp": 14.4
+  },
+  "record": [
+   214,
+   309,
+   1
+  ],
+  "teammates": [
+   "whimsicott",
+   "sneasler",
+   "farigiraf",
+   "aerodactyl",
+   "garchomp",
+   "kingambit"
+  ],
+  "top_spread": {
+   "nature": null,
+   "pct": 60.6,
+   "points": [
+    2,
+    0,
+    0,
+    32,
+    0,
+    32
+   ]
+  },
+  "win_rate": 40.935
+ }
+}

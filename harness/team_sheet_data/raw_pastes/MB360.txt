@@ -1,0 +1,48 @@
+Charizard @ Charizardite Y  
+Ability: Blaze  
+Modest Nature  
+- Heat Wave  
+- Weather Ball  
+- Solar Beam  
+- Protect  
+
+Farigiraf @ Colbur Berry  
+Ability: Armor Tail  
+Modest Nature  
+- Psychic  
+- Thunderbolt  
+- Helping Hand  
+- Trick Room  
+
+Venusaur @ Focus Sash  
+Ability: Chlorophyll  
+Modest Nature  
+- Leaf Storm  
+- Sludge Bomb  
+- Sleep Powder  
+- Protect  
+
+Garchomp @ Life Orb  
+Ability: Rough Skin  
+Jolly Nature  
+- Rock Slide  
+- Dragon Claw  
+- Earthquake  
+- Protect  
+
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+Careful Nature  
+- Flare Blitz  
+- Darkest Lariat  
+- Parting Shot  
+- Fake Out  
+
+Sylveon @ Fairy Feather  
+Ability: Pixilate  
+Modest Nature  
+- Hyper Voice  
+- Hyper Beam  
+- Quick Attack  
+- Protect  
+

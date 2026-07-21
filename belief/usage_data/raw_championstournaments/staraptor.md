@@ -1,0 +1,144 @@
+# Staraptor - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Tournaments
+
+> Find the best Staraptor builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Tournaments. Data from Pikalytics.
+
+## Best Staraptor Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Tournaments (`championstournaments`) |
+| **Game** | Pokemon Champions |
+| **Category** | championstournaments |
+| **Usage** | 2% |
+| **Win Rate** | 45.468% |
+| **Record** | 471-565-1 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Staraptor)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/championstournaments/Staraptor
+- **Format Overview**: [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments)
+- **AI Format Index**: [/ai/pokedex/championstournaments](https://www.pikalytics.com/ai/pokedex/championstournaments)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Staraptor.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Electric (2x), Ice (2x), Rock (2x) |
+| **Resists** | Grass (1/2x), Bug (1/2x) |
+| **Immune To** | Ground (0x), Ghost (0x) |
+
+## Common Moves
+- **Final Gambit**: 76.020%
+- **Brave Bird**: 72.959%
+- **U-turn**: 70.918%
+- **Close Combat**: 66.837%
+- **Protect**: 21.939%
+- **Dual Wingbeat**: 10.714%
+- **Sunny Day**: 8.163%
+- **Tailwind**: 6.633%
+- **Roost**: 5.612%
+- **Double-Edge**: 4.592%
+
+## Common Abilities
+- **Intimidate**: 81.122%
+- **Reckless**: 4.592%
+
+## Common Items
+- **Choice Scarf**: 76.531%
+- **Nothing**: 13.265%
+- **Focus Sash**: 1.531%
+- **Starminite**: 1.020%
+
+## Common Teammates
+- **Farigiraf**: 67.347%
+- **Torkoal**: 53.571%
+- **Vileplume**: 24.490%
+- **Sylveon**: 23.980%
+- **Mawile-Mega**: 23.469%
+- **Kingambit**: 17.347%
+
+## Featured Teams with Staraptor
+
+### Team 1 by DUhZER4 - Blastoise
+*Record: 8-1*
+*Event: limitless-6a369a31af50e123084062cf*
+
+**Pokemon**: Blastoise-Mega, Farigiraf, Kingambit, Torkoal, Sylveon, Staraptor
+
+**Staraptor Set**:
+- **Ability**: Intimidate
+- **Item**: Choice Scarf
+- **Moves**: Brave Bird, Sunny Day, U-turn, Final Gambit
+
+### Team 2 by Ocelia
+*Record: 5-1*
+*Event: limitless-6a42470b83fd320299bd3cc7*
+
+**Pokemon**: Camerupt-Mega, Drampa-Mega, Armarouge, Staraptor, Dragonite, Incineroar
+
+**Staraptor Set**:
+- **Ability**: Intimidate
+- **Item**: Choice Scarf
+- **Moves**: Close Combat, Brave Bird, Final Gambit, U-turn
+
+### Team 3 by Carlos Macias
+*Record: 3-0*
+*Event: limitless-6a3554edaf50e12308405472*
+
+**Pokemon**: Staraptor, Whimsicott, Gholdengo, Incineroar, Basculegion, Grimmsnarl
+
+**Staraptor Set**:
+- **Moves**: Close Combat, Brave Bird, Roost, Protect
+
+
+## FAQ for Staraptor in championstournaments-1760
+
+### What are the top moves for Staraptor?
+The most common moves for Staraptor are Final Gambit, Brave Bird, U-turn, Close Combat. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Staraptor?
+Staraptor is frequently paired with Farigiraf, Torkoal, Vileplume, Sylveon. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Staraptor weak to and resistant against?
+Staraptor is weak to Electric (2x), Ice (2x), Rock (2x), resists Grass (1/2x), Bug (1/2x), and is immune to Ground (0x), Ghost (0x).
+
+### Which Tera Types are best for Staraptor?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Staraptor?
+No EV spread or nature data available.
+
+### Which Ability and Item should I use on Staraptor?
+Staraptor is most effectively run with the ability **Intimidate** (81.122%) and the item **Choice Scarf** (76.531%).
+
+### What is the most common role for Staraptor?
+Based on common item usage (Choice Scarf), Staraptor often functions as a **choice-locked attacker** in the championstournaments-1760 meta.
+
+### What are the base stats for Staraptor?
+| Stat | Value |
+|------|-------|
+| HP | 85 |
+| Attack | 120 |
+| Defense | 70 |
+| Sp. Atk | 50 |
+| Sp. Def | 60 |
+| Speed | 100 |
+| **BST** | **485** |
+
+---
+
+## Additional Resources
+
+- [View Staraptor on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Staraptor) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/championstournaments) - Build teams with Staraptor
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

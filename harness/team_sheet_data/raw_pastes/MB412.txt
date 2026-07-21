@@ -1,0 +1,48 @@
+Venusaur @ Life Orb  
+Ability: Chlorophyll  
+Modest Nature  
+- Solar Beam  
+- Sludge Bomb  
+- Earth Power  
+- Protect  
+
+Mamoswine @ Focus Sash  
+Ability: Oblivious  
+Jolly Nature  
+- High Horsepower  
+- Rock Tomb  
+- Ice Shard  
+- Protect  
+
+Charizard @ Charizardite Y  
+Ability: Blaze  
+Modest Nature  
+- Heat Wave  
+- Weather Ball  
+- Helping Hand  
+- Protect  
+
+Garchomp @ Choice Scarf  
+Ability: Rough Skin  
+Adamant Nature  
+- Earthquake  
+- Dragon Claw  
+- Rock Slide  
+- Iron Head  
+
+Sylveon @ Fairy Feather  
+Ability: Pixilate  
+Modest Nature  
+- Hyper Voice  
+- Quick Attack  
+- Yawn  
+- Detect  
+
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+Careful Nature  
+- Flare Blitz  
+- Darkest Lariat  
+- Fake Out  
+- Parting Shot  
+

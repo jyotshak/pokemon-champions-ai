@@ -1,0 +1,48 @@
+Farigiraf @ Sitrus Berry  
+Ability: Armor Tail  
+Bold Nature  
+- Twin Beam  
+- Thunderbolt  
+- Trick Room  
+- Helping Hand  
+
+Kingambit @ Focus Sash  
+Ability: Defiant  
+Adamant Nature  
+- Sucker Punch  
+- Kowtow Cleave  
+- Low Kick  
+- Iron Head  
+
+Sylveon @ Fairy Feather  
+Ability: Pixilate  
+Modest Nature  
+- Detect  
+- Hyper Voice  
+- Quick Attack  
+- Hyper Beam  
+
+Garchomp @ Life Orb  
+Ability: Rough Skin  
+Jolly Nature  
+- Stomping Tantrum  
+- Earthquake  
+- Dragon Claw  
+- Protect  
+
+Aerodactyl @ Aerodactylite  
+Ability: Unnerve  
+Jolly Nature  
+- Tailwind  
+- Dual Wingbeat  
+- Rock Slide  
+- Ice Fang  
+
+Charizard @ Charizardite Y  
+Ability: Blaze  
+Modest Nature  
+- Weather Ball  
+- Heat Wave  
+- Solar Beam  
+- Protect  
+

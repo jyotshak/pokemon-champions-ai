@@ -1,0 +1,137 @@
+# Zoroark-Hisui - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data
+
+> Find the best Zoroark-Hisui builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data. Data from Pikalytics.
+
+## Best Zoroark-Hisui Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data (`battledataregmbs3`) |
+| **Game** | Pokemon Scarlet Violet |
+| **Category** | battledataregmbs3 |
+| **Usage** | N/A |
+| **Win Rate** | 40.935% |
+| **Record** | 214-309-1 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Zoroark-Hisui)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/battledataregmbs3/Zoroark-Hisui
+- **Format Overview**: [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3)
+- **AI Format Index**: [/ai/pokedex/battledataregmbs3](https://www.pikalytics.com/ai/pokedex/battledataregmbs3)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Zoroark-Hisui.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Dark (2x) |
+| **Resists** | Poison (1/2x), Bug (1/2x) |
+| **Immune To** | Normal (0x), Fighting (0x), Ghost (0x) |
+
+## Common Moves
+- **Shadow Ball**: 63.9%
+- **Hyper Voice**: 54.5%
+- **Icy Wind**: 52.0%
+- **Bitter Malice**: 31.0%
+- **Psychic**: 30.0%
+- **Flamethrower**: 29.6%
+- **Protect**: 26.0%
+- **Trick**: 23.1%
+- **Taunt**: 15.5%
+- **Will-O-Wisp**: 14.4%
+
+## Common Abilities
+- **Illusion**: 100.0%
+
+## Common Items
+- **Choice Scarf**: 46.2%
+- **Life Orb**: 25.6%
+- **Focus Sash**: 20.9%
+- **Bright Powder**: 3.6%
+- **Spell Tag**: 2.2%
+- **Colbur Berry**: 1.1%
+- **Silk Scarf**: 0.4%
+
+## Common Teammates
+- **Whimsicott**: undefined%
+- **Sneasler**: undefined%
+- **Farigiraf**: undefined%
+- **Aerodactyl**: undefined%
+- **Garchomp**: undefined%
+- **Kingambit**: undefined%
+
+## Featured Teams with Zoroark-Hisui
+
+### Team 1 by Dominik_KyloRen
+*Record: 6-1*
+*Event: limitless-6a427995c87cd9ff0a312b58*
+
+**Pokemon**: Swampert-Mega, Pelipper, Archaludon, Sableye, Zoroark-Hisui, Raichu-Mega-Y
+
+**Zoroark-Hisui Set**:
+- **Ability**: Illusion
+- **Item**: Choice Scarf
+- **Moves**: Bitter Malice, Hyper Voice, Icy Wind, Trick
+
+### Team 2 by Losandy
+*Record: 7-0*
+*Event: limitless-6a492540063cb29d318e305c*
+
+**Pokemon**: Kangaskhan, Farigiraf, Zoroark-Hisui, Maushold, Staraptor-Mega, Pyroar-Mega
+
+**Zoroark-Hisui Set**:
+- **Ability**: Illusion
+- **Item**: Focus Sash
+- **Moves**: Hyper Voice, Bitter Malice, Icy Wind, Protect
+
+
+## FAQ for Zoroark-Hisui in battledataregmbs3-1760
+
+### What are the top moves for Zoroark-Hisui?
+The most common moves for Zoroark-Hisui are Shadow Ball, Hyper Voice, Icy Wind, Bitter Malice. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Zoroark-Hisui?
+Zoroark-Hisui is frequently paired with Whimsicott, Sneasler, Farigiraf, Aerodactyl. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Zoroark-Hisui weak to and resistant against?
+Zoroark-Hisui is weak to Dark (2x), resists Poison (1/2x), Bug (1/2x), and is immune to Normal (0x), Fighting (0x), Ghost (0x).
+
+### Which Tera Types are best for Zoroark-Hisui?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Zoroark-Hisui?
+The top build for Zoroark-Hisui features a **** nature with an EV spread of `2/0/0/32/0/32`. This configuration accounts for 60.6% of competitive builds.
+
+### Which Ability and Item should I use on Zoroark-Hisui?
+Zoroark-Hisui is most effectively run with the ability **Illusion** (100.0%) and the item **Choice Scarf** (46.2%).
+
+### What is the most common role for Zoroark-Hisui?
+Based on common item usage (Choice Scarf), Zoroark-Hisui often functions as a **choice-locked attacker** in the battledataregmbs3-1760 meta.
+
+### What are the base stats for Zoroark-Hisui?
+| Stat | Value |
+|------|-------|
+| HP | 55 |
+| Attack | 100 |
+| Defense | 60 |
+| Sp. Atk | 125 |
+| Sp. Def | 60 |
+| Speed | 110 |
+| **BST** | **510** |
+
+---
+
+## Additional Resources
+
+- [View Zoroark-Hisui on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Zoroark-Hisui) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/battledataregmbs3) - Build teams with Zoroark-Hisui
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

@@ -1,0 +1,137 @@
+[
+ {
+  "species": [
+   "charizardmegay",
+   "garchomp"
+  ],
+  "team_count": 2042,
+  "pct": 19.5
+ },
+ {
+  "species": [
+   "garchomp",
+   "whimsicott"
+  ],
+  "team_count": 1846,
+  "pct": 17.7
+ },
+ {
+  "species": [
+   "basculegion",
+   "garchomp"
+  ],
+  "team_count": 1619,
+  "pct": 15.5
+ },
+ {
+  "species": [
+   "garchomp",
+   "kingambit"
+  ],
+  "team_count": 1597,
+  "pct": 15.3
+ },
+ {
+  "species": [
+   "archaludon",
+   "pelipper"
+  ],
+  "team_count": 1564,
+  "pct": 15.0
+ },
+ {
+  "species": [
+   "archaludon",
+   "pelipper",
+   "swampertmega"
+  ],
+  "team_count": 1271,
+  "pct": 12.2
+ },
+ {
+  "species": [
+   "basculegion",
+   "garchomp",
+   "whimsicott"
+  ],
+  "team_count": 1139,
+  "pct": 10.9
+ },
+ {
+  "species": [
+   "charizardmegay",
+   "garchomp",
+   "kingambit"
+  ],
+  "team_count": 1111,
+  "pct": 10.6
+ },
+ {
+  "species": [
+   "charizardmegay",
+   "garchomp",
+   "whimsicott"
+  ],
+  "team_count": 1090,
+  "pct": 10.4
+ },
+ {
+  "species": [
+   "basculegion",
+   "charizardmegay",
+   "garchomp"
+  ],
+  "team_count": 995,
+  "pct": 9.5
+ },
+ {
+  "species": [
+   "basculegion",
+   "charizardmegay",
+   "garchomp",
+   "whimsicott"
+  ],
+  "team_count": 830,
+  "pct": 7.9
+ },
+ {
+  "species": [
+   "archaludon",
+   "pelipper",
+   "sinistcha",
+   "swampertmega"
+  ],
+  "team_count": 812,
+  "pct": 7.8
+ },
+ {
+  "species": [
+   "basculegion",
+   "charizardmegay",
+   "garchomp",
+   "kingambit"
+  ],
+  "team_count": 650,
+  "pct": 6.2
+ },
+ {
+  "species": [
+   "basculegion",
+   "garchomp",
+   "kingambit",
+   "whimsicott"
+  ],
+  "team_count": 608,
+  "pct": 5.8
+ },
+ {
+  "species": [
+   "charizardmegay",
+   "garchomp",
+   "kingambit",
+   "whimsicott"
+  ],
+  "team_count": 605,
+  "pct": 5.8
+ }
+]

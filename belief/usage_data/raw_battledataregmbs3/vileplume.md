@@ -1,0 +1,138 @@
+# Vileplume - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data
+
+> Find the best Vileplume builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data. Data from Pikalytics.
+
+## Best Vileplume Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data (`battledataregmbs3`) |
+| **Game** | Pokemon Scarlet Violet |
+| **Category** | battledataregmbs3 |
+| **Usage** | N/A |
+| **Win Rate** | 49.008% |
+| **Record** | 519-540 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Vileplume)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/battledataregmbs3/Vileplume
+- **Format Overview**: [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3)
+- **AI Format Index**: [/ai/pokedex/battledataregmbs3](https://www.pikalytics.com/ai/pokedex/battledataregmbs3)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Vileplume.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Fire (2x), Ice (2x), Flying (2x), Psychic (2x) |
+| **Resists** | Grass (1/4x), Water (1/2x), Electric (1/2x), Fighting (1/2x), Fairy (1/2x) |
+| **Immune To** | None |
+
+## Common Moves
+- **Sleep Powder**: 78.0%
+- **Sludge Bomb**: 73.8%
+- **After You**: 60.7%
+- **Protect**: 39.3%
+- **Leaf Storm**: 36.1%
+- **Solar Beam**: 25.1%
+- **Strength Sap**: 23.0%
+- **Giga Drain**: 17.3%
+- **Moonblast**: 16.8%
+- **Weather Ball**: 10.5%
+
+## Common Abilities
+- **Chlorophyll**: 88.5%
+- **Effect Spore**: 11.5%
+
+## Common Items
+- **Wide Lens**: 45.0%
+- **Life Orb**: 26.2%
+- **Focus Sash**: 18.3%
+- **Lum Berry**: 5.8%
+- **Big Root**: 3.1%
+- **Leftovers**: 1.0%
+- **Expert Belt**: 0.5%
+
+## Common Teammates
+- **Torkoal**: undefined%
+- **Raichu**: undefined%
+- **Heliolisk**: undefined%
+- **Farigiraf**: undefined%
+- **Meowscarada**: undefined%
+- **Armarouge**: undefined%
+
+## Featured Teams with Vileplume
+
+### Team 1 by Nisanth
+*Record: 8-2*
+*Event: limitless-6a1cd3d456b11a587a94527f*
+
+**Pokemon**: Torkoal, Vileplume, Farigiraf, Scrafty-Mega, Gallade, Mawile-Mega
+
+**Vileplume Set**:
+- **Ability**: Chlorophyll
+- **Item**: Focus Sash
+- **Moves**: Energy Ball, Sludge Bomb, Sleep Powder, After You
+
+### Team 2 by a8592
+*Record: 8-2*
+*Event: limitless-6a37eef2ceacae7d6441bbd5*
+
+**Pokemon**: Torkoal, Farigiraf, Vileplume, Kangaskhan-Mega, Basculegion, Kommo-o
+
+**Vileplume Set**:
+- **Ability**: Chlorophyll
+- **Item**: Focus Sash
+- **Moves**: Sludge Bomb, Energy Ball, Sleep Powder, After You
+
+
+## FAQ for Vileplume in battledataregmbs3-1760
+
+### What are the top moves for Vileplume?
+The most common moves for Vileplume are Sleep Powder, Sludge Bomb, After You, Protect. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Vileplume?
+Vileplume is frequently paired with Torkoal, Raichu, Heliolisk, Farigiraf. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Vileplume weak to and resistant against?
+Vileplume is weak to Fire (2x), Ice (2x), Flying (2x), Psychic (2x), resists Grass (1/4x), Water (1/2x), Electric (1/2x), Fighting (1/2x), Fairy (1/2x), and is immune to no types.
+
+### Which Tera Types are best for Vileplume?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Vileplume?
+The top build for Vileplume features a **** nature with an EV spread of `2/0/0/32/0/32`. This configuration accounts for 55.5% of competitive builds.
+
+### Which Ability and Item should I use on Vileplume?
+Vileplume is most effectively run with the ability **Chlorophyll** (88.5%) and the item **Wide Lens** (45.0%).
+
+### What is the most common role for Vileplume?
+Based on common item usage (Wide Lens), Vileplume often functions as a **tactical** in the battledataregmbs3-1760 meta.
+
+### What are the base stats for Vileplume?
+| Stat | Value |
+|------|-------|
+| HP | 75 |
+| Attack | 80 |
+| Defense | 85 |
+| Sp. Atk | 110 |
+| Sp. Def | 90 |
+| Speed | 50 |
+| **BST** | **490** |
+
+---
+
+## Additional Resources
+
+- [View Vileplume on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Vileplume) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/battledataregmbs3) - Build teams with Vileplume
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

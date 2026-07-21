@@ -1,0 +1,48 @@
+Charizard @ Charizardite Y  
+Ability: Blaze  
+Timid Nature  
+- Weather Ball  
+- Heat Wave  
+- Solar Beam  
+- Protect  
+
+Mawile @ Mawilite  
+Ability: Hyper Cutter  
+Adamant Nature  
+- Play Rough  
+- Sucker Punch  
+- Brick Break  
+- Protect  
+
+Basculegion @ Mystic Water  
+Ability: Adaptability  
+Adamant Nature  
+- Wave Crash  
+- Last Respects  
+- Aqua Jet  
+- Protect  
+
+Garchomp @ Life Orb  
+Ability: Rough Skin  
+Jolly Nature  
+- Earthquake  
+- Dragon Claw  
+- Rock Slide  
+- Protect  
+
+Whimsicott @ Focus Sash  
+Ability: Prankster  
+Timid Nature  
+- Moonblast  
+- Encore  
+- Tailwind  
+- Protect  
+
+Farigiraf @ Sitrus Berry  
+Ability: Armor Tail  
+Bold Nature  
+- Twin Beam  
+- Thunderbolt  
+- Trick Room  
+- Helping Hand  
+

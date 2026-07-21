@@ -1,0 +1,60 @@
+Staraptor @ Choice Scarf  
+Ability: Intimidate  
+Level: 50  
+EVs: 32 HP / 14 Atk / 20 Spe  
+Jolly Nature  
+- Final Gambit  
+- Brave Bird  
+- Close Combat  
+- U-turn  
+
+Vanilluxe @ Never-Melt Ice  
+Ability: Snow Warning  
+Level: 50  
+EVs: 32 HP / 32 SpA / 2 SpD  
+Quiet Nature  
+- Blizzard  
+- Freeze-Dry  
+- Protect  
+- Ice Shard  
+
+Farigiraf @ Sitrus Berry  
+Ability: Armor Tail  
+Level: 50  
+EVs: 29 HP / 20 Def / 17 SpD  
+Relaxed Nature  
+- Psychic Fangs  
+- Hyper Voice  
+- Helping Hand  
+- Trick Room  
+
+Blastoise-Mega @ Blastoisinite  
+Ability: Rain Dish  
+Level: 50  
+EVs: 32 HP / 32 SpA / 2 SpD  
+Quiet Nature  
+- Fake Out  
+- Water Spout  
+- Aura Sphere  
+- Dark Pulse  
+
+Kingambit @ Life Orb  
+Ability: Defiant  
+Level: 50  
+EVs: 32 HP / 32 Atk / 1 Def / 1 SpD  
+Brave Nature  
+- Kowtow Cleave  
+- Iron Head  
+- Protect  
+- Sucker Punch  
+
+Camerupt-Mega @ Cameruptite  
+Ability: Solid Rock  
+Level: 50  
+EVs: 32 HP / 32 SpA / 2 SpD  
+Quiet Nature  
+- Heat Wave  
+- Earth Power  
+- Protect  
+- Ancient Power  
+

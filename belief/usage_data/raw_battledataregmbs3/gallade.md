@@ -1,0 +1,141 @@
+# Gallade - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data
+
+> Find the best Gallade builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data. Data from Pikalytics.
+
+## Best Gallade Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data (`battledataregmbs3`) |
+| **Game** | Pokemon Scarlet Violet |
+| **Category** | battledataregmbs3 |
+| **Usage** | N/A |
+| **Win Rate** | 46.905% |
+| **Record** | 341-386 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Gallade)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/battledataregmbs3/Gallade
+- **Format Overview**: [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3)
+- **AI Format Index**: [/ai/pokedex/battledataregmbs3](https://www.pikalytics.com/ai/pokedex/battledataregmbs3)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Gallade.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Flying (2x), Ghost (2x), Fairy (2x) |
+| **Resists** | Fighting (1/2x), Rock (1/2x) |
+| **Immune To** | None |
+
+## Common Moves
+- **Sacred Sword**: 94.7%
+- **Psycho Cut**: 87.3%
+- **Protect**: 65.5%
+- **Leaf Blade**: 54.0%
+- **Trick Room**: 27.1%
+- **Night Slash**: 16.0%
+- **Wide Guard**: 13.3%
+- **Zen Headbutt**: 5.3%
+- **Shadow Sneak**: 4.5%
+- **Close Combat**: 4.3%
+
+## Common Abilities
+- **Sharpness**: 94.9%
+- **Justified**: 5.1%
+
+## Common Items
+- **Focus Sash**: 31.8%
+- **Scope Lens**: 13.8%
+- **Galladite**: 10.5%
+- **Life Orb**: 10.1%
+- **Black Belt**: 8.0%
+- **Lum Berry**: 7.4%
+- **Choice Scarf**: 5.7%
+- **Iron Ball**: 3.5%
+- **Roseli Berry**: 2.9%
+- **White Herb**: 2.3%
+
+## Common Teammates
+- **Farigiraf**: undefined%
+- **Metagross**: undefined%
+- **Sinistcha**: undefined%
+- **Whimsicott**: undefined%
+- **Sylveon**: undefined%
+- **Kingambit**: undefined%
+
+## Featured Teams with Gallade
+
+### Team 1 by scrambledegg6
+*Record: 8-1*
+*Event: limitless-6a387661af50e1230840809c*
+
+**Pokemon**: Pyroar-Mega, Gallade, Farigiraf, Kangaskhan, Torkoal, Mawile-Mega
+
+**Gallade Set**:
+- **Ability**: Sharpness
+- **Item**: Iron Ball
+- **Moves**: Sacred Sword, Psycho Cut, Leaf Blade, Trick Room
+
+### Team 2 by Nisanth
+*Record: 8-2*
+*Event: limitless-6a1cd3d456b11a587a94527f*
+
+**Pokemon**: Torkoal, Vileplume, Farigiraf, Scrafty-Mega, Gallade, Mawile-Mega
+
+**Gallade Set**:
+- **Ability**: Sharpness
+- **Item**: Iron Ball
+- **Moves**: Sacred Sword, Psycho Cut, Wide Guard, Trick Room
+
+
+## FAQ for Gallade in battledataregmbs3-1760
+
+### What are the top moves for Gallade?
+The most common moves for Gallade are Sacred Sword, Psycho Cut, Protect, Leaf Blade. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Gallade?
+Gallade is frequently paired with Farigiraf, Metagross, Sinistcha, Whimsicott. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Gallade weak to and resistant against?
+Gallade is weak to Flying (2x), Ghost (2x), Fairy (2x), resists Fighting (1/2x), Rock (1/2x), and is immune to no types.
+
+### Which Tera Types are best for Gallade?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Gallade?
+The top build for Gallade features a **** nature with an EV spread of `2/32/0/0/0/32`. This configuration accounts for 41.7% of competitive builds.
+
+### Which Ability and Item should I use on Gallade?
+Gallade is most effectively run with the ability **Sharpness** (94.9%) and the item **Focus Sash** (31.8%).
+
+### What is the most common role for Gallade?
+Based on common item usage (Focus Sash), Gallade often functions as a **lead or glass-cannon** in the battledataregmbs3-1760 meta.
+
+### What are the base stats for Gallade?
+| Stat | Value |
+|------|-------|
+| HP | 68 |
+| Attack | 125 |
+| Defense | 65 |
+| Sp. Atk | 65 |
+| Sp. Def | 115 |
+| Speed | 80 |
+| **BST** | **518** |
+
+---
+
+## Additional Resources
+
+- [View Gallade on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Gallade) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/battledataregmbs3) - Build teams with Gallade
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

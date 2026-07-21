@@ -949,7 +949,8 @@
   "type": "Normal",
   "accuracy": true,
   "priority": 0,
-  "target": "self"
+  "target": "self",
+  "selfSwitch": "copyvolatile"
  },
  "xscissor": {
   "basePower": 80,
@@ -1317,7 +1318,8 @@
   "type": "Dark",
   "accuracy": 100,
   "priority": 0,
-  "target": "normal"
+  "target": "normal",
+  "selfSwitch": true
  },
  "skillswap": {
   "basePower": 0,
@@ -2445,7 +2447,8 @@
   "type": "Water",
   "accuracy": 100,
   "priority": 0,
-  "target": "normal"
+  "target": "normal",
+  "selfSwitch": true
  },
  "aromaticmist": {
   "basePower": 0,
@@ -2469,7 +2472,8 @@
   "type": "Bug",
   "accuracy": 100,
   "priority": 0,
-  "target": "normal"
+  "target": "normal",
+  "selfSwitch": true
  },
  "toxicspikes": {
   "basePower": 0,
@@ -2781,7 +2785,8 @@
   "type": "Normal",
   "accuracy": true,
   "priority": 0,
-  "target": "self"
+  "target": "self",
+  "selfSwitch": "shedtail"
  },
  "ragingfury": {
   "basePower": 120,
@@ -2853,7 +2858,8 @@
   "type": "Ice",
   "accuracy": true,
   "priority": 0,
-  "target": "all"
+  "target": "all",
+  "selfSwitch": true
  },
  "electrify": {
   "basePower": 0,
@@ -3741,7 +3747,8 @@
   "type": "Electric",
   "accuracy": 100,
   "priority": 0,
-  "target": "normal"
+  "target": "normal",
+  "selfSwitch": true
  },
  "crunch": {
   "basePower": 80,

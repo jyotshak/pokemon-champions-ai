@@ -1,0 +1,136 @@
+# Vivillon - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data
+
+> Find the best Vivillon builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data. Data from Pikalytics.
+
+## Best Vivillon Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data (`battledataregmbs3`) |
+| **Game** | Pokemon Scarlet Violet |
+| **Category** | battledataregmbs3 |
+| **Usage** | N/A |
+| **Win Rate** | 49.306% |
+| **Record** | 746-767 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Vivillon)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/battledataregmbs3/Vivillon
+- **Format Overview**: [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3)
+- **AI Format Index**: [/ai/pokedex/battledataregmbs3](https://www.pikalytics.com/ai/pokedex/battledataregmbs3)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Vivillon.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Rock (4x), Fire (2x), Electric (2x), Ice (2x), Flying (2x) |
+| **Resists** | Grass (1/4x), Fighting (1/4x), Bug (1/2x) |
+| **Immune To** | Ground (0x) |
+
+## Common Moves
+- **Sleep Powder**: 92.3%
+- **Hurricane**: 81.2%
+- **Rage Powder**: 75.6%
+- **Tailwind**: 40.3%
+- **Rain Dance**: 34.7%
+- **Pollen Puff**: 31.3%
+- **Protect**: 23.7%
+- **Air Slash**: 4.8%
+- **Bug Buzz**: 3.6%
+- **Struggle Bug**: 2.9%
+
+## Common Abilities
+- **Compound Eyes**: 84.5%
+- **Friend Guard**: 8.9%
+- **Shield Dust**: 6.5%
+
+## Common Items
+- **Choice Scarf**: 54.8%
+- **Focus Sash**: 41.1%
+- **Charti Berry**: 4.0%
+- **Leftovers**: 0.1%
+
+## Common Teammates
+- **Basculegion**: undefined%
+- **Blastoise**: undefined%
+- **Farigiraf**: undefined%
+- **Torkoal**: undefined%
+- **Kangaskhan**: undefined%
+- **Sinistcha**: undefined%
+
+## Featured Teams with Vivillon
+
+### Team 1 by FOXY2003
+*Record: 8-0*
+*Event: limitless-6a262ef447f3797bf6baedd1*
+
+**Pokemon**: Kangaskhan-Mega, Blastoise-Mega, Farigiraf, Torkoal, Vivillon, Basculegion
+
+**Vivillon Set**:
+- **Ability**: Compound Eyes
+- **Item**: Choice Scarf
+- **Moves**: Sleep Powder, Rage Powder, Hurricane, Rain Dance
+
+### Team 2 by jiholee32
+*Record: 7-2*
+*Event: limitless-6a3efd4fc87cd9ff0a3105ee*
+
+**Pokemon**: Vivillon, Incineroar, Politoed, Archaludon, Gengar-Mega, Swampert-Mega
+
+**Vivillon Set**:
+- **Ability**: Compound Eyes
+- **Item**: Focus Sash
+- **Moves**: Sleep Powder, Hurricane, Rage Powder, Protect
+
+
+## FAQ for Vivillon in battledataregmbs3-1760
+
+### What are the top moves for Vivillon?
+The most common moves for Vivillon are Sleep Powder, Hurricane, Rage Powder, Tailwind. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Vivillon?
+Vivillon is frequently paired with Basculegion, Blastoise, Farigiraf, Torkoal. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Vivillon weak to and resistant against?
+Vivillon is weak to Rock (4x), Fire (2x), Electric (2x), Ice (2x), Flying (2x), resists Grass (1/4x), Fighting (1/4x), Bug (1/2x), and is immune to Ground (0x).
+
+### Which Tera Types are best for Vivillon?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Vivillon?
+The top build for Vivillon features a **** nature with an EV spread of `2/0/0/32/0/32`. This configuration accounts for 28.1% of competitive builds.
+
+### Which Ability and Item should I use on Vivillon?
+Vivillon is most effectively run with the ability **Compound Eyes** (84.5%) and the item **Choice Scarf** (54.8%).
+
+### What is the most common role for Vivillon?
+Based on common item usage (Choice Scarf), Vivillon often functions as a **choice-locked attacker** in the battledataregmbs3-1760 meta.
+
+### What are the base stats for Vivillon?
+| Stat | Value |
+|------|-------|
+| HP | 80 |
+| Attack | 52 |
+| Defense | 50 |
+| Sp. Atk | 90 |
+| Sp. Def | 50 |
+| Speed | 89 |
+| **BST** | **411** |
+
+---
+
+## Additional Resources
+
+- [View Vivillon on Pikalytics](https://www.pikalytics.com/pokedex/battledataregmbs3/Vivillon) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Reg M-B S3 Ranked Battle Data Pokedex](https://www.pikalytics.com/pokedex/battledataregmbs3) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/battledataregmbs3) - Build teams with Vivillon
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

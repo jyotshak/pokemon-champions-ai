@@ -1,0 +1,136 @@
+# Corviknight - Best Builds, Moves and Teams in Pokemon Champions VGC 2026 Tournaments
+
+> Find the best Corviknight builds, best moves, best teams, usage trends, and counters in Pokemon Champions VGC 2026 Tournaments. Data from Pikalytics.
+
+## Best Corviknight Quick Info
+
+| Property | Value |
+|----------|-------|
+| **Format** | Pokemon Champions VGC 2026 Tournaments (`championstournaments`) |
+| **Game** | Pokemon Champions |
+| **Category** | championstournaments |
+| **Usage** | 2% |
+| **Win Rate** | 46.105% |
+| **Record** | 905-1058-1 |
+| **Data Date** | 2026-05 |
+
+## Page Links
+
+- **Standard Web Page** (for users): [View on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Corviknight)
+- **AI Data** (this page): https://www.pikalytics.com/ai/pokedex/championstournaments/Corviknight
+- **Format Overview**: [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments)
+- **AI Format Index**: [/ai/pokedex/championstournaments](https://www.pikalytics.com/ai/pokedex/championstournaments)
+
+---
+
+Pikalytics provides the premier competitive Pokemon database, aggregating data from millions of ranked battles on official platforms and Smogon. This report summarizes the current meta-game role and effectiveness of Corviknight.
+
+## Defensive Type Matchups
+
+| Category | Attacking Types |
+|----------|-----------------|
+| **Weak To** | Fire (2x), Electric (2x) |
+| **Resists** | Grass (1/4x), Bug (1/4x), Normal (1/2x), Flying (1/2x), Psychic (1/2x), Dragon (1/2x), Steel (1/2x), Fairy (1/2x) |
+| **Immune To** | Poison (0x), Ground (0x) |
+
+## Common Moves
+- **Brave Bird**: 76.585%
+- **Tailwind**: 69.756%
+- **Roost**: 64.390%
+- **Iron Head**: 47.805%
+- **Bulk Up**: 41.463%
+- **Body Press**: 34.146%
+- **Protect**: 25.366%
+- **Iron Defense**: 19.024%
+- **U-turn**: 7.317%
+- **Taunt**: 3.902%
+
+## Common Abilities
+- **Mirror Armor**: 95.122%
+- **Pressure**: 2.439%
+
+## Common Items
+- **Leftovers**: 71.220%
+- **Occa Berry**: 11.220%
+- **Sitrus Berry**: 9.268%
+- **Metal Coat**: 2.927%
+- **Nothing**: 1.463%
+
+## Common Teammates
+- **Tyranitar-Mega**: 48.293%
+- **Garchomp**: 40.488%
+- **Excadrill**: 29.756%
+- **Sinistcha**: 24.390%
+- **Rotom-Wash**: 21.951%
+- **Hydreigon**: 20.976%
+
+## Featured Teams with Corviknight
+
+### Team 1 by JurassicJoints
+*Record: 9-0*
+*Event: limitless-6a3c370fc87cd9ff0a30eaa1*
+
+**Pokemon**: Hydreigon, Tyranitar-Mega, Excadrill, Rotom-Wash, Corviknight, Houndstone
+
+**Corviknight Set**:
+- **Ability**: Mirror Armor
+- **Item**: Leftovers
+- **Moves**: Brave Bird, Tailwind, Bulk Up, Roost
+
+### Team 2 by JurassicJoints
+*Record: 3-0*
+*Event: limitless-6a303342e334c3c9befd76fd*
+
+**Pokemon**: Hydreigon, Tyranitar-Mega, Excadrill, Rotom-Wash, Corviknight, Houndstone
+
+**Corviknight Set**:
+- **Ability**: Mirror Armor
+- **Item**: Leftovers
+- **Moves**: Brave Bird, Tailwind, Bulk Up, Roost
+
+
+## FAQ for Corviknight in championstournaments-1760
+
+### What are the top moves for Corviknight?
+The most common moves for Corviknight are Brave Bird, Tailwind, Roost, Iron Head. These represent the highest usage percentages on the ladder.
+
+### What are the best team partners for Corviknight?
+Corviknight is frequently paired with Tyranitar-Mega, Garchomp, Excadrill, Sinistcha. These partners help cover its weaknesses or enhance its offensive capabilities.
+
+### What is Corviknight weak to and resistant against?
+Corviknight is weak to Fire (2x), Electric (2x), resists Grass (1/4x), Bug (1/4x), Normal (1/2x), Flying (1/2x), Psychic (1/2x), Dragon (1/2x), Steel (1/2x), Fairy (1/2x), and is immune to Poison (0x), Ground (0x).
+
+### Which Tera Types are best for Corviknight?
+Tera Type data is not available or not applicable for this format.
+
+### What is the most common EV Spread and Nature for Corviknight?
+No EV spread or nature data available.
+
+### Which Ability and Item should I use on Corviknight?
+Corviknight is most effectively run with the ability **Mirror Armor** (95.122%) and the item **Leftovers** (71.220%).
+
+### What is the most common role for Corviknight?
+Based on common item usage (Leftovers), Corviknight often functions as a **bulky attacker or support** in the championstournaments-1760 meta.
+
+### What are the base stats for Corviknight?
+| Stat | Value |
+|------|-------|
+| HP | 98 |
+| Attack | 87 |
+| Defense | 105 |
+| Sp. Atk | 53 |
+| Sp. Def | 85 |
+| Speed | 67 |
+| **BST** | **495** |
+
+---
+
+## Additional Resources
+
+- [View Corviknight on Pikalytics](https://www.pikalytics.com/pokedex/championstournaments/Corviknight) - Full interactive stats page
+- [Pokemon Champions VGC 2026 Tournaments Pokedex](https://www.pikalytics.com/pokedex/championstournaments) - All Pokemon in this format
+- [Team Builder](https://www.pikalytics.com/team/championstournaments) - Build teams with Corviknight
+- [Damage Calculator](https://www.pikalytics.com/calc) - Calculate damage
+
+---
+*Generated by [Pikalytics](https://www.pikalytics.com). For more context on site data and AI usage, see [llms-full.txt](https://www.pikalytics.com/llms-full.txt).*

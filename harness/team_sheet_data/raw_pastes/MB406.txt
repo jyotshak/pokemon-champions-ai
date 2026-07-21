@@ -1,0 +1,48 @@
+Delphox @ Delphoxite  
+Ability: Blaze  
+Timid Nature  
+- Psychic  
+- Heat Wave  
+- Nasty Plot  
+- Protect  
+
+Blastoise @ Blastoisinite  
+Ability: Rain Dish  
+Modest Nature  
+- Water Spout  
+- Dark Pulse  
+- Shell Smash  
+- Protect  
+
+Sinistcha @ Kasib Berry  
+Ability: Hospitality  
+Bold Nature  
+- Matcha Gotcha  
+- Rage Powder  
+- Trick Room  
+- Protect  
+
+Sneasler @ Focus Sash  
+Ability: Poison Touch  
+Jolly Nature  
+- Dire Claw  
+- Close Combat  
+- Fake Out  
+- Quick Guard  
+
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+Impish Nature  
+- Flare Blitz  
+- Helping Hand  
+- Parting Shot  
+- Fake Out  
+
+Kingambit @ Black Glasses  
+Ability: Defiant  
+Adamant Nature  
+- Kowtow Cleave  
+- Sucker Punch  
+- Swords Dance  
+- Protect  
+

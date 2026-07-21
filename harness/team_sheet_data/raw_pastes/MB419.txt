@@ -1,0 +1,51 @@
+Kingambit @ Chople Berry  
+Ability: Defiant  
+Shiny: Yes  
+Adamant Nature  
+- Kowtow Cleave  
+- Low Kick  
+- Sucker Punch  
+- Protect  
+
+Charizard @ Charizardite Y  
+Ability: Solar Power  
+Shiny: Yes  
+Modest Nature  
+- Heat Wave  
+- Weather Ball  
+- Solar Beam  
+- Protect  
+
+Floette-Eternal @ Floettite  
+Ability: Flower Veil  
+Timid Nature  
+- Moonblast  
+- Dazzling Gleam  
+- Light of Ruin  
+- Protect  
+
+Whimsicott @ Focus Sash  
+Ability: Prankster  
+Timid Nature  
+- Moonblast  
+- Tailwind  
+- Encore  
+- Protect  
+
+Garchomp @ Life Orb  
+Ability: Rough Skin  
+Shiny: Yes  
+Jolly Nature  
+- Earthquake  
+- Dragon Claw  
+- Rock Slide  
+- Protect  
+
+Basculegion @ Mystic Water  
+Ability: Adaptability  
+Adamant Nature  
+- Wave Crash  
+- Aqua Jet  
+- Last Respects  
+- Protect  
+

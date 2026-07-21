@@ -1,0 +1,54 @@
+Froslass @ Froslassite  
+Ability: Snow Cloak  
+EVs: 32 HP / 10 Def / 24 Spe  
+Timid Nature  
+- Blizzard  
+- Shadow Ball  
+- Aurora Veil  
+- Protect  
+
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+EVs: 32 HP / 6 Def / 12 SpD / 16 Spe  
+Impish Nature  
+- Flare Blitz  
+- Parting Shot  
+- Fake Out  
+- Throat Chop  
+
+Gholdengo @ Life Orb  
+Ability: Good as Gold  
+EVs: 2 HP / 32 SpA / 32 Spe  
+Timid Nature  
+- Make It Rain  
+- Shadow Ball  
+- Nasty Plot  
+- Protect  
+
+Basculegion @ Mystic Water  
+Ability: Adaptability  
+EVs: 30 Atk / 16 Def / 20 Spe  
+Adamant Nature  
+- Aqua Jet  
+- Wave Crash  
+- Last Respects  
+- Protect  
+
+Kingambit @ Black Glasses  
+Ability: Defiant  
+EVs: 32 HP / 32 Atk / 1 SpD / 1 Spe  
+Adamant Nature  
+- Kowtow Cleave  
+- Swords Dance  
+- Sucker Punch  
+- Protect  
+
+Arcanine-Hisui @ Focus Sash  
+Ability: Rock Head  
+EVs: 2 HP / 32 Atk / 32 Spe  
+Jolly Nature  
+- Flare Blitz  
+- Head Smash  
+- Rock Slide  
+- Protect  
+

@@ -40,7 +40,39 @@ def _bench_pokemon(battle: DoubleBattle, bench_slot: int):
     return bench[bench_slot]
 
 
+def _forced_move(battle: DoubleBattle, actor):
+    """The synthetic move Showdown offers during a FORCED CONTINUATION
+    (recharge after Hyper Beam, Struggle, a locked two-turn move), or None.
+
+    Showdown replaces that slot's move list with a single entry whose id is
+    NOT in the mon's own moveset, so nothing in our schema can name it:
+    harness/translator.py deliberately keeps OwnPokemon.moves as the real,
+    engine-buildable moveset (a synthetic id has no PP data and breaks
+    init_battle's buildSet), which leaves every real move "disabled" and makes
+    the policy emit NoAction. Passing is illegal here - the server answers
+    "[Invalid choice] Can't pass: Your <mon> must make a move (or switch)" and
+    the battle stalls retrying. So we resolve it at THIS boundary, where the
+    live request is still in hand, and submit the synthetic move itself.
+    Found live on MB552's Sylveon + Hyper Beam.
+    """
+    try:
+        i = list(battle.active_pokemon).index(actor)
+    except ValueError:
+        return None
+    available = battle.available_moves[i] if i < len(battle.available_moves) else []
+    extras = [m for m in available if m.id not in actor.moves]
+    return extras[0] if len(extras) == 1 else None
+
+
 def _single_order(battle: DoubleBattle, action: Action, actor, position: Position) -> SingleBattleOrder:
+    # A forced continuation overrides whatever the policy chose for this slot:
+    # it is the only legal move. Switches are left alone - Struggle is a forced
+    # continuation you CAN legally switch out of (recharge sets trapped, so the
+    # policy won't offer a switch there anyway).
+    if actor is not None and not isinstance(action, SwitchAction):
+        forced = _forced_move(battle, actor)
+        if forced is not None:
+            return SingleBattleOrder(forced)
     if isinstance(action, NoAction):
         return PassBattleOrder()
     if isinstance(action, SwitchAction):

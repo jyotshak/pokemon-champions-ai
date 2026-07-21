@@ -1,0 +1,48 @@
+Basculegion @ Choice Scarf  
+Ability: Adaptability  
+Jolly Nature  
+- Last Respects  
+- Wave Crash  
+- Flip Turn  
+- Aqua Jet  
+
+Kingambit @ Black Glasses  
+Ability: Defiant  
+Adamant Nature  
+- Kowtow Cleave  
+- Sucker Punch  
+- Swords Dance  
+- Protect  
+
+Sneasler @ White Herb  
+Ability: Unburden  
+Adamant Nature  
+- Fake Out  
+- Dire Claw  
+- Close Combat  
+- Protect  
+
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+Careful Nature  
+- Flare Blitz  
+- Parting Shot  
+- Helping Hand  
+- Fake Out  
+
+Sinistcha @ Focus Sash  
+Ability: Hospitality  
+Modest Nature  
+- Matcha Gotcha  
+- Rage Powder  
+- Shadow Ball  
+- Protect  
+
+Floette-Eternal @ Floettite  
+Ability: Flower Veil  
+Timid Nature  
+- Dazzling Gleam  
+- Draining Kiss  
+- Calm Mind  
+- Protect  
+

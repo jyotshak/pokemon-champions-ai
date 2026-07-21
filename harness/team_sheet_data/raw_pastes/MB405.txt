@@ -1,0 +1,49 @@
+Sneasler @ Focus Sash  
+Ability: Poison Touch  
+Tera Type: Fighting  
+Jolly Nature  
+- Quick Guard  
+- Fake Out  
+- Dire Claw  
+- Close Combat  
+
+Sinistcha @ Occa Berry  
+Ability: Hospitality  
+Relaxed Nature  
+- Protect  
+- Rage Powder  
+- Matcha Gotcha  
+- Trick Room  
+
+Incineroar @ Sitrus Berry  
+Ability: Intimidate  
+Careful Nature  
+- Fake Out  
+- Flare Blitz  
+- Throat Chop  
+- Parting Shot  
+
+Kingambit @ Black Glasses  
+Ability: Defiant  
+Adamant Nature  
+- Kowtow Cleave  
+- Swords Dance  
+- Sucker Punch  
+- Protect  
+
+Delphox @ Delphoxite  
+Ability: Blaze  
+Timid Nature  
+- Protect  
+- Nasty Plot  
+- Heat Wave  
+- Psyshock  
+
+Blastoise @ Blastoisinite  
+Ability: Rain Dish  
+Modest Nature  
+- Water Spout  
+- Dark Pulse  
+- Shell Smash  
+- Protect  
+

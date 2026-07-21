@@ -1,0 +1,48 @@
+Gengar @ Gengarite  
+Ability: Cursed Body  
+Timid Nature  
+- Shadow Ball  
+- Perish Song  
+- Sludge Bomb  
+- Protect  
+
+Swampert @ Swampertite  
+Ability: Torrent  
+Adamant Nature  
+- Wave Crash  
+- Earthquake  
+- Ice Punch  
+- Protect  
+
+Incineroar @ Passho Berry  
+Ability: Intimidate  
+Sassy Nature  
+- Throat Chop  
+- Parting Shot  
+- Fake Out  
+- Protect  
+
+Politoed @ Sitrus Berry  
+Ability: Drizzle  
+Calm Nature  
+- Weather Ball  
+- Perish Song  
+- Encore  
+- Protect  
+
+Archaludon @ Leftovers  
+Ability: Stamina  
+Bold Nature  
+- Dragon Pulse  
+- Flash Cannon  
+- Electro Shot  
+- Protect  
+
+Vivillon @ Focus Sash  
+Ability: Compound Eyes  
+Timid Nature  
+- Hurricane  
+- Sleep Powder  
+- Rage Powder  
+- Protect  
+
