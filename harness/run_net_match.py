@@ -28,7 +28,7 @@ from harness.teams import TEAM_AERO_HO, TEAM_SWAMPERT_TR
 from model.net_infer import NetEvaluator
 
 N_GAMES_PER_SIDE = int(sys.argv[1]) if len(sys.argv) > 1 else 5
-CHECKPOINT = "model/checkpoints/imitation_v2.pt"
+CHECKPOINT = "model/checkpoints/imitation_v4.pt"
 OUTPUT_DIR = Path(__file__).resolve().parent.parent / "logs"
 # One shared model for the whole batch (no per-game reload / CUDA-context churn).
 EVALUATOR = NetEvaluator(CHECKPOINT)

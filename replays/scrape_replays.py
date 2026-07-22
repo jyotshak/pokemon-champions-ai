@@ -20,6 +20,14 @@ source.
 Run from the project root, e.g.:
   python -m replays.scrape_replays --format both --min-rating 1200 --max-pages 40
   python -m replays.scrape_replays --format bo3 --min-rating 0 --max-pages 5
+  python -m replays.scrape_replays --sort rating --max-pages 100   # higher-floor corpus
+
+Downloads are id-keyed and skip-if-cached (download_replay), so re-running
+this periodically (with either --sort) against an already-populated
+replays/raw/ only ever adds genuinely new replays - safe to schedule
+regularly. See replays/trained_manifest.py + reconstruct.py's --new-only
+for turning freshly-scraped raw replays into training examples without
+touching the ones already folded into the main corpus.
 """
 
 import argparse
@@ -48,19 +56,34 @@ def _get(url: str, timeout: float = 20.0) -> bytes:
         return r.read()
 
 
-def list_page(format_id: str, page: int) -> list[dict]:
+def list_page(format_id: str, page: int, sort: str = "date") -> list[dict]:
     """One search page of replay metadata (up to 51). Empty list = past
-    the last page (the natural stop condition)."""
-    return json.loads(_get(_SEARCH.format(fmt=format_id, page=page)).decode("utf-8"))
+    the last page (the natural stop condition). sort='rating' asks the
+    same search.json endpoint the site's own UI uses for a rating-sorted
+    listing (confirmed live 2026-07-21: page 1 runs ~1700+, monotonically
+    descending) - a much higher floor than the default upload-time order,
+    which mixes in a lot of unrated/casual games."""
+    url = _SEARCH.format(fmt=format_id, page=page)
+    if sort == "rating":
+        url += "&sort=rating"
+    return json.loads(_get(url).decode("utf-8"))
 
 
-def iter_replay_meta(format_id: str, min_rating: int, max_pages: int, sleep: float):
+def iter_replay_meta(format_id: str, min_rating: int, max_pages: int, sleep: float, sort: str = "date"):
     """Yield replay metadata dicts across pages, keeping only public,
     rating>=min_rating games. Stops at max_pages or the first empty page.
-    Filtering here (metadata) means we never download a log we'd discard."""
+    Filtering here (metadata) means we never download a log we'd discard.
+
+    sort='rating': results arrive rating-descending, so once a REAL rating
+    dips below the floor every later entry (this page and all following
+    pages) is guaranteed to be too, and we can stop early instead of
+    paging all the way to 100 for nothing. Only a perf optimization - the
+    min_rating check below still applies unconditionally either way, so a
+    wrong assumption here would cost extra requests, never a correctness
+    bug."""
     for page in range(1, max_pages + 1):
         try:
-            entries = list_page(format_id, page)
+            entries = list_page(format_id, page, sort=sort)
         except Exception as e:  # transient network / rate hiccup - report, stop this format
             print(f"  [page {page}] fetch failed ({e}); stopping this format", flush=True)
             return
@@ -77,6 +100,8 @@ def iter_replay_meta(format_id: str, min_rating: int, max_pages: int, sleep: flo
             # per-record for a train-time filter. Unrated Bo3 games still
             # carry open sheets, valuable for the belief model regardless.
             if min_rating > 0 and (rating is None or rating < min_rating):
+                if sort == "rating" and rating is not None:
+                    return   # monotonically descending -> nothing further can qualify
                 continue
             yield e
         time.sleep(sleep)
@@ -98,12 +123,12 @@ def download_replay(replay_id: str, out_dir: Path, sleep: float) -> bool:
     return True
 
 
-def scrape(format_key: str, min_rating: int, max_pages: int, sleep: float) -> dict:
+def scrape(format_key: str, min_rating: int, max_pages: int, sleep: float, sort: str = "date") -> dict:
     format_id = FORMATS[format_key]
     out_dir = RAW_DIR / format_id
     out_dir.mkdir(parents=True, exist_ok=True)
     seen = kept = downloaded = 0
-    for meta in iter_replay_meta(format_id, min_rating, max_pages, sleep):
+    for meta in iter_replay_meta(format_id, min_rating, max_pages, sleep, sort=sort):
         seen += 1
         kept += 1
         if download_replay(meta["id"], out_dir, sleep):
@@ -111,7 +136,7 @@ def scrape(format_key: str, min_rating: int, max_pages: int, sleep: float) -> di
         if kept % 25 == 0:
             print(f"  [{format_key}] kept {kept}, downloaded {downloaded} new...", flush=True)
     total_cached = len(list(out_dir.glob("*.json")))
-    print(f"[{format_key}] {format_id}: kept {kept} (rating>={min_rating}), "
+    print(f"[{format_key}] {format_id}: kept {kept} (rating>={min_rating}, sort={sort}), "
           f"{downloaded} newly downloaded, {total_cached} total cached in {out_dir}", flush=True)
     return {"format": format_id, "kept": kept, "downloaded": downloaded, "cached": total_cached}
 
@@ -123,11 +148,14 @@ def main():
                     help="skip replays rated below this (Bo3 unrated games have rating=null and are skipped)")
     ap.add_argument("--max-pages", type=int, default=40, help="search pages per format (51 replays/page)")
     ap.add_argument("--sleep", type=float, default=0.3, help="seconds between requests (be polite)")
+    ap.add_argument("--sort", choices=["date", "rating"], default="date",
+                    help="'rating' pulls a much higher-floor corpus (page 1 ~1700+, descending) "
+                         "and can early-stop once ratings drop below --min-rating")
     args = ap.parse_args()
 
     keys = ["bo1", "bo3"] if args.format == "both" else [args.format]
     for k in keys:
-        scrape(k, args.min_rating, args.max_pages, args.sleep)
+        scrape(k, args.min_rating, args.max_pages, args.sleep, sort=args.sort)
 
 
 if __name__ == "__main__":

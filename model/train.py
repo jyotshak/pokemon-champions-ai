@@ -21,9 +21,17 @@ Examples:
       # and value_coef=1.0 (the default) lets the value BCE (capped at ln2=0.69)
       # get drowned out by the five policy losses (summing to several nats
       # early on) in the shared backward pass - value_coef re-balances that.
+  python -m model.train --resume model/checkpoints/imitation_v3.pt \
+      --paths "replays/examples/*new.jsonl" --epochs 10 --out model/checkpoints/imitation_v4.pt
+      # incremental run on a freshly-scraped, not-yet-merged batch only
+      # (replays/reconstruct.py --new-only) - much cheaper than a full
+      # retrain for a periodic top-up. Merge the batch into the main
+      # corpus with `python -m replays.merge_new` once this checkpoint is
+      # kept, so the next --new-only run doesn't see it again.
 """
 
 import argparse
+import glob
 import time
 
 import torch
@@ -67,9 +75,15 @@ def evaluate(net, loader, dev) -> dict:
 
 def train(args):
     dev = "cuda" if torch.cuda.is_available() and not args.cpu else "cpu"
+    paths = None
+    if args.paths:
+        paths = sorted(p for pat in args.paths.split(",") for p in glob.glob(pat.strip()))
+        if not paths:
+            raise SystemExit(f"--paths matched no files: {args.paths!r}")
     train_ds, val_ds = load_train_val(min_rating=args.min_rating,
                                       species_dropout=args.species_dropout,
-                                      val_frac=args.val_frac, limit=args.limit, seed=args.seed)
+                                      val_frac=args.val_frac, limit=args.limit, seed=args.seed,
+                                      paths=paths)
     train_dl = DataLoader(train_ds, batch_size=args.batch, shuffle=True, drop_last=True)
     val_dl = DataLoader(val_ds, batch_size=args.batch, shuffle=False)
 
@@ -134,6 +148,9 @@ def main():
     ap.add_argument("--species-dropout", type=float, default=0.15)
     ap.add_argument("--val-frac", type=float, default=0.1)
     ap.add_argument("--limit", type=int, default=0, help="cap examples (0=all), for quick runs")
+    ap.add_argument("--paths", type=str, default="",
+                    help="comma-separated jsonl glob pattern(s) to train on instead of the full "
+                         "corpus, e.g. 'replays/examples/*new.jsonl' for an incremental top-up run")
     ap.add_argument("--d-model", type=int, default=128)
     ap.add_argument("--layers", type=int, default=4)
     ap.add_argument("--species-dim", type=int, default=32)

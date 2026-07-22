@@ -50,7 +50,7 @@ def _remap_bench(action: Action, state: BattleState) -> Action:
 
 
 class NetPlayer(Player):
-    def __init__(self, *args, checkpoint: str = "model/checkpoints/imitation_v2.pt",
+    def __init__(self, *args, checkpoint: str = "model/checkpoints/imitation_v4.pt",
                  evaluator: NetEvaluator | None = None,
                  n_worlds: int = 4, k_my: int = 4, k_opp: int = 4,
                  solver_seed: int = 0, verbose: bool = False,
