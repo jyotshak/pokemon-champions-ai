@@ -1,0 +1,111 @@
+export const Abilities: import('../../../sim/dex-abilities').ModdedAbilityDataTable = {
+	disguise: {
+		inherit: true,
+		onDamage(damage, target, source, effect) {
+			if (
+				effect && effect.effectType === 'Move' &&
+				['mimikyu', 'mimikyutotem'].includes(target.species.id) && !target.transformed
+			) {
+				if (["rollout", "iceball"].includes(effect.id)) {
+					source.volatiles[effect.id].contactHitCount--;
+				}
+
+				this.add("-activate", target, "ability: Disguise");
+				this.effectState.busted = true;
+				return 0;
+			}
+		},
+		onUpdate(pokemon) {
+			if (['mimikyu', 'mimikyutotem'].includes(pokemon.species.id) && this.effectState.busted) {
+				const speciesid = pokemon.species.id === 'mimikyutotem' ? 'Mimikyu-Busted-Totem' : 'Mimikyu-Busted';
+				pokemon.formeChange(speciesid, this.effect, true);
+				pokemon.formeRegression = true;
+			}
+		},
+	},
+	darkaura: {
+		inherit: true,
+		flags: { breakable: 1 },
+	},
+	fairyaura: {
+		inherit: true,
+		flags: { breakable: 1 },
+	},
+	innerfocus: {
+		inherit: true,
+		rating: 1,
+		onTryBoost: undefined, // no inherit
+	},
+	moody: {
+		inherit: true,
+		onResidual(pokemon) {
+			let stats: BoostID[] = [];
+			const boost: SparseBoostsTable = {};
+			let statPlus: BoostID;
+			for (statPlus in pokemon.boosts) {
+				if (pokemon.boosts[statPlus] < 6) {
+					stats.push(statPlus);
+				}
+			}
+			let randomStat = stats.length ? this.sample(stats) : undefined;
+			if (randomStat) boost[randomStat] = 2;
+
+			stats = [];
+			let statMinus: BoostID;
+			for (statMinus in pokemon.boosts) {
+				if (pokemon.boosts[statMinus] > -6 && statMinus !== randomStat) {
+					stats.push(statMinus);
+				}
+			}
+			randomStat = stats.length ? this.sample(stats) : undefined;
+			if (randomStat) boost[randomStat] = -1;
+
+			this.boost(boost, pokemon, pokemon);
+		},
+	},
+	oblivious: {
+		inherit: true,
+		onTryBoost: undefined, // no inherit
+	},
+	owntempo: {
+		inherit: true,
+		onTryBoost: undefined, // no inherit
+	},
+	rattled: {
+		inherit: true,
+		onAfterBoost: undefined, // no inherit
+	},
+	scrappy: {
+		inherit: true,
+		onTryBoost: undefined, // no inherit
+	},
+	slowstart: {
+		inherit: true,
+		onModifyAtk(atk, pokemon, target, move) {
+			// This is because the game checks the move's category in data, rather than what it is currently, unlike e.g. Huge Power
+			if (this.effectState.counter && this.dex.moves.get(move.id).category === 'Physical') {
+				return this.chainModify(0.5);
+			}
+		},
+		onModifySpAPriority: 5,
+		onModifySpA(spa, pokemon, target, move) {
+			// Ordinary Z-moves like Breakneck Blitz will halve the user's Special Attack as well
+			if (this.effectState.counter && this.dex.moves.get(move.id).category === 'Physical') {
+				return this.chainModify(0.5);
+			}
+		},
+	},
+	soundproof: {
+		inherit: true,
+		onTryHit(target, source, move) {
+			if (move.flags['sound']) {
+				this.add('-immune', target, '[from] ability: Soundproof');
+				return null;
+			}
+		},
+	},
+	technician: {
+		inherit: true,
+		onBasePowerPriority: 19,
+	},
+};

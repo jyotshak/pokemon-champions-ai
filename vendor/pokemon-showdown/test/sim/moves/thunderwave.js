@@ -1,0 +1,22 @@
+'use strict';
+
+const assert = require('./../../assert');
+const common = require('./../../common');
+
+let battle;
+
+describe('Thunder Wave', () => {
+	afterEach(() => {
+		battle.destroy();
+	});
+
+	it('should not ignore natural type immunities', () => {
+		battle = common.createBattle([[
+			{ species: "Jolteon", ability: 'quickfeet', moves: ['thunderwave'] },
+		], [
+			{ species: "Hippowdon", ability: 'sandforce', moves: ['slackoff'] },
+		]]);
+		battle.makeChoices('move thunderwave', 'move slackoff');
+		assert.equal(battle.p2.active[0].status, '');
+	});
+});

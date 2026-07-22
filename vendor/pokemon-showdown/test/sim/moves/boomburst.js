@@ -1,0 +1,23 @@
+'use strict';
+
+const assert = require('./../../assert');
+const common = require('./../../common');
+
+let battle;
+
+describe('Boomburst', () => {
+	afterEach(() => {
+		battle.destroy();
+	});
+
+	it('should pierce through substitutes', () => {
+		battle = common.createBattle([[
+			{ species: "Deoxys-Attack", ability: 'victorystar', item: 'laggingtail', moves: ['splash', 'boomburst'] },
+		], [
+			{ species: "Caterpie", level: 2, ability: 'naturalcure', item: 'focussash', moves: ['substitute', 'rest'] },
+		]]);
+		battle.makeChoices('move splash', 'move substitute');
+		battle.makeChoices('move boomburst', 'move rest');
+		assert.equal(battle.p2.active[0].item, '');
+	});
+});
