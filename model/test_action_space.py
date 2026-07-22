@@ -36,9 +36,12 @@ def check(name: str, actual, expected):
 
 
 def mk(species, moves, item=None, position=None, hp=155, fainted=False, pp=16, trapped=False,
-      disabled=False, must_recharge=False):
+      disabled=False, must_recharge=False, charging_move=None):
     for m in moves:
         assert m in _MOVE_DATA, f"typo in test data: {m} not in move_data.json"
+    volatiles = [VolatileState(name="must_recharge")] if must_recharge else []
+    if charging_move:
+        volatiles.append(VolatileState(name="two_turn_move", data={"move": charging_move}))
     return OwnPokemon(
         species=species, position=position, fainted=fainted,
         hp=0 if fainted else hp, max_hp=hp,
@@ -46,7 +49,7 @@ def mk(species, moves, item=None, position=None, hp=155, fainted=False, pp=16, t
         ability="pressure", item=item,
         moves=[MoveSlot(move=m, pp=pp, max_pp=16, disabled=disabled) for m in moves],
         trapped=trapped,
-        volatiles=[VolatileState(name="must_recharge")] if must_recharge else [],
+        volatiles=volatiles,
     )
 
 
@@ -182,6 +185,26 @@ recharging_no_bench = FullInfoState(
 check("still one real move, NOT NoAction",
       propose_slot_actions(recharging_no_bench, "me", Position.LEFT),
       [MoveAction(move_slot=1, target=Target.NONE)])
+
+print("\ntwo_turn_move volatile (mid-charge on Solar Beam/Fly/Electro Shot without Rain, "
+      "LIVE-TRANSLATED shape) -> exactly one move at the charging move's REAL slot, no switch")
+# Solar Beam is real move_slot 2 here (not slot 1) - the fix must find the
+# actual slot the charging move lives in, not assume 1 (must_recharge can
+# assume 1 since that move is synthetic and slot content doesn't matter -
+# solarbeam is a genuine moveset entry, so getting the slot right matters
+# for any downstream code that reads move_slot expecting the real move).
+charging = FullInfoState(
+    turn=5, field=FieldState(),
+    my_team=[mk("charizard", ["protect", "solarbeam", "flamethrower", "airslash"],
+               position=Position.LEFT, disabled=True, charging_move="solarbeam"),
+             mk("kingambit", ["suckerpunch", "ironhead", "kowtowcleave", "lowkick"])],  # a LIVE bench mon
+    opp_team=[mk("tyranitar", ["crunch"], position=Position.LEFT)],
+)
+charging_actions = propose_slot_actions(charging, "me", Position.LEFT)
+check("exactly one action, at solarbeam's real slot (2)",
+      charging_actions, [MoveAction(move_slot=2, target=Target.NONE)])
+check("no switch offered (a charging mon cannot switch, even with one available)",
+      any(isinstance(a, SwitchAction) for a in charging_actions), False)
 
 print("\nCurse targeting depends on the USER's type, not a fixed move property")
 curse_ghost = FullInfoState(
@@ -330,5 +353,66 @@ hp_frac = half.my_team[1].hp / half.my_team[1].max_hp
 # my side: 3 living-full (3.0) + 1 living at hp_frac (0.75 + 0.25*hp_frac); opp: 3 living-full (3.0).
 expected = ((3.0 + 0.75 + 0.25 * hp_frac) - 3.0) / 4.0
 check("after damage", hp_leaf_value(half), expected)
+
+print("\n2026-07-21 pruning redesign, after an external review found the original "
+      "version silently dropped whole classes of actions ([[net-external-review-2026-07-21]])")
+
+print("\nProtect (0-damage) MUST survive a tight cap alongside several real attacks - "
+      "this is the concrete mechanism behind 'the net AND the CFR tree clicked Protect 0 times'")
+protect_squeeze = FullInfoState(
+    turn=3, field=FieldState(),
+    my_team=[mk("garchomp", ["earthquake", "dragonclaw", "rockslide", "protect"], position=Position.LEFT),
+             mk("kingambit", ["suckerpunch", "ironhead", "kowtowcleave", "lowkick"], position=Position.RIGHT)],
+    opp_team=[mk("tyranitar", ["crunch"], position=Position.LEFT),
+              mk("rotomwash", ["hydropump"], position=Position.RIGHT)],
+)
+tight = _pruned_slot_actions(protect_squeeze, "me", Position.LEFT, cap=2)
+protect_kept = any(isinstance(a, MoveAction) and a.move_slot == 4 for a in tight)
+check("Protect survives even at cap=2 (smaller than the 4 real moves)", protect_kept, True)
+
+print("\ntarget diversity: a status move with a REAL targeting decision (Thunder Wave on "
+      "either opponent, both score 0.0 damage) must keep BOTH targets, not just whichever "
+      "was enumerated first")
+thunderwave_state = FullInfoState(
+    turn=3, field=FieldState(),
+    my_team=[mk("whimsicott", ["thunderwave", "moonblast", "tailwind", "encore"], position=Position.LEFT),
+             mk("kingambit", ["suckerpunch", "ironhead", "kowtowcleave", "lowkick"], position=Position.RIGHT)],
+    opp_team=[mk("tyranitar", ["crunch"], position=Position.LEFT),
+              mk("rotomwash", ["hydropump"], position=Position.RIGHT)],
+)
+tw_actions = [a for a in _pruned_slot_actions(thunderwave_state, "me", Position.LEFT, cap=6)
+              if isinstance(a, MoveAction) and a.move_slot == 1]
+tw_targets = {a.target for a in tw_actions}
+check("Thunder Wave kept for BOTH opposing targets (not collapsed to one)",
+      tw_targets, {Target.OPP_LEFT, Target.OPP_RIGHT})
+
+print("\nall normal switch destinations survive a tight cap, not just the first found")
+three_bench = FullInfoState(
+    turn=3, field=FieldState(),
+    my_team=[mk("garchomp", ["earthquake", "dragonclaw", "rockslide", "protect"], position=Position.LEFT),
+             mk("kingambit", ["suckerpunch"], position=Position.RIGHT),
+             mk("clefable", ["moonblast"]), mk("incineroar", ["fakeout"]), mk("sylveon", ["hypervoice"])],
+    opp_team=[mk("tyranitar", ["crunch"], position=Position.LEFT)],
+)
+switch_actions = [a for a in _pruned_slot_actions(three_bench, "me", Position.LEFT, cap=3)
+                  if isinstance(a, SwitchAction)]
+check("all 3 living bench mons reachable by a voluntary switch, not just bench_slot 0",
+      {a.bench_slot for a in switch_actions}, {0, 1, 2})
+
+print("\nmega + Protect coexists with mega + best attack, not just the single highest-damage mega")
+mega_utility = FullInfoState(
+    turn=3, field=FieldState(),
+    my_team=[mk("charizard", ["heatwave", "airslash", "protect", "solarbeam"],
+               item="charizarditey", position=Position.LEFT),
+             mk("kingambit", ["suckerpunch", "ironhead", "kowtowcleave", "lowkick"], position=Position.RIGHT)],
+    opp_team=[mk("tyranitar", ["crunch"], position=Position.LEFT),
+              mk("rotomwash", ["hydropump"], position=Position.RIGHT)],
+)
+mega_actions = [a for a in _pruned_slot_actions(mega_utility, "me", Position.LEFT, cap=6)
+                if isinstance(a, MoveAction) and a.mega]
+mega_move_slots = {a.move_slot for a in mega_actions}
+print(f"  (mega move_slots present: {mega_move_slots})")
+check("mega+Protect (move_slot 3) present alongside a mega+attack combo",
+      3 in mega_move_slots and len(mega_move_slots) > 1, True)
 
 print(f"\n{'PASS' if not failures else 'FAIL: ' + ', '.join(failures)}")

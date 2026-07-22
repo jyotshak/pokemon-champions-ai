@@ -64,7 +64,31 @@ def _volatiles(poke_mon: Pokemon) -> list[VolatileState]:
     return [
         VolatileState(name=effect.name.lower(), data={"value": value})
         for effect, value in poke_mon.effects.items()
-    ]
+    ] + _forced_continuation_volatiles(poke_mon)
+
+
+def _forced_continuation_volatiles(poke_mon: Pokemon) -> list[VolatileState]:
+    """must_recharge (after Hyper Beam etc.) and mid-charge on a two-turn
+    move (Solar Beam, Fly, Electro Shot without Rain, ...) are tracked by
+    poke-env as DEDICATED attributes (must_recharge, preparing_move), set
+    directly from the real -mustrecharge/-prepare protocol lines and
+    cleared the instant the mon actually moves (Pokemon.moved()) - NOT via
+    poke_mon.effects, which the list above reads and which was confirmed
+    (empirically, on a real Pokemon object) to NEVER carry either of these.
+    Without this, neither model/action_space.py::propose_slot_actions'
+    forced-continuation check nor engine/bridge.js's matching volatile
+    reconstruction ever actually engage in live play - they'd only ever be
+    exercised by hand-built test fixtures, not the real translation path.
+    harness/actions.py::_forced_move reads these same two properties
+    directly (not through this schema) for the live order-submission side
+    of the same fix.
+    """
+    out = []
+    if poke_mon.must_recharge:
+        out.append(VolatileState(name="must_recharge"))
+    if poke_mon.preparing_move is not None:
+        out.append(VolatileState(name="two_turn_move", data={"move": poke_mon.preparing_move.id}))
+    return out
 
 
 def _is_mega(poke_mon: Pokemon) -> bool:

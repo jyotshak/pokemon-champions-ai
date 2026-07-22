@@ -30,7 +30,6 @@ import glob
 import json
 from pathlib import Path
 
-import numpy as np
 import torch
 from torch.utils.data import Dataset
 
@@ -77,9 +76,17 @@ def _to_tensors(enc: dict) -> dict:
         "moves": torch.from_numpy(s["moves"]).long(),
         "numeric": torch.from_numpy(s["numeric"]).float(),
         "static": torch.from_numpy(s["static"]).float(),
-        "meta": torch.from_numpy(s["meta"]).float(),
         "field": torch.from_numpy(s["field"]).float(),
         "mask": torch.from_numpy(s["mask"]).float(),
+        # meta: int64 vocab indices (routed through the shared item/ability/
+        # move embedding tables in model/policy_net.py) + their float probs -
+        # kept separate, not one packed float array (2026-07-21 fix).
+        "meta_item": torch.from_numpy(s["meta_item"]).long(),
+        "meta_item_prob": torch.from_numpy(s["meta_item_prob"]).float(),
+        "meta_ability": torch.from_numpy(s["meta_ability"]).long(),
+        "meta_ability_prob": torch.from_numpy(s["meta_ability_prob"]).float(),
+        "meta_move": torch.from_numpy(s["meta_move"]).long(),
+        "meta_move_prob": torch.from_numpy(s["meta_move_prob"]).float(),
     }
     return {
         "state": state,
@@ -99,8 +106,13 @@ class ReplayDataset(Dataset):
         (0 = all), for quick runs."""
         self.species_dropout = species_dropout
         if paths is None:
-            paths = sorted(glob.glob(str(EXAMPLES_DIR / "*.jsonl")))
+            # exclude *new.jsonl: a not-yet-merged incremental batch from
+            # replays/reconstruct.py --new-only (see replays/merge_new.py) -
+            # a full-corpus run must not double count it before it's folded
+            # into the main <fmt>.jsonl by merge_new.py.
+            paths = sorted(p for p in glob.glob(str(EXAMPLES_DIR / "*.jsonl")) if not p.endswith("new.jsonl"))
         self.records: list[dict] = []
+        self.game_ids: list[str] = []   # parallel to self.records - which replay each came from
         kept = skipped_rating = skipped_value = 0
         for fp in paths:
             for line in open(fp, encoding="utf-8"):
@@ -113,6 +125,7 @@ class ReplayDataset(Dataset):
                     skipped_rating += 1
                     continue
                 self.records.append(_to_tensors(encode_example(ex)))
+                self.game_ids.append(ex["id"])
                 kept += 1
                 if limit and kept >= limit:
                     break
@@ -159,21 +172,58 @@ class _RecordView(Dataset):
         return _apply(self.records[i], self.species_dropout)
 
 
+def _game_sort_key(game_id: str):
+    """Replay ids are '<formatid>-<numeric-suffix>', and that suffix is a
+    Showdown-assigned, roughly-monotonically-increasing replay counter - a
+    usable chronological proxy without needing to thread uploadtime through
+    the whole reconstruct.py pipeline. Falls back to the raw string (still
+    deterministic, just not time-ordered) if a format ever lacks a numeric
+    suffix, so this never raises."""
+    suffix = game_id.rsplit("-", 1)[-1]
+    return (0, int(suffix)) if suffix.isdigit() else (1, game_id)
+
+
 def load_train_val(min_rating: int = 1200, species_dropout: float = 0.15,
-                   val_frac: float = 0.1, limit: int = 0, seed: int = 0, verbose: bool = True):
+                   val_frac: float = 0.1, limit: int = 0, seed: int = 0, verbose: bool = True,
+                   paths=None):
     """Encode the filtered corpus ONCE, then split into a train view (species
     dropout on) and a val view (dropout OFF - measure imitation with full
-    info). Returns (train_view, val_view)."""
-    base = ReplayDataset(min_rating=min_rating, species_dropout=species_dropout,
+    info). Returns (train_view, val_view).
+
+    paths: explicit jsonl files/patterns (default: all of replays/examples/,
+    minus any not-yet-merged *new.jsonl - see ReplayDataset). Pass e.g.
+    ["replays/examples/gen9championsvgc2026regmbnew.jsonl", ...] to train
+    (or continue-train, via train.py --resume) on only a freshly-scraped,
+    not-yet-merged batch instead of the whole corpus.
+
+    SPLIT BY GAME, CHRONOLOGICALLY - not a random split over individual
+    examples (2026-07-21 fix, [[net-external-review-2026-07-21]]). A replay
+    contributes many examples (one per side per turn); splitting at the
+    EXAMPLE level let 99.8% of validation games' positions also appear in
+    training (confirmed empirically), making any reported val accuracy not
+    a real generalization measurement. Splitting by game id closes that -
+    and ordering by _game_sort_key so validation is always the CHRONOLOGICALLY
+    LATEST val_frac of games (not a random subset of games) is a strictly
+    harder, more honest holdout: it tests generalization to games the model
+    hasn't seen AND that happened after everything it trained on, closer to
+    how the net will actually be used. `seed` is accepted for API
+    compatibility / a future randomized-split mode but is not used to
+    choose which games land in validation - the chronological ordering is
+    deterministic by design, not shuffled.
+    """
+    base = ReplayDataset(paths=paths, min_rating=min_rating, species_dropout=species_dropout,
                          limit=limit, verbose=verbose)
-    idx = np.arange(len(base.records))
-    np.random.default_rng(seed).shuffle(idx)
-    n_val = max(1, int(len(idx) * val_frac))
-    val_recs = [base.records[i] for i in idx[:n_val]]
-    train_recs = [base.records[i] for i in idx[n_val:]]
+    distinct_games = sorted(set(base.game_ids), key=_game_sort_key)
+    n_val_games = max(1, int(len(distinct_games) * val_frac))
+    val_game_ids = set(distinct_games[-n_val_games:])   # chronologically latest games
+
+    train_recs, val_recs = [], []
+    for rec, gid in zip(base.records, base.game_ids):
+        (val_recs if gid in val_game_ids else train_recs).append(rec)
     if verbose:
-        print(f"split: {len(train_recs)} train / {len(val_recs)} val "
-              f"(val species_dropout=0.0)")
+        print(f"split: {len(train_recs)} train / {len(val_recs)} val examples "
+              f"({len(distinct_games) - n_val_games} train games / {n_val_games} val games, "
+              f"chronological - val species_dropout=0.0)")
     return _RecordView(train_recs, species_dropout), _RecordView(val_recs, 0.0)
 
 
@@ -202,7 +252,29 @@ def _selfcheck():
           f"({int(real.sum())} real tokens) -> {'ok' if n_unk > 0 else 'FAIL (no dropout)'}")
     # me-active tokens are slots 0 and 1 (fixed positions) - policy heads read these
     print("me-active token indices for per-slot policy heads: 0 (a), 1 (b)")
-    print("PASS" if len(ds) > 0 else "FAIL: empty dataset")
+
+    # 2026-07-21 regression: the split must be by GAME, chronologically, not
+    # by individual example - a random per-example split let 99.8% of
+    # validation games' positions also appear in training (confirmed on the
+    # full corpus - see [[net-external-review-2026-07-21]]). Re-derive the
+    # split's game-id sets the same way load_train_val does internally and
+    # check them directly, since _RecordView itself doesn't carry ids.
+    print("\ntrain/val split: zero game-id overlap, val is chronologically latest")
+    base2 = ReplayDataset(min_rating=1200, species_dropout=0.0, limit=2000, verbose=False)
+    _tv, _vv = load_train_val(min_rating=1200, species_dropout=0.15, val_frac=0.1, limit=2000, verbose=False)
+    distinct = sorted(set(base2.game_ids), key=_game_sort_key)
+    n_val = max(1, int(len(distinct) * 0.1))
+    val_games, train_games = set(distinct[-n_val:]), set(distinct[:-n_val])
+    overlap = val_games & train_games
+    ok1 = len(overlap) == 0
+    print(f"  zero game overlap between train/val: {'ok' if ok1 else 'FAIL'} ({len(overlap)} shared games)")
+    ok2 = len(train_games) == 0 or min(val_games, key=_game_sort_key) >= max(train_games, key=_game_sort_key)
+    print(f"  every val game is chronologically >= every train game: {'ok' if ok2 else 'FAIL'}")
+    print("  example counts match the record-level split "
+          f"({len(_tv)} train / {len(_vv)} val, {len(base2)} total): "
+          f"{'ok' if len(_tv) + len(_vv) == len(base2) else 'FAIL'}")
+
+    print("PASS" if len(ds) > 0 and ok1 and ok2 else "FAIL")
 
 
 if __name__ == "__main__":

@@ -137,22 +137,36 @@ function applyMonState(p, mon) {
     }
   });
   // Volatiles are otherwise NOT reconstructed at the root (this module's
-  // header comment, "Known V1 fidelity gaps") - this one targeted exception
-  // exists because losing it broke both live play and search rollouts the
-  // same way: a mon translated from a real recharge request (harness/
-  // translator.py::own_pokemon, model/action_space.py's matching check -
-  // both key on this exact string, poke-env's Effect.MUST_RECHARGE
-  // lowercased) keeps its real moveset with everything disabled, and
-  // without the engine's OWN mustrecharge volatile, it has no idea the
-  // mon is locked - it demands a normal choice and rejects whatever gets
-  // submitted for an exhausted-bench mon ("Can't pass: ... must make a
-  // move"), or wrongly allows an illegal switch otherwise. addVolatile
-  // (not a raw flag) is what makes Pokemon.getLockedMove() return
-  // 'recharge' - the actual mechanism side.ts's chooseMove() uses to force
-  // the real move regardless of what we submit, and what makes the
-  // engine's own choice validation correctly refuse a switch for this mon.
+  // header comment, "Known V1 fidelity gaps") - these two targeted
+  // exceptions exist because losing them broke both live play and search
+  // rollouts the same way: a mon translated from a real recharge or
+  // mid-two-turn-move request (harness/translator.py's
+  // _forced_continuation_volatiles, from poke-env's DIRECT must_recharge/
+  // preparing_move tracking - model/action_space.py's matching checks key
+  // on these exact volatile names) keeps its real moveset with everything
+  // disabled, and without the engine's OWN lock volatile it has no idea
+  // the mon is locked - it demands a normal choice and rejects whatever
+  // gets submitted for an exhausted-bench mon ("Can't pass: ... must make
+  // a move"), or wrongly allows an illegal switch otherwise.
   if (mon.volatiles && mon.volatiles.some(v => v.name === 'must_recharge')) {
+    // addVolatile (not a raw flag) is what makes Pokemon.getLockedMove()
+    // return 'recharge' - the actual mechanism side.ts's chooseMove() uses
+    // to force the real move regardless of what we submit, and what makes
+    // the engine's own choice validation correctly refuse a switch too.
     p.addVolatile('mustrecharge');
+  }
+  const twoTurn = mon.volatiles && mon.volatiles.find(v => v.name === 'two_turn_move');
+  if (twoTurn) {
+    // Same mechanism, generalized to Solar Beam/Fly/Electro Shot-without-
+    // Rain/etc.: conditions.ts's twoturnmove.onLockMove returns
+    // effectState.move, so addVolatile + directly setting .move (rather
+    // than relying on onStart's automatic derivation, which expects to run
+    // inside the actual move-execution event context we don't have here)
+    // is enough for getLockedMove() to force the real charging move
+    // regardless of what slot we submit - same direct-state-mutation
+    // reconstruction style as the moveSlots/boosts handling above.
+    p.addVolatile('twoturnmove');
+    if (p.volatiles.twoturnmove) p.volatiles.twoturnmove.move = twoTurn.data.move;
   }
 }
 

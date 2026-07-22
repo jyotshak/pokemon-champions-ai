@@ -74,18 +74,36 @@ class NetEvaluator:
     def score_labels(pol: dict, slot: int, labels: list[dict]) -> np.ndarray:
         """Selection probabilities over a candidate set of action labels for
         one active slot. Each label is model/encoding.encode_action output
-        {type, move, target, mega, switch}. Score = the head log-probs the
-        label implies (type + move-or-switch); softmaxed over the candidate
-        set so it's a usable branch prior. Target/mega are minor and left out
-        of ranking (the net's target head is weak; mega rarely flips choice)."""
+        {type, move, target, mega, switch}. Score = the SUM of every head's
+        log-prob the label implies (type, move-or-switch, AND target/mega for
+        a move), softmaxed over the candidate set so it's a usable branch
+        prior.
+
+        Target and mega are now INCLUDED (2026-07-21 fix,
+        [[net-external-review-2026-07-21]] - a prior version left them out
+        of ranking with the reasoning "the target head is weak; mega rarely
+        flips choice", which meant those two trained heads had near-zero
+        actual influence on play regardless of how well they were trained.
+        If a head genuinely is weak/uncalibrated, that shows up naturally as
+        near-uniform log-probs across labels - contributing little to the
+        ranking on its own, with no need to hand-suppress it - rather than
+        unconditionally silencing a signal that retraining (encoder v3,
+        [[net-external-review-2026-07-21]]) might have improved anyway.
+        mega is a BINARY (sigmoid) head, not a softmax category, so its
+        contribution is log P(mega=lab["mega"]) via log-sigmoid, not
+        log-softmax."""
         type_lp = _log_softmax(pol["type"][slot])
         move_lp = _log_softmax(pol["move"][slot])
+        target_lp = _log_softmax(pol["target"][slot])
         switch_lp = _log_softmax(pol["switch"][slot])
+        mega_logit = float(pol["mega"][slot])
         scores = np.empty(len(labels), dtype=np.float32)
         for k, lab in enumerate(labels):
             s = type_lp[lab["type"]]
             if lab["type"] == 1:        # move
                 s += move_lp[lab["move"]]
+                s += target_lp[lab["target"]]
+                s += _log_sigmoid(mega_logit if lab["mega"] else -mega_logit)
             elif lab["type"] == 2:      # switch
                 s += switch_lp[lab["switch"]]
             scores[k] = s
@@ -100,3 +118,7 @@ def _softmax(x: np.ndarray) -> np.ndarray:
 def _log_softmax(x: np.ndarray) -> np.ndarray:
     m = x.max()
     return x - m - np.log(np.exp(x - m).sum())
+
+
+def _log_sigmoid(x: float) -> float:
+    return -np.logaddexp(0.0, -x)

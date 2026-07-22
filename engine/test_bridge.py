@@ -62,6 +62,20 @@
     correctly reconstructed, the engine's OWN choice validation now
     correctly REFUSES an illegal switch for that mon too (real recharge
     mechanics; before the fix a switch was silently, incorrectly allowed).
+13. two_turn_move reconstruction at a FRESH init_battle - generalizes #12
+    to Solar Beam/Fly/Electro Shot-without-Rain/etc. Same mechanism
+    (conditions.ts's twoturnmove.onLockMove returns effectState.move) but
+    the release turn must actually FIRE the charging move (unlike
+    recharge, which does nothing) - checked by confirming the opponent
+    takes real damage, not just that the choice was accepted. Also checks
+    that #12's discovery (this class of investigation also revealed the
+    LIVE translator's own _volatiles() never actually carries either
+    must_recharge or preparing_move from a real poke-env Pokemon - they
+    are separate dedicated attributes, not part of .effects - so
+    harness/translator.py gained a direct _forced_continuation_volatiles
+    helper reading those properties directly, verified against a REAL
+    Pokemon object, not just hand-built fixtures) that a switch is
+    likewise correctly refused for a charging mon.
 
 Needs node + the built vendor sim (vendor/pokemon-showdown/dist).
 Run from the project root: python -m engine.test_bridge
@@ -98,15 +112,18 @@ def flat(species):
 
 
 def mk(species, moves, ability, item=None, position=None, hp=None, fainted=False,
-       status=Status.NONE, boosts=None, moves_disabled=False, must_recharge=False):
+       status=Status.NONE, boosts=None, moves_disabled=False, must_recharge=False, charging_move=None):
     max_hp, stats = flat(species)
+    volatiles = [VolatileState(name="must_recharge")] if must_recharge else []
+    if charging_move:
+        volatiles.append(VolatileState(name="two_turn_move", data={"move": charging_move}))
     return OwnPokemon(
         species=species, position=position, fainted=fainted,
         hp=0 if fainted else (hp if hp is not None else max_hp), max_hp=max_hp,
         status=status, stats=stats, boosts=boosts or Boosts(),
         ability=ability, item=item,
         moves=[MoveSlot(move=m, pp=16, max_pp=16, disabled=moves_disabled) for m in moves],
-        volatiles=[VolatileState(name="must_recharge")] if must_recharge else [],
+        volatiles=volatiles,
     )
 
 
@@ -410,6 +427,40 @@ check("switching a recharging mon is correctly REFUSED by the engine "
       "(real mechanics - proves the volatile actually engaged, not just that SOME choice was accepted)",
       bool(switch_attempt.errors), switch_attempt.errors)
 
-bridge.free([handle, h2, handle11, handle12])
+print("\n13. two_turn_move reconstruction at a FRESH init_battle (generalizes #12 to "
+      "Solar Beam/Fly/Electro Shot without Rain)")
+charge_root = base_state()
+charge_root.my_team[0] = mk("charizard", ["heatwave", "airslash", "protect", "solarbeam"], "blaze",
+                            item="charizarditey", position=Position.LEFT,
+                            moves_disabled=True, charging_move="solarbeam")
+handle13, echo13 = bridge.init_battle(charge_root)
+release_turn = bridge.step(
+    handle13, echo13,
+    # move_slot=1 (heatwave, disabled) is deliberately the WRONG slot - if
+    # getLockedMove() is correctly forcing solarbeam regardless of what we
+    # submit (same mechanism as #12), this must still fire Solar Beam, not
+    # reject the choice or fire heatwave.
+    my=TurnActions(slot_left=MoveAction(move_slot=1, target=Target.NONE),
+                   slot_right=MoveAction(move_slot=3, target=Target.SELF)),
+    opp=TurnActions(slot_left=MoveAction(move_slot=3, target=Target.SELF),
+                    slot_right=MoveAction(move_slot=3, target=Target.SELF)),
+)
+check("forced release accepted, no rejection", not release_turn.errors, release_turn.errors)
+opp_hp_before_release = sum(m.hp for m in charge_root.opp_team)
+opp_hp_after_release = sum(m.hp for m in release_turn.state.opp_team)
+check("Solar Beam actually fired (opponent took damage), not silently no-opped like recharge",
+      opp_hp_after_release < opp_hp_before_release, f"{opp_hp_before_release} -> {opp_hp_after_release}")
+
+handle14, echo14 = bridge.init_battle(charge_root)   # independent fresh reconstruction
+switch_attempt_2 = bridge.step(
+    handle14, echo14,
+    my=TurnActions(slot_left=SwitchAction(bench_slot=0), slot_right=MoveAction(move_slot=3, target=Target.SELF)),
+    opp=TurnActions(slot_left=MoveAction(move_slot=3, target=Target.SELF),
+                    slot_right=MoveAction(move_slot=3, target=Target.SELF)),
+)
+check("switching a charging mon is correctly REFUSED by the engine (same mechanic as recharge)",
+      bool(switch_attempt_2.errors), switch_attempt_2.errors)
+
+bridge.free([handle, h2, handle11, handle12, handle13, handle14])
 bridge.close()
 print(f"\n{'PASS' if not failures else 'FAIL: ' + ', '.join(failures)}")

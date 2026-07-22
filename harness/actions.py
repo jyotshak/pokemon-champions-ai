@@ -8,6 +8,7 @@ DoubleBattle.{POKEMON,OPPONENT}_{1,2}_POSITION constants, not guessed.
 """
 
 from poke_env.battle.double_battle import DoubleBattle
+from poke_env.battle.move import Move
 from poke_env.player.battle_order import DoubleBattleOrder, PassBattleOrder, SingleBattleOrder
 
 from schema.battle_state import (
@@ -41,20 +42,41 @@ def _bench_pokemon(battle: DoubleBattle, bench_slot: int):
 
 
 def _forced_move(battle: DoubleBattle, actor):
-    """The synthetic move Showdown offers during a FORCED CONTINUATION
-    (recharge after Hyper Beam, Struggle, a locked two-turn move), or None.
+    """The forced move for a FORCED CONTINUATION (recharge after Hyper Beam,
+    or mid-charge on a two-turn move like Solar Beam/Fly/Electro Shot
+    without Rain), or None.
 
-    Showdown replaces that slot's move list with a single entry whose id is
-    NOT in the mon's own moveset, so nothing in our schema can name it:
-    harness/translator.py deliberately keeps OwnPokemon.moves as the real,
-    engine-buildable moveset (a synthetic id has no PP data and breaks
-    init_battle's buildSet), which leaves every real move "disabled" and makes
-    the policy emit NoAction. Passing is illegal here - the server answers
-    "[Invalid choice] Can't pass: Your <mon> must make a move (or switch)" and
-    the battle stalls retrying. So we resolve it at THIS boundary, where the
-    live request is still in hand, and submit the synthetic move itself.
-    Found live on MB552's Sylveon + Hyper Beam.
+    Checks poke-env's own DIRECT, protocol-driven tracking - actor.
+    must_recharge / actor.preparing_move, set straight from the real
+    -mustrecharge/-prepare log lines and cleared the instant the mon
+    actually moves (poke_env.battle.pokemon.Pokemon.moved()) - rather than
+    diffing battle.available_moves against the mon's real moveset. That
+    diff-based approach (the original fix here) breaks specifically when
+    this request is COMBINED with an ally's post-faint replacement:
+    Showdown does not re-list a still-alive, non-participating slot's
+    moves during a switch-only request (harness/translator.py's own
+    documented gotcha - battle.available_moves[i] reads EMPTY there), so
+    the diff finds nothing, falls through to a plain pass, and the real
+    outstanding requirement goes unanswered - silently deferred to the
+    NEXT request, where it resurfaces as the exact same problem one turn
+    later (found live on MB552's Sylveon: Garchomp fainted the same turn
+    Sylveon's Hyper Beam locked her into recharging).
+
+    Confirmed empirically that poke_mon.effects (what harness/
+    translator.py::_volatiles reads) never carries either of these - they
+    are separate dedicated attributes - so this must read the properties
+    directly rather than go through that path.
     """
+    if actor is None:
+        return None
+    if actor.must_recharge:
+        return Move("recharge", gen=battle.gen)
+    if actor.preparing_move is not None:
+        return actor.preparing_move
+    # Fallback for anything else needing a forced single move (Struggle -
+    # genuinely PP-based, not tracked by a dedicated property, and unaffected
+    # by the switch-only-request gap since it doesn't depend on recharge/
+    # charge state at all): the original available_moves-diff detection.
     try:
         i = list(battle.active_pokemon).index(actor)
     except ValueError:

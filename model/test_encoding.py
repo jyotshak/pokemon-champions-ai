@@ -14,7 +14,7 @@ import numpy as np
 
 from model.encoding import (
     MAX_MONS, PAD, UNK, SPECIES_VOCAB, VOCAB_SIZES, encode_state, resolve_species,
-    STATIC_DIM, N_TYPES, TYPE_INDEX, FEATURE_DIMS,
+    STATIC_DIM, N_TYPES, TYPE_INDEX, FEATURE_DIMS, _WEATHER, _TERRAIN,
 )
 
 failures = []
@@ -87,12 +87,18 @@ check("opp token flagged NOT me", enc["numeric"][MAX_MONS][1] == 0.0, enc["numer
 check("benched Sylveon present, flagged not-active", enc["species"][2] == resolve_species("Sylveon")
       and enc["numeric"][2][2] == 0.0, (enc["species"][2], enc["numeric"][2][2]))
 
-# field: [weather, terrain, trick_room, me_cond(4), opp_cond(4)]
+# field: [weather one-hot(7), terrain one-hot(6), trick_room(1), me_cond(4), opp_cond(4)]
+# = 22. One-hot (not a scalar index) since 2026-07-21 - see FEATURE_DIMS's
+# own comment for why.
 f = enc["field"]
-check("field len 11", f.shape == (11,), f.shape)
-check("weather None -> 0 (not UNK)", f[0] == 0.0, f[0])
-check("trick_room flag set", f[2] == 1.0, f[2])
-check("me tailwind flag set", f[3] == 1.0, f[3])
+W, T = len(_WEATHER) + 1, len(_TERRAIN) + 1   # 7, 6
+check("field len 22 (weather one-hot 7 + terrain one-hot 6 + TR + 2x4 conds)",
+      f.shape == (W + T + 1 + 8,), f.shape)
+check("weather None -> one-hot index 0 (the real 'no weather' category, not a raw scalar)",
+      f[0] == 1.0 and f[1:W].sum() == 0.0, f[:W])
+check("terrain None -> one-hot index 0 too", f[W] == 1.0 and f[W + 1:W + T].sum() == 0.0, f[W:W + T])
+check("trick_room flag set", f[W + T] == 1.0, f[W + T])
+check("me tailwind flag set", f[W + T + 1] == 1.0, f[W + T + 1])
 check("Whimsicott spe boost +2 -> 2/6", any(abs(enc["numeric"][i][4 + 4] - 2 / 6) < 1e-6
       for i in range(MAX_MONS) if enc["species"][i] == resolve_species("Whimsicott")))
 
@@ -170,7 +176,7 @@ check("value = 1.0 (won)", rec["value"] == 1.0, rec["value"])
 check("action_a is a move", rec["actions"]["a"]["type"] == 1)
 check("action_b is a switch to Sylveon", rec["actions"]["b"]["switch"] == resolve_species("Sylveon"))
 check("meta aligned with tokens (opp active has nonzero item prob)",
-      rec["state"]["meta"][MAX_MONS][1] > 0.0, rec["state"]["meta"][MAX_MONS])
+      rec["state"]["meta_item_prob"][MAX_MONS] > 0.0, rec["state"]["meta_item_prob"][MAX_MONS])
 
 print("\ncorpus move-label coverage (0% UNK expected) if examples exist")
 if glob.glob(str(Path("replays/examples") / "*.jsonl")):

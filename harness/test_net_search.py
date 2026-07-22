@@ -29,7 +29,7 @@ def _desc(action, team, position):
     return "pass"
 
 FORMAT = "gen9championsvgc2026regmb"
-CKPT = "model/checkpoints/imitation_v2.pt"
+CKPT = "model/checkpoints/imitation_v4.pt"
 
 failures = []
 
@@ -115,6 +115,7 @@ print("\nTier-1 pruning regression: the net search must never propose a "
 # roster, or the filter never even runs and the test passes for the wrong
 # reason.
 from harness.net_search import _ranked_joints  # noqa: E402
+from model.action_space import _pruned_slot_actions  # noqa: E402
 
 heatwave_state = FullInfoState(
     turn=1, field=FieldState(),
@@ -131,6 +132,27 @@ heatwave_state = FullInfoState(
         mon("charizard", Position.RIGHT, ability="blaze", moves=["airslash"]),
     ],
 )
+# Check the PRUNED CANDIDATE POOL directly (model/action_space.py's
+# responsibility) rather than only through _ranked_joints' top-k JOINT
+# picks: with the 2026-07-21 pruning redesign now correctly offering ALL
+# living switch destinations (not just the first), the candidate pool grew
+# by one entry here, which dilutes the net's OWN softmax ranking enough
+# that Rock Slide's joint pairings can fall outside an 8-wide top-k window
+# in this hand-built position - that's the net's LEARNED policy preferring
+# Protect/Solar Beam here, a separate concern from "did Tier-1 pruning
+# correctly exclude Heat Wave and include Rock Slide in the pool at all",
+# which is what this test actually needs to guarantee.
+pruned_pool = _pruned_slot_actions(heatwave_state, "me", Position.LEFT, 6)
+pool_moves = {heatwave_state.my_team[0].moves[a.move_slot - 1].move
+              for a in pruned_pool if isinstance(a, MoveAction)}
+check("Heat Wave never in the pruned candidate pool (resisted by both opposing mons)",
+      "heatwave" not in pool_moves, pool_moves)
+check("Rock Slide IS in the pruned candidate pool (neutral/super, survives the cut)",
+      "rockslide" in pool_moves, pool_moves)
+
+# And separately, confirm the SEARCH actually draws from that pool (never
+# the raw one) by checking Heat Wave is absent from the net's top-k joint
+# picks too - the guarantee _ranked_joints is actually responsible for.
 my_cands = _ranked_joints(evaluator, full_info_state_to_netstate(heatwave_state),
                           heatwave_state, "me", heatwave_state.my_team, k=8, tier1_cap=6)
 left_moves = set()
@@ -138,10 +160,8 @@ for _, ta in my_cands:
     a = ta.slot_left
     if isinstance(a, MoveAction):
         left_moves.add(active_mon(heatwave_state.my_team, Position.LEFT).moves[a.move_slot - 1].move)
-check("Heat Wave never proposed for Charizard (resisted by both opposing mons)",
+check("Heat Wave never proposed for Charizard by the search either",
       "heatwave" not in left_moves, left_moves)
-check("Rock Slide IS proposed (neutral/super, survives the cut)",
-      "rockslide" in left_moves, left_moves)
 
 print("\nhandle-leak soak: many decisions on one bridge must stay fast + not crash")
 N_SOAK = 25

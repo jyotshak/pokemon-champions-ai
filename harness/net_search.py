@@ -45,7 +45,7 @@ from dataclasses import dataclass, field
 
 import numpy as np
 
-from schema.battle_state import MoveAction, SwitchAction, TurnActions, Position
+from schema.battle_state import MoveAction, SwitchAction, TurnActions, Position, Target
 from schema.full_info_state import FullInfoState, active_mon, bench_mons
 from model.action_space import _pruned_slot_actions, _switch_destination
 from model.encoding import resolve_species, _lookup, MOVE_VOCAB
@@ -64,19 +64,40 @@ class SearchDiagnostics:
     matrix: list = field(default_factory=list)        # the solved payoff matrix (my_cands x opp columns)
 
 
+# schema Target -> model/encoding.py's _TARGET index ("none","opp_a","opp_b",
+# "self","ally") - already given relative to the acting side by the
+# schema's own convention, same as _TARGET's, so this is a direct lookup,
+# no relative-side computation needed.
+_TARGET_TO_INDEX = {Target.NONE: 0, Target.OPP_LEFT: 1, Target.OPP_RIGHT: 2,
+                    Target.SELF: 3, Target.ALLY: 4}
+
+
 def _action_label(action, team: list, position: Position) -> dict:
-    """schema Action -> encoder action label (type/move/switch), resolving
-    move_slot/bench_slot against the acting team. Target/mega omitted from
-    scoring (see NetEvaluator.score_labels)."""
+    """schema Action -> encoder action label (type/move/target/mega/switch),
+    resolving move_slot/bench_slot against the acting team.
+
+    Target now correctly reflects the real chosen target (2026-07-21 fix,
+    [[net-external-review-2026-07-21]]) - it was previously hardcoded to 0
+    regardless of the actual action, which would have silently defeated
+    NetEvaluator.score_labels' matching fix to actually USE the target head
+    in ranking (a label always claiming "no target" can never be told apart
+    from one that actually targets something)."""
     if isinstance(action, MoveAction):
         mon = active_mon(team, position)
         move_name = mon.moves[action.move_slot - 1].move if mon else ""
         return {"type": 1, "move": _lookup(MOVE_VOCAB, move_name),
-                "target": 0, "mega": int(action.mega), "switch": 0}
+                "target": _TARGET_TO_INDEX.get(action.target, 0), "mega": int(action.mega), "switch": 0}
     if isinstance(action, SwitchAction):
         sp = str(bench_mons(team)[action.bench_slot].species)
         return {"type": 2, "move": 0, "target": 0, "mega": 0, "switch": resolve_species(sp)}
     return {"type": 0, "move": 0, "target": 0, "mega": 0, "switch": 0}
+
+
+def _label_key(label: dict) -> tuple:
+    """A hashable, canonical, WORLD-INDEPENDENT identity for one slot's
+    action label - used to align matrix columns by real action identity
+    rather than by rank position (see net_depth1_decision's fix note)."""
+    return (label["type"], label["move"], label["target"], label["mega"], label["switch"])
 
 
 def _legal_pair(a, b) -> bool:
@@ -136,14 +157,19 @@ def net_depth1_decision(evaluator: NetEvaluator, bridge, worlds: list[FullInfoSt
     n_my = len(my_cands)
 
     # Gather every (world, my, opp) leaf, batching value-head calls. Columns
-    # are OPPONENT-POLICY RANK POSITIONS (0 = their top choice, ...), not a
-    # single literal action: each world's determinization can give the
-    # opponent's hidden mon a different real moveset, so the action at
-    # column j can differ world to world. That's fine for what we need -
-    # a legitimate MIXED STRATEGY over MY OWN fixed candidate set - we just
-    # average column j's payoff over the worlds that had a j-th candidate
-    # (a world with fewer legal opponent options simply skips the missing
-    # columns; every world always has at least a column 0).
+    # are keyed by the opponent's REAL ACTION IDENTITY (2026-07-21 fix,
+    # [[net-external-review-2026-07-21]]: a prior version keyed columns by
+    # OPPONENT-POLICY RANK POSITION - "their j-th most likely choice" - which
+    # is NOT the same real action across worlds (a determinization can give
+    # the opponent's hidden mon a different real moveset), so averaging
+    # column j's payoff across worlds silently blended together whatever
+    # DIFFERENT real moves each world happened to rank j-th, then solved
+    # that artificial construct adversarially. Keying by identity instead
+    # (_label_key, built from the same canonical move/target/mega/switch
+    # labels used for scoring) means a column is always the SAME real
+    # action; a world whose hidden info makes that action illegal/different
+    # simply contributes nothing to it, rather than smearing a different
+    # move's payoff into the slot.
     #
     # One init_battle PER WORLD (not per rollout): step() branches repeatedly
     # from the same (handle, root) - the same primitive model/solver_game.py's
@@ -151,29 +177,35 @@ def net_depth1_decision(evaluator: NetEvaluator, bridge, worlds: list[FullInfoSt
     # leaks battles in the engine's node process until it dies with
     # "Reached heap limit - JavaScript heap out of memory".
     leaf_states, leaf_ix = [], []          # non-terminal leaves to value in one batch
-    contribs = []                          # (my_idx, opp_col_idx, kind, payload)
-    world_opp_counts: list[int] = []       # len(opp_cands) per world, for column averaging
+    contribs = []                          # (my_idx, col_idx, kind, payload)
+    col_index: dict[tuple, int] = {}       # action-identity key -> column index (first-seen order)
+    world_col_ids: list[set[int]] = []     # per world, which columns it contributed to (for averaging)
     handles: list[int] = []
     try:
         for w in worlds:
             opp_ns = flip_netstate(full_info_state_to_netstate(w))
             opp_cands = _ranked_joints(evaluator, opp_ns, w, "opp", w.opp_team, k_opp, tier1_cap)
-            world_opp_counts.append(len(opp_cands))
             root_handle, root_state = bridge.init_battle(w)
             handles.append(root_handle)
+            this_world_cols: set[int] = set()
             for mi, (_, m) in enumerate(my_cands):
-                for oi, (_, o) in enumerate(opp_cands):
+                for _, o in opp_cands:
+                    key = (_label_key(_action_label(o.slot_left, w.opp_team, _LEFT)),
+                          _label_key(_action_label(o.slot_right, w.opp_team, _RIGHT)))
+                    ci = col_index.setdefault(key, len(col_index))
+                    this_world_cols.add(ci)
                     res = bridge.step(root_handle, root_state, m, o)
                     if res.handle is not None:
                         handles.append(res.handle)
                     diag.rollouts += 1
                     diag.engine_errors += len(res.errors)
                     if res.terminal is not None:
-                        contribs.append((mi, oi, "term", (res.terminal + 1.0) / 2.0))
+                        contribs.append((mi, ci, "term", (res.terminal + 1.0) / 2.0))
                     else:
                         leaf_ix.append(len(contribs))
                         leaf_states.append(full_info_state_to_netstate(res.state))
-                        contribs.append((mi, oi, "leaf", None))
+                        contribs.append((mi, ci, "leaf", None))
+            world_col_ids.append(this_world_cols)
     finally:
         if handles:
             bridge.free(handles)
@@ -183,11 +215,12 @@ def net_depth1_decision(evaluator: NetEvaluator, bridge, worlds: list[FullInfoSt
         mi, oi, _, _ = contribs[ci]
         contribs[ci] = (mi, oi, "term", float(leaf_vals[slot]))
 
-    max_cols = max(world_opp_counts)
-    sums = np.zeros((n_my, max_cols), dtype=np.float64)
-    counts = np.zeros(max_cols, dtype=np.float64)
-    for n in world_opp_counts:
-        counts[:n] += 1.0
+    n_cols = len(col_index)
+    sums = np.zeros((n_my, n_cols), dtype=np.float64)
+    counts = np.zeros(n_cols, dtype=np.float64)
+    for cols in world_col_ids:
+        for ci in cols:
+            counts[ci] += 1.0
     for mi, oi, _, v in contribs:
         sums[mi, oi] += v
     keep_cols = np.flatnonzero(counts > 0)

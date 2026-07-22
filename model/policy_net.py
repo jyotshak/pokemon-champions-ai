@@ -6,11 +6,26 @@ Shape contract (from model/encoding.py):
 - 2*MAX_MONS = 12 mon tokens: me at 0..5 (active a=0, b=1, bench 2..5),
   opp at 6..11. A 13th FIELD token carries weather/terrain/TR/side-conds.
 - Each mon token embeds species/item/ability/status (+ mean-pooled moves)
-  and projects numeric (battle state) + static (base stats & typing) + meta
-  (usage prior). Species embedding is deliberately SMALL and is randomly
-  dropped in the dataset (-> UNK) so the net must lean on the static role
-  profile - the Incineroar<->Scrafty generalization lever
-  ([[net-generalization-design]]).
+  and projects numeric (battle state) + static (base stats & typing).
+  Species embedding is deliberately SMALL and is randomly dropped in the
+  dataset (-> UNK) so the net must lean on the static role profile - the
+  Incineroar<->Scrafty generalization lever ([[net-generalization-design]]).
+- META (usage-prior "likely item/ability/move") is NOT concatenated as raw
+  floats (2026-07-21 fix, [[net-external-review-2026-07-21]]: vocab index
+  437 is not "more" than 216). Instead each meta index is embedded through
+  the SAME table as the revealed value (self.item/self.ability/self.move -
+  shares weights between "revealed" and "likely" representations) and
+  blended in, weighted by its probability - see _meta_blend/the move
+  mean-pool below.
+- A learned per-TOKEN-POSITION embedding (self.pos_embed) is added before
+  the encoder (2026-07-21 fix: plain self-attention has no positional
+  signal at all - a review found zero positional/role embeddings anywhere,
+  meaning attention had no explicit way to reason about WHICH physical
+  slot - me_a vs me_b vs opp_a, etc. - a token occupies when computing how
+  tokens should interact, only an implicit, unreinforced "fixed input
+  order" convention). Token index <-> role is fixed by encoding.py's
+  packing scheme, so a plain positional embedding doubles as a role
+  embedding here.
 - Policy heads are SHARED and applied to the two me-active tokens (0, 1):
   the same policy function decides for each active mon.
 - Value = masked-mean pool over real tokens + the field token -> sigmoid.
@@ -29,6 +44,19 @@ from model.encoding import VOCAB_SIZES, FEATURE_DIMS, MAX_MONS
 
 # Token indices for the two me-active slots the policy heads read.
 ME_ACTIVE_SLOTS = (0, 1)
+N_TOKENS = 2 * MAX_MONS + 1   # 12 mon tokens + 1 field token
+
+
+def _meta_blend(revealed_idx: torch.Tensor, meta_idx: torch.Tensor, meta_prob: torch.Tensor,
+                embed: nn.Embedding) -> torch.Tensor:
+    """revealed_idx/meta_idx: (B,T) long; meta_prob: (B,T) float; embed: the
+    SAME embedding table used for the revealed value. If revealed (idx != 0,
+    PAD), use ONLY that embedding - a known fact shouldn't be diluted by a
+    population prior. If not revealed, use the meta (usage-prior) embedding
+    scaled by its probability - low confidence shrinks toward the neutral
+    PAD embedding instead of asserting a specific guess."""
+    known = (revealed_idx != 0).float().unsqueeze(-1)
+    return known * embed(revealed_idx) + (1.0 - known) * meta_prob.unsqueeze(-1) * embed(meta_idx)
 
 
 class MonTokenEmbed(nn.Module):
@@ -42,19 +70,31 @@ class MonTokenEmbed(nn.Module):
         self.status = nn.Embedding(VOCAB_SIZES["status"], 16, padding_idx=0)
         self.move = nn.Embedding(VOCAB_SIZES["move"], 48, padding_idx=0)
         cat_dim = (species_dim + 32 + 32 + 16 + 48
-                   + FEATURE_DIMS["numeric"] + FEATURE_DIMS["static"] + FEATURE_DIMS["meta"])
+                   + FEATURE_DIMS["numeric"] + FEATURE_DIMS["static"])
         self.proj = nn.Sequential(nn.Linear(cat_dim, d_model), nn.LayerNorm(d_model))
 
     def forward(self, s: dict) -> torch.Tensor:
-        # mean-pool the (up to 4) move embeddings, ignoring PAD move slots
+        # mean-pool the (up to 4) REAL revealed move embeddings, plus a 5th
+        # PSEUDO-SLOT for the usage-prior "likely move" (meta_move, same
+        # embedding table), weighted by its probability rather than a flat
+        # 1.0 like a real reveal - so it contributes proportionally LESS
+        # once several real moves are already known, and fully substitutes
+        # when nothing is known yet (the Bo1 moveset gap - see
+        # model/encoding.py::_species_meta).
         mv = self.move(s["moves"])                          # (B, T, 4, 48)
         mv_mask = (s["moves"] != 0).float().unsqueeze(-1)   # (B, T, 4, 1)
-        mv_sum = (mv * mv_mask).sum(2)
-        mv_mean = mv_sum / mv_mask.sum(2).clamp(min=1.0)    # (B, T, 48)
+        meta_mv = self.move(s["meta_move"]).unsqueeze(2)                    # (B, T, 1, 48)
+        meta_mv_w = s["meta_move_prob"].unsqueeze(-1).unsqueeze(-1)         # (B, T, 1, 1)
+        mv_all = torch.cat([mv, meta_mv], dim=2)                            # (B, T, 5, 48)
+        w_all = torch.cat([mv_mask, meta_mv_w], dim=2)                      # (B, T, 5, 1)
+        mv_mean = (mv_all * w_all).sum(2) / w_all.sum(2).clamp(min=1e-6)   # (B, T, 48)
+
+        item_repr = _meta_blend(s["item"], s["meta_item"], s["meta_item_prob"], self.item)
+        ability_repr = _meta_blend(s["ability"], s["meta_ability"], s["meta_ability_prob"], self.ability)
+
         cat = torch.cat([
-            self.species(s["species"]), self.item(s["item"]),
-            self.ability(s["ability"]), self.status(s["status"]), mv_mean,
-            s["numeric"], s["static"], s["meta"],
+            self.species(s["species"]), item_repr, ability_repr, self.status(s["status"]), mv_mean,
+            s["numeric"], s["static"],
         ], dim=-1)
         return self.proj(cat)                               # (B, T, d_model)
 
@@ -65,6 +105,11 @@ class PolicyValueNet(nn.Module):
         super().__init__()
         self.tokens = MonTokenEmbed(d_model, species_dim)
         self.field_proj = nn.Sequential(nn.Linear(FEATURE_DIMS["field"], d_model), nn.LayerNorm(d_model))
+        # Learned per-token-position embedding (2026-07-21 fix - see module
+        # docstring): token index <-> role (me_a, me_b, me_bench_0..3,
+        # opp_a, opp_b, opp_bench_0..3, field) is fixed by encoding.py's
+        # packing, so this doubles as a role embedding.
+        self.pos_embed = nn.Embedding(N_TOKENS, d_model)
         enc = nn.TransformerEncoderLayer(d_model, nhead, ffn, dropout,
                                          batch_first=True, norm_first=True)
         self.encoder = nn.TransformerEncoder(enc, layers)
@@ -82,6 +127,7 @@ class PolicyValueNet(nn.Module):
         tok = self.tokens(state)                            # (B, 12, d)
         field = self.field_proj(state["field"]).unsqueeze(1)  # (B, 1, d)
         h = torch.cat([tok, field], dim=1)                  # (B, 13, d)
+        h = h + self.pos_embed(torch.arange(N_TOKENS, device=h.device)).unsqueeze(0)
 
         # key-padding mask: True = ignore. Empty mon tokens padded; field kept.
         B = tok.size(0)

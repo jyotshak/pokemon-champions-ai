@@ -85,7 +85,7 @@ check("me token0 is Incineroar", enc["species"][0] == resolve_species("Incineroa
 check("opp token starts at MAX_MONS = Garchomp",
       enc["species"][MAX_MONS] == resolve_species("Garchomp"), enc["species"][MAX_MONS])
 check("me token0 flagged is_me & active", enc["numeric"][0][1] == 1.0 and enc["numeric"][0][2] == 1.0)
-check("meta present, shape (12,4)", enc["meta"].shape == (2 * MAX_MONS, 4), enc["meta"].shape)
+check("meta present, shape (12,)", enc["meta_item"].shape == (2 * MAX_MONS,), enc["meta_item"].shape)
 
 print("\nfull_info_state_to_netstate: determinized leaf (both sides full-info)")
 fis = FullInfoState(

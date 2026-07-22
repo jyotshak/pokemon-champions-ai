@@ -15,7 +15,18 @@ fixed MAX_MONS budget (6 per side):
   static                      : species-derived base stats + typing multi-hot
                                 (role features that survive species dropout)
   mask                        : which token slots are real
-plus a field vector (weather/terrain/trick-room + per-side conditions).
+plus a field vector: weather/terrain are ONE-HOT (not a raw scalar index -
+categorical, not ordinal - see FEATURE_DIMS's comment), trick-room flag,
+and per-side conditions.
+
+encode_for_inference additionally returns 3 (index, probability) pairs -
+meta_item/meta_ability/meta_move - the belief usage-prior's most-likely
+item/ability/move for this species. These are int64 VOCAB INDICES, meant
+to be routed through the SAME embedding tables as the revealed value
+(model/policy_net.py), not concatenated as raw floats - a vocab index is
+categorical, and a species' usual moveset is exactly the substitute prior
+a Bo1 replay's genuinely-unrecoverable unrevealed moves need (see
+[[net-external-review-2026-07-21]]).
 
 Vocabularies are built once from reference/ at import (stable indices):
 species from species_stats, moves from move_data, items from the legal
@@ -205,15 +216,39 @@ def encode_state(state: dict) -> dict:
             "moves": moves, "numeric": numeric, "static": static, "mask": mask, "field": field}
 
 
+def _one_hot(value: str, categories: list[str]) -> np.ndarray:
+    """CATEGORICAL one-hot, not an ordinal scalar index (2026-07-21 fix,
+    [[net-external-review-2026-07-21]]): weather/terrain were previously a
+    single float index fed straight into a Linear layer, which treats
+    "Sandstorm" (whatever index it happens to land on) as quantitatively
+    "more" than "RainDance" - nonsense for a category. A small, fixed
+    vocabulary (5-6 values) makes one-hot the natural fit here (a Linear
+    layer over one-hot is mathematically equivalent to summing learned
+    per-category embeddings - the same reasoning that already made the
+    `static` type multi-hot correct); large vocabularies (items/abilities/
+    moves) instead route through the real embedding tables - see
+    model/policy_net.py's meta handling.
+
+    An unrecognized value gets its OWN explicit trailing slot, separate
+    from `categories[0]` (the real "none" state) - the old scalar-index
+    version used UNK=1 for this, which happens to collide with whichever
+    real category sits at index 1 (e.g. an unrecognized weather string
+    would have silently encoded as "RainDance").
+    """
+    vec = np.zeros(len(categories) + 1, dtype=np.float32)
+    vec[categories.index(value) if value in categories else len(categories)] = 1.0
+    return vec
+
+
 def _encode_field(state: dict) -> np.ndarray:
-    weather = state.get("weather") or ""   # None -> "" (no-weather slot, index 0)
+    weather = state.get("weather") or ""   # None -> "" (the real "no weather" category)
     terrain = state.get("terrain") or ""
-    w = _WEATHER.index(weather) if weather in _WEATHER else UNK
-    ter = _TERRAIN.index(terrain) if terrain in _TERRAIN else UNK
+    w = _one_hot(weather, _WEATHER)      # len(_WEATHER)+1
+    ter = _one_hot(terrain, _TERRAIN)    # len(_TERRAIN)+1
     cond_keys = ["tailwind", "reflect", "light_screen", "aurora_veil"]
     me_c = [float(state["me"]["cond"].get(k, False)) for k in cond_keys]
     opp_c = [float(state["opp"]["cond"].get(k, False)) for k in cond_keys]
-    return np.array([w, ter, float(state.get("trick_room", False)), *me_c, *opp_c], dtype=np.float32)
+    return np.concatenate([w, ter, [float(state.get("trick_room", False))], me_c, opp_c]).astype(np.float32)
 
 
 # ---------------------------------------------------------------------------
@@ -237,18 +272,29 @@ def _top(dist: dict[str, float]) -> tuple[str, float]:
     return name, max(0.0, min(1.0, w / 100.0))   # usage % -> rough probability
 
 
-def _species_meta(species_id: str | None) -> tuple[int, float, int, float]:
-    """(top_item_idx, top_item_prob, top_ability_idx, top_ability_prob) from
-    the usage prior for this species (folded to its base), all zeros if
-    unknown."""
+def _species_meta(species_id: str | None) -> tuple[int, float, int, float, int, float]:
+    """(top_item_idx, top_item_prob, top_ability_idx, top_ability_prob,
+    top_move_idx, top_move_prob) from the usage prior for this species
+    (folded to its base), all zeros if unknown.
+
+    The move entry (2026-07-21 addition, [[net-external-review-2026-07-21]])
+    closes the Bo1 gap: replays/reconstruct.py can seed a mon's FULL
+    moveset from a Bo3 Open Team Sheet, but Bo1 replays carry no sheet, so
+    an unrevealed Bo1 move is genuinely unrecoverable after the fact - the
+    usage-prior "what does this species usually run" is the correct
+    ceiling there, not a bug to chase further. The data was already being
+    scraped (belief/usage_data/species_weights.json's `moves` distribution)
+    but nothing downstream ever read it until now.
+    """
     if not species_id:
-        return PAD, 0.0, PAD, 0.0
+        return PAD, 0.0, PAD, 0.0, PAD, 0.0
     w = _WEIGHTS.get(base_species_id(species_id))
     if not w:
-        return PAD, 0.0, PAD, 0.0
+        return PAD, 0.0, PAD, 0.0, PAD, 0.0
     item, ip = _top(w.get("items", {}))
     abil, ap = _top(w.get("abilities", {}))
-    return _lookup(ITEM_VOCAB, item), ip, _lookup(ABILITY_VOCAB, abil), ap
+    move, mp = _top(w.get("moves", {}))
+    return _lookup(ITEM_VOCAB, item), ip, _lookup(ABILITY_VOCAB, abil), ap, _lookup(MOVE_VOCAB, move), mp
 
 
 # Target slots, from the acting side's point of view.
@@ -291,13 +337,35 @@ def encode_for_inference(state_dict: dict) -> dict:
     """A reconstructed board state ('me'/'opp' sides) -> encoded state tensors
     WITH per-token meta features, ready to batch into the net. The single
     entry point for inference (position eval, live play): no action/value
-    labels, just the observable state the policy/value heads consume."""
+    labels, just the observable state the policy/value heads consume.
+
+    Meta is 3 (idx, prob) pairs - item/ability/move - kept as SEPARATE
+    int64-index / float32-prob arrays (not one packed float array) so
+    model/policy_net.py can route the indices through the SAME embedding
+    tables used for the revealed item/ability/move, weighted by prob
+    (2026-07-21 fix, [[net-external-review-2026-07-21]]): the old packed
+    float array fed vocab indices straight into a Linear layer as if they
+    were continuous - item id 437 is not "more" than id 216.
+    """
+    n = 2 * MAX_MONS
     state = encode_state(state_dict)
-    meta = np.zeros((2 * MAX_MONS, 4), dtype=np.float32)  # aligned with token order
+    meta_item = np.zeros(n, dtype=np.int64)
+    meta_item_prob = np.zeros(n, dtype=np.float32)
+    meta_ability = np.zeros(n, dtype=np.int64)
+    meta_ability_prob = np.zeros(n, dtype=np.float32)
+    meta_move = np.zeros(n, dtype=np.int64)
+    meta_move_prob = np.zeros(n, dtype=np.float32)
     for t, sid in enumerate(_token_species_ids(state_dict)):
-        ii, ip, ai, ap = _species_meta(sid)
-        meta[t] = [ii, ip, ai, ap]
-    state["meta"] = meta
+        ii, ip, ai, ap, mi, mp = _species_meta(sid)
+        meta_item[t], meta_item_prob[t] = ii, ip
+        meta_ability[t], meta_ability_prob[t] = ai, ap
+        meta_move[t], meta_move_prob[t] = mi, mp
+    state["meta_item"] = meta_item
+    state["meta_item_prob"] = meta_item_prob
+    state["meta_ability"] = meta_ability
+    state["meta_ability_prob"] = meta_ability_prob
+    state["meta_move"] = meta_move
+    state["meta_move_prob"] = meta_move_prob
     return state
 
 
@@ -338,9 +406,16 @@ VOCAB_SIZES = {
 
 # Continuous per-token / field feature widths, for the net's linear
 # projections. `static` = 6 base stats + N_TYPES multi-hot typing.
+# `meta` no longer has a flat float width - meta_item/meta_ability/meta_move
+# are int64 vocab indices routed through the SAME embedding tables as the
+# revealed item/ability/move (model/policy_net.py), weighted by their
+# *_prob float siblings, not concatenated as raw floats (2026-07-21 fix).
 FEATURE_DIMS = {
     "numeric": 4 + len(_BOOST_STATS),   # hp + 3 flags + 7 boosts = 11
     "static": STATIC_DIM,               # 6 base stats + 18 types = 24
-    "meta": 4,                          # top item/ability idx + prob
-    "field": 3 + 2 * 4,                 # weather,terrain,TR + per-side conds = 11
+    # weather/terrain are now ONE-HOT (+1 explicit UNK slot each) rather
+    # than a single ordinal scalar index - a Linear layer over one-hot is
+    # mathematically equivalent to summing per-category embeddings, the
+    # same reasoning already used for `static`'s type multi-hot.
+    "field": (len(_WEATHER) + 1) + (len(_TERRAIN) + 1) + 1 + 2 * 4,  # weather,terrain,TR + per-side conds
 }
